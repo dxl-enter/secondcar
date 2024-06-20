@@ -18,6 +18,19 @@ const routes = [
         name: 'Login',
         component: Login
     },
+    /**
+     * 手机页面
+     */
+    {
+        path: '/yueChi/phone/login',
+        name: 'Login',
+        component: () => import(/* webpackChunkName: "login" */ '../views/phone/login.vue')
+    },
+    {
+        path: '/yueChi/phone/index',
+        name: 'PhoneIndex',
+        component: () => import(/* webpackChunkName: "PhoneIndex" */ '../views/phone/index.vue')
+    },
 
     // 这个路由相当于没用了、
     {
@@ -167,7 +180,7 @@ let EXPIRESTIME = 86400000
 // 使用 router.beforeEach 注册一个全局前置守卫，判断用户是否登陆
 router.beforeEach((to, from, next) => {
 
-    if (to.path === "/yueChi/sysUser/login" || to.path === "/carInfo/carInfoIndex"
+    if (to.path === "/yueChi/sysUser/login" || to.path === "/carInfo/carInfoIndex" || to.path === "/yueChi/phone/login"
       || to.name === "CarDetail"
       || to.path === "/yueChi/sysUser/register") {
         next();
@@ -175,7 +188,14 @@ router.beforeEach((to, from, next) => {
         let token = localStorage.getItem("token");
 
         if (token === null || token === "") {
-            next("/yueChi/sysUser/login");
+            // 判断电脑还是手机设备
+            if (navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)) {
+                // 手机设备
+                next("/yueChi/phone/login");
+            } else {
+                // 电脑设备
+                next("/yueChi/sysUser/login");
+            }
         } else {
             next();
         }

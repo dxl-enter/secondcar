@@ -17,8 +17,8 @@ module.exports = {
   },
   proxy: {
     "^/": {
-      // target: "http://locaohost:8090",
-      target: "http://47.98.130.198:8090",
+      target: "http://localhost:8090",
+      // target: "http://47.98.130.198:8090",
       changeOrigin: true,
       // onProxyReq: onProxyReq,
       ws: false,

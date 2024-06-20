@@ -1,4 +1,13 @@
-let proxyObj = {}
+let proxyObj = {
+    // '/api': {
+    //     target: 'http://localhost:8090/api',
+    //     changeOrigin: true,
+    //     ws: true,
+    //     pathRewrite: {
+    //         '^/api': 'http://localhost:8090/api' //路径重写
+    //     }
+    // }
+}
 
 
 proxyObj['/ws'] = {

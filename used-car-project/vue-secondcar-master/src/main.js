@@ -8,6 +8,10 @@ import store from './store'
 import 'font-awesome/css/font-awesome.css'
 import './assets/font/iconfont.css' // 阿里巴巴矢量库图标
 
+import Vant from 'vant';
+import 'vant/lib/index.css';
+// 引入全局样式
+import './styles/index.less'
 // import './assets/css/index.css'
 
 //引用七牛云
@@ -20,6 +24,7 @@ Vue.prototype.$qiniu = qiniu;
 Vue.config.productionTip = false;
 
 Vue.use(ElementUI);
+Vue.use(Vant);
 
 // 导入axios设置
 import './my-axios'
