@@ -1,0 +1,49 @@
+2021-05-20 16:38:11.850 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'carInfoMapper' and 'com.dippy.mapper.CarInfoMapper' mapperInterface. Bean already defined with the same name!
+2021-05-20 16:38:11.854 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'carPictureMapper' and 'com.dippy.mapper.CarPictureMapper' mapperInterface. Bean already defined with the same name!
+2021-05-20 16:38:11.854 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'logLoginMapper' and 'com.dippy.mapper.LogLoginMapper' mapperInterface. Bean already defined with the same name!
+2021-05-20 16:38:11.855 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'persistentLoginsMapper' and 'com.dippy.mapper.PersistentLoginsMapper' mapperInterface. Bean already defined with the same name!
+2021-05-20 16:38:11.856 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'regionMapper' and 'com.dippy.mapper.RegionMapper' mapperInterface. Bean already defined with the same name!
+2021-05-20 16:38:11.857 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sellerCarMapper' and 'com.dippy.mapper.SellerCarMapper' mapperInterface. Bean already defined with the same name!
+2021-05-20 16:38:11.857 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'shAreaMapper' and 'com.dippy.mapper.ShAreaMapper' mapperInterface. Bean already defined with the same name!
+2021-05-20 16:38:11.857 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysOrderMapper' and 'com.dippy.mapper.SysOrderMapper' mapperInterface. Bean already defined with the same name!
+2021-05-20 16:38:11.857 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysPermissionMapper' and 'com.dippy.mapper.SysPermissionMapper' mapperInterface. Bean already defined with the same name!
+2021-05-20 16:38:11.858 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysRoleMapper' and 'com.dippy.mapper.SysRoleMapper' mapperInterface. Bean already defined with the same name!
+2021-05-20 16:38:11.858 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysRolePermissionMapper' and 'com.dippy.mapper.SysRolePermissionMapper' mapperInterface. Bean already defined with the same name!
+2021-05-20 16:38:11.859 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysRoleUserMapper' and 'com.dippy.mapper.SysRoleUserMapper' mapperInterface. Bean already defined with the same name!
+2021-05-20 16:38:11.859 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysUserAddressMapper' and 'com.dippy.mapper.SysUserAddressMapper' mapperInterface. Bean already defined with the same name!
+2021-05-20 16:38:11.859 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysUserChatMessageMapper' and 'com.dippy.mapper.SysUserChatMessageMapper' mapperInterface. Bean already defined with the same name!
+2021-05-20 16:38:11.859 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysUserCollectCarMapper' and 'com.dippy.mapper.SysUserCollectCarMapper' mapperInterface. Bean already defined with the same name!
+2021-05-20 16:38:11.860 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysUserMapper' and 'com.dippy.mapper.SysUserMapper' mapperInterface. Bean already defined with the same name!
+2021-05-20 16:38:11.860 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userAddressMapper' and 'com.dippy.mapper.UserAddressMapper' mapperInterface. Bean already defined with the same name!
+2021-05-20 16:38:11.861 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userInfoMapper' and 'com.dippy.mapper.UserInfoMapper' mapperInterface. Bean already defined with the same name!
+2021-05-20 16:38:11.862 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-05-20 16:38:15.215 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.dippy.entity.PersistentLogins".
+2021-05-20 16:38:15.328 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.dippy.entity.SellerCar".
+2021-05-20 16:38:15.594 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.dippy.entity.SysRoleUser".
+2021-05-20 16:38:15.800 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.dippy.entity.SysUserCollectCars".
+2021-05-20 16:38:22.593 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-05-20 16:38:22.593 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-05-20 16:38:22.594 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-05-20 16:38:22.594 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-05-20 16:38:22.988 [main] WARN  o.s.data.elasticsearch.support.VersionInfo - Version mismatch in between Elasticsearch Clients build/use: 7.6.2 - 7.10.1
+2021-05-20 16:45:57.775 [http-nio-8090-exec-4] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [MyException(code=2020, errMsg=用户异常！请退出后重新登录)]
+2021-05-20 16:45:58.970 [http-nio-8090-exec-3] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException]
+2021-05-20 16:58:47.339 [http-nio-8090-exec-3] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException]
+2021-05-20 17:34:59.950 [http-nio-8090-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [[car-info] ElasticsearchStatusException[Elasticsearch exception [type=index_not_found_exception, reason=no such index [car-info]]]]
+2021-05-20 18:04:10.301 [AMQP Connection 192.168.88.145:5672] WARN  com.rabbitmq.client.impl.ForgivingExceptionHandler - An unexpected connection driver error occured (Exception message: Connection reset)
+2021-05-20 18:04:10.957 [lettuce-nioEventLoop-4-2] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [yuechi.com:6379]: No route to host: no further information: yuechi.com/192.168.88.145:6379
+io.netty.channel.AbstractChannel$AnnotatedNoRouteToHostException: No route to host: no further information: yuechi.com/192.168.88.145:6379
+Caused by: java.net.NoRouteToHostException: No route to host: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:702)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2021-05-20 18:41:08.649 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=37m9s563ms4µs700ns).

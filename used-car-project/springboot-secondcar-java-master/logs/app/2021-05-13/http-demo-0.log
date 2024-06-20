@@ -1,0 +1,966 @@
+2021-05-13 00:04:12.567 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==>  Preparing: SELECT user_id,username,password,name,sex,avatar,address_id,province,city,area,detailed_address,phone,email,birthday,is_lock,create_time,update_time FROM sys_user WHERE (username = ?)
+2021-05-13 00:04:12.620 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==> Parameters: test4(String)
+2021-05-13 00:04:12.679 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - <==      Total: 1
+2021-05-13 00:04:12.706 [DEBUG] com.dippy.mapper.SysRoleUserMapper.selectList - ==>  Preparing: SELECT role_id FROM sys_role_user WHERE (user_id = ?)
+2021-05-13 00:04:12.707 [DEBUG] com.dippy.mapper.SysRoleUserMapper.selectList - ==> Parameters: 14(Integer)
+2021-05-13 00:04:12.709 [DEBUG] com.dippy.mapper.SysRoleUserMapper.selectList - <==      Total: 2
+2021-05-13 00:04:12.713 [DEBUG] com.dippy.mapper.SysPermissionMapper.listPermissionByUserId - ==>  Preparing: SELECT p.* FROM sys_user u, sys_permission p LEFT JOIN sys_role_permission rp ON p.permission_id = rp.permission_id LEFT JOIN sys_role_user ru ON rp.role_id = ru.role_id WHERE u.user_id = ?
+2021-05-13 00:04:12.713 [DEBUG] com.dippy.mapper.SysPermissionMapper.listPermissionByUserId - ==> Parameters: 14(Integer)
+2021-05-13 00:04:12.731 [DEBUG] com.dippy.mapper.SysPermissionMapper.listPermissionByUserId - <==      Total: 80
+2021-05-13 00:04:17.477 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==>  Preparing: SELECT user_id,username,password,name,sex,avatar,address_id,province,city,area,detailed_address,phone,email,birthday,is_lock,create_time,update_time FROM sys_user WHERE (username = ?)
+2021-05-13 00:04:17.479 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==> Parameters: test4(String)
+2021-05-13 00:04:17.481 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - <==      Total: 1
+2021-05-13 00:04:17.485 [DEBUG] com.dippy.mapper.SysRoleUserMapper.selectList - ==>  Preparing: SELECT role_id FROM sys_role_user WHERE (user_id = ?)
+2021-05-13 00:04:17.486 [DEBUG] com.dippy.mapper.SysRoleUserMapper.selectList - ==> Parameters: 14(Integer)
+2021-05-13 00:04:17.488 [DEBUG] com.dippy.mapper.SysRoleUserMapper.selectList - <==      Total: 2
+2021-05-13 00:04:17.489 [DEBUG] com.dippy.mapper.SysPermissionMapper.listPermissionByUserId - ==>  Preparing: SELECT p.* FROM sys_user u, sys_permission p LEFT JOIN sys_role_permission rp ON p.permission_id = rp.permission_id LEFT JOIN sys_role_user ru ON rp.role_id = ru.role_id WHERE u.user_id = ?
+2021-05-13 00:04:17.489 [DEBUG] com.dippy.mapper.SysPermissionMapper.listPermissionByUserId - ==> Parameters: 14(Integer)
+2021-05-13 00:04:17.499 [DEBUG] com.dippy.mapper.SysPermissionMapper.listPermissionByUserId - <==      Total: 80
+2021-05-13 00:05:33.773 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) FROM seller_car WHERE (user_id = ?)
+2021-05-13 00:05:33.775 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==> Parameters: 14(Integer)
+2021-05-13 00:05:33.777 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - <==      Total: 1
+2021-05-13 00:10:14.781 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) FROM seller_car WHERE (user_id = ?)
+2021-05-13 00:10:14.783 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==> Parameters: 14(Integer)
+2021-05-13 00:10:14.785 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - <==      Total: 1
+2021-05-13 00:14:49.593 [DEBUG] com.dippy.mapper.CarInfoMapper.insert - ==>  Preparing: INSERT INTO car_info ( car_brand, car_series, car_type, car_price, car_user_time, transfer_count, car_car_mileage, car_color, car_gear_box, car_displacement, car_configuration, car_seat, car_fuel_type, car_front_tyre, rear_tyre, car_describe, create_time, car_status, car_title ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2021-05-13 00:14:49.635 [DEBUG] com.dippy.mapper.CarInfoMapper.insert - ==> Parameters: (String), (String), (String), 0.0(Double), 0(Integer), 0(Integer), 0.0(Double), (String), (String), 0.0(Double), (String), 0(Integer), (String), 0(String), 0(String), (String), 2021-05-13T00:14:34.518(LocalDateTime), 0(Integer), dagfagagas(String)
+2021-05-13 00:14:49.653 [DEBUG] com.dippy.mapper.CarInfoMapper.insert - <==    Updates: 1
+2021-05-13 00:14:55.173 [DEBUG] com.dippy.mapper.SellerCarMapper.insert - ==>  Preparing: INSERT INTO seller_car ( user_id, car_id, create_time ) VALUES ( ?, ?, ? )
+2021-05-13 00:14:55.184 [DEBUG] com.dippy.mapper.SellerCarMapper.insert - ==> Parameters: 14(Integer), 37(Integer), 2021-05-13T00:14:54.166(LocalDateTime)
+2021-05-13 00:14:55.195 [DEBUG] com.dippy.mapper.SellerCarMapper.insert - <==    Updates: 1
+2021-05-13 00:15:05.775 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE (car_id = ?)
+2021-05-13 00:15:05.776 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - ==> Parameters: 37(Integer)
+2021-05-13 00:15:05.779 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - <==      Total: 1
+2021-05-13 00:26:32.970 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) FROM seller_car WHERE (user_id = ?)
+2021-05-13 00:26:32.971 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==> Parameters: 14(Integer)
+2021-05-13 00:26:32.974 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - <==      Total: 1
+2021-05-13 00:26:33.001 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==>  Preparing: SELECT car_id FROM seller_car WHERE (user_id = ?) LIMIT ?
+2021-05-13 00:26:33.002 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==> Parameters: 14(Integer), 5(Long)
+2021-05-13 00:26:33.005 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - <==      Total: 1
+2021-05-13 00:26:33.012 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE (car_id IN (?))
+2021-05-13 00:26:33.014 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==> Parameters: 37(Integer)
+2021-05-13 00:26:33.019 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - <==      Total: 1
+2021-05-13 00:28:14.904 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) FROM seller_car WHERE (user_id = ?)
+2021-05-13 00:28:14.905 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==> Parameters: 14(Integer)
+2021-05-13 00:28:14.907 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - <==      Total: 1
+2021-05-13 00:28:14.927 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==>  Preparing: SELECT car_id FROM seller_car WHERE (user_id = ?) LIMIT ?
+2021-05-13 00:28:14.929 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==> Parameters: 14(Integer), 5(Long)
+2021-05-13 00:28:14.932 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - <==      Total: 1
+2021-05-13 00:28:14.937 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE (car_id IN (?))
+2021-05-13 00:28:14.938 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==> Parameters: 37(Integer)
+2021-05-13 00:28:14.942 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - <==      Total: 1
+2021-05-13 00:30:29.184 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) FROM seller_car WHERE (user_id = ?)
+2021-05-13 00:30:29.186 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==> Parameters: 14(Integer)
+2021-05-13 00:30:29.190 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - <==      Total: 1
+2021-05-13 00:30:29.193 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==>  Preparing: SELECT car_id FROM seller_car WHERE (user_id = ?) LIMIT ?
+2021-05-13 00:30:29.194 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==> Parameters: 14(Integer), 5(Long)
+2021-05-13 00:30:29.195 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - <==      Total: 1
+2021-05-13 00:30:29.199 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE (car_id IN (?))
+2021-05-13 00:30:29.200 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==> Parameters: 37(Integer)
+2021-05-13 00:30:29.205 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - <==      Total: 1
+2021-05-13 00:32:45.903 [DEBUG] com.dippy.mapper.CarInfoMapper.insert - ==>  Preparing: INSERT INTO car_info ( car_brand, car_series, car_type, car_price, car_user_time, transfer_count, car_car_mileage, car_color, car_gear_box, car_displacement, car_configuration, car_seat, car_fuel_type, car_front_tyre, rear_tyre, car_describe, create_time, car_status, car_title ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2021-05-13 00:32:45.972 [DEBUG] com.dippy.mapper.CarInfoMapper.insert - ==> Parameters: (String), (String), (String), 0.0(Double), 0(Integer), 0(Integer), 0.0(Double), (String), (String), 0.0(Double), (String), 0(Integer), (String), 0(String), 0(String), (String), 2021-05-13T00:32:32.476(LocalDateTime), 0(Integer), wewe(String)
+2021-05-13 00:32:45.996 [DEBUG] com.dippy.mapper.CarInfoMapper.insert - <==    Updates: 1
+2021-05-13 00:32:51.427 [DEBUG] com.dippy.mapper.SellerCarMapper.insert - ==>  Preparing: INSERT INTO seller_car ( user_id, car_id, create_time ) VALUES ( ?, ?, ? )
+2021-05-13 00:32:51.449 [DEBUG] com.dippy.mapper.SellerCarMapper.insert - ==> Parameters: 14(Integer), 38(Integer), 2021-05-13T00:32:50.246(LocalDateTime)
+2021-05-13 00:32:51.466 [DEBUG] com.dippy.mapper.SellerCarMapper.insert - <==    Updates: 1
+2021-05-13 00:36:27.302 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE (car_id = ?)
+2021-05-13 00:36:27.303 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - ==> Parameters: 38(Integer)
+2021-05-13 00:36:27.306 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - <==      Total: 1
+2021-05-13 00:36:27.451 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) FROM seller_car WHERE (user_id = ?)
+2021-05-13 00:36:27.452 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==> Parameters: 14(Integer)
+2021-05-13 00:36:27.456 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - <==      Total: 1
+2021-05-13 00:36:27.458 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==>  Preparing: SELECT car_id FROM seller_car WHERE (user_id = ?) LIMIT ?
+2021-05-13 00:36:27.459 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==> Parameters: 14(Integer), 5(Long)
+2021-05-13 00:36:27.460 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - <==      Total: 2
+2021-05-13 00:36:27.463 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE (car_id IN (?,?))
+2021-05-13 00:36:27.463 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==> Parameters: 37(Integer), 38(Integer)
+2021-05-13 00:36:27.468 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - <==      Total: 2
+2021-05-13 00:36:27.595 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE (car_id = ?)
+2021-05-13 00:36:27.596 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - ==> Parameters: 38(Integer)
+2021-05-13 00:36:27.598 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - <==      Total: 1
+2021-05-13 00:38:38.792 [DEBUG] com.dippy.mapper.CarInfoMapper.insert - ==>  Preparing: INSERT INTO car_info ( car_brand, car_series, car_type, car_price, car_user_time, transfer_count, car_car_mileage, car_color, car_gear_box, car_displacement, car_configuration, car_seat, car_fuel_type, car_front_tyre, rear_tyre, car_describe, create_time, car_status, car_title ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2021-05-13 00:38:38.796 [DEBUG] com.dippy.mapper.CarInfoMapper.insert - ==> Parameters: (String), (String), (String), 0.0(Double), 0(Integer), 0(Integer), 0.0(Double), (String), (String), 0.0(Double), (String), 0(Integer), (String), 0(String), 0(String), (String), 2021-05-13T00:38:17.637(LocalDateTime), 0(Integer), ffafa(String)
+2021-05-13 00:38:38.798 [DEBUG] com.dippy.mapper.CarInfoMapper.insert - <==    Updates: 1
+2021-05-13 00:38:38.800 [DEBUG] com.dippy.mapper.SellerCarMapper.insert - ==>  Preparing: INSERT INTO seller_car ( user_id, car_id, create_time ) VALUES ( ?, ?, ? )
+2021-05-13 00:38:38.801 [DEBUG] com.dippy.mapper.SellerCarMapper.insert - ==> Parameters: 14(Integer), 39(Integer), 2021-05-13T00:38:38.799(LocalDateTime)
+2021-05-13 00:38:38.803 [DEBUG] com.dippy.mapper.SellerCarMapper.insert - <==    Updates: 1
+2021-05-13 00:38:38.813 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE (car_id = ?)
+2021-05-13 00:38:38.814 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - ==> Parameters: 39(Integer)
+2021-05-13 00:38:38.816 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - <==      Total: 1
+2021-05-13 00:50:25.445 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) FROM seller_car WHERE (user_id = ?)
+2021-05-13 00:50:25.447 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==> Parameters: 14(Integer)
+2021-05-13 00:50:25.449 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - <==      Total: 1
+2021-05-13 00:50:25.451 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==>  Preparing: SELECT car_id FROM seller_car WHERE (user_id = ?) LIMIT ?
+2021-05-13 00:50:25.452 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==> Parameters: 14(Integer), 5(Long)
+2021-05-13 00:50:25.454 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - <==      Total: 3
+2021-05-13 00:50:25.457 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE (car_id IN (?,?,?))
+2021-05-13 00:50:25.457 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==> Parameters: 37(Integer), 38(Integer), 39(Integer)
+2021-05-13 00:50:25.460 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - <==      Total: 3
+2021-05-13 00:54:09.765 [DEBUG] com.dippy.mapper.CarInfoMapper.insert - ==>  Preparing: INSERT INTO car_info ( car_brand, car_series, car_type, car_price, car_user_time, transfer_count, car_car_mileage, car_color, car_gear_box, car_displacement, car_configuration, car_seat, car_fuel_type, car_front_tyre, rear_tyre, car_describe, create_time, car_status, car_title ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2021-05-13 00:54:09.863 [DEBUG] com.dippy.mapper.CarInfoMapper.insert - ==> Parameters: (String), (String), (String), 0.0(Double), 0(Integer), 0(Integer), 0.0(Double), (String), (String), 0.0(Double), (String), 0(Integer), (String), 0(String), 0(String), (String), 2021-05-13T00:54:08.705(LocalDateTime), 1(Integer), 测试上传汽车444444(String)
+2021-05-13 00:54:09.887 [DEBUG] com.dippy.mapper.CarInfoMapper.insert - <==    Updates: 1
+2021-05-13 00:54:12.350 [DEBUG] com.dippy.mapper.SellerCarMapper.insert - ==>  Preparing: INSERT INTO seller_car ( user_id, car_id, create_time ) VALUES ( ?, ?, ? )
+2021-05-13 00:54:12.374 [DEBUG] com.dippy.mapper.SellerCarMapper.insert - ==> Parameters: 14(Integer), 40(Integer), 2021-05-13T00:54:12.093(LocalDateTime)
+2021-05-13 00:54:12.390 [DEBUG] com.dippy.mapper.SellerCarMapper.insert - <==    Updates: 1
+2021-05-13 00:54:18.089 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE (car_id = ?)
+2021-05-13 00:54:18.090 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - ==> Parameters: 40(Integer)
+2021-05-13 00:54:18.093 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - <==      Total: 1
+2021-05-13 00:58:58.585 [DEBUG] com.dippy.mapper.CarInfoMapper.insert - ==>  Preparing: INSERT INTO car_info ( car_brand, car_series, car_type, car_price, car_user_time, transfer_count, car_car_mileage, car_color, car_gear_box, car_displacement, car_configuration, car_seat, car_fuel_type, car_front_tyre, rear_tyre, car_describe, create_time, car_status, car_title ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2021-05-13 00:58:58.588 [DEBUG] com.dippy.mapper.CarInfoMapper.insert - ==> Parameters: (String), (String), (String), 0.0(Double), 0(Integer), 0(Integer), 0.0(Double), (String), (String), 0.0(Double), (String), 0(Integer), (String), 0(String), 0(String), (String), 2021-05-13T00:58:58.584(LocalDateTime), 0(Integer), 测试555(String)
+2021-05-13 00:58:58.591 [DEBUG] com.dippy.mapper.CarInfoMapper.insert - <==    Updates: 1
+2021-05-13 00:58:58.594 [DEBUG] com.dippy.mapper.SellerCarMapper.insert - ==>  Preparing: INSERT INTO seller_car ( user_id, car_id, create_time ) VALUES ( ?, ?, ? )
+2021-05-13 00:58:58.595 [DEBUG] com.dippy.mapper.SellerCarMapper.insert - ==> Parameters: 14(Integer), 41(Integer), 2021-05-13T00:58:58.593(LocalDateTime)
+2021-05-13 00:58:58.597 [DEBUG] com.dippy.mapper.SellerCarMapper.insert - <==    Updates: 1
+2021-05-13 00:58:58.636 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE (car_id = ?)
+2021-05-13 00:58:58.636 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - ==> Parameters: 41(Integer)
+2021-05-13 00:58:58.639 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - <==      Total: 1
+2021-05-13 10:07:37.512 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==>  Preparing: SELECT user_id,username,password,name,sex,avatar,address_id,province,city,area,detailed_address,phone,email,birthday,is_lock,create_time,update_time FROM sys_user WHERE (username = ?)
+2021-05-13 10:07:37.661 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==> Parameters: test4(String)
+2021-05-13 10:07:37.724 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - <==      Total: 1
+2021-05-13 10:07:37.749 [DEBUG] com.dippy.mapper.SysRoleUserMapper.selectList - ==>  Preparing: SELECT role_id FROM sys_role_user WHERE (user_id = ?)
+2021-05-13 10:07:37.750 [DEBUG] com.dippy.mapper.SysRoleUserMapper.selectList - ==> Parameters: 14(Integer)
+2021-05-13 10:07:37.752 [DEBUG] com.dippy.mapper.SysRoleUserMapper.selectList - <==      Total: 2
+2021-05-13 10:07:37.755 [DEBUG] com.dippy.mapper.SysPermissionMapper.listPermissionByUserId - ==>  Preparing: SELECT p.* FROM sys_user u, sys_permission p LEFT JOIN sys_role_permission rp ON p.permission_id = rp.permission_id LEFT JOIN sys_role_user ru ON rp.role_id = ru.role_id WHERE u.user_id = ?
+2021-05-13 10:07:37.755 [DEBUG] com.dippy.mapper.SysPermissionMapper.listPermissionByUserId - ==> Parameters: 14(Integer)
+2021-05-13 10:07:37.773 [DEBUG] com.dippy.mapper.SysPermissionMapper.listPermissionByUserId - <==      Total: 80
+2021-05-13 10:07:44.517 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) FROM seller_car WHERE (user_id = ?)
+2021-05-13 10:07:44.518 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==> Parameters: 14(Integer)
+2021-05-13 10:07:44.520 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - <==      Total: 1
+2021-05-13 10:07:44.536 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==>  Preparing: SELECT car_id FROM seller_car WHERE (user_id = ?) LIMIT ?
+2021-05-13 10:07:44.537 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==> Parameters: 14(Integer), 5(Long)
+2021-05-13 10:07:44.540 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - <==      Total: 5
+2021-05-13 10:07:44.547 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE (car_id IN (?,?,?,?,?))
+2021-05-13 10:07:44.549 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==> Parameters: 37(Integer), 38(Integer), 39(Integer), 40(Integer), 41(Integer)
+2021-05-13 10:07:44.559 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - <==      Total: 5
+2021-05-13 10:18:33.783 [DEBUG] com.dippy.mapper.CarInfoMapper.insert - ==>  Preparing: INSERT INTO car_info ( car_brand, car_series, car_type, car_price, car_user_time, transfer_count, car_car_mileage, car_color, car_gear_box, car_displacement, car_configuration, car_seat, car_fuel_type, car_front_tyre, rear_tyre, car_describe, create_time, car_status, car_title ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2021-05-13 10:18:33.792 [DEBUG] com.dippy.mapper.CarInfoMapper.insert - ==> Parameters: (String), (String), (String), 0.0(Double), 0(Integer), 0(Integer), 0.0(Double), (String), (String), 0.0(Double), (String), 0(Integer), (String), 0(String), 0(String), (String), 2021-05-13T10:18:33.734(LocalDateTime), 0(Integer), ce4(String)
+2021-05-13 10:18:33.795 [DEBUG] com.dippy.mapper.CarInfoMapper.insert - <==    Updates: 1
+2021-05-13 10:18:33.806 [DEBUG] com.dippy.mapper.SellerCarMapper.insert - ==>  Preparing: INSERT INTO seller_car ( user_id, car_id, create_time ) VALUES ( ?, ?, ? )
+2021-05-13 10:18:33.807 [DEBUG] com.dippy.mapper.SellerCarMapper.insert - ==> Parameters: 14(Integer), 42(Integer), 2021-05-13T10:18:33.802(LocalDateTime)
+2021-05-13 10:18:33.809 [DEBUG] com.dippy.mapper.SellerCarMapper.insert - <==    Updates: 1
+2021-05-13 10:18:34.796 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE (car_id = ?)
+2021-05-13 10:18:34.798 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - ==> Parameters: 42(Integer)
+2021-05-13 10:18:34.802 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - <==      Total: 1
+2021-05-13 10:22:37.824 [DEBUG] com.dippy.mapper.CarInfoMapper.insert - ==>  Preparing: INSERT INTO car_info ( car_brand, car_series, car_type, car_price, car_user_time, transfer_count, car_car_mileage, car_color, car_gear_box, car_displacement, car_configuration, car_seat, car_fuel_type, car_front_tyre, rear_tyre, car_describe, create_time, car_status, car_title ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2021-05-13 10:22:37.829 [DEBUG] com.dippy.mapper.CarInfoMapper.insert - ==> Parameters: (String), (String), (String), 0.0(Double), 0(Integer), 0(Integer), 0.0(Double), (String), (String), 0.0(Double), (String), 0(Integer), (String), 0(String), 0(String), (String), 2021-05-13T10:22:37.820(LocalDateTime), 0(Integer), cccc5(String)
+2021-05-13 10:22:37.831 [DEBUG] com.dippy.mapper.CarInfoMapper.insert - <==    Updates: 1
+2021-05-13 10:22:37.833 [DEBUG] com.dippy.mapper.SellerCarMapper.insert - ==>  Preparing: INSERT INTO seller_car ( user_id, car_id, create_time ) VALUES ( ?, ?, ? )
+2021-05-13 10:22:37.835 [DEBUG] com.dippy.mapper.SellerCarMapper.insert - ==> Parameters: 14(Integer), 43(Integer), 2021-05-13T10:22:37.833(LocalDateTime)
+2021-05-13 10:22:37.837 [DEBUG] com.dippy.mapper.SellerCarMapper.insert - <==    Updates: 1
+2021-05-13 10:22:37.908 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE (car_id = ?)
+2021-05-13 10:22:37.909 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - ==> Parameters: 43(Integer)
+2021-05-13 10:22:37.913 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - <==      Total: 1
+2021-05-13 10:28:23.417 [DEBUG] com.dippy.mapper.CarInfoMapper.insert - ==>  Preparing: INSERT INTO car_info ( car_brand, car_series, car_type, car_price, car_user_time, transfer_count, car_car_mileage, car_color, car_gear_box, car_displacement, car_configuration, car_seat, car_fuel_type, car_front_tyre, rear_tyre, car_describe, create_time, car_status, car_title ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2021-05-13 10:28:23.436 [DEBUG] com.dippy.mapper.CarInfoMapper.insert - ==> Parameters: (String), (String), (String), 0.0(Double), 0(Integer), 0(Integer), 0.0(Double), (String), (String), 0.0(Double), (String), 0(Integer), (String), 0(String), 0(String), (String), 2021-05-13T10:28:23.414(LocalDateTime), 0(Integer), 5555555(String)
+2021-05-13 10:28:23.442 [DEBUG] com.dippy.mapper.CarInfoMapper.insert - <==    Updates: 1
+2021-05-13 10:28:23.444 [DEBUG] com.dippy.mapper.SellerCarMapper.insert - ==>  Preparing: INSERT INTO seller_car ( user_id, car_id, create_time ) VALUES ( ?, ?, ? )
+2021-05-13 10:28:23.446 [DEBUG] com.dippy.mapper.SellerCarMapper.insert - ==> Parameters: 14(Integer), 44(Integer), 2021-05-13T10:28:23.443(LocalDateTime)
+2021-05-13 10:28:23.448 [DEBUG] com.dippy.mapper.SellerCarMapper.insert - <==    Updates: 1
+2021-05-13 10:28:23.461 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE (car_id = ?)
+2021-05-13 10:28:23.463 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - ==> Parameters: 44(Integer)
+2021-05-13 10:28:23.468 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - <==      Total: 1
+2021-05-13 10:29:00.169 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) FROM seller_car WHERE (user_id = ?)
+2021-05-13 10:29:00.171 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==> Parameters: 14(Integer)
+2021-05-13 10:29:00.175 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - <==      Total: 1
+2021-05-13 10:29:00.178 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==>  Preparing: SELECT car_id FROM seller_car WHERE (user_id = ?) LIMIT ?
+2021-05-13 10:29:00.179 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==> Parameters: 14(Integer), 5(Long)
+2021-05-13 10:29:00.182 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - <==      Total: 5
+2021-05-13 10:29:00.186 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE (car_id IN (?,?,?,?,?))
+2021-05-13 10:29:00.188 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==> Parameters: 37(Integer), 38(Integer), 39(Integer), 40(Integer), 41(Integer)
+2021-05-13 10:29:00.196 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - <==      Total: 5
+2021-05-13 10:37:52.475 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) FROM seller_car WHERE (user_id = ?)
+2021-05-13 10:37:52.477 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==> Parameters: 14(Integer)
+2021-05-13 10:37:52.480 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - <==      Total: 1
+2021-05-13 10:37:52.481 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==>  Preparing: SELECT car_id FROM seller_car WHERE (user_id = ?) LIMIT ?
+2021-05-13 10:37:52.482 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==> Parameters: 14(Integer), 5(Long)
+2021-05-13 10:37:52.486 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - <==      Total: 5
+2021-05-13 10:37:52.490 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE (car_id IN (?,?,?,?,?))
+2021-05-13 10:37:52.491 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==> Parameters: 37(Integer), 38(Integer), 39(Integer), 40(Integer), 41(Integer)
+2021-05-13 10:37:52.507 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - <==      Total: 5
+2021-05-13 10:37:54.716 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) FROM seller_car WHERE (user_id = ?)
+2021-05-13 10:37:54.717 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==> Parameters: 14(Integer)
+2021-05-13 10:37:54.720 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - <==      Total: 1
+2021-05-13 10:37:54.723 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==>  Preparing: SELECT car_id FROM seller_car WHERE (user_id = ?) LIMIT ?
+2021-05-13 10:37:54.724 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==> Parameters: 14(Integer), 5(Long)
+2021-05-13 10:37:54.727 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - <==      Total: 5
+2021-05-13 10:37:54.730 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE (car_id IN (?,?,?,?,?))
+2021-05-13 10:37:54.731 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==> Parameters: 37(Integer), 38(Integer), 39(Integer), 40(Integer), 41(Integer)
+2021-05-13 10:37:54.736 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - <==      Total: 5
+2021-05-13 10:38:02.859 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) FROM seller_car WHERE (user_id = ?)
+2021-05-13 10:38:02.907 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==> Parameters: 14(Integer)
+2021-05-13 10:38:02.909 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - <==      Total: 1
+2021-05-13 10:38:02.911 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==>  Preparing: SELECT car_id FROM seller_car WHERE (user_id = ?) LIMIT ?
+2021-05-13 10:38:02.911 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==> Parameters: 14(Integer), 5(Long)
+2021-05-13 10:38:02.914 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - <==      Total: 5
+2021-05-13 10:38:02.917 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE (car_id IN (?,?,?,?,?))
+2021-05-13 10:38:02.918 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==> Parameters: 37(Integer), 38(Integer), 39(Integer), 40(Integer), 41(Integer)
+2021-05-13 10:38:02.921 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - <==      Total: 5
+2021-05-13 13:59:03.020 [DEBUG] com.dippy.mapper.CarInfoMapper.insert - ==>  Preparing: INSERT INTO car_info ( car_brand, car_series, car_type, car_price, car_user_time, transfer_count, car_car_mileage, car_color, car_gear_box, car_displacement, car_configuration, car_seat, car_fuel_type, car_front_tyre, rear_tyre, car_describe, create_time, car_status, car_title ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2021-05-13 13:59:03.064 [DEBUG] com.dippy.mapper.CarInfoMapper.insert - ==> Parameters: (String), (String), (String), 0.0(Double), 0(Integer), 0(Integer), 0.0(Double), (String), (String), 0.0(Double), (String), 0(Integer), (String), 0(String), 0(String), (String), 2021-05-13T13:59:02.897(LocalDateTime), 0(Integer), fffff(String)
+2021-05-13 13:59:03.091 [DEBUG] com.dippy.mapper.CarInfoMapper.insert - <==    Updates: 1
+2021-05-13 13:59:03.099 [DEBUG] com.dippy.mapper.SellerCarMapper.insert - ==>  Preparing: INSERT INTO seller_car ( user_id, car_id, create_time ) VALUES ( ?, ?, ? )
+2021-05-13 13:59:03.100 [DEBUG] com.dippy.mapper.SellerCarMapper.insert - ==> Parameters: 14(Integer), 45(Integer), 2021-05-13T13:59:03.095(LocalDateTime)
+2021-05-13 13:59:03.102 [DEBUG] com.dippy.mapper.SellerCarMapper.insert - <==    Updates: 1
+2021-05-13 13:59:04.253 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE (car_id = ?)
+2021-05-13 13:59:04.254 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - ==> Parameters: 45(Integer)
+2021-05-13 13:59:04.259 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - <==      Total: 1
+2021-05-13 13:59:21.219 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==>  Preparing: SELECT user_id,username,password,name,sex,avatar,address_id,province,city,area,detailed_address,phone,email,birthday,is_lock,create_time,update_time FROM sys_user WHERE (username = ?)
+2021-05-13 13:59:21.220 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==> Parameters: admin(String)
+2021-05-13 13:59:21.224 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - <==      Total: 1
+2021-05-13 13:59:21.253 [DEBUG] com.dippy.mapper.SysRoleUserMapper.selectList - ==>  Preparing: SELECT role_id FROM sys_role_user WHERE (user_id = ?)
+2021-05-13 13:59:21.254 [DEBUG] com.dippy.mapper.SysRoleUserMapper.selectList - ==> Parameters: 1(Integer)
+2021-05-13 13:59:21.256 [DEBUG] com.dippy.mapper.SysRoleUserMapper.selectList - <==      Total: 1
+2021-05-13 13:59:21.258 [DEBUG] com.dippy.mapper.SysPermissionMapper.listPermissionByUserId - ==>  Preparing: SELECT p.* FROM sys_user u, sys_permission p LEFT JOIN sys_role_permission rp ON p.permission_id = rp.permission_id LEFT JOIN sys_role_user ru ON rp.role_id = ru.role_id WHERE u.user_id = ?
+2021-05-13 13:59:21.259 [DEBUG] com.dippy.mapper.SysPermissionMapper.listPermissionByUserId - ==> Parameters: 1(Integer)
+2021-05-13 13:59:21.271 [DEBUG] com.dippy.mapper.SysPermissionMapper.listPermissionByUserId - <==      Total: 80
+2021-05-13 13:59:46.436 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==>  Preparing: SELECT user_id,username,password,name,sex,avatar,address_id,province,city,area,detailed_address,phone,email,birthday,is_lock,create_time,update_time FROM sys_user WHERE (username = ?)
+2021-05-13 13:59:46.437 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==> Parameters: test4(String)
+2021-05-13 13:59:46.441 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - <==      Total: 1
+2021-05-13 13:59:46.444 [DEBUG] com.dippy.mapper.SysRoleUserMapper.selectList - ==>  Preparing: SELECT role_id FROM sys_role_user WHERE (user_id = ?)
+2021-05-13 13:59:46.445 [DEBUG] com.dippy.mapper.SysRoleUserMapper.selectList - ==> Parameters: 14(Integer)
+2021-05-13 13:59:46.447 [DEBUG] com.dippy.mapper.SysRoleUserMapper.selectList - <==      Total: 2
+2021-05-13 13:59:46.449 [DEBUG] com.dippy.mapper.SysPermissionMapper.listPermissionByUserId - ==>  Preparing: SELECT p.* FROM sys_user u, sys_permission p LEFT JOIN sys_role_permission rp ON p.permission_id = rp.permission_id LEFT JOIN sys_role_user ru ON rp.role_id = ru.role_id WHERE u.user_id = ?
+2021-05-13 13:59:46.450 [DEBUG] com.dippy.mapper.SysPermissionMapper.listPermissionByUserId - ==> Parameters: 14(Integer)
+2021-05-13 13:59:46.460 [DEBUG] com.dippy.mapper.SysPermissionMapper.listPermissionByUserId - <==      Total: 80
+2021-05-13 13:59:54.092 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) FROM seller_car WHERE (user_id = ?)
+2021-05-13 13:59:54.094 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==> Parameters: 14(Integer)
+2021-05-13 13:59:54.096 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - <==      Total: 1
+2021-05-13 13:59:54.099 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==>  Preparing: SELECT car_id FROM seller_car WHERE (user_id = ?) LIMIT ?
+2021-05-13 13:59:54.100 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==> Parameters: 14(Integer), 5(Long)
+2021-05-13 13:59:54.103 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - <==      Total: 5
+2021-05-13 13:59:54.110 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE (car_id IN (?,?,?,?,?))
+2021-05-13 13:59:54.111 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==> Parameters: 37(Integer), 38(Integer), 39(Integer), 40(Integer), 41(Integer)
+2021-05-13 13:59:54.116 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - <==      Total: 5
+2021-05-13 14:00:57.769 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) FROM seller_car WHERE (user_id = ?)
+2021-05-13 14:00:57.770 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==> Parameters: 14(Integer)
+2021-05-13 14:00:57.772 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - <==      Total: 1
+2021-05-13 14:00:57.774 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==>  Preparing: SELECT car_id FROM seller_car WHERE (user_id = ?) LIMIT ?
+2021-05-13 14:00:57.775 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==> Parameters: 14(Integer), 5(Long)
+2021-05-13 14:00:57.778 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - <==      Total: 5
+2021-05-13 14:00:57.781 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE (car_id IN (?,?,?,?,?))
+2021-05-13 14:00:57.782 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==> Parameters: 37(Integer), 38(Integer), 39(Integer), 40(Integer), 41(Integer)
+2021-05-13 14:00:57.786 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - <==      Total: 5
+2021-05-13 14:01:49.630 [DEBUG] com.dippy.mapper.CarInfoMapper.insert - ==>  Preparing: INSERT INTO car_info ( car_brand, car_series, car_type, car_price, car_user_time, transfer_count, car_car_mileage, car_color, car_gear_box, car_displacement, car_configuration, car_seat, car_fuel_type, car_front_tyre, rear_tyre, car_describe, create_time, car_status, car_title ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2021-05-13 14:01:49.633 [DEBUG] com.dippy.mapper.CarInfoMapper.insert - ==> Parameters: (String), (String), (String), 0.0(Double), 0(Integer), 0(Integer), 0.0(Double), (String), (String), 0.0(Double), (String), 0(Integer), (String), 0(String), 0(String), (String), 2021-05-13T14:01:49.625(LocalDateTime), 0(Integer), fsfasfet(String)
+2021-05-13 14:01:49.635 [DEBUG] com.dippy.mapper.CarInfoMapper.insert - <==    Updates: 1
+2021-05-13 14:01:49.637 [DEBUG] com.dippy.mapper.SellerCarMapper.insert - ==>  Preparing: INSERT INTO seller_car ( user_id, car_id, create_time ) VALUES ( ?, ?, ? )
+2021-05-13 14:01:49.639 [DEBUG] com.dippy.mapper.SellerCarMapper.insert - ==> Parameters: 14(Integer), 46(Integer), 2021-05-13T14:01:49.637(LocalDateTime)
+2021-05-13 14:01:49.640 [DEBUG] com.dippy.mapper.SellerCarMapper.insert - <==    Updates: 1
+2021-05-13 14:01:49.649 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE (car_id = ?)
+2021-05-13 14:01:49.650 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - ==> Parameters: 46(Integer)
+2021-05-13 14:01:49.653 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - <==      Total: 1
+2021-05-13 14:02:55.959 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) FROM seller_car WHERE (user_id = ?)
+2021-05-13 14:02:55.961 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==> Parameters: 14(Integer)
+2021-05-13 14:02:55.962 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - <==      Total: 1
+2021-05-13 14:02:55.964 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==>  Preparing: SELECT car_id FROM seller_car WHERE (user_id = ?) LIMIT ?
+2021-05-13 14:02:55.965 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==> Parameters: 14(Integer), 5(Long)
+2021-05-13 14:02:55.967 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - <==      Total: 5
+2021-05-13 14:02:55.970 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE (car_id IN (?,?,?,?,?))
+2021-05-13 14:02:55.971 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==> Parameters: 37(Integer), 38(Integer), 39(Integer), 40(Integer), 41(Integer)
+2021-05-13 14:02:55.975 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - <==      Total: 5
+2021-05-13 14:03:19.299 [DEBUG] com.dippy.mapper.CarInfoMapper.insert - ==>  Preparing: INSERT INTO car_info ( car_brand, car_series, car_type, car_price, car_user_time, transfer_count, car_car_mileage, car_color, car_gear_box, car_displacement, car_configuration, car_seat, car_fuel_type, car_front_tyre, rear_tyre, car_describe, create_time, car_status, car_title ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2021-05-13 14:03:19.307 [DEBUG] com.dippy.mapper.CarInfoMapper.insert - ==> Parameters: (String), (String), (String), 0.0(Double), 0(Integer), 0(Integer), 0.0(Double), (String), (String), 0.0(Double), (String), 0(Integer), (String), 0(String), 0(String), (String), 2021-05-13T14:03:19.296(LocalDateTime), 0(Integer), fw525s(String)
+2021-05-13 14:03:19.311 [DEBUG] com.dippy.mapper.CarInfoMapper.insert - <==    Updates: 1
+2021-05-13 14:03:19.315 [DEBUG] com.dippy.mapper.SellerCarMapper.insert - ==>  Preparing: INSERT INTO seller_car ( user_id, car_id, create_time ) VALUES ( ?, ?, ? )
+2021-05-13 14:03:19.316 [DEBUG] com.dippy.mapper.SellerCarMapper.insert - ==> Parameters: 14(Integer), 47(Integer), 2021-05-13T14:03:19.313(LocalDateTime)
+2021-05-13 14:03:19.318 [DEBUG] com.dippy.mapper.SellerCarMapper.insert - <==    Updates: 1
+2021-05-13 14:03:19.411 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE (car_id = ?)
+2021-05-13 14:03:19.412 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - ==> Parameters: 47(Integer)
+2021-05-13 14:03:19.415 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - <==      Total: 1
+2021-05-13 14:03:28.378 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) FROM seller_car WHERE (user_id = ?)
+2021-05-13 14:03:28.379 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==> Parameters: 14(Integer)
+2021-05-13 14:03:28.381 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - <==      Total: 1
+2021-05-13 14:03:28.384 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==>  Preparing: SELECT car_id FROM seller_car WHERE (user_id = ?) LIMIT ?
+2021-05-13 14:03:28.385 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==> Parameters: 14(Integer), 5(Long)
+2021-05-13 14:03:28.386 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - <==      Total: 5
+2021-05-13 14:03:28.389 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE (car_id IN (?,?,?,?,?))
+2021-05-13 14:03:28.391 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==> Parameters: 37(Integer), 38(Integer), 39(Integer), 40(Integer), 41(Integer)
+2021-05-13 14:03:28.394 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - <==      Total: 5
+2021-05-13 14:04:05.058 [DEBUG] com.dippy.mapper.CarInfoMapper.insert - ==>  Preparing: INSERT INTO car_info ( car_brand, car_series, car_type, car_price, car_user_time, transfer_count, car_car_mileage, car_color, car_gear_box, car_displacement, car_configuration, car_seat, car_fuel_type, car_front_tyre, rear_tyre, car_describe, create_time, car_status, car_title ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2021-05-13 14:04:05.064 [DEBUG] com.dippy.mapper.CarInfoMapper.insert - ==> Parameters: (String), (String), (String), 0.0(Double), 0(Integer), 0(Integer), 0.0(Double), (String), (String), 0.0(Double), (String), 0(Integer), (String), 0(String), 0(String), (String), 2021-05-13T14:04:05.057(LocalDateTime), 0(Integer), fer242(String)
+2021-05-13 14:04:05.067 [DEBUG] com.dippy.mapper.CarInfoMapper.insert - <==    Updates: 1
+2021-05-13 14:04:05.069 [DEBUG] com.dippy.mapper.SellerCarMapper.insert - ==>  Preparing: INSERT INTO seller_car ( user_id, car_id, create_time ) VALUES ( ?, ?, ? )
+2021-05-13 14:04:05.070 [DEBUG] com.dippy.mapper.SellerCarMapper.insert - ==> Parameters: 14(Integer), 48(Integer), 2021-05-13T14:04:05.069(LocalDateTime)
+2021-05-13 14:04:05.073 [DEBUG] com.dippy.mapper.SellerCarMapper.insert - <==    Updates: 1
+2021-05-13 14:04:05.081 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE (car_id = ?)
+2021-05-13 14:04:05.083 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - ==> Parameters: 48(Integer)
+2021-05-13 14:04:05.086 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - <==      Total: 1
+2021-05-13 14:05:40.249 [DEBUG] com.dippy.mapper.CarInfoMapper.insert - ==>  Preparing: INSERT INTO car_info ( car_brand, car_series, car_type, car_price, car_user_time, transfer_count, car_car_mileage, car_color, car_gear_box, car_displacement, car_configuration, car_seat, car_fuel_type, car_front_tyre, rear_tyre, car_describe, create_time, car_status, car_title ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2021-05-13 14:05:40.253 [DEBUG] com.dippy.mapper.CarInfoMapper.insert - ==> Parameters: (String), (String), (String), 0.0(Double), 0(Integer), 0(Integer), 0.0(Double), (String), (String), 0.0(Double), (String), 0(Integer), (String), 0(String), 0(String), (String), 2021-05-13T14:05:40.247(LocalDateTime), 0(Integer), 2425(String)
+2021-05-13 14:05:40.256 [DEBUG] com.dippy.mapper.CarInfoMapper.insert - <==    Updates: 1
+2021-05-13 14:05:40.260 [DEBUG] com.dippy.mapper.SellerCarMapper.insert - ==>  Preparing: INSERT INTO seller_car ( user_id, car_id, create_time ) VALUES ( ?, ?, ? )
+2021-05-13 14:05:40.263 [DEBUG] com.dippy.mapper.SellerCarMapper.insert - ==> Parameters: 14(Integer), 49(Integer), 2021-05-13T14:05:40.258(LocalDateTime)
+2021-05-13 14:05:40.266 [DEBUG] com.dippy.mapper.SellerCarMapper.insert - <==    Updates: 1
+2021-05-13 14:05:40.286 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE (car_id = ?)
+2021-05-13 14:05:40.287 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - ==> Parameters: 49(Integer)
+2021-05-13 14:05:40.289 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - <==      Total: 1
+2021-05-13 14:07:14.845 [DEBUG] com.dippy.mapper.CarInfoMapper.insert - ==>  Preparing: INSERT INTO car_info ( car_brand, car_series, car_type, car_price, car_user_time, transfer_count, car_car_mileage, car_color, car_gear_box, car_displacement, car_configuration, car_seat, car_fuel_type, car_front_tyre, rear_tyre, car_describe, create_time, car_status, car_title ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2021-05-13 14:07:14.847 [DEBUG] com.dippy.mapper.CarInfoMapper.insert - ==> Parameters: (String), (String), (String), 0.0(Double), 0(Integer), 0(Integer), 0.0(Double), (String), (String), 0.0(Double), (String), 0(Integer), (String), 0(String), 0(String), (String), 2021-05-13T14:07:14.842(LocalDateTime), 0(Integer), 2425(String)
+2021-05-13 14:07:14.849 [DEBUG] com.dippy.mapper.CarInfoMapper.insert - <==    Updates: 1
+2021-05-13 14:07:14.850 [DEBUG] com.dippy.mapper.SellerCarMapper.insert - ==>  Preparing: INSERT INTO seller_car ( user_id, car_id, create_time ) VALUES ( ?, ?, ? )
+2021-05-13 14:07:14.852 [DEBUG] com.dippy.mapper.SellerCarMapper.insert - ==> Parameters: 14(Integer), 50(Integer), 2021-05-13T14:07:14.850(LocalDateTime)
+2021-05-13 14:07:14.854 [DEBUG] com.dippy.mapper.SellerCarMapper.insert - <==    Updates: 1
+2021-05-13 14:07:14.861 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE (car_id = ?)
+2021-05-13 14:07:14.862 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - ==> Parameters: 50(Integer)
+2021-05-13 14:07:14.865 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - <==      Total: 1
+2021-05-13 14:08:27.964 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) FROM seller_car WHERE (user_id = ?)
+2021-05-13 14:08:27.965 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==> Parameters: 14(Integer)
+2021-05-13 14:08:27.966 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - <==      Total: 1
+2021-05-13 14:08:27.968 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==>  Preparing: SELECT car_id FROM seller_car WHERE (user_id = ?) LIMIT ?
+2021-05-13 14:08:27.968 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==> Parameters: 14(Integer), 5(Long)
+2021-05-13 14:08:27.970 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - <==      Total: 5
+2021-05-13 14:08:27.972 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE (car_id IN (?,?,?,?,?))
+2021-05-13 14:08:27.973 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==> Parameters: 37(Integer), 38(Integer), 39(Integer), 40(Integer), 41(Integer)
+2021-05-13 14:08:27.976 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - <==      Total: 5
+2021-05-13 14:09:45.197 [DEBUG] com.dippy.mapper.CarInfoMapper.insert - ==>  Preparing: INSERT INTO car_info ( car_brand, car_series, car_type, car_price, car_user_time, transfer_count, car_car_mileage, car_color, car_gear_box, car_displacement, car_configuration, car_seat, car_fuel_type, car_front_tyre, rear_tyre, car_describe, create_time, car_status, car_title ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2021-05-13 14:09:45.200 [DEBUG] com.dippy.mapper.CarInfoMapper.insert - ==> Parameters: (String), (String), (String), 0.0(Double), 0(Integer), 0(Integer), 0.0(Double), (String), (String), 0.0(Double), (String), 0(Integer), (String), 0(String), 0(String), (String), 2021-05-13T14:09:45.196(LocalDateTime), 0(Integer), jhrgrt(String)
+2021-05-13 14:09:45.205 [DEBUG] com.dippy.mapper.CarInfoMapper.insert - <==    Updates: 1
+2021-05-13 14:09:45.206 [DEBUG] com.dippy.mapper.SellerCarMapper.insert - ==>  Preparing: INSERT INTO seller_car ( user_id, car_id, create_time ) VALUES ( ?, ?, ? )
+2021-05-13 14:09:45.207 [DEBUG] com.dippy.mapper.SellerCarMapper.insert - ==> Parameters: 14(Integer), 51(Integer), 2021-05-13T14:09:45.206(LocalDateTime)
+2021-05-13 14:09:45.215 [DEBUG] com.dippy.mapper.SellerCarMapper.insert - <==    Updates: 1
+2021-05-13 14:09:45.223 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE (car_id = ?)
+2021-05-13 14:09:45.224 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - ==> Parameters: 51(Integer)
+2021-05-13 14:09:45.226 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - <==      Total: 1
+2021-05-13 14:20:14.361 [DEBUG] com.dippy.mapper.CarInfoMapper.insert - ==>  Preparing: INSERT INTO car_info ( car_brand, car_series, car_type, car_price, car_user_time, transfer_count, car_car_mileage, car_color, car_gear_box, car_displacement, car_configuration, car_seat, car_fuel_type, car_front_tyre, rear_tyre, car_describe, create_time, car_status, car_title ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2021-05-13 14:20:14.364 [DEBUG] com.dippy.mapper.CarInfoMapper.insert - ==> Parameters: (String), (String), (String), 0.0(Double), 0(Integer), 0(Integer), 0.0(Double), (String), (String), 0.0(Double), (String), 0(Integer), (String), 0(String), 0(String), (String), 2021-05-13T14:20:12.260(LocalDateTime), 0(Integer), 华尔街好难过(String)
+2021-05-13 14:20:14.366 [DEBUG] com.dippy.mapper.CarInfoMapper.insert - <==    Updates: 1
+2021-05-13 14:20:14.367 [DEBUG] com.dippy.mapper.SellerCarMapper.insert - ==>  Preparing: INSERT INTO seller_car ( user_id, car_id, create_time ) VALUES ( ?, ?, ? )
+2021-05-13 14:20:14.368 [DEBUG] com.dippy.mapper.SellerCarMapper.insert - ==> Parameters: 14(Integer), 52(Integer), 2021-05-13T14:20:14.367(LocalDateTime)
+2021-05-13 14:20:14.369 [DEBUG] com.dippy.mapper.SellerCarMapper.insert - <==    Updates: 1
+2021-05-13 14:20:14.435 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE (car_id = ?)
+2021-05-13 14:20:14.437 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - ==> Parameters: 52(Integer)
+2021-05-13 14:20:14.440 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - <==      Total: 1
+2021-05-13 14:23:23.054 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) FROM seller_car WHERE (user_id = ?)
+2021-05-13 14:23:23.055 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==> Parameters: 14(Integer)
+2021-05-13 14:23:23.057 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - <==      Total: 1
+2021-05-13 14:23:23.059 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==>  Preparing: SELECT car_id FROM seller_car WHERE (user_id = ?) LIMIT ?
+2021-05-13 14:23:23.059 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==> Parameters: 14(Integer), 5(Long)
+2021-05-13 14:23:23.061 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - <==      Total: 5
+2021-05-13 14:23:23.063 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE (car_id IN (?,?,?,?,?))
+2021-05-13 14:23:23.064 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==> Parameters: 37(Integer), 38(Integer), 39(Integer), 40(Integer), 41(Integer)
+2021-05-13 14:23:23.067 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - <==      Total: 5
+2021-05-13 14:24:12.982 [DEBUG] com.dippy.mapper.CarInfoMapper.insert - ==>  Preparing: INSERT INTO car_info ( car_brand, car_series, car_type, car_price, car_user_time, transfer_count, car_car_mileage, car_color, car_gear_box, car_displacement, car_configuration, car_seat, car_fuel_type, car_front_tyre, rear_tyre, car_describe, create_time, car_status, car_title ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2021-05-13 14:24:12.985 [DEBUG] com.dippy.mapper.CarInfoMapper.insert - ==> Parameters: (String), (String), (String), 0.0(Double), 0(Integer), 0(Integer), 0.0(Double), (String), (String), 0.0(Double), (String), 0(Integer), (String), 0(String), 0(String), (String), 2021-05-13T14:24:12.981(LocalDateTime), 0(Integer), 纷纷为(String)
+2021-05-13 14:24:12.989 [DEBUG] com.dippy.mapper.CarInfoMapper.insert - <==    Updates: 1
+2021-05-13 14:24:12.991 [DEBUG] com.dippy.mapper.SellerCarMapper.insert - ==>  Preparing: INSERT INTO seller_car ( user_id, car_id, create_time ) VALUES ( ?, ?, ? )
+2021-05-13 14:24:12.992 [DEBUG] com.dippy.mapper.SellerCarMapper.insert - ==> Parameters: 14(Integer), 53(Integer), 2021-05-13T14:24:12.990(LocalDateTime)
+2021-05-13 14:24:12.994 [DEBUG] com.dippy.mapper.SellerCarMapper.insert - <==    Updates: 1
+2021-05-13 14:24:13.005 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE (car_id = ?)
+2021-05-13 14:24:13.006 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - ==> Parameters: 53(Integer)
+2021-05-13 14:24:13.009 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - <==      Total: 1
+2021-05-13 14:24:36.123 [DEBUG] com.dippy.mapper.CarPictureMapper.insert - ==>  Preparing: INSERT INTO car_picture ( car_url, car_picture_location, car_id ) VALUES ( ?, ?, ? )
+2021-05-13 14:24:36.124 [DEBUG] com.dippy.mapper.CarPictureMapper.insert - ==> Parameters: http://qrg5og3v4.hn-bkt.clouddn.com/8qy7KPCYQQ09ql4.jpg(String), 0(Integer), 53(Integer)
+2021-05-13 14:24:36.126 [DEBUG] com.dippy.mapper.CarPictureMapper.insert - <==    Updates: 1
+2021-05-13 14:24:36.140 [DEBUG] com.dippy.mapper.CarInfoMapper.updateById - ==>  Preparing: UPDATE car_info SET user_id=?, car_picture=? WHERE car_id=?
+2021-05-13 14:24:36.142 [DEBUG] com.dippy.mapper.CarInfoMapper.updateById - ==> Parameters: 14(Integer), http://qrg5og3v4.hn-bkt.clouddn.com/8qy7KPCYQQ09ql4.jpg(String), 53(Integer)
+2021-05-13 14:24:36.145 [DEBUG] com.dippy.mapper.CarInfoMapper.updateById - <==    Updates: 1
+2021-05-13 14:24:36.154 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE (car_id = ?)
+2021-05-13 14:24:36.155 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - ==> Parameters: 53(Integer)
+2021-05-13 14:24:36.157 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - <==      Total: 1
+2021-05-13 14:24:36.232 [DEBUG] com.dippy.mapper.CarPictureMapper.insert - ==>  Preparing: INSERT INTO car_picture ( car_url, car_picture_location, car_id ) VALUES ( ?, ?, ? )
+2021-05-13 14:24:36.233 [DEBUG] com.dippy.mapper.CarPictureMapper.insert - ==> Parameters: http://qrg5og3v4.hn-bkt.clouddn.com/5402vmPE9961.jpg(String), 1(Integer), 53(Integer)
+2021-05-13 14:24:36.235 [DEBUG] com.dippy.mapper.CarPictureMapper.insert - <==    Updates: 1
+2021-05-13 14:24:36.322 [DEBUG] com.dippy.mapper.CarPictureMapper.insert - ==>  Preparing: INSERT INTO car_picture ( car_url, car_picture_location, car_id ) VALUES ( ?, ?, ? )
+2021-05-13 14:24:36.323 [DEBUG] com.dippy.mapper.CarPictureMapper.insert - ==> Parameters: http://qrg5og3v4.hn-bkt.clouddn.com/nqwd0ZWZJ7pkgbZNse.jpg(String), 1(Integer), 53(Integer)
+2021-05-13 14:24:36.325 [DEBUG] com.dippy.mapper.CarPictureMapper.insert - <==    Updates: 1
+2021-05-13 14:24:36.735 [DEBUG] com.dippy.mapper.CarPictureMapper.insert - ==>  Preparing: INSERT INTO car_picture ( car_url, car_picture_location, car_id ) VALUES ( ?, ?, ? )
+2021-05-13 14:24:36.736 [DEBUG] com.dippy.mapper.CarPictureMapper.insert - ==> Parameters: http://qrg5og3v4.hn-bkt.clouddn.com/86ZZNZ40se2mi7.jpg(String), 1(Integer), 53(Integer)
+2021-05-13 14:24:36.738 [DEBUG] com.dippy.mapper.CarPictureMapper.insert - <==    Updates: 1
+2021-05-13 14:24:36.744 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE (car_id = ?)
+2021-05-13 14:24:36.744 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - ==> Parameters: 53(Integer)
+2021-05-13 14:24:36.746 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - <==      Total: 1
+2021-05-13 14:24:36.876 [DEBUG] com.dippy.mapper.CarPictureMapper.insert - ==>  Preparing: INSERT INTO car_picture ( car_url, car_picture_location, car_id ) VALUES ( ?, ?, ? )
+2021-05-13 14:24:36.877 [DEBUG] com.dippy.mapper.CarPictureMapper.insert - ==> Parameters: http://qrg5og3v4.hn-bkt.clouddn.com/3IM558CLIU58UA.jpg(String), 2(Integer), 53(Integer)
+2021-05-13 14:24:36.879 [DEBUG] com.dippy.mapper.CarPictureMapper.insert - <==    Updates: 1
+2021-05-13 14:24:36.962 [DEBUG] com.dippy.mapper.CarPictureMapper.insert - ==>  Preparing: INSERT INTO car_picture ( car_url, car_picture_location, car_id ) VALUES ( ?, ?, ? )
+2021-05-13 14:24:36.963 [DEBUG] com.dippy.mapper.CarPictureMapper.insert - ==> Parameters: http://qrg5og3v4.hn-bkt.clouddn.com/ibjv0626na5JE7.jpg(String), 2(Integer), 53(Integer)
+2021-05-13 14:24:36.965 [DEBUG] com.dippy.mapper.CarPictureMapper.insert - <==    Updates: 1
+2021-05-13 14:24:37.082 [DEBUG] com.dippy.mapper.CarPictureMapper.insert - ==>  Preparing: INSERT INTO car_picture ( car_url, car_picture_location, car_id ) VALUES ( ?, ?, ? )
+2021-05-13 14:24:37.083 [DEBUG] com.dippy.mapper.CarPictureMapper.insert - ==> Parameters: http://qrg5og3v4.hn-bkt.clouddn.com/FMms41EG89lqXTwx.jpg(String), 2(Integer), 53(Integer)
+2021-05-13 14:24:37.085 [DEBUG] com.dippy.mapper.CarPictureMapper.insert - <==    Updates: 1
+2021-05-13 14:24:37.090 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE (car_id = ?)
+2021-05-13 14:24:37.090 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - ==> Parameters: 53(Integer)
+2021-05-13 14:24:37.092 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - <==      Total: 1
+2021-05-13 14:24:37.168 [DEBUG] com.dippy.mapper.CarPictureMapper.insert - ==>  Preparing: INSERT INTO car_picture ( car_url, car_picture_location, car_id ) VALUES ( ?, ?, ? )
+2021-05-13 14:24:37.170 [DEBUG] com.dippy.mapper.CarPictureMapper.insert - ==> Parameters: http://qrg5og3v4.hn-bkt.clouddn.com/961mfeeqh07vm9.jpg(String), 3(Integer), 53(Integer)
+2021-05-13 14:24:37.171 [DEBUG] com.dippy.mapper.CarPictureMapper.insert - <==    Updates: 1
+2021-05-13 14:24:37.248 [DEBUG] com.dippy.mapper.CarPictureMapper.insert - ==>  Preparing: INSERT INTO car_picture ( car_url, car_picture_location, car_id ) VALUES ( ?, ?, ? )
+2021-05-13 14:24:37.249 [DEBUG] com.dippy.mapper.CarPictureMapper.insert - ==> Parameters: http://qrg5og3v4.hn-bkt.clouddn.com/PFzi4565YX4WNke.jpg(String), 3(Integer), 53(Integer)
+2021-05-13 14:24:37.252 [DEBUG] com.dippy.mapper.CarPictureMapper.insert - <==    Updates: 1
+2021-05-13 14:24:37.259 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE (car_id = ?)
+2021-05-13 14:24:37.260 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - ==> Parameters: 53(Integer)
+2021-05-13 14:24:37.262 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - <==      Total: 1
+2021-05-13 14:24:37.342 [DEBUG] com.dippy.mapper.CarPictureMapper.insert - ==>  Preparing: INSERT INTO car_picture ( car_url, car_picture_location, car_id ) VALUES ( ?, ?, ? )
+2021-05-13 14:24:37.343 [DEBUG] com.dippy.mapper.CarPictureMapper.insert - ==> Parameters: http://qrg5og3v4.hn-bkt.clouddn.com/mphx7doyptpCQzd42.jpg(String), 4(Integer), 53(Integer)
+2021-05-13 14:24:37.345 [DEBUG] com.dippy.mapper.CarPictureMapper.insert - <==    Updates: 1
+2021-05-13 14:24:37.495 [DEBUG] com.dippy.mapper.CarPictureMapper.insert - ==>  Preparing: INSERT INTO car_picture ( car_url, car_picture_location, car_id ) VALUES ( ?, ?, ? )
+2021-05-13 14:24:37.496 [DEBUG] com.dippy.mapper.CarPictureMapper.insert - ==> Parameters: http://qrg5og3v4.hn-bkt.clouddn.com/740338vx44JA.jpg(String), 4(Integer), 53(Integer)
+2021-05-13 14:24:37.497 [DEBUG] com.dippy.mapper.CarPictureMapper.insert - <==    Updates: 1
+2021-05-13 14:24:37.505 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE (car_id = ?)
+2021-05-13 14:24:37.506 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - ==> Parameters: 53(Integer)
+2021-05-13 14:24:37.508 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - <==      Total: 1
+2021-05-13 14:38:02.704 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) FROM seller_car WHERE (user_id = ?)
+2021-05-13 14:38:02.705 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==> Parameters: 14(Integer)
+2021-05-13 14:38:02.707 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - <==      Total: 1
+2021-05-13 14:38:02.708 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==>  Preparing: SELECT car_id FROM seller_car WHERE (user_id = ?) LIMIT ?
+2021-05-13 14:38:02.709 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==> Parameters: 14(Integer), 5(Long)
+2021-05-13 14:38:02.710 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - <==      Total: 5
+2021-05-13 14:38:02.713 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE (car_id IN (?,?,?,?,?))
+2021-05-13 14:38:02.714 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==> Parameters: 37(Integer), 38(Integer), 39(Integer), 40(Integer), 41(Integer)
+2021-05-13 14:38:02.716 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - <==      Total: 5
+2021-05-13 14:39:16.682 [DEBUG] com.dippy.mapper.CarInfoMapper.insert - ==>  Preparing: INSERT INTO car_info ( car_brand, car_series, car_type, car_price, car_user_time, transfer_count, car_car_mileage, car_color, car_gear_box, car_displacement, car_configuration, car_seat, car_fuel_type, car_front_tyre, rear_tyre, car_describe, create_time, car_status, car_title ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2021-05-13 14:39:16.689 [DEBUG] com.dippy.mapper.CarInfoMapper.insert - ==> Parameters: (String), (String), (String), 0.0(Double), 0(Integer), 0(Integer), 0.0(Double), (String), (String), 0.0(Double), (String), 0(Integer), (String), 0(String), 0(String), (String), 2021-05-13T14:39:16.681(LocalDateTime), 0(Integer), 发送范范(String)
+2021-05-13 14:39:16.691 [DEBUG] com.dippy.mapper.CarInfoMapper.insert - <==    Updates: 1
+2021-05-13 14:39:16.693 [DEBUG] com.dippy.mapper.SellerCarMapper.insert - ==>  Preparing: INSERT INTO seller_car ( user_id, car_id, create_time ) VALUES ( ?, ?, ? )
+2021-05-13 14:39:16.694 [DEBUG] com.dippy.mapper.SellerCarMapper.insert - ==> Parameters: 14(Integer), 54(Integer), 2021-05-13T14:39:16.692(LocalDateTime)
+2021-05-13 14:39:16.695 [DEBUG] com.dippy.mapper.SellerCarMapper.insert - <==    Updates: 1
+2021-05-13 14:39:16.706 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE (car_id = ?)
+2021-05-13 14:39:16.707 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - ==> Parameters: 54(Integer)
+2021-05-13 14:39:16.711 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - <==      Total: 1
+2021-05-13 14:39:57.079 [DEBUG] com.dippy.mapper.CarPictureMapper.insert - ==>  Preparing: INSERT INTO car_picture ( car_url, car_picture_location, car_id ) VALUES ( ?, ?, ? )
+2021-05-13 14:39:57.080 [DEBUG] com.dippy.mapper.CarPictureMapper.insert - ==> Parameters: http://qrg5og3v4.hn-bkt.clouddn.com/FN26knch508KB9.jpg(String), 0(Integer), 54(Integer)
+2021-05-13 14:39:57.081 [DEBUG] com.dippy.mapper.CarPictureMapper.insert - <==    Updates: 1
+2021-05-13 14:39:57.084 [DEBUG] com.dippy.mapper.CarInfoMapper.updateById - ==>  Preparing: UPDATE car_info SET user_id=?, car_picture=? WHERE car_id=?
+2021-05-13 14:39:57.085 [DEBUG] com.dippy.mapper.CarInfoMapper.updateById - ==> Parameters: 14(Integer), http://qrg5og3v4.hn-bkt.clouddn.com/FN26knch508KB9.jpg(String), 54(Integer)
+2021-05-13 14:39:57.087 [DEBUG] com.dippy.mapper.CarInfoMapper.updateById - <==    Updates: 1
+2021-05-13 14:39:57.094 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE (car_id = ?)
+2021-05-13 14:39:57.095 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - ==> Parameters: 54(Integer)
+2021-05-13 14:39:57.097 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - <==      Total: 1
+2021-05-13 14:39:57.168 [DEBUG] com.dippy.mapper.CarPictureMapper.insert - ==>  Preparing: INSERT INTO car_picture ( car_url, car_picture_location, car_id ) VALUES ( ?, ?, ? )
+2021-05-13 14:39:57.169 [DEBUG] com.dippy.mapper.CarPictureMapper.insert - ==> Parameters: http://qrg5og3v4.hn-bkt.clouddn.com/7bsIW6421VYBKef.jpg(String), 1(Integer), 54(Integer)
+2021-05-13 14:39:57.171 [DEBUG] com.dippy.mapper.CarPictureMapper.insert - <==    Updates: 1
+2021-05-13 14:39:57.248 [DEBUG] com.dippy.mapper.CarPictureMapper.insert - ==>  Preparing: INSERT INTO car_picture ( car_url, car_picture_location, car_id ) VALUES ( ?, ?, ? )
+2021-05-13 14:39:57.249 [DEBUG] com.dippy.mapper.CarPictureMapper.insert - ==> Parameters: http://qrg5og3v4.hn-bkt.clouddn.com/12ft5CODU3CM94.jpg(String), 1(Integer), 54(Integer)
+2021-05-13 14:39:57.250 [DEBUG] com.dippy.mapper.CarPictureMapper.insert - <==    Updates: 1
+2021-05-13 14:39:57.255 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE (car_id = ?)
+2021-05-13 14:39:57.255 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - ==> Parameters: 54(Integer)
+2021-05-13 14:39:57.257 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - <==      Total: 1
+2021-05-13 14:39:57.328 [DEBUG] com.dippy.mapper.CarPictureMapper.insert - ==>  Preparing: INSERT INTO car_picture ( car_url, car_picture_location, car_id ) VALUES ( ?, ?, ? )
+2021-05-13 14:39:57.329 [DEBUG] com.dippy.mapper.CarPictureMapper.insert - ==> Parameters: http://qrg5og3v4.hn-bkt.clouddn.com/98eq9111939.jpg(String), 2(Integer), 54(Integer)
+2021-05-13 14:39:57.330 [DEBUG] com.dippy.mapper.CarPictureMapper.insert - <==    Updates: 1
+2021-05-13 14:39:57.427 [DEBUG] com.dippy.mapper.CarPictureMapper.insert - ==>  Preparing: INSERT INTO car_picture ( car_url, car_picture_location, car_id ) VALUES ( ?, ?, ? )
+2021-05-13 14:39:57.428 [DEBUG] com.dippy.mapper.CarPictureMapper.insert - ==> Parameters: http://qrg5og3v4.hn-bkt.clouddn.com/20sdgd6VF8495.jpg(String), 2(Integer), 54(Integer)
+2021-05-13 14:39:57.430 [DEBUG] com.dippy.mapper.CarPictureMapper.insert - <==    Updates: 1
+2021-05-13 14:39:57.434 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE (car_id = ?)
+2021-05-13 14:39:57.435 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - ==> Parameters: 54(Integer)
+2021-05-13 14:39:57.437 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - <==      Total: 1
+2021-05-13 14:39:57.511 [DEBUG] com.dippy.mapper.CarPictureMapper.insert - ==>  Preparing: INSERT INTO car_picture ( car_url, car_picture_location, car_id ) VALUES ( ?, ?, ? )
+2021-05-13 14:39:57.512 [DEBUG] com.dippy.mapper.CarPictureMapper.insert - ==> Parameters: http://qrg5og3v4.hn-bkt.clouddn.com/EF0CQ2cmpr3op3VQ.jpg(String), 3(Integer), 54(Integer)
+2021-05-13 14:39:57.513 [DEBUG] com.dippy.mapper.CarPictureMapper.insert - <==    Updates: 1
+2021-05-13 14:39:57.593 [DEBUG] com.dippy.mapper.CarPictureMapper.insert - ==>  Preparing: INSERT INTO car_picture ( car_url, car_picture_location, car_id ) VALUES ( ?, ?, ? )
+2021-05-13 14:39:57.594 [DEBUG] com.dippy.mapper.CarPictureMapper.insert - ==> Parameters: http://qrg5og3v4.hn-bkt.clouddn.com/47ne541TO49HI.jpg(String), 3(Integer), 54(Integer)
+2021-05-13 14:39:57.595 [DEBUG] com.dippy.mapper.CarPictureMapper.insert - <==    Updates: 1
+2021-05-13 14:39:57.670 [DEBUG] com.dippy.mapper.CarPictureMapper.insert - ==>  Preparing: INSERT INTO car_picture ( car_url, car_picture_location, car_id ) VALUES ( ?, ?, ? )
+2021-05-13 14:39:57.671 [DEBUG] com.dippy.mapper.CarPictureMapper.insert - ==> Parameters: http://qrg5og3v4.hn-bkt.clouddn.com/42ny0EB8JPAO05.jpg(String), 3(Integer), 54(Integer)
+2021-05-13 14:39:57.673 [DEBUG] com.dippy.mapper.CarPictureMapper.insert - <==    Updates: 1
+2021-05-13 14:39:57.678 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE (car_id = ?)
+2021-05-13 14:39:57.679 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - ==> Parameters: 54(Integer)
+2021-05-13 14:39:57.681 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - <==      Total: 1
+2021-05-13 14:39:57.752 [DEBUG] com.dippy.mapper.CarPictureMapper.insert - ==>  Preparing: INSERT INTO car_picture ( car_url, car_picture_location, car_id ) VALUES ( ?, ?, ? )
+2021-05-13 14:39:57.752 [DEBUG] com.dippy.mapper.CarPictureMapper.insert - ==> Parameters: http://qrg5og3v4.hn-bkt.clouddn.com/21gt9OKYWftCF53.jpg(String), 4(Integer), 54(Integer)
+2021-05-13 14:39:57.754 [DEBUG] com.dippy.mapper.CarPictureMapper.insert - <==    Updates: 1
+2021-05-13 14:39:57.824 [DEBUG] com.dippy.mapper.CarPictureMapper.insert - ==>  Preparing: INSERT INTO car_picture ( car_url, car_picture_location, car_id ) VALUES ( ?, ?, ? )
+2021-05-13 14:39:57.825 [DEBUG] com.dippy.mapper.CarPictureMapper.insert - ==> Parameters: http://qrg5og3v4.hn-bkt.clouddn.com/1181DUOQDDis68.jpg(String), 4(Integer), 54(Integer)
+2021-05-13 14:39:57.826 [DEBUG] com.dippy.mapper.CarPictureMapper.insert - <==    Updates: 1
+2021-05-13 14:39:57.900 [DEBUG] com.dippy.mapper.CarPictureMapper.insert - ==>  Preparing: INSERT INTO car_picture ( car_url, car_picture_location, car_id ) VALUES ( ?, ?, ? )
+2021-05-13 14:39:57.901 [DEBUG] com.dippy.mapper.CarPictureMapper.insert - ==> Parameters: http://qrg5og3v4.hn-bkt.clouddn.com/ge0VO081YY3ji9.jpg(String), 4(Integer), 54(Integer)
+2021-05-13 14:39:57.903 [DEBUG] com.dippy.mapper.CarPictureMapper.insert - <==    Updates: 1
+2021-05-13 14:39:57.910 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE (car_id = ?)
+2021-05-13 14:39:57.912 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - ==> Parameters: 54(Integer)
+2021-05-13 14:39:57.914 [DEBUG] com.dippy.mapper.CarInfoMapper.selectOne - <==      Total: 1
+2021-05-13 14:53:13.416 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) FROM seller_car WHERE (user_id = ?)
+2021-05-13 14:53:13.417 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==> Parameters: 14(Integer)
+2021-05-13 14:53:13.419 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - <==      Total: 1
+2021-05-13 14:53:13.420 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==>  Preparing: SELECT car_id FROM seller_car WHERE (user_id = ?) LIMIT ?
+2021-05-13 14:53:13.421 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==> Parameters: 14(Integer), 5(Long)
+2021-05-13 14:53:13.423 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - <==      Total: 5
+2021-05-13 14:53:13.425 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE (car_id IN (?,?,?,?,?))
+2021-05-13 14:53:13.426 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==> Parameters: 37(Integer), 38(Integer), 39(Integer), 40(Integer), 41(Integer)
+2021-05-13 14:53:13.429 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - <==      Total: 5
+2021-05-13 14:53:22.170 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) FROM seller_car WHERE (user_id = ?)
+2021-05-13 14:53:22.170 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==> Parameters: 14(Integer)
+2021-05-13 14:53:22.172 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - <==      Total: 1
+2021-05-13 14:53:22.173 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==>  Preparing: SELECT car_id FROM seller_car WHERE (user_id = ?) LIMIT ?
+2021-05-13 14:53:22.174 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==> Parameters: 14(Integer), 5(Long)
+2021-05-13 14:53:22.175 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - <==      Total: 5
+2021-05-13 14:53:22.177 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE (car_id IN (?,?,?,?,?))
+2021-05-13 14:53:22.178 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==> Parameters: 37(Integer), 38(Integer), 39(Integer), 40(Integer), 41(Integer)
+2021-05-13 14:53:22.181 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - <==      Total: 5
+2021-05-13 14:54:38.363 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) FROM seller_car WHERE (user_id = ?)
+2021-05-13 14:54:38.365 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==> Parameters: 14(Integer)
+2021-05-13 14:54:38.366 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - <==      Total: 1
+2021-05-13 14:54:38.368 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==>  Preparing: SELECT car_id FROM seller_car WHERE (user_id = ?) LIMIT ?
+2021-05-13 14:54:38.369 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==> Parameters: 14(Integer), 5(Long)
+2021-05-13 14:54:38.371 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - <==      Total: 5
+2021-05-13 14:54:38.373 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE (car_id IN (?,?,?,?,?))
+2021-05-13 14:54:38.374 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==> Parameters: 37(Integer), 38(Integer), 39(Integer), 40(Integer), 41(Integer)
+2021-05-13 14:54:38.381 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - <==      Total: 5
+2021-05-13 15:11:46.788 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) FROM seller_car WHERE (user_id = ?)
+2021-05-13 15:11:46.789 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==> Parameters: 14(Integer)
+2021-05-13 15:11:46.792 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - <==      Total: 1
+2021-05-13 15:11:46.794 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==>  Preparing: SELECT car_id FROM seller_car WHERE (user_id = ?) LIMIT ?
+2021-05-13 15:11:46.796 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==> Parameters: 14(Integer), 5(Long)
+2021-05-13 15:11:46.798 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - <==      Total: 5
+2021-05-13 15:11:46.800 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE (car_id IN (?,?,?,?,?))
+2021-05-13 15:11:46.801 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==> Parameters: 37(Integer), 38(Integer), 39(Integer), 40(Integer), 41(Integer)
+2021-05-13 15:11:46.803 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - <==      Total: 5
+2021-05-13 15:12:09.622 [DEBUG] com.dippy.mapper.CarInfoMapper.deleteById - ==>  Preparing: DELETE FROM car_info WHERE car_id=?
+2021-05-13 15:12:09.623 [DEBUG] com.dippy.mapper.CarInfoMapper.deleteById - ==> Parameters: 40(Integer)
+2021-05-13 15:12:09.624 [DEBUG] com.dippy.mapper.CarInfoMapper.deleteById - <==    Updates: 1
+2021-05-13 15:12:09.626 [DEBUG] com.dippy.mapper.SellerCarMapper.delete - ==>  Preparing: DELETE FROM seller_car WHERE (car_id = ?)
+2021-05-13 15:12:09.627 [DEBUG] com.dippy.mapper.SellerCarMapper.delete - ==> Parameters: 40(Integer)
+2021-05-13 15:12:09.629 [DEBUG] com.dippy.mapper.SellerCarMapper.delete - <==    Updates: 1
+2021-05-13 15:12:09.630 [DEBUG] com.dippy.mapper.CarPictureMapper.selectList - ==>  Preparing: SELECT car_url FROM car_picture WHERE (car_id = ?)
+2021-05-13 15:12:09.631 [DEBUG] com.dippy.mapper.CarPictureMapper.selectList - ==> Parameters: 40(Integer)
+2021-05-13 15:12:09.633 [DEBUG] com.dippy.mapper.CarPictureMapper.selectList - <==      Total: 0
+2021-05-13 15:12:09.635 [DEBUG] com.dippy.mapper.CarPictureMapper.delete - ==>  Preparing: DELETE FROM car_picture WHERE (car_id = ?)
+2021-05-13 15:12:09.636 [DEBUG] com.dippy.mapper.CarPictureMapper.delete - ==> Parameters: 40(Integer)
+2021-05-13 15:12:09.637 [DEBUG] com.dippy.mapper.CarPictureMapper.delete - <==    Updates: 0
+2021-05-13 17:35:57.161 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==>  Preparing: SELECT user_id,username,password,name,sex,avatar,address_id,province,city,area,detailed_address,phone,email,birthday,is_lock,create_time,update_time FROM sys_user WHERE (username = ?)
+2021-05-13 17:35:57.211 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==> Parameters: admin(String)
+2021-05-13 17:35:57.273 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - <==      Total: 1
+2021-05-13 17:35:57.301 [DEBUG] com.dippy.mapper.SysRoleUserMapper.selectList - ==>  Preparing: SELECT role_id FROM sys_role_user WHERE (user_id = ?)
+2021-05-13 17:35:57.301 [DEBUG] com.dippy.mapper.SysRoleUserMapper.selectList - ==> Parameters: 1(Integer)
+2021-05-13 17:35:57.303 [DEBUG] com.dippy.mapper.SysRoleUserMapper.selectList - <==      Total: 1
+2021-05-13 17:35:57.306 [DEBUG] com.dippy.mapper.SysPermissionMapper.listPermissionByUserId - ==>  Preparing: SELECT p.* FROM sys_user u, sys_permission p LEFT JOIN sys_role_permission rp ON p.permission_id = rp.permission_id LEFT JOIN sys_role_user ru ON rp.role_id = ru.role_id WHERE u.user_id = ?
+2021-05-13 17:35:57.307 [DEBUG] com.dippy.mapper.SysPermissionMapper.listPermissionByUserId - ==> Parameters: 1(Integer)
+2021-05-13 17:35:57.324 [DEBUG] com.dippy.mapper.SysPermissionMapper.listPermissionByUserId - <==      Total: 80
+2021-05-13 17:36:37.461 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==>  Preparing: SELECT user_id,username,password,name,sex,avatar,address_id,province,city,area,detailed_address,phone,email,birthday,is_lock,create_time,update_time FROM sys_user WHERE (username = ?)
+2021-05-13 17:36:37.462 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==> Parameters: admin(String)
+2021-05-13 17:36:37.465 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - <==      Total: 1
+2021-05-13 17:36:37.469 [DEBUG] com.dippy.mapper.SysRoleUserMapper.selectList - ==>  Preparing: SELECT role_id FROM sys_role_user WHERE (user_id = ?)
+2021-05-13 17:36:37.469 [DEBUG] com.dippy.mapper.SysRoleUserMapper.selectList - ==> Parameters: 1(Integer)
+2021-05-13 17:36:37.471 [DEBUG] com.dippy.mapper.SysRoleUserMapper.selectList - <==      Total: 1
+2021-05-13 17:36:37.472 [DEBUG] com.dippy.mapper.SysPermissionMapper.listPermissionByUserId - ==>  Preparing: SELECT p.* FROM sys_user u, sys_permission p LEFT JOIN sys_role_permission rp ON p.permission_id = rp.permission_id LEFT JOIN sys_role_user ru ON rp.role_id = ru.role_id WHERE u.user_id = ?
+2021-05-13 17:36:37.472 [DEBUG] com.dippy.mapper.SysPermissionMapper.listPermissionByUserId - ==> Parameters: 1(Integer)
+2021-05-13 17:36:37.484 [DEBUG] com.dippy.mapper.SysPermissionMapper.listPermissionByUserId - <==      Total: 80
+2021-05-13 17:36:50.063 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) FROM seller_car WHERE (user_id = ?)
+2021-05-13 17:36:50.065 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==> Parameters: 1(Integer)
+2021-05-13 17:36:50.067 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - <==      Total: 1
+2021-05-13 17:36:50.082 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==>  Preparing: SELECT car_id FROM seller_car WHERE (user_id = ?) LIMIT ?
+2021-05-13 17:36:50.083 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==> Parameters: 1(Integer), 5(Long)
+2021-05-13 17:36:50.086 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - <==      Total: 3
+2021-05-13 17:36:50.095 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE (car_id IN (?,?,?))
+2021-05-13 17:36:50.096 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==> Parameters: 1(Integer), 2(Integer), 3(Integer)
+2021-05-13 17:36:50.100 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - <==      Total: 3
+2021-05-13 17:38:47.830 [DEBUG] com.dippy.mapper.CarInfoMapper.selectById - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE car_id=?
+2021-05-13 17:38:47.837 [DEBUG] com.dippy.mapper.CarInfoMapper.selectById - ==> Parameters: 1(Integer)
+2021-05-13 17:38:47.887 [DEBUG] com.dippy.mapper.CarInfoMapper.selectById - <==      Total: 1
+2021-05-13 17:38:54.334 [DEBUG] com.dippy.mapper.CarPictureMapper.selectList - ==>  Preparing: SELECT car_picture_location,car_url FROM car_picture WHERE (car_id = ?)
+2021-05-13 17:38:54.341 [DEBUG] com.dippy.mapper.CarPictureMapper.selectList - ==> Parameters: 1(Integer)
+2021-05-13 17:38:54.373 [DEBUG] com.dippy.mapper.CarPictureMapper.selectList - <==      Total: 20
+2021-05-13 17:38:57.509 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==>  Preparing: SELECT name,phone,sex FROM sys_user WHERE (user_id = ?)
+2021-05-13 17:38:57.517 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==> Parameters: 1(Integer)
+2021-05-13 17:38:57.531 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - <==      Total: 1
+2021-05-13 17:39:43.918 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) FROM seller_car WHERE (user_id = ?)
+2021-05-13 17:39:43.919 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==> Parameters: 1(Integer)
+2021-05-13 17:39:43.921 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - <==      Total: 1
+2021-05-13 17:39:43.923 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==>  Preparing: SELECT car_id FROM seller_car WHERE (user_id = ?) LIMIT ?
+2021-05-13 17:39:43.924 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==> Parameters: 1(Integer), 5(Long)
+2021-05-13 17:39:43.926 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - <==      Total: 3
+2021-05-13 17:39:43.929 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE (car_id IN (?,?,?))
+2021-05-13 17:39:43.931 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==> Parameters: 1(Integer), 2(Integer), 3(Integer)
+2021-05-13 17:39:43.936 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - <==      Total: 3
+2021-05-13 17:40:57.762 [DEBUG] com.dippy.mapper.CarInfoMapper.selectById - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE car_id=?
+2021-05-13 17:40:57.767 [DEBUG] com.dippy.mapper.CarInfoMapper.selectById - ==> Parameters: 1(Integer)
+2021-05-13 17:40:57.775 [DEBUG] com.dippy.mapper.CarInfoMapper.selectById - <==      Total: 1
+2021-05-13 17:40:57.783 [DEBUG] com.dippy.mapper.CarPictureMapper.selectList - ==>  Preparing: SELECT car_picture_location,car_url FROM car_picture WHERE (car_id = ?)
+2021-05-13 17:40:57.783 [DEBUG] com.dippy.mapper.CarPictureMapper.selectList - ==> Parameters: 1(Integer)
+2021-05-13 17:40:57.786 [DEBUG] com.dippy.mapper.CarPictureMapper.selectList - <==      Total: 20
+2021-05-13 17:40:57.788 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==>  Preparing: SELECT name,phone,sex FROM sys_user WHERE (user_id = ?)
+2021-05-13 17:40:57.789 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==> Parameters: 1(Integer)
+2021-05-13 17:40:57.792 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) FROM seller_car WHERE (user_id = ?)
+2021-05-13 17:40:57.792 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - <==      Total: 1
+2021-05-13 17:40:57.794 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==> Parameters: 1(Integer)
+2021-05-13 17:40:57.796 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - <==      Total: 1
+2021-05-13 17:40:57.797 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==>  Preparing: SELECT car_id FROM seller_car WHERE (user_id = ?) LIMIT ?
+2021-05-13 17:40:57.798 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==> Parameters: 1(Integer), 5(Long)
+2021-05-13 17:40:57.800 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - <==      Total: 3
+2021-05-13 17:40:57.802 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE (car_id IN (?,?,?))
+2021-05-13 17:40:57.803 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==> Parameters: 1(Integer), 2(Integer), 3(Integer)
+2021-05-13 17:40:57.807 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - <==      Total: 3
+2021-05-13 17:41:02.667 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) FROM seller_car WHERE (user_id = ?)
+2021-05-13 17:41:02.668 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==> Parameters: 1(Integer)
+2021-05-13 17:41:02.669 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - <==      Total: 1
+2021-05-13 17:41:02.672 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==>  Preparing: SELECT car_id FROM seller_car WHERE (user_id = ?) LIMIT ?
+2021-05-13 17:41:02.672 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==> Parameters: 1(Integer), 5(Long)
+2021-05-13 17:41:02.674 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - <==      Total: 3
+2021-05-13 17:41:02.678 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE (car_id IN (?,?,?))
+2021-05-13 17:41:02.679 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==> Parameters: 1(Integer), 2(Integer), 3(Integer)
+2021-05-13 17:41:02.682 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - <==      Total: 3
+2021-05-13 17:41:35.006 [DEBUG] com.dippy.mapper.CarInfoMapper.selectById - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE car_id=?
+2021-05-13 17:41:35.007 [DEBUG] com.dippy.mapper.CarInfoMapper.selectById - ==> Parameters: 1(Integer)
+2021-05-13 17:41:35.011 [DEBUG] com.dippy.mapper.CarInfoMapper.selectById - <==      Total: 1
+2021-05-13 17:41:35.014 [DEBUG] com.dippy.mapper.CarPictureMapper.selectList - ==>  Preparing: SELECT car_picture_location,car_url FROM car_picture WHERE (car_id = ?)
+2021-05-13 17:41:35.015 [DEBUG] com.dippy.mapper.CarPictureMapper.selectList - ==> Parameters: 1(Integer)
+2021-05-13 17:41:35.017 [DEBUG] com.dippy.mapper.CarPictureMapper.selectList - <==      Total: 20
+2021-05-13 17:41:35.019 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==>  Preparing: SELECT name,phone,sex FROM sys_user WHERE (user_id = ?)
+2021-05-13 17:41:35.020 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==> Parameters: 1(Integer)
+2021-05-13 17:41:35.021 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - <==      Total: 1
+2021-05-13 17:41:56.151 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==>  Preparing: SELECT user_id,username,password,name,sex,avatar,address_id,province,city,area,detailed_address,phone,email,birthday,is_lock,create_time,update_time FROM sys_user WHERE (username = ?)
+2021-05-13 17:41:56.152 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==> Parameters: test4(String)
+2021-05-13 17:41:56.155 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - <==      Total: 1
+2021-05-13 17:41:56.157 [DEBUG] com.dippy.mapper.SysRoleUserMapper.selectList - ==>  Preparing: SELECT role_id FROM sys_role_user WHERE (user_id = ?)
+2021-05-13 17:41:56.158 [DEBUG] com.dippy.mapper.SysRoleUserMapper.selectList - ==> Parameters: 14(Integer)
+2021-05-13 17:41:56.161 [DEBUG] com.dippy.mapper.SysRoleUserMapper.selectList - <==      Total: 2
+2021-05-13 17:41:56.162 [DEBUG] com.dippy.mapper.SysPermissionMapper.listPermissionByUserId - ==>  Preparing: SELECT p.* FROM sys_user u, sys_permission p LEFT JOIN sys_role_permission rp ON p.permission_id = rp.permission_id LEFT JOIN sys_role_user ru ON rp.role_id = ru.role_id WHERE u.user_id = ?
+2021-05-13 17:41:56.163 [DEBUG] com.dippy.mapper.SysPermissionMapper.listPermissionByUserId - ==> Parameters: 14(Integer)
+2021-05-13 17:41:56.168 [DEBUG] com.dippy.mapper.SysPermissionMapper.listPermissionByUserId - <==      Total: 80
+2021-05-13 17:42:01.429 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) FROM seller_car WHERE (user_id = ?)
+2021-05-13 17:42:01.430 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==> Parameters: 14(Integer)
+2021-05-13 17:42:01.432 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - <==      Total: 1
+2021-05-13 17:42:01.433 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==>  Preparing: SELECT car_id FROM seller_car WHERE (user_id = ?) LIMIT ?
+2021-05-13 17:42:01.433 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==> Parameters: 14(Integer), 5(Long)
+2021-05-13 17:42:01.436 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - <==      Total: 5
+2021-05-13 17:42:01.438 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE (car_id IN (?,?,?,?,?))
+2021-05-13 17:42:01.439 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==> Parameters: 37(Integer), 38(Integer), 39(Integer), 41(Integer), 42(Integer)
+2021-05-13 17:42:01.449 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - <==      Total: 5
+2021-05-13 17:42:33.749 [DEBUG] com.dippy.mapper.CarInfoMapper.selectById - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE car_id=?
+2021-05-13 17:42:33.755 [DEBUG] com.dippy.mapper.CarInfoMapper.selectById - ==> Parameters: 37(Integer)
+2021-05-13 17:42:33.799 [DEBUG] com.dippy.mapper.CarInfoMapper.selectById - <==      Total: 1
+2021-05-13 17:42:35.302 [DEBUG] com.dippy.mapper.CarPictureMapper.selectList - ==>  Preparing: SELECT car_picture_location,car_url FROM car_picture WHERE (car_id = ?)
+2021-05-13 17:42:35.302 [DEBUG] com.dippy.mapper.CarPictureMapper.selectList - ==> Parameters: 37(Integer)
+2021-05-13 17:42:35.304 [DEBUG] com.dippy.mapper.CarPictureMapper.selectList - <==      Total: 0
+2021-05-13 17:42:35.306 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==>  Preparing: SELECT name,phone,sex FROM sys_user WHERE (user_id = ?)
+2021-05-13 17:42:35.307 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==> Parameters: null
+2021-05-13 17:42:35.310 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - <==      Total: 0
+2021-05-13 17:45:25.126 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) FROM seller_car WHERE (user_id = ?)
+2021-05-13 17:45:25.127 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==> Parameters: 14(Integer)
+2021-05-13 17:45:25.129 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - <==      Total: 1
+2021-05-13 17:45:25.130 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==>  Preparing: SELECT car_id FROM seller_car WHERE (user_id = ?) LIMIT ?
+2021-05-13 17:45:25.131 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==> Parameters: 14(Integer), 5(Long)
+2021-05-13 17:45:25.133 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - <==      Total: 5
+2021-05-13 17:45:25.135 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE (car_id IN (?,?,?,?,?))
+2021-05-13 17:45:25.136 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==> Parameters: 37(Integer), 38(Integer), 39(Integer), 41(Integer), 42(Integer)
+2021-05-13 17:45:25.139 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - <==      Total: 5
+2021-05-13 17:45:28.843 [DEBUG] com.dippy.mapper.CarInfoMapper.selectById - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE car_id=?
+2021-05-13 17:45:28.844 [DEBUG] com.dippy.mapper.CarInfoMapper.selectById - ==> Parameters: 37(Integer)
+2021-05-13 17:45:28.846 [DEBUG] com.dippy.mapper.CarInfoMapper.selectById - <==      Total: 1
+2021-05-13 17:45:28.849 [DEBUG] com.dippy.mapper.CarPictureMapper.selectList - ==>  Preparing: SELECT car_picture_location,car_url FROM car_picture WHERE (car_id = ?)
+2021-05-13 17:45:28.850 [DEBUG] com.dippy.mapper.CarPictureMapper.selectList - ==> Parameters: 37(Integer)
+2021-05-13 17:45:28.852 [DEBUG] com.dippy.mapper.CarPictureMapper.selectList - <==      Total: 0
+2021-05-13 17:45:28.854 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==>  Preparing: SELECT name,phone,sex FROM sys_user WHERE (user_id = ?)
+2021-05-13 17:45:28.856 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==> Parameters: null
+2021-05-13 17:45:28.857 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - <==      Total: 0
+2021-05-13 17:56:13.377 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) FROM seller_car WHERE (user_id = ?)
+2021-05-13 17:56:13.378 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==> Parameters: 14(Integer)
+2021-05-13 17:56:13.379 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - <==      Total: 1
+2021-05-13 17:56:13.381 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==>  Preparing: SELECT car_id FROM seller_car WHERE (user_id = ?) LIMIT ?
+2021-05-13 17:56:13.382 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==> Parameters: 14(Integer), 5(Long)
+2021-05-13 17:56:13.383 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - <==      Total: 5
+2021-05-13 17:56:13.386 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE (car_id IN (?,?,?,?,?))
+2021-05-13 17:56:13.387 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==> Parameters: 37(Integer), 38(Integer), 39(Integer), 41(Integer), 42(Integer)
+2021-05-13 17:56:13.391 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - <==      Total: 5
+2021-05-13 17:56:15.917 [DEBUG] com.dippy.mapper.CarInfoMapper.selectById - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE car_id=?
+2021-05-13 17:56:15.918 [DEBUG] com.dippy.mapper.CarInfoMapper.selectById - ==> Parameters: 37(Integer)
+2021-05-13 17:56:15.920 [DEBUG] com.dippy.mapper.CarInfoMapper.selectById - <==      Total: 1
+2021-05-13 17:56:15.923 [DEBUG] com.dippy.mapper.CarPictureMapper.selectList - ==>  Preparing: SELECT car_picture_location,car_url FROM car_picture WHERE (car_id = ?)
+2021-05-13 17:56:15.924 [DEBUG] com.dippy.mapper.CarPictureMapper.selectList - ==> Parameters: 37(Integer)
+2021-05-13 17:56:15.926 [DEBUG] com.dippy.mapper.CarPictureMapper.selectList - <==      Total: 0
+2021-05-13 17:56:15.928 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==>  Preparing: SELECT name,phone,sex FROM sys_user WHERE (user_id = ?)
+2021-05-13 17:56:15.931 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==> Parameters: null
+2021-05-13 17:56:15.940 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - <==      Total: 0
+2021-05-13 17:57:01.474 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) FROM seller_car WHERE (user_id = ?)
+2021-05-13 17:57:01.475 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==> Parameters: 14(Integer)
+2021-05-13 17:57:01.477 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - <==      Total: 1
+2021-05-13 17:57:01.479 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==>  Preparing: SELECT car_id FROM seller_car WHERE (user_id = ?) LIMIT ?
+2021-05-13 17:57:01.480 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==> Parameters: 14(Integer), 5(Long)
+2021-05-13 17:57:01.482 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - <==      Total: 5
+2021-05-13 17:57:01.484 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE (car_id IN (?,?,?,?,?))
+2021-05-13 17:57:01.485 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==> Parameters: 37(Integer), 38(Integer), 39(Integer), 41(Integer), 42(Integer)
+2021-05-13 17:57:01.488 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - <==      Total: 5
+2021-05-13 17:57:04.684 [DEBUG] com.dippy.mapper.CarInfoMapper.selectById - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE car_id=?
+2021-05-13 17:57:04.685 [DEBUG] com.dippy.mapper.CarInfoMapper.selectById - ==> Parameters: 37(Integer)
+2021-05-13 17:57:04.687 [DEBUG] com.dippy.mapper.CarInfoMapper.selectById - <==      Total: 1
+2021-05-13 17:57:04.689 [DEBUG] com.dippy.mapper.CarPictureMapper.selectList - ==>  Preparing: SELECT car_picture_location,car_url FROM car_picture WHERE (car_id = ?)
+2021-05-13 17:57:04.690 [DEBUG] com.dippy.mapper.CarPictureMapper.selectList - ==> Parameters: 37(Integer)
+2021-05-13 17:57:04.691 [DEBUG] com.dippy.mapper.CarPictureMapper.selectList - <==      Total: 0
+2021-05-13 17:57:04.693 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==>  Preparing: SELECT name,phone,sex FROM sys_user WHERE (user_id = ?)
+2021-05-13 17:57:04.694 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==> Parameters: null
+2021-05-13 17:57:04.696 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - <==      Total: 0
+2021-05-13 18:05:35.148 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) FROM seller_car WHERE (user_id = ?)
+2021-05-13 18:05:35.150 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==> Parameters: 14(Integer)
+2021-05-13 18:05:35.151 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - <==      Total: 1
+2021-05-13 18:05:35.153 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==>  Preparing: SELECT car_id FROM seller_car WHERE (user_id = ?) LIMIT ?
+2021-05-13 18:05:35.154 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==> Parameters: 14(Integer), 5(Long)
+2021-05-13 18:05:35.156 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - <==      Total: 5
+2021-05-13 18:05:35.160 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE (car_id IN (?,?,?,?,?))
+2021-05-13 18:05:35.161 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==> Parameters: 37(Integer), 38(Integer), 39(Integer), 41(Integer), 42(Integer)
+2021-05-13 18:05:35.164 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - <==      Total: 5
+2021-05-13 18:05:38.671 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) FROM seller_car WHERE (user_id = ?)
+2021-05-13 18:05:38.672 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==> Parameters: 14(Integer)
+2021-05-13 18:05:38.673 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - <==      Total: 1
+2021-05-13 18:05:38.675 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==>  Preparing: SELECT car_id FROM seller_car WHERE (user_id = ?) LIMIT ?
+2021-05-13 18:05:38.676 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==> Parameters: 14(Integer), 5(Long)
+2021-05-13 18:05:38.677 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - <==      Total: 5
+2021-05-13 18:05:38.679 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE (car_id IN (?,?,?,?,?))
+2021-05-13 18:05:38.680 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==> Parameters: 37(Integer), 38(Integer), 39(Integer), 41(Integer), 42(Integer)
+2021-05-13 18:05:38.683 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - <==      Total: 5
+2021-05-13 18:06:32.292 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) FROM seller_car WHERE (user_id = ?)
+2021-05-13 18:06:32.293 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==> Parameters: 14(Integer)
+2021-05-13 18:06:32.295 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - <==      Total: 1
+2021-05-13 18:06:32.297 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==>  Preparing: SELECT car_id FROM seller_car WHERE (user_id = ?) LIMIT ?
+2021-05-13 18:06:32.298 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==> Parameters: 14(Integer), 5(Long)
+2021-05-13 18:06:32.299 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - <==      Total: 5
+2021-05-13 18:06:32.302 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE (car_id IN (?,?,?,?,?))
+2021-05-13 18:06:32.302 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==> Parameters: 37(Integer), 38(Integer), 39(Integer), 41(Integer), 42(Integer)
+2021-05-13 18:06:32.305 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - <==      Total: 5
+2021-05-13 18:07:25.504 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) FROM seller_car WHERE (user_id = ?)
+2021-05-13 18:07:25.505 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==> Parameters: 14(Integer)
+2021-05-13 18:07:25.507 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - <==      Total: 1
+2021-05-13 18:07:25.508 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==>  Preparing: SELECT car_id FROM seller_car WHERE (user_id = ?) LIMIT ?
+2021-05-13 18:07:25.509 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==> Parameters: 14(Integer), 5(Long)
+2021-05-13 18:07:25.510 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - <==      Total: 5
+2021-05-13 18:07:25.512 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE (car_id IN (?,?,?,?,?))
+2021-05-13 18:07:25.513 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==> Parameters: 37(Integer), 38(Integer), 39(Integer), 41(Integer), 42(Integer)
+2021-05-13 18:07:25.516 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - <==      Total: 5
+2021-05-13 18:10:24.606 [DEBUG] com.dippy.mapper.CarInfoMapper.selectById - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE car_id=?
+2021-05-13 18:10:24.607 [DEBUG] com.dippy.mapper.CarInfoMapper.selectById - ==> Parameters: 37(Integer)
+2021-05-13 18:10:24.609 [DEBUG] com.dippy.mapper.CarInfoMapper.selectById - <==      Total: 1
+2021-05-13 18:10:24.611 [DEBUG] com.dippy.mapper.CarPictureMapper.selectList - ==>  Preparing: SELECT car_picture_location,car_url FROM car_picture WHERE (car_id = ?)
+2021-05-13 18:10:24.612 [DEBUG] com.dippy.mapper.CarPictureMapper.selectList - ==> Parameters: 37(Integer)
+2021-05-13 18:10:24.613 [DEBUG] com.dippy.mapper.CarPictureMapper.selectList - <==      Total: 0
+2021-05-13 18:10:24.615 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==>  Preparing: SELECT name,phone,sex FROM sys_user WHERE (user_id = ?)
+2021-05-13 18:10:24.616 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==> Parameters: null
+2021-05-13 18:10:24.617 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - <==      Total: 0
+2021-05-13 18:10:27.981 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) FROM seller_car WHERE (user_id = ?)
+2021-05-13 18:10:27.981 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==> Parameters: 14(Integer)
+2021-05-13 18:10:27.983 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - <==      Total: 1
+2021-05-13 18:10:27.983 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==>  Preparing: SELECT car_id FROM seller_car WHERE (user_id = ?) LIMIT ?
+2021-05-13 18:10:27.984 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==> Parameters: 14(Integer), 5(Long)
+2021-05-13 18:10:27.985 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - <==      Total: 5
+2021-05-13 18:10:27.988 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE (car_id IN (?,?,?,?,?))
+2021-05-13 18:10:27.989 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==> Parameters: 37(Integer), 38(Integer), 39(Integer), 41(Integer), 42(Integer)
+2021-05-13 18:10:27.992 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - <==      Total: 5
+2021-05-13 18:10:32.455 [DEBUG] com.dippy.mapper.CarInfoMapper.selectById - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE car_id=?
+2021-05-13 18:10:32.456 [DEBUG] com.dippy.mapper.CarInfoMapper.selectById - ==> Parameters: 37(Integer)
+2021-05-13 18:10:32.459 [DEBUG] com.dippy.mapper.CarInfoMapper.selectById - <==      Total: 1
+2021-05-13 18:10:32.461 [DEBUG] com.dippy.mapper.CarPictureMapper.selectList - ==>  Preparing: SELECT car_picture_location,car_url FROM car_picture WHERE (car_id = ?)
+2021-05-13 18:10:32.462 [DEBUG] com.dippy.mapper.CarPictureMapper.selectList - ==> Parameters: 37(Integer)
+2021-05-13 18:10:32.464 [DEBUG] com.dippy.mapper.CarPictureMapper.selectList - <==      Total: 0
+2021-05-13 18:10:32.466 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==>  Preparing: SELECT name,phone,sex FROM sys_user WHERE (user_id = ?)
+2021-05-13 18:10:32.467 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==> Parameters: null
+2021-05-13 18:10:32.468 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - <==      Total: 0
+2021-05-13 18:14:03.391 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) FROM seller_car WHERE (user_id = ?)
+2021-05-13 18:14:03.392 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==> Parameters: 14(Integer)
+2021-05-13 18:14:03.394 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - <==      Total: 1
+2021-05-13 18:14:03.397 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==>  Preparing: SELECT car_id FROM seller_car WHERE (user_id = ?) LIMIT ?
+2021-05-13 18:14:03.397 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==> Parameters: 14(Integer), 5(Long)
+2021-05-13 18:14:03.401 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - <==      Total: 5
+2021-05-13 18:14:03.404 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE (car_id IN (?,?,?,?,?))
+2021-05-13 18:14:03.405 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==> Parameters: 37(Integer), 38(Integer), 39(Integer), 41(Integer), 42(Integer)
+2021-05-13 18:14:03.412 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - <==      Total: 5
+2021-05-13 18:14:11.756 [DEBUG] com.dippy.mapper.CarInfoMapper.selectById - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE car_id=?
+2021-05-13 18:14:11.759 [DEBUG] com.dippy.mapper.CarInfoMapper.selectById - ==> Parameters: 37(Integer)
+2021-05-13 18:14:11.764 [DEBUG] com.dippy.mapper.CarInfoMapper.selectById - <==      Total: 1
+2021-05-13 18:14:11.768 [DEBUG] com.dippy.mapper.CarPictureMapper.selectList - ==>  Preparing: SELECT car_picture_location,car_url FROM car_picture WHERE (car_id = ?)
+2021-05-13 18:14:11.771 [DEBUG] com.dippy.mapper.CarPictureMapper.selectList - ==> Parameters: 37(Integer)
+2021-05-13 18:14:11.772 [DEBUG] com.dippy.mapper.CarPictureMapper.selectList - <==      Total: 0
+2021-05-13 18:14:11.780 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==>  Preparing: SELECT name,phone,sex FROM sys_user WHERE (user_id = ?)
+2021-05-13 18:14:11.781 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==> Parameters: null
+2021-05-13 18:14:11.784 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - <==      Total: 0
+2021-05-13 18:19:56.004 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) FROM seller_car WHERE (user_id = ?)
+2021-05-13 18:19:56.005 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==> Parameters: 14(Integer)
+2021-05-13 18:19:56.007 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - <==      Total: 1
+2021-05-13 18:19:56.010 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==>  Preparing: SELECT car_id FROM seller_car WHERE (user_id = ?) LIMIT ?
+2021-05-13 18:19:56.011 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==> Parameters: 14(Integer), 5(Long)
+2021-05-13 18:19:56.014 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - <==      Total: 5
+2021-05-13 18:19:56.018 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE (car_id IN (?,?,?,?,?))
+2021-05-13 18:19:56.019 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==> Parameters: 37(Integer), 38(Integer), 39(Integer), 41(Integer), 42(Integer)
+2021-05-13 18:19:56.026 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - <==      Total: 5
+2021-05-13 18:20:04.089 [DEBUG] com.dippy.mapper.CarInfoMapper.selectById - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE car_id=?
+2021-05-13 18:20:04.104 [DEBUG] com.dippy.mapper.CarInfoMapper.selectById - ==> Parameters: 37(Integer)
+2021-05-13 18:20:04.221 [DEBUG] com.dippy.mapper.CarInfoMapper.selectById - <==      Total: 1
+2021-05-13 18:20:06.179 [DEBUG] com.dippy.mapper.CarPictureMapper.selectList - ==>  Preparing: SELECT car_picture_location,car_url FROM car_picture WHERE (car_id = ?)
+2021-05-13 18:20:06.192 [DEBUG] com.dippy.mapper.CarPictureMapper.selectList - ==> Parameters: 37(Integer)
+2021-05-13 18:20:06.209 [DEBUG] com.dippy.mapper.CarPictureMapper.selectList - <==      Total: 0
+2021-05-13 18:20:08.955 [DEBUG] com.dippy.mapper.SellerCarMapper.selectOne - ==>  Preparing: SELECT user_id FROM seller_car WHERE (car_id = ?)
+2021-05-13 18:20:08.970 [DEBUG] com.dippy.mapper.SellerCarMapper.selectOne - ==> Parameters: 37(Integer)
+2021-05-13 18:20:08.990 [DEBUG] com.dippy.mapper.SellerCarMapper.selectOne - <==      Total: 1
+2021-05-13 18:20:11.494 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==>  Preparing: SELECT name,phone,sex FROM sys_user WHERE (user_id = ?)
+2021-05-13 18:20:11.505 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==> Parameters: 14(Integer)
+2021-05-13 18:20:11.528 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - <==      Total: 1
+2021-05-13 18:25:10.914 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) FROM seller_car WHERE (user_id = ?)
+2021-05-13 18:25:10.915 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==> Parameters: 14(Integer)
+2021-05-13 18:25:10.918 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - <==      Total: 1
+2021-05-13 18:25:10.920 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==>  Preparing: SELECT car_id FROM seller_car WHERE (user_id = ?) LIMIT ?
+2021-05-13 18:25:10.922 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==> Parameters: 14(Integer), 5(Long)
+2021-05-13 18:25:10.926 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - <==      Total: 5
+2021-05-13 18:25:10.931 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE (car_id IN (?,?,?,?,?))
+2021-05-13 18:25:10.932 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==> Parameters: 37(Integer), 38(Integer), 39(Integer), 41(Integer), 42(Integer)
+2021-05-13 18:25:10.937 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - <==      Total: 5
+2021-05-13 18:25:16.808 [DEBUG] com.dippy.mapper.CarInfoMapper.selectById - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE car_id=?
+2021-05-13 18:25:16.820 [DEBUG] com.dippy.mapper.CarInfoMapper.selectById - ==> Parameters: 37(Integer)
+2021-05-13 18:25:16.891 [DEBUG] com.dippy.mapper.CarInfoMapper.selectById - <==      Total: 1
+2021-05-13 18:25:18.403 [DEBUG] com.dippy.mapper.CarPictureMapper.selectList - ==>  Preparing: SELECT car_picture_location,car_url FROM car_picture WHERE (car_id = ?)
+2021-05-13 18:25:18.415 [DEBUG] com.dippy.mapper.CarPictureMapper.selectList - ==> Parameters: 37(Integer)
+2021-05-13 18:25:18.434 [DEBUG] com.dippy.mapper.CarPictureMapper.selectList - <==      Total: 0
+2021-05-13 18:25:19.275 [DEBUG] com.dippy.mapper.SellerCarMapper.selectOne - ==>  Preparing: SELECT user_id FROM seller_car WHERE (car_id = ?)
+2021-05-13 18:25:19.288 [DEBUG] com.dippy.mapper.SellerCarMapper.selectOne - ==> Parameters: 37(Integer)
+2021-05-13 18:25:19.307 [DEBUG] com.dippy.mapper.SellerCarMapper.selectOne - <==      Total: 1
+2021-05-13 18:25:22.667 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==>  Preparing: SELECT name,phone,sex FROM sys_user WHERE (user_id = ?)
+2021-05-13 18:25:22.679 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==> Parameters: 14(Integer)
+2021-05-13 18:25:22.701 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - <==      Total: 1
+2021-05-13 18:41:50.410 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) FROM seller_car WHERE (user_id = ?)
+2021-05-13 18:41:50.411 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==> Parameters: 14(Integer)
+2021-05-13 18:41:50.413 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - <==      Total: 1
+2021-05-13 18:41:50.415 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==>  Preparing: SELECT car_id FROM seller_car WHERE (user_id = ?) LIMIT ?
+2021-05-13 18:41:50.415 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==> Parameters: 14(Integer), 5(Long)
+2021-05-13 18:41:50.418 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - <==      Total: 5
+2021-05-13 18:41:50.427 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE (car_id IN (?,?,?,?,?))
+2021-05-13 18:41:50.428 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==> Parameters: 37(Integer), 38(Integer), 39(Integer), 41(Integer), 42(Integer)
+2021-05-13 18:41:50.433 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - <==      Total: 5
+2021-05-13 18:41:57.984 [DEBUG] com.dippy.mapper.CarInfoMapper.selectById - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE car_id=?
+2021-05-13 18:41:57.996 [DEBUG] com.dippy.mapper.CarInfoMapper.selectById - ==> Parameters: 37(Integer)
+2021-05-13 18:41:58.067 [DEBUG] com.dippy.mapper.CarInfoMapper.selectById - <==      Total: 1
+2021-05-13 18:41:59.416 [DEBUG] com.dippy.mapper.CarPictureMapper.selectList - ==>  Preparing: SELECT car_picture_location,car_url FROM car_picture WHERE (car_id = ?)
+2021-05-13 18:41:59.439 [DEBUG] com.dippy.mapper.CarPictureMapper.selectList - ==> Parameters: 37(Integer)
+2021-05-13 18:41:59.468 [DEBUG] com.dippy.mapper.CarPictureMapper.selectList - <==      Total: 0
+2021-05-13 18:42:00.883 [DEBUG] com.dippy.mapper.SellerCarMapper.selectOne - ==>  Preparing: SELECT user_id FROM seller_car WHERE (car_id = ?)
+2021-05-13 18:42:00.895 [DEBUG] com.dippy.mapper.SellerCarMapper.selectOne - ==> Parameters: 37(Integer)
+2021-05-13 18:42:00.915 [DEBUG] com.dippy.mapper.SellerCarMapper.selectOne - <==      Total: 1
+2021-05-13 18:42:05.247 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==>  Preparing: SELECT name,phone,sex FROM sys_user WHERE (user_id = ?)
+2021-05-13 18:42:05.248 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==> Parameters: 14(Integer)
+2021-05-13 18:42:05.250 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - <==      Total: 1
+2021-05-13 18:43:26.399 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) FROM seller_car WHERE (user_id = ?)
+2021-05-13 18:43:26.400 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==> Parameters: 14(Integer)
+2021-05-13 18:43:26.401 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - <==      Total: 1
+2021-05-13 18:43:26.403 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==>  Preparing: SELECT car_id FROM seller_car WHERE (user_id = ?) LIMIT ?
+2021-05-13 18:43:26.405 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==> Parameters: 14(Integer), 5(Long)
+2021-05-13 18:43:26.407 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - <==      Total: 5
+2021-05-13 18:43:26.411 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE (car_id IN (?,?,?,?,?))
+2021-05-13 18:43:26.412 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==> Parameters: 37(Integer), 38(Integer), 39(Integer), 41(Integer), 42(Integer)
+2021-05-13 18:43:26.417 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - <==      Total: 5
+2021-05-13 18:43:37.037 [DEBUG] com.dippy.mapper.CarInfoMapper.selectById - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE car_id=?
+2021-05-13 18:43:37.049 [DEBUG] com.dippy.mapper.CarInfoMapper.selectById - ==> Parameters: 37(Integer)
+2021-05-13 18:43:37.120 [DEBUG] com.dippy.mapper.CarInfoMapper.selectById - <==      Total: 1
+2021-05-13 18:43:49.182 [DEBUG] com.dippy.mapper.CarPictureMapper.selectList - ==>  Preparing: SELECT car_picture_location,car_url FROM car_picture WHERE (car_id = ?)
+2021-05-13 18:43:49.183 [DEBUG] com.dippy.mapper.CarPictureMapper.selectList - ==> Parameters: 37(Integer)
+2021-05-13 18:43:49.185 [DEBUG] com.dippy.mapper.CarPictureMapper.selectList - <==      Total: 0
+2021-05-13 18:43:49.188 [DEBUG] com.dippy.mapper.SellerCarMapper.selectOne - ==>  Preparing: SELECT user_id FROM seller_car WHERE (car_id = ?)
+2021-05-13 18:43:49.189 [DEBUG] com.dippy.mapper.SellerCarMapper.selectOne - ==> Parameters: 37(Integer)
+2021-05-13 18:43:49.191 [DEBUG] com.dippy.mapper.SellerCarMapper.selectOne - <==      Total: 1
+2021-05-13 18:43:49.194 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==>  Preparing: SELECT name,phone,sex FROM sys_user WHERE (user_id = ?)
+2021-05-13 18:43:49.194 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==> Parameters: 14(Integer)
+2021-05-13 18:43:49.196 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - <==      Total: 1
+2021-05-13 18:45:00.821 [DEBUG] com.dippy.mapper.CarInfoMapper.selectById - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE car_id=?
+2021-05-13 18:45:00.822 [DEBUG] com.dippy.mapper.CarInfoMapper.selectById - ==> Parameters: 1(Integer)
+2021-05-13 18:45:00.829 [DEBUG] com.dippy.mapper.CarInfoMapper.selectById - <==      Total: 1
+2021-05-13 18:45:00.831 [DEBUG] com.dippy.mapper.CarPictureMapper.selectList - ==>  Preparing: SELECT car_picture_location,car_url FROM car_picture WHERE (car_id = ?)
+2021-05-13 18:45:00.832 [DEBUG] com.dippy.mapper.CarPictureMapper.selectList - ==> Parameters: 1(Integer)
+2021-05-13 18:45:00.835 [DEBUG] com.dippy.mapper.CarPictureMapper.selectList - <==      Total: 20
+2021-05-13 18:45:00.837 [DEBUG] com.dippy.mapper.SellerCarMapper.selectOne - ==>  Preparing: SELECT user_id FROM seller_car WHERE (car_id = ?)
+2021-05-13 18:45:00.838 [DEBUG] com.dippy.mapper.SellerCarMapper.selectOne - ==> Parameters: 1(Integer)
+2021-05-13 18:45:00.840 [DEBUG] com.dippy.mapper.SellerCarMapper.selectOne - <==      Total: 2
+2021-05-13 18:45:27.839 [DEBUG] com.dippy.mapper.CarInfoMapper.selectById - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE car_id=?
+2021-05-13 18:45:27.840 [DEBUG] com.dippy.mapper.CarInfoMapper.selectById - ==> Parameters: 1(Integer)
+2021-05-13 18:45:27.842 [DEBUG] com.dippy.mapper.CarInfoMapper.selectById - <==      Total: 1
+2021-05-13 18:45:27.844 [DEBUG] com.dippy.mapper.CarPictureMapper.selectList - ==>  Preparing: SELECT car_picture_location,car_url FROM car_picture WHERE (car_id = ?)
+2021-05-13 18:45:27.845 [DEBUG] com.dippy.mapper.CarPictureMapper.selectList - ==> Parameters: 1(Integer)
+2021-05-13 18:45:27.847 [DEBUG] com.dippy.mapper.CarPictureMapper.selectList - <==      Total: 20
+2021-05-13 18:45:27.849 [DEBUG] com.dippy.mapper.SellerCarMapper.selectOne - ==>  Preparing: SELECT user_id FROM seller_car WHERE (car_id = ?)
+2021-05-13 18:45:27.852 [DEBUG] com.dippy.mapper.SellerCarMapper.selectOne - ==> Parameters: 1(Integer)
+2021-05-13 18:45:27.854 [DEBUG] com.dippy.mapper.SellerCarMapper.selectOne - <==      Total: 2
+2021-05-13 18:46:37.165 [DEBUG] com.dippy.mapper.CarInfoMapper.selectById - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE car_id=?
+2021-05-13 18:46:37.166 [DEBUG] com.dippy.mapper.CarInfoMapper.selectById - ==> Parameters: 1(Integer)
+2021-05-13 18:46:37.168 [DEBUG] com.dippy.mapper.CarInfoMapper.selectById - <==      Total: 1
+2021-05-13 18:46:37.170 [DEBUG] com.dippy.mapper.CarPictureMapper.selectList - ==>  Preparing: SELECT car_picture_location,car_url FROM car_picture WHERE (car_id = ?)
+2021-05-13 18:46:37.171 [DEBUG] com.dippy.mapper.CarPictureMapper.selectList - ==> Parameters: 1(Integer)
+2021-05-13 18:46:37.173 [DEBUG] com.dippy.mapper.CarPictureMapper.selectList - <==      Total: 20
+2021-05-13 18:46:37.175 [DEBUG] com.dippy.mapper.SellerCarMapper.selectOne - ==>  Preparing: SELECT user_id FROM seller_car WHERE (car_id = ?)
+2021-05-13 18:46:37.175 [DEBUG] com.dippy.mapper.SellerCarMapper.selectOne - ==> Parameters: 1(Integer)
+2021-05-13 18:46:37.178 [DEBUG] com.dippy.mapper.SellerCarMapper.selectOne - <==      Total: 1
+2021-05-13 18:46:37.180 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==>  Preparing: SELECT name,phone,sex FROM sys_user WHERE (user_id = ?)
+2021-05-13 18:46:37.181 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==> Parameters: 3(Integer)
+2021-05-13 18:46:37.182 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - <==      Total: 0
+2021-05-13 18:48:19.210 [DEBUG] com.dippy.mapper.CarInfoMapper.selectById - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE car_id=?
+2021-05-13 18:48:19.222 [DEBUG] com.dippy.mapper.CarInfoMapper.selectById - ==> Parameters: 1(Integer)
+2021-05-13 18:48:19.298 [DEBUG] com.dippy.mapper.CarInfoMapper.selectById - <==      Total: 1
+2021-05-13 18:48:26.352 [DEBUG] com.dippy.mapper.CarPictureMapper.selectList - ==>  Preparing: SELECT car_picture_location,car_url FROM car_picture WHERE (car_id = ?)
+2021-05-13 18:48:26.364 [DEBUG] com.dippy.mapper.CarPictureMapper.selectList - ==> Parameters: 1(Integer)
+2021-05-13 18:48:26.432 [DEBUG] com.dippy.mapper.CarPictureMapper.selectList - <==      Total: 20
+2021-05-13 18:48:30.256 [DEBUG] com.dippy.mapper.SellerCarMapper.selectOne - ==>  Preparing: SELECT user_id FROM seller_car WHERE (car_id = ?)
+2021-05-13 18:48:30.268 [DEBUG] com.dippy.mapper.SellerCarMapper.selectOne - ==> Parameters: 1(Integer)
+2021-05-13 18:48:30.287 [DEBUG] com.dippy.mapper.SellerCarMapper.selectOne - <==      Total: 1
+2021-05-13 18:50:11.812 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==>  Preparing: SELECT name,phone,sex FROM sys_user WHERE (user_id = ?)
+2021-05-13 18:50:11.824 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==> Parameters: 3(Integer)
+2021-05-13 18:50:11.841 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - <==      Total: 0
+2021-05-13 18:50:28.468 [DEBUG] com.dippy.mapper.CarInfoMapper.selectById - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE car_id=?
+2021-05-13 18:50:28.484 [DEBUG] com.dippy.mapper.CarInfoMapper.selectById - ==> Parameters: 1(Integer)
+2021-05-13 18:50:28.608 [DEBUG] com.dippy.mapper.CarInfoMapper.selectById - <==      Total: 1
+2021-05-13 18:50:30.846 [DEBUG] com.dippy.mapper.CarPictureMapper.selectList - ==>  Preparing: SELECT car_picture_location,car_url FROM car_picture WHERE (car_id = ?)
+2021-05-13 18:50:30.859 [DEBUG] com.dippy.mapper.CarPictureMapper.selectList - ==> Parameters: 1(Integer)
+2021-05-13 18:50:30.924 [DEBUG] com.dippy.mapper.CarPictureMapper.selectList - <==      Total: 20
+2021-05-13 18:50:41.532 [DEBUG] com.dippy.mapper.SellerCarMapper.selectOne - ==>  Preparing: SELECT user_id FROM seller_car WHERE (car_id = ?)
+2021-05-13 18:50:41.545 [DEBUG] com.dippy.mapper.SellerCarMapper.selectOne - ==> Parameters: 1(Integer)
+2021-05-13 18:50:41.564 [DEBUG] com.dippy.mapper.SellerCarMapper.selectOne - <==      Total: 1
+2021-05-13 18:50:47.608 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==>  Preparing: SELECT name,phone,sex FROM sys_user WHERE (user_id = ?)
+2021-05-13 18:50:47.620 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==> Parameters: 1(Integer)
+2021-05-13 18:50:47.643 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - <==      Total: 1
+2021-05-13 18:51:50.052 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) FROM seller_car WHERE (user_id = ?)
+2021-05-13 18:51:50.060 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==> Parameters: 14(Integer)
+2021-05-13 18:51:50.062 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - <==      Total: 1
+2021-05-13 18:51:50.066 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==>  Preparing: SELECT car_id FROM seller_car WHERE (user_id = ?) LIMIT ?
+2021-05-13 18:51:50.067 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==> Parameters: 14(Integer), 5(Long)
+2021-05-13 18:51:50.069 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - <==      Total: 5
+2021-05-13 18:51:50.072 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE (car_id IN (?,?,?,?,?))
+2021-05-13 18:51:50.073 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==> Parameters: 37(Integer), 38(Integer), 39(Integer), 41(Integer), 42(Integer)
+2021-05-13 18:51:50.077 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - <==      Total: 5
+2021-05-13 19:05:40.632 [DEBUG] com.dippy.mapper.CarInfoMapper.selectById - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE car_id=?
+2021-05-13 19:05:40.649 [DEBUG] com.dippy.mapper.CarInfoMapper.selectById - ==> Parameters: 37(Integer)
+2021-05-13 19:05:40.730 [DEBUG] com.dippy.mapper.CarInfoMapper.selectById - <==      Total: 1
+2021-05-13 19:05:42.378 [DEBUG] com.dippy.mapper.CarPictureMapper.selectList - ==>  Preparing: SELECT car_picture_location,car_url FROM car_picture WHERE (car_id = ?)
+2021-05-13 19:05:42.391 [DEBUG] com.dippy.mapper.CarPictureMapper.selectList - ==> Parameters: 37(Integer)
+2021-05-13 19:05:42.410 [DEBUG] com.dippy.mapper.CarPictureMapper.selectList - <==      Total: 0
+2021-05-13 19:05:44.420 [DEBUG] com.dippy.mapper.SellerCarMapper.selectOne - ==>  Preparing: SELECT user_id FROM seller_car WHERE (car_id = ?)
+2021-05-13 19:05:44.431 [DEBUG] com.dippy.mapper.SellerCarMapper.selectOne - ==> Parameters: 37(Integer)
+2021-05-13 19:05:44.451 [DEBUG] com.dippy.mapper.SellerCarMapper.selectOne - <==      Total: 1
+2021-05-13 19:05:53.143 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==>  Preparing: SELECT name,phone,sex FROM sys_user WHERE (user_id = ?)
+2021-05-13 19:05:53.157 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==> Parameters: 14(Integer)
+2021-05-13 19:05:53.177 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - <==      Total: 1
+2021-05-13 19:20:35.933 [DEBUG] com.dippy.mapper.CarInfoMapper.selectById - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE car_id=?
+2021-05-13 19:20:35.934 [DEBUG] com.dippy.mapper.CarInfoMapper.selectById - ==> Parameters: 37(Integer)
+2021-05-13 19:20:35.937 [DEBUG] com.dippy.mapper.CarInfoMapper.selectById - <==      Total: 1
+2021-05-13 19:20:35.960 [DEBUG] com.dippy.mapper.CarPictureMapper.selectList - ==>  Preparing: SELECT car_picture_location,car_url FROM car_picture WHERE (car_id = ?)
+2021-05-13 19:20:35.961 [DEBUG] com.dippy.mapper.CarPictureMapper.selectList - ==> Parameters: 37(Integer)
+2021-05-13 19:20:35.963 [DEBUG] com.dippy.mapper.CarPictureMapper.selectList - <==      Total: 0
+2021-05-13 19:20:35.964 [DEBUG] com.dippy.mapper.SellerCarMapper.selectOne - ==>  Preparing: SELECT user_id FROM seller_car WHERE (car_id = ?)
+2021-05-13 19:20:35.965 [DEBUG] com.dippy.mapper.SellerCarMapper.selectOne - ==> Parameters: 37(Integer)
+2021-05-13 19:20:35.966 [DEBUG] com.dippy.mapper.SellerCarMapper.selectOne - <==      Total: 1
+2021-05-13 19:20:35.968 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==>  Preparing: SELECT name,phone,sex FROM sys_user WHERE (user_id = ?)
+2021-05-13 19:20:35.969 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==> Parameters: 14(Integer)
+2021-05-13 19:20:35.970 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - <==      Total: 1
+2021-05-13 19:20:35.979 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) FROM seller_car WHERE (user_id = ?)
+2021-05-13 19:20:35.980 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==> Parameters: 14(Integer)
+2021-05-13 19:20:35.983 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - <==      Total: 1
+2021-05-13 19:20:35.984 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==>  Preparing: SELECT car_id FROM seller_car WHERE (user_id = ?) LIMIT ?
+2021-05-13 19:20:35.985 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==> Parameters: 14(Integer), 5(Long)
+2021-05-13 19:20:35.985 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - <==      Total: 5
+2021-05-13 19:20:35.987 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE (car_id IN (?,?,?,?,?))
+2021-05-13 19:20:35.988 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==> Parameters: 37(Integer), 38(Integer), 39(Integer), 41(Integer), 42(Integer)
+2021-05-13 19:20:35.992 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - <==      Total: 5
+2021-05-13 19:42:59.674 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==>  Preparing: SELECT user_id,username,password,name,sex,avatar,address_id,province,city,area,detailed_address,phone,email,birthday,is_lock,create_time,update_time FROM sys_user WHERE (username = ?)
+2021-05-13 19:42:59.783 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==> Parameters: text4(String)
+2021-05-13 19:42:59.879 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - <==      Total: 0
+2021-05-13 19:43:21.795 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==>  Preparing: SELECT user_id,username,password,name,sex,avatar,address_id,province,city,area,detailed_address,phone,email,birthday,is_lock,create_time,update_time FROM sys_user WHERE (username = ?)
+2021-05-13 19:43:21.796 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==> Parameters: text4(String)
+2021-05-13 19:43:21.798 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - <==      Total: 0
+2021-05-13 19:44:28.018 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==>  Preparing: SELECT user_id,username,password,name,sex,avatar,address_id,province,city,area,detailed_address,phone,email,birthday,is_lock,create_time,update_time FROM sys_user WHERE (username = ?)
+2021-05-13 19:44:28.019 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==> Parameters: test4(String)
+2021-05-13 19:44:28.039 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - <==      Total: 1
+2021-05-13 19:44:28.064 [DEBUG] com.dippy.mapper.SysRoleUserMapper.selectList - ==>  Preparing: SELECT role_id FROM sys_role_user WHERE (user_id = ?)
+2021-05-13 19:44:28.065 [DEBUG] com.dippy.mapper.SysRoleUserMapper.selectList - ==> Parameters: 14(Integer)
+2021-05-13 19:44:28.080 [DEBUG] com.dippy.mapper.SysRoleUserMapper.selectList - <==      Total: 2
+2021-05-13 19:44:28.083 [DEBUG] com.dippy.mapper.SysPermissionMapper.listPermissionByUserId - ==>  Preparing: SELECT p.* FROM sys_user u, sys_permission p LEFT JOIN sys_role_permission rp ON p.permission_id = rp.permission_id LEFT JOIN sys_role_user ru ON rp.role_id = ru.role_id WHERE u.user_id = ?
+2021-05-13 19:44:28.083 [DEBUG] com.dippy.mapper.SysPermissionMapper.listPermissionByUserId - ==> Parameters: 14(Integer)
+2021-05-13 19:44:28.114 [DEBUG] com.dippy.mapper.SysPermissionMapper.listPermissionByUserId - <==      Total: 80
+2021-05-13 19:44:36.710 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) FROM seller_car WHERE (user_id = ?)
+2021-05-13 19:44:36.711 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - ==> Parameters: 14(Integer)
+2021-05-13 19:44:36.716 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage_mpCount - <==      Total: 1
+2021-05-13 19:44:36.742 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==>  Preparing: SELECT car_id FROM seller_car WHERE (user_id = ?) LIMIT ?
+2021-05-13 19:44:36.744 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - ==> Parameters: 14(Integer), 5(Long)
+2021-05-13 19:44:36.747 [DEBUG] com.dippy.mapper.SellerCarMapper.selectPage - <==      Total: 5
+2021-05-13 19:44:36.758 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time,car_status,car_title,user_id,car_picture FROM car_info WHERE (car_id IN (?,?,?,?,?))
+2021-05-13 19:44:36.760 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==> Parameters: 37(Integer), 38(Integer), 39(Integer), 41(Integer), 42(Integer)
+2021-05-13 19:44:36.771 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - <==      Total: 5

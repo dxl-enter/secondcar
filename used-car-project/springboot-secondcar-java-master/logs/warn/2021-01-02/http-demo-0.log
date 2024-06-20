@@ -1,0 +1,4 @@
+2021-01-02 22:41:59.232 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userInfoMapper' and 'com.dippy.mapper.UserInfoMapper' mapperInterface. Bean already defined with the same name!
+2021-01-02 22:41:59.233 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-01-02 22:53:34.779 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userInfoMapper' and 'com.dippy.mapper.UserInfoMapper' mapperInterface. Bean already defined with the same name!
+2021-01-02 22:53:34.780 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.

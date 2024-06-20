@@ -1,0 +1,24 @@
+2021-02-04 15:01:28.482 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==>  Preparing: SELECT user_id,username,password,user_name,sex,avatar,address_id,phone,email,birthday,is_lock,create_time,update_time FROM sys_user WHERE (username = ?)
+2021-02-04 15:01:28.489 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==> Parameters: admin(String)
+2021-02-04 15:01:28.494 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - <==      Total: 1
+2021-02-04 15:01:28.525 [DEBUG] com.dippy.mapper.SysPermissionMapper.listPermissionByUserId - ==>  Preparing: SELECT p.* FROM sys_user u, sys_permission p LEFT JOIN sys_role_permission rp ON p.permission_id = rp.permissionId LEFT JOIN sys_role_user ru ON rp.roleId = ru.roleId WHERE u.user_id = ?
+2021-02-04 15:01:28.527 [DEBUG] com.dippy.mapper.SysPermissionMapper.listPermissionByUserId - ==> Parameters: 1(Integer)
+2021-02-04 15:01:28.532 [DEBUG] com.dippy.mapper.SysPermissionMapper.listPermissionByUserId - <==      Total: 40
+2021-02-04 21:29:42.882 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==>  Preparing: SELECT user_id,username,password,user_name,sex,avatar,address_id,phone,email,birthday,is_lock,create_time,update_time FROM sys_user WHERE (username = ?)
+2021-02-04 21:29:42.884 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==> Parameters: admin(String)
+2021-02-04 21:29:42.887 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - <==      Total: 1
+2021-02-04 21:29:42.898 [DEBUG] com.dippy.mapper.SysPermissionMapper.listPermissionByUserId - ==>  Preparing: SELECT p.* FROM sys_user u, sys_permission p LEFT JOIN sys_role_permission rp ON p.permission_id = rp.permissionId LEFT JOIN sys_role_user ru ON rp.roleId = ru.roleId WHERE u.user_id = ?
+2021-02-04 21:29:42.899 [DEBUG] com.dippy.mapper.SysPermissionMapper.listPermissionByUserId - ==> Parameters: 1(Integer)
+2021-02-04 21:29:42.903 [DEBUG] com.dippy.mapper.SysPermissionMapper.listPermissionByUserId - <==      Total: 40
+2021-02-04 21:31:59.957 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==>  Preparing: SELECT user_id,username,password,user_name,sex,avatar,address_id,phone,email,birthday,is_lock,create_time,update_time FROM sys_user WHERE (username = ?)
+2021-02-04 21:31:59.958 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==> Parameters: admin(String)
+2021-02-04 21:31:59.960 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - <==      Total: 1
+2021-02-04 21:31:59.970 [DEBUG] com.dippy.mapper.SysPermissionMapper.listPermissionByUserId - ==>  Preparing: SELECT p.* FROM sys_user u, sys_permission p LEFT JOIN sys_role_permission rp ON p.permission_id = rp.permissionId LEFT JOIN sys_role_user ru ON rp.roleId = ru.roleId WHERE u.user_id = ?
+2021-02-04 21:31:59.971 [DEBUG] com.dippy.mapper.SysPermissionMapper.listPermissionByUserId - ==> Parameters: 1(Integer)
+2021-02-04 21:31:59.975 [DEBUG] com.dippy.mapper.SysPermissionMapper.listPermissionByUserId - <==      Total: 40
+2021-02-04 21:43:42.639 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==>  Preparing: SELECT user_id,username,password,user_name,sex,avatar,address_id,phone,email,birthday,is_lock,create_time,update_time FROM sys_user WHERE (username = ?)
+2021-02-04 21:43:42.640 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==> Parameters: admin(String)
+2021-02-04 21:43:42.642 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - <==      Total: 1
+2021-02-04 21:43:42.645 [DEBUG] com.dippy.mapper.SysPermissionMapper.listPermissionByUserId - ==>  Preparing: SELECT p.* FROM sys_user u, sys_permission p LEFT JOIN sys_role_permission rp ON p.permission_id = rp.permissionId LEFT JOIN sys_role_user ru ON rp.roleId = ru.roleId WHERE u.user_id = ?
+2021-02-04 21:43:42.647 [DEBUG] com.dippy.mapper.SysPermissionMapper.listPermissionByUserId - ==> Parameters: 1(Integer)
+2021-02-04 21:43:42.651 [DEBUG] com.dippy.mapper.SysPermissionMapper.listPermissionByUserId - <==      Total: 40

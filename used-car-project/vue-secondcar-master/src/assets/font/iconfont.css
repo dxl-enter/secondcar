@@ -1,0 +1,79 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 2552123 */
+  src: url('iconfont.woff2?t=1621219533440') format('woff2'),
+       url('iconfont.woff?t=1621219533440') format('woff'),
+       url('iconfont.ttf?t=1621219533440') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-email:before {
+  content: "\e74f";
+}
+
+.icon-mobile-phone:before {
+  content: "\e759";
+}
+
+.icon-manage-order:before {
+  content: "\e75a";
+}
+
+.icon-office-supplies:before {
+  content: "\e75b";
+}
+
+.icon-password:before {
+  content: "\e75c";
+}
+
+.icon-usercenter:before {
+  content: "\e773";
+}
+
+.icon-atm:before {
+  content: "\e744";
+}
+
+.icon-collection:before {
+  content: "\e79d";
+}
+
+.icon-collection-fill:before {
+  content: "\e79e";
+}
+
+.icon-dingdan:before {
+  content: "\e8ae";
+}
+
+.icon-gengduo:before {
+  content: "\e8af";
+}
+
+.icon-mima:before {
+  content: "\e8b2";
+}
+
+.icon-nan:before {
+  content: "\e8b3";
+}
+
+.icon-nv:before {
+  content: "\e8b4";
+}
+
+.icon-shanchu:before {
+  content: "\e8b6";
+}
+
+.icon-shezhi:before {
+  content: "\e8b7";
+}
+

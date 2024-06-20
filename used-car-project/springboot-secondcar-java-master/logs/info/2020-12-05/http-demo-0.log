@@ -1,0 +1,154 @@
+2020-12-05 15:47:54.277 [INFO ] com.dippy.SpringbootSecondcarApplication - Starting SpringbootSecondcarApplication on Dippy with PID 2988 (E:\workspace\IDEA\springboot\springboot-secondcar\target\classes started by Mindless in E:\workspace\IDEA\springboot\springboot-secondcar)
+2020-12-05 15:47:54.281 [INFO ] com.dippy.SpringbootSecondcarApplication - No active profile set, falling back to default profiles: default
+2020-12-05 15:47:54.392 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-05 15:47:54.393 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-05 15:47:56.321 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2020-12-05 15:47:56.339 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2020-12-05 15:47:56.340 [INFO ] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-05 15:47:56.341 [INFO ] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-12-05 15:47:56.548 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-05 15:47:56.548 [INFO ] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2153 ms
+2020-12-05 15:47:58.859 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-05 15:47:59.303 [INFO ] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-12-05 15:47:59.331 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2020-12-05 15:47:59.379 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2020-12-05 15:47:59.395 [INFO ] com.dippy.SpringbootSecondcarApplication - Started SpringbootSecondcarApplication in 6.244 seconds (JVM running for 10.521)
+2020-12-05 15:48:22.747 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-05 15:48:22.932 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-12-05 15:48:23.187 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-12-05 15:50:49.075 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-05 15:50:49.077 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-12-05 15:50:49.091 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-12-05 15:50:57.780 [INFO ] com.dippy.SpringbootSecondcarApplication - Starting SpringbootSecondcarApplication on Dippy with PID 19384 (E:\workspace\IDEA\springboot\springboot-secondcar\target\classes started by Mindless in E:\workspace\IDEA\springboot\springboot-secondcar)
+2020-12-05 15:50:57.784 [INFO ] com.dippy.SpringbootSecondcarApplication - No active profile set, falling back to default profiles: default
+2020-12-05 15:50:57.957 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-05 15:50:57.958 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-05 15:51:00.124 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2020-12-05 15:51:00.145 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2020-12-05 15:51:00.147 [INFO ] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-05 15:51:00.148 [INFO ] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-12-05 15:51:00.335 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-05 15:51:00.335 [INFO ] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2374 ms
+2020-12-05 15:51:02.653 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-05 15:51:03.117 [INFO ] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-12-05 15:51:03.145 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2020-12-05 15:51:03.194 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2020-12-05 15:51:03.211 [INFO ] com.dippy.SpringbootSecondcarApplication - Started SpringbootSecondcarApplication in 7.112 seconds (JVM running for 11.989)
+2020-12-05 15:51:12.580 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-05 15:51:12.766 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-12-05 15:51:12.986 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-12-05 15:54:57.625 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-05 15:54:57.626 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-12-05 15:54:57.641 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-12-05 15:57:58.050 [INFO ] com.dippy.SpringbootSecondcarApplication - Starting SpringbootSecondcarApplication on Dippy with PID 3980 (E:\workspace\IDEA\springboot\springboot-secondcar\target\classes started by Mindless in E:\workspace\IDEA\springboot\springboot-secondcar)
+2020-12-05 15:57:58.054 [INFO ] com.dippy.SpringbootSecondcarApplication - No active profile set, falling back to default profiles: default
+2020-12-05 15:57:58.178 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-05 15:57:58.178 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-05 15:58:00.053 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2020-12-05 15:58:00.071 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2020-12-05 15:58:00.073 [INFO ] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-05 15:58:00.074 [INFO ] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-12-05 15:58:00.290 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-05 15:58:00.291 [INFO ] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2112 ms
+2020-12-05 15:58:02.535 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-05 15:58:02.981 [INFO ] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-12-05 15:58:03.011 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2020-12-05 15:58:03.054 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2020-12-05 15:58:03.070 [INFO ] com.dippy.SpringbootSecondcarApplication - Started SpringbootSecondcarApplication in 6.374 seconds (JVM running for 12.673)
+2020-12-05 16:00:26.148 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-05 16:00:26.461 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-12-05 16:00:26.730 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-12-05 16:02:04.222 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-05 16:02:04.224 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-12-05 16:02:04.240 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-12-05 16:02:12.146 [INFO ] com.dippy.SpringbootSecondcarApplication - Starting SpringbootSecondcarApplication on Dippy with PID 2820 (E:\workspace\IDEA\springboot\springboot-secondcar\target\classes started by Mindless in E:\workspace\IDEA\springboot\springboot-secondcar)
+2020-12-05 16:02:12.152 [INFO ] com.dippy.SpringbootSecondcarApplication - No active profile set, falling back to default profiles: default
+2020-12-05 16:02:12.269 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-05 16:02:12.270 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-05 16:02:14.659 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2020-12-05 16:02:14.677 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2020-12-05 16:02:14.678 [INFO ] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-05 16:02:14.678 [INFO ] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-12-05 16:02:14.979 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-05 16:02:14.980 [INFO ] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2708 ms
+2020-12-05 16:02:17.988 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-05 16:02:18.465 [INFO ] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-12-05 16:02:18.518 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2020-12-05 16:02:18.570 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2020-12-05 16:02:18.586 [INFO ] com.dippy.SpringbootSecondcarApplication - Started SpringbootSecondcarApplication in 8.239 seconds (JVM running for 13.184)
+2020-12-05 16:02:23.145 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-05 16:02:23.327 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-12-05 16:02:23.605 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-12-05 16:29:26.478 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-05 16:29:26.479 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-12-05 16:29:26.495 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-12-05 16:38:13.708 [INFO ] com.dippy.SpringbootSecondcarApplication - Starting SpringbootSecondcarApplication on Dippy with PID 5900 (E:\workspace\IDEA\springboot\springboot-secondcar\target\classes started by Mindless in E:\workspace\IDEA\springboot\springboot-secondcar)
+2020-12-05 16:38:13.786 [INFO ] com.dippy.SpringbootSecondcarApplication - No active profile set, falling back to default profiles: default
+2020-12-05 16:38:13.890 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-05 16:38:13.891 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-05 16:40:49.643 [INFO ] com.dippy.SpringbootSecondcarApplication - Starting SpringbootSecondcarApplication on Dippy with PID 16836 (E:\workspace\IDEA\springboot\springboot-secondcar\target\classes started by Mindless in E:\workspace\IDEA\springboot\springboot-secondcar)
+2020-12-05 16:40:49.648 [INFO ] com.dippy.SpringbootSecondcarApplication - No active profile set, falling back to default profiles: default
+2020-12-05 16:40:49.823 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-05 16:40:49.824 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-05 16:40:52.714 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2020-12-05 16:40:52.733 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2020-12-05 16:40:52.734 [INFO ] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-05 16:40:52.734 [INFO ] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-12-05 16:40:52.982 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-05 16:40:52.982 [INFO ] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3158 ms
+2020-12-05 16:40:55.299 [INFO ] org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2020-12-05 16:40:55.316 [INFO ] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-12-05 16:50:43.152 [INFO ] com.dippy.SpringbootSecondcarApplication - Starting SpringbootSecondcarApplication on Dippy with PID 3376 (E:\workspace\IDEA\springboot\springboot-secondcar\target\classes started by Mindless in E:\workspace\IDEA\springboot\springboot-secondcar)
+2020-12-05 16:50:43.155 [INFO ] com.dippy.SpringbootSecondcarApplication - No active profile set, falling back to default profiles: default
+2020-12-05 16:50:43.287 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-05 16:50:43.287 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-05 16:50:45.867 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2020-12-05 16:50:45.888 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2020-12-05 16:50:45.889 [INFO ] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-05 16:50:45.890 [INFO ] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-12-05 16:50:46.111 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-05 16:50:46.112 [INFO ] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2824 ms
+2020-12-05 16:50:48.796 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-05 16:50:48.940 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-05 16:50:49.036 [INFO ] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-12-05 16:50:49.416 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2020-12-05 16:50:49.466 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2020-12-05 16:50:49.468 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-12-05 16:50:49.512 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-12-05 16:50:49.603 [INFO ] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-12-05 16:50:49.651 [INFO ] com.dippy.SpringbootSecondcarApplication - Started SpringbootSecondcarApplication in 7.714 seconds (JVM running for 12.452)
+2020-12-05 16:51:38.334 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-05 16:53:26.934 [INFO ] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-12-05 16:54:43.293 [INFO ] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-12-05 16:54:43.303 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: indexUsingGET_1
+2020-12-05 16:56:40.312 [INFO ] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-12-05 16:56:40.317 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: indexUsingGET_2
+2020-12-05 17:13:53.387 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-05 17:18:52.926 [INFO ] com.dippy.SpringbootSecondcarApplication - Starting SpringbootSecondcarApplication on Dippy with PID 6772 (E:\workspace\IDEA\springboot\springboot-secondcar\target\classes started by Mindless in E:\workspace\IDEA\springboot\springboot-secondcar)
+2020-12-05 17:18:52.929 [INFO ] com.dippy.SpringbootSecondcarApplication - No active profile set, falling back to default profiles: default
+2020-12-05 17:18:53.136 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-05 17:18:53.136 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-05 17:18:55.428 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2020-12-05 17:18:55.446 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2020-12-05 17:18:55.447 [INFO ] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-05 17:18:55.448 [INFO ] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-12-05 17:18:55.685 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-05 17:18:55.685 [INFO ] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2548 ms
+2020-12-05 17:18:58.141 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-05 17:18:58.278 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-05 17:18:58.348 [INFO ] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-12-05 17:18:58.734 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2020-12-05 17:18:58.779 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2020-12-05 17:18:58.781 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-12-05 17:18:58.804 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-12-05 17:18:58.869 [INFO ] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-12-05 17:18:59.069 [INFO ] com.dippy.SpringbootSecondcarApplication - Started SpringbootSecondcarApplication in 7.326 seconds (JVM running for 12.453)
+2020-12-05 17:19:33.062 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-05 17:19:33.245 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-12-05 17:19:33.461 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-12-05 17:20:57.775 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-05 17:24:54.863 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-05 17:24:54.867 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-12-05 17:24:54.882 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

@@ -1,0 +1,181 @@
+2021-02-09 02:59:11.261 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'carInfoMapper' and 'com.dippy.mapper.CarInfoMapper' mapperInterface. Bean already defined with the same name!
+2021-02-09 02:59:11.263 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysPermissionMapper' and 'com.dippy.mapper.SysPermissionMapper' mapperInterface. Bean already defined with the same name!
+2021-02-09 02:59:11.265 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysRoleMapper' and 'com.dippy.mapper.SysRoleMapper' mapperInterface. Bean already defined with the same name!
+2021-02-09 02:59:11.266 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysRolePermissionMapper' and 'com.dippy.mapper.SysRolePermissionMapper' mapperInterface. Bean already defined with the same name!
+2021-02-09 02:59:11.268 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysRoleUserMapper' and 'com.dippy.mapper.SysRoleUserMapper' mapperInterface. Bean already defined with the same name!
+2021-02-09 02:59:11.270 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysUserMapper' and 'com.dippy.mapper.SysUserMapper' mapperInterface. Bean already defined with the same name!
+2021-02-09 02:59:11.272 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userInfoMapper' and 'com.dippy.mapper.UserInfoMapper' mapperInterface. Bean already defined with the same name!
+2021-02-09 02:59:11.275 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-02-09 03:01:37.862 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'carInfoMapper' and 'com.dippy.mapper.CarInfoMapper' mapperInterface. Bean already defined with the same name!
+2021-02-09 03:01:37.863 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysPermissionMapper' and 'com.dippy.mapper.SysPermissionMapper' mapperInterface. Bean already defined with the same name!
+2021-02-09 03:01:37.864 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysRoleMapper' and 'com.dippy.mapper.SysRoleMapper' mapperInterface. Bean already defined with the same name!
+2021-02-09 03:01:37.865 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysRolePermissionMapper' and 'com.dippy.mapper.SysRolePermissionMapper' mapperInterface. Bean already defined with the same name!
+2021-02-09 03:01:37.869 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysRoleUserMapper' and 'com.dippy.mapper.SysRoleUserMapper' mapperInterface. Bean already defined with the same name!
+2021-02-09 03:01:37.870 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysUserMapper' and 'com.dippy.mapper.SysUserMapper' mapperInterface. Bean already defined with the same name!
+2021-02-09 03:01:37.873 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userInfoMapper' and 'com.dippy.mapper.UserInfoMapper' mapperInterface. Bean already defined with the same name!
+2021-02-09 03:01:37.874 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-02-09 03:11:45.395 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'carInfoMapper' and 'com.dippy.mapper.CarInfoMapper' mapperInterface. Bean already defined with the same name!
+2021-02-09 03:11:45.396 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysPermissionMapper' and 'com.dippy.mapper.SysPermissionMapper' mapperInterface. Bean already defined with the same name!
+2021-02-09 03:11:45.396 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysRoleMapper' and 'com.dippy.mapper.SysRoleMapper' mapperInterface. Bean already defined with the same name!
+2021-02-09 03:11:45.396 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysRolePermissionMapper' and 'com.dippy.mapper.SysRolePermissionMapper' mapperInterface. Bean already defined with the same name!
+2021-02-09 03:11:45.397 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysRoleUserMapper' and 'com.dippy.mapper.SysRoleUserMapper' mapperInterface. Bean already defined with the same name!
+2021-02-09 03:11:45.397 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysUserMapper' and 'com.dippy.mapper.SysUserMapper' mapperInterface. Bean already defined with the same name!
+2021-02-09 03:11:45.397 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userInfoMapper' and 'com.dippy.mapper.UserInfoMapper' mapperInterface. Bean already defined with the same name!
+2021-02-09 03:11:45.399 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-02-09 03:12:54.809 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'carInfoMapper' and 'com.dippy.mapper.CarInfoMapper' mapperInterface. Bean already defined with the same name!
+2021-02-09 03:12:54.809 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysPermissionMapper' and 'com.dippy.mapper.SysPermissionMapper' mapperInterface. Bean already defined with the same name!
+2021-02-09 03:12:54.810 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysRoleMapper' and 'com.dippy.mapper.SysRoleMapper' mapperInterface. Bean already defined with the same name!
+2021-02-09 03:12:54.810 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysRolePermissionMapper' and 'com.dippy.mapper.SysRolePermissionMapper' mapperInterface. Bean already defined with the same name!
+2021-02-09 03:12:54.811 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysRoleUserMapper' and 'com.dippy.mapper.SysRoleUserMapper' mapperInterface. Bean already defined with the same name!
+2021-02-09 03:12:54.812 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysUserMapper' and 'com.dippy.mapper.SysUserMapper' mapperInterface. Bean already defined with the same name!
+2021-02-09 03:12:54.813 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userInfoMapper' and 'com.dippy.mapper.UserInfoMapper' mapperInterface. Bean already defined with the same name!
+2021-02-09 03:12:54.813 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-02-09 03:14:27.337 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'carInfoMapper' and 'com.dippy.mapper.CarInfoMapper' mapperInterface. Bean already defined with the same name!
+2021-02-09 03:14:27.338 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysPermissionMapper' and 'com.dippy.mapper.SysPermissionMapper' mapperInterface. Bean already defined with the same name!
+2021-02-09 03:14:27.338 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysRoleMapper' and 'com.dippy.mapper.SysRoleMapper' mapperInterface. Bean already defined with the same name!
+2021-02-09 03:14:27.340 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysRolePermissionMapper' and 'com.dippy.mapper.SysRolePermissionMapper' mapperInterface. Bean already defined with the same name!
+2021-02-09 03:14:27.341 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysRoleUserMapper' and 'com.dippy.mapper.SysRoleUserMapper' mapperInterface. Bean already defined with the same name!
+2021-02-09 03:14:27.341 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysUserMapper' and 'com.dippy.mapper.SysUserMapper' mapperInterface. Bean already defined with the same name!
+2021-02-09 03:14:27.341 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userInfoMapper' and 'com.dippy.mapper.UserInfoMapper' mapperInterface. Bean already defined with the same name!
+2021-02-09 03:14:27.342 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-02-09 03:25:46.014 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'carInfoMapper' and 'com.dippy.mapper.CarInfoMapper' mapperInterface. Bean already defined with the same name!
+2021-02-09 03:25:46.015 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysPermissionMapper' and 'com.dippy.mapper.SysPermissionMapper' mapperInterface. Bean already defined with the same name!
+2021-02-09 03:25:46.015 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysRoleMapper' and 'com.dippy.mapper.SysRoleMapper' mapperInterface. Bean already defined with the same name!
+2021-02-09 03:25:46.015 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysRolePermissionMapper' and 'com.dippy.mapper.SysRolePermissionMapper' mapperInterface. Bean already defined with the same name!
+2021-02-09 03:25:46.016 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysRoleUserMapper' and 'com.dippy.mapper.SysRoleUserMapper' mapperInterface. Bean already defined with the same name!
+2021-02-09 03:25:46.017 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysUserMapper' and 'com.dippy.mapper.SysUserMapper' mapperInterface. Bean already defined with the same name!
+2021-02-09 03:25:46.020 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userInfoMapper' and 'com.dippy.mapper.UserInfoMapper' mapperInterface. Bean already defined with the same name!
+2021-02-09 03:25:46.021 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-02-09 03:32:28.295 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'carInfoMapper' and 'com.dippy.mapper.CarInfoMapper' mapperInterface. Bean already defined with the same name!
+2021-02-09 03:32:28.296 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysPermissionMapper' and 'com.dippy.mapper.SysPermissionMapper' mapperInterface. Bean already defined with the same name!
+2021-02-09 03:32:28.297 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysRoleMapper' and 'com.dippy.mapper.SysRoleMapper' mapperInterface. Bean already defined with the same name!
+2021-02-09 03:32:28.297 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysRolePermissionMapper' and 'com.dippy.mapper.SysRolePermissionMapper' mapperInterface. Bean already defined with the same name!
+2021-02-09 03:32:28.297 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysRoleUserMapper' and 'com.dippy.mapper.SysRoleUserMapper' mapperInterface. Bean already defined with the same name!
+2021-02-09 03:32:28.298 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysUserMapper' and 'com.dippy.mapper.SysUserMapper' mapperInterface. Bean already defined with the same name!
+2021-02-09 03:32:28.298 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userInfoMapper' and 'com.dippy.mapper.UserInfoMapper' mapperInterface. Bean already defined with the same name!
+2021-02-09 03:32:28.298 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-02-09 03:34:15.890 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'carInfoMapper' and 'com.dippy.mapper.CarInfoMapper' mapperInterface. Bean already defined with the same name!
+2021-02-09 03:34:15.892 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysPermissionMapper' and 'com.dippy.mapper.SysPermissionMapper' mapperInterface. Bean already defined with the same name!
+2021-02-09 03:34:15.892 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysRoleMapper' and 'com.dippy.mapper.SysRoleMapper' mapperInterface. Bean already defined with the same name!
+2021-02-09 03:34:15.892 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysRolePermissionMapper' and 'com.dippy.mapper.SysRolePermissionMapper' mapperInterface. Bean already defined with the same name!
+2021-02-09 03:34:15.893 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysRoleUserMapper' and 'com.dippy.mapper.SysRoleUserMapper' mapperInterface. Bean already defined with the same name!
+2021-02-09 03:34:15.893 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysUserMapper' and 'com.dippy.mapper.SysUserMapper' mapperInterface. Bean already defined with the same name!
+2021-02-09 03:34:15.893 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userInfoMapper' and 'com.dippy.mapper.UserInfoMapper' mapperInterface. Bean already defined with the same name!
+2021-02-09 03:34:15.894 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-02-09 03:36:48.165 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'carInfoMapper' and 'com.dippy.mapper.CarInfoMapper' mapperInterface. Bean already defined with the same name!
+2021-02-09 03:36:48.166 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysPermissionMapper' and 'com.dippy.mapper.SysPermissionMapper' mapperInterface. Bean already defined with the same name!
+2021-02-09 03:36:48.166 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysRoleMapper' and 'com.dippy.mapper.SysRoleMapper' mapperInterface. Bean already defined with the same name!
+2021-02-09 03:36:48.166 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysRolePermissionMapper' and 'com.dippy.mapper.SysRolePermissionMapper' mapperInterface. Bean already defined with the same name!
+2021-02-09 03:36:48.167 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysRoleUserMapper' and 'com.dippy.mapper.SysRoleUserMapper' mapperInterface. Bean already defined with the same name!
+2021-02-09 03:36:48.167 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysUserMapper' and 'com.dippy.mapper.SysUserMapper' mapperInterface. Bean already defined with the same name!
+2021-02-09 03:36:48.168 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userInfoMapper' and 'com.dippy.mapper.UserInfoMapper' mapperInterface. Bean already defined with the same name!
+2021-02-09 03:36:48.169 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-02-09 03:51:50.007 [http-nio-8090-exec-8] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Failure in @ExceptionHandler com.dippy.common.GlobalExceptionHandle#handler(RuntimeException)
+java.lang.IllegalStateException: getWriter() has already been called for this response
+	at org.apache.catalina.connector.Response.getOutputStream(Response.java:550)
+	at org.apache.catalina.connector.ResponseFacade.getOutputStream(ResponseFacade.java:210)
+	at javax.servlet.ServletResponseWrapper.getOutputStream(ServletResponseWrapper.java:105)
+	at javax.servlet.ServletResponseWrapper.getOutputStream(ServletResponseWrapper.java:105)
+	at org.springframework.security.web.util.OnCommittedResponseWrapper.getOutputStream(OnCommittedResponseWrapper.java:145)
+	at javax.servlet.ServletResponseWrapper.getOutputStream(ServletResponseWrapper.java:105)
+	at org.springframework.security.web.util.OnCommittedResponseWrapper.getOutputStream(OnCommittedResponseWrapper.java:145)
+	at org.springframework.http.server.ServletServerHttpResponse.getBody(ServletServerHttpResponse.java:84)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.writeInternal(AbstractJackson2HttpMessageConverter.java:311)
+	at org.springframework.http.converter.AbstractGenericHttpMessageConverter.write(AbstractGenericHttpMessageConverter.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:277)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.handleReturnValue(RequestResponseBodyMethodProcessor.java:181)
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:82)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:123)
+	at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.doResolveHandlerMethodException(ExceptionHandlerExceptionResolver.java:407)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodExceptionResolver.doResolveException(AbstractHandlerMethodExceptionResolver.java:61)
+	at org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.resolveException(AbstractHandlerExceptionResolver.java:141)
+	at org.springframework.web.servlet.handler.HandlerExceptionResolverComposite.resolveException(HandlerExceptionResolverComposite.java:80)
+	at org.springframework.web.servlet.DispatcherServlet.processHandlerException(DispatcherServlet.java:1300)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1111)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:113)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.dippy.filter.VerifyCodeFilter.doFilterInternal(VerifyCodeFilter.java:76)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.dippy.filter.TokenFilter.doFilterInternal(TokenFilter.java:70)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:113)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:113)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:113)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:459)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312)
+	at org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequestDispatcher.forward(HeaderWriterFilter.java:172)
+	at com.dippy.common.SecurityHandlerConfig$5.onLogoutSuccess(SecurityHandlerConfig.java:177)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.__invoke(StandardContextValve.java:97)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:41002)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)

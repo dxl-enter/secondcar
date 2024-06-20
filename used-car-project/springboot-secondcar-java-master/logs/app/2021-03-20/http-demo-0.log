@@ -1,0 +1,8 @@
+2021-03-20 01:12:40.425 [DEBUG] com.dippy.mapper.CarInfoMapper.selectPage - ==>  Preparing: SELECT COUNT(1) FROM car_info
+2021-03-20 01:12:40.481 [DEBUG] com.dippy.mapper.CarInfoMapper.selectPage - ==> Parameters: 
+2021-03-20 01:12:40.558 [DEBUG] com.dippy.mapper.CarInfoMapper.selectPage - ==>  Preparing: SELECT car_id,car_brand,car_series,car_type,car_price,car_count,car_user_time,transfer_count,car_car_mileage,car_color,car_picture_id,car_gear_box,car_displacement,produce_time,car_configuration,car_seat,car_fuel_type,car_quality_time,car_region_id,car_front_tyre,rear_tyre,car_describe,create_time,update_time FROM car_info LIMIT ?
+2021-03-20 01:12:40.560 [DEBUG] com.dippy.mapper.CarInfoMapper.selectPage - ==> Parameters: 5(Long)
+2021-03-20 01:12:40.586 [DEBUG] com.dippy.mapper.CarInfoMapper.selectPage - <==      Total: 3
+2021-03-20 01:17:10.332 [DEBUG] com.dippy.mapper.CarInfoMapper.getAllCarBrand - ==>  Preparing: SELECT distinct(car_brand) FROM car_info
+2021-03-20 01:17:10.334 [DEBUG] com.dippy.mapper.CarInfoMapper.getAllCarBrand - ==> Parameters: 
+2021-03-20 01:17:10.341 [DEBUG] com.dippy.mapper.CarInfoMapper.getAllCarBrand - <==      Total: 2

@@ -1,0 +1,23 @@
+2020-12-11 00:07:44.911 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userInfoMapper' and 'com.dippy.mapper.UserInfoMapper' mapperInterface. Bean already defined with the same name!
+2020-12-11 00:07:44.912 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2020-12-11 00:10:16.802 [rebel-change-detector-thread] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2020-12-11 00:10:16.809 [rebel-change-detector-thread] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2020-12-11 00:14:49.545 [http-nio-8090-exec-4] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2020-12-11 00:14:49.548 [http-nio-8090-exec-4] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2020-12-11 00:20:10.723 [http-nio-8090-exec-1] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2020-12-11 00:20:10.727 [http-nio-8090-exec-1] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2020-12-11 00:21:19.133 [http-nio-8090-exec-1] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2020-12-11 00:21:19.136 [http-nio-8090-exec-1] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2020-12-11 00:23:28.288 [http-nio-8090-exec-7] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2020-12-11 00:23:28.291 [http-nio-8090-exec-7] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2020-12-11 00:25:59.418 [http-nio-8090-exec-8] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2020-12-11 00:25:59.421 [http-nio-8090-exec-8] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2020-12-11 00:32:40.182 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userInfoMapper' and 'com.dippy.mapper.UserInfoMapper' mapperInterface. Bean already defined with the same name!
+2020-12-11 00:32:40.183 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2020-12-11 00:35:21.250 [http-nio-8090-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.IllegalArgumentException: setAttribute: name parameter cannot be null]
+2020-12-11 00:36:48.306 [http-nio-8090-exec-4] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2020-12-11 00:36:48.323 [http-nio-8090-exec-4] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2020-12-11 01:04:13.864 [http-nio-8090-exec-5] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2020-12-11 01:04:13.876 [http-nio-8090-exec-5] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2020-12-11 01:17:19.413 [http-nio-8090-exec-5] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2020-12-11 01:17:19.426 [http-nio-8090-exec-5] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.

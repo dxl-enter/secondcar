@@ -1,0 +1,12 @@
+2021-03-21 16:54:57.588 [DEBUG] com.dippy.mapper.CarInfoMapper.insert - ==>  Preparing: INSERT INTO car_info ( car_brand ) VALUES ( ? )
+2021-03-21 16:54:57.647 [DEBUG] com.dippy.mapper.CarInfoMapper.insert - ==> Parameters: 路虎(String)
+2021-03-21 16:54:57.655 [DEBUG] com.dippy.mapper.CarInfoMapper.insert - <==    Updates: 1
+2021-03-21 21:42:40.801 [DEBUG] com.dippy.mapper.CarInfoMapper.insert - ==>  Preparing: INSERT INTO car_info ( car_brand ) VALUES ( ? )
+2021-03-21 21:42:40.865 [DEBUG] com.dippy.mapper.CarInfoMapper.insert - ==> Parameters: 路虎(String)
+2021-03-21 21:42:40.887 [DEBUG] com.dippy.mapper.CarInfoMapper.insert - <==    Updates: 1
+2021-03-21 22:17:34.479 [DEBUG] com.dippy.mapper.CarInfoMapper.insert - ==>  Preparing: INSERT INTO car_info ( car_brand ) VALUES ( ? )
+2021-03-21 22:17:34.589 [DEBUG] com.dippy.mapper.CarInfoMapper.insert - ==> Parameters: 路虎(String)
+2021-03-21 22:17:34.603 [DEBUG] com.dippy.mapper.CarInfoMapper.insert - <==    Updates: 1
+2021-03-21 22:18:04.119 [DEBUG] com.dippy.mapper.CarInfoMapper.insert - ==>  Preparing: INSERT INTO car_info ( car_brand ) VALUES ( ? )
+2021-03-21 22:18:04.137 [DEBUG] com.dippy.mapper.CarInfoMapper.insert - ==> Parameters: 路虎(String)
+2021-03-21 22:18:04.155 [DEBUG] com.dippy.mapper.CarInfoMapper.insert - <==    Updates: 1

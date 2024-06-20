@@ -1,0 +1,18 @@
+2020-12-07 20:07:29.510 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field jwtUtils in com.dippy.controller.BaseController required a bean of type 'com.dippy.util.JwtUtils' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.dippy.util.JwtUtils' in your configuration.
+

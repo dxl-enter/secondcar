@@ -1,0 +1,986 @@
+2021-05-03 00:15:49.546 [INFO ] io.lettuce.core.protocol.CommandHandler - null Unexpected exception during request: java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1133)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2021-05-03 00:15:49.643 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@288207f7: tags=[[amq.ctag-zY8HYBizhXhsg1S1_pTA_w]], channel=Cached Rabbit Channel: AMQChannel(amqp://guest@192.168.88.136:5672/,1), conn: Proxy@3bc59637 Shared Rabbit Connection: SimpleConnection@195240bb [delegate=amqp://guest@192.168.88.136:5672/, localPort= 55169], acknowledgeMode=AUTO local queue size=0
+2021-05-03 12:51:01.585 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 12:51:01.456 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com/192.168.88.136:6379
+2021-05-03 12:51:12.262 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 12:51:19.492 [INFO ] io.lettuce.core.protocol.ReconnectionHandler - Reconnected to yuechi.com:6379
+2021-05-03 12:51:23.670 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 12:51:25.587 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#42eaf47f:7/SimpleConnection@6ae6640b [delegate=amqp://guest@192.168.88.136:5672/, localPort= 50919]
+2021-05-03 16:20:48.555 [INFO ] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2021-05-03 16:20:48.802 [INFO ] com.dippy.SpringbootSecondcarApplication - Starting SpringbootSecondcarApplication on Dippy with PID 15292 (E:\workspace\IDEA\springboot\springboot-secondcar\target\classes started by Mindless in E:\workspace\IDEA\springboot\springboot-secondcar)
+2021-05-03 16:20:48.804 [INFO ] com.dippy.SpringbootSecondcarApplication - No active profile set, falling back to default profiles: default
+2021-05-03 16:20:48.948 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-03 16:20:48.949 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-03 16:20:56.577 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-05-03 16:20:56.583 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2021-05-03 16:20:56.936 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 288ms. Found 1 Elasticsearch repository interfaces.
+2021-05-03 16:20:56.954 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-05-03 16:20:56.955 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2021-05-03 16:20:56.991 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 36ms. Found 0 Reactive Elasticsearch repository interfaces.
+2021-05-03 16:20:57.026 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-05-03 16:20:57.029 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-05-03 16:20:57.123 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.dippy.es.repository.CarInfoRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021-05-03 16:20:57.123 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 76ms. Found 0 Redis repository interfaces.
+2021-05-03 16:20:58.353 [INFO ] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@315b4202' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-05-03 16:20:58.370 [INFO ] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-05-03 16:20:59.408 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2021-05-03 16:20:59.429 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2021-05-03 16:20:59.430 [INFO ] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-03 16:20:59.430 [INFO ] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2021-05-03 16:20:59.738 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-03 16:20:59.739 [INFO ] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 10790 ms
+2021-05-03 16:21:04.300 [INFO ] org.springframework.data.elasticsearch.support.VersionInfo - Version Spring Data Elasticsearch: 4.0.4.RELEASE
+2021-05-03 16:21:04.301 [INFO ] org.springframework.data.elasticsearch.support.VersionInfo - Version Elasticsearch Client in build: 7.6.2
+2021-05-03 16:21:04.301 [INFO ] org.springframework.data.elasticsearch.support.VersionInfo - Version Elasticsearch Client used: 7.10.1
+2021-05-03 16:21:04.302 [INFO ] org.springframework.data.elasticsearch.support.VersionInfo - Version Elasticsearch cluster: 7.10.1
+2021-05-03 16:21:04.624 [INFO ] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-05-03 16:21:05.724 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-03 16:21:05.982 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-03 16:21:07.595 [INFO ] org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/captcha.jpg'], []
+2021-05-03 16:21:07.667 [INFO ] org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2620d0dc, org.springframework.security.web.context.SecurityContextPersistenceFilter@6f8060ac, org.springframework.security.web.header.HeaderWriterFilter@72cbe3b6, org.springframework.web.filter.CorsFilter@27605b87, org.springframework.security.web.authentication.logout.LogoutFilter@35984172, com.dippy.filter.VerifyCodeFilter@17fa14a3, com.dippy.filter.TokenFilter@3c74d846, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@746fda68, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@308a2eb0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3776c917, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@72bd8702, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@18f90bd8, org.springframework.security.web.session.SessionManagementFilter@7aadb5e8, org.springframework.security.web.access.ExceptionTranslationFilter@6de6467a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@448861e5]
+2021-05-03 16:21:07.961 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2021-05-03 16:21:07.990 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2021-05-03 16:21:07.992 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-05-03 16:21:08.018 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-05-03 16:21:08.089 [INFO ] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-05-03 16:21:08.408 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_1
+2021-05-03 16:21:08.421 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: infoUsingPOST_1
+2021-05-03 16:21:08.461 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: saveUsingPOST_1
+2021-05-03 16:21:08.478 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPOST_1
+2021-05-03 16:21:08.499 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingGET_1
+2021-05-03 16:21:08.501 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingHEAD_1
+2021-05-03 16:21:08.503 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingPOST_1
+2021-05-03 16:21:08.506 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingPUT_1
+2021-05-03 16:21:08.508 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingPATCH_1
+2021-05-03 16:21:08.510 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_2
+2021-05-03 16:21:08.512 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingOPTIONS_1
+2021-05-03 16:21:08.515 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingTRACE_1
+2021-05-03 16:21:08.518 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: infoUsingGET_1
+2021-05-03 16:21:08.520 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: infoUsingHEAD_1
+2021-05-03 16:21:08.523 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: infoUsingPOST_2
+2021-05-03 16:21:08.526 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: infoUsingPUT_1
+2021-05-03 16:21:08.528 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: infoUsingPATCH_1
+2021-05-03 16:21:08.531 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: infoUsingDELETE_1
+2021-05-03 16:21:08.534 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: infoUsingOPTIONS_1
+2021-05-03 16:21:08.537 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: infoUsingTRACE_1
+2021-05-03 16:21:08.541 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_1
+2021-05-03 16:21:08.544 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingHEAD_1
+2021-05-03 16:21:08.546 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingPOST_1
+2021-05-03 16:21:08.548 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingPUT_1
+2021-05-03 16:21:08.550 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingPATCH_1
+2021-05-03 16:21:08.552 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingDELETE_1
+2021-05-03 16:21:08.555 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingOPTIONS_1
+2021-05-03 16:21:08.557 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingTRACE_1
+2021-05-03 16:21:08.565 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: saveUsingGET_1
+2021-05-03 16:21:08.567 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: saveUsingHEAD_1
+2021-05-03 16:21:08.570 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: saveUsingPOST_2
+2021-05-03 16:21:08.572 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: saveUsingPUT_1
+2021-05-03 16:21:08.574 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: saveUsingPATCH_1
+2021-05-03 16:21:08.576 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: saveUsingDELETE_1
+2021-05-03 16:21:08.578 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: saveUsingOPTIONS_1
+2021-05-03 16:21:08.580 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: saveUsingTRACE_1
+2021-05-03 16:21:08.583 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingGET_1
+2021-05-03 16:21:08.586 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingHEAD_1
+2021-05-03 16:21:08.587 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPOST_2
+2021-05-03 16:21:08.589 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_1
+2021-05-03 16:21:08.591 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPATCH_1
+2021-05-03 16:21:08.593 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingDELETE_1
+2021-05-03 16:21:08.595 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingOPTIONS_1
+2021-05-03 16:21:08.597 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingTRACE_1
+2021-05-03 16:21:08.601 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingGET_2
+2021-05-03 16:21:08.604 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingHEAD_2
+2021-05-03 16:21:08.606 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingPOST_2
+2021-05-03 16:21:08.608 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingPUT_2
+2021-05-03 16:21:08.610 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingPATCH_2
+2021-05-03 16:21:08.612 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_3
+2021-05-03 16:21:08.615 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingOPTIONS_2
+2021-05-03 16:21:08.623 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingTRACE_2
+2021-05-03 16:21:08.633 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: infoUsingGET_2
+2021-05-03 16:21:08.638 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: infoUsingHEAD_2
+2021-05-03 16:21:08.640 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: infoUsingPOST_3
+2021-05-03 16:21:08.642 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: infoUsingPUT_2
+2021-05-03 16:21:08.645 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: infoUsingPATCH_2
+2021-05-03 16:21:08.647 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: infoUsingDELETE_2
+2021-05-03 16:21:08.649 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: infoUsingOPTIONS_2
+2021-05-03 16:21:08.653 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: infoUsingTRACE_2
+2021-05-03 16:21:08.657 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_2
+2021-05-03 16:21:08.660 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingHEAD_2
+2021-05-03 16:21:08.662 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingPOST_2
+2021-05-03 16:21:08.664 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingPUT_2
+2021-05-03 16:21:08.667 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingPATCH_2
+2021-05-03 16:21:08.669 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingDELETE_2
+2021-05-03 16:21:08.672 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingOPTIONS_2
+2021-05-03 16:21:08.674 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingTRACE_2
+2021-05-03 16:21:08.679 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: saveUsingGET_2
+2021-05-03 16:21:08.682 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: saveUsingHEAD_2
+2021-05-03 16:21:08.684 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: saveUsingPOST_3
+2021-05-03 16:21:08.687 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: saveUsingPUT_2
+2021-05-03 16:21:08.689 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: saveUsingPATCH_2
+2021-05-03 16:21:08.692 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: saveUsingDELETE_2
+2021-05-03 16:21:08.694 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: saveUsingOPTIONS_2
+2021-05-03 16:21:08.696 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: saveUsingTRACE_2
+2021-05-03 16:21:08.701 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingGET_2
+2021-05-03 16:21:08.703 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingHEAD_2
+2021-05-03 16:21:08.705 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPOST_3
+2021-05-03 16:21:08.707 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_2
+2021-05-03 16:21:08.710 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPATCH_2
+2021-05-03 16:21:08.713 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingDELETE_2
+2021-05-03 16:21:08.715 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingOPTIONS_2
+2021-05-03 16:21:08.717 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingTRACE_2
+2021-05-03 16:21:08.728 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingPOST_3
+2021-05-03 16:21:08.737 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: infoUsingGET_3
+2021-05-03 16:21:08.746 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingPOST_3
+2021-05-03 16:21:08.754 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: saveUsingPOST_4
+2021-05-03 16:21:08.759 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPOST_4
+2021-05-03 16:21:08.789 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingPOST_4
+2021-05-03 16:21:08.792 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: infoUsingGET_4
+2021-05-03 16:21:08.796 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingPOST_4
+2021-05-03 16:21:08.803 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: saveUsingPOST_5
+2021-05-03 16:21:08.807 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPOST_5
+2021-05-03 16:21:08.840 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: initAddressUsingGET_1
+2021-05-03 16:21:08.843 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingGET_3
+2021-05-03 16:21:08.846 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingHEAD_3
+2021-05-03 16:21:08.848 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingPOST_5
+2021-05-03 16:21:08.851 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingPUT_3
+2021-05-03 16:21:08.853 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingPATCH_3
+2021-05-03 16:21:08.855 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_4
+2021-05-03 16:21:08.857 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingOPTIONS_3
+2021-05-03 16:21:08.860 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingTRACE_3
+2021-05-03 16:21:08.867 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: infoUsingGET_5
+2021-05-03 16:21:08.871 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: infoUsingHEAD_3
+2021-05-03 16:21:08.875 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: infoUsingPOST_4
+2021-05-03 16:21:08.878 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: infoUsingPUT_3
+2021-05-03 16:21:08.880 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: infoUsingPATCH_3
+2021-05-03 16:21:08.883 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: infoUsingDELETE_3
+2021-05-03 16:21:08.885 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: infoUsingOPTIONS_3
+2021-05-03 16:21:08.892 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: infoUsingTRACE_3
+2021-05-03 16:21:08.896 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_3
+2021-05-03 16:21:08.901 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingHEAD_3
+2021-05-03 16:21:08.904 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingPOST_5
+2021-05-03 16:21:08.906 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingPUT_3
+2021-05-03 16:21:08.909 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingPATCH_3
+2021-05-03 16:21:08.911 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingDELETE_3
+2021-05-03 16:21:08.915 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingOPTIONS_3
+2021-05-03 16:21:08.917 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingTRACE_3
+2021-05-03 16:21:08.924 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: saveUsingGET_3
+2021-05-03 16:21:08.927 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: saveUsingHEAD_3
+2021-05-03 16:21:08.932 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: saveUsingPOST_6
+2021-05-03 16:21:08.936 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: saveUsingPUT_3
+2021-05-03 16:21:08.939 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: saveUsingPATCH_3
+2021-05-03 16:21:08.942 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: saveUsingDELETE_3
+2021-05-03 16:21:08.944 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: saveUsingOPTIONS_3
+2021-05-03 16:21:08.946 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: saveUsingTRACE_3
+2021-05-03 16:21:08.950 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingGET_3
+2021-05-03 16:21:08.952 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingHEAD_3
+2021-05-03 16:21:08.954 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPOST_6
+2021-05-03 16:21:08.957 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_3
+2021-05-03 16:21:08.962 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPATCH_3
+2021-05-03 16:21:08.966 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingDELETE_3
+2021-05-03 16:21:08.967 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingOPTIONS_3
+2021-05-03 16:21:08.970 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingTRACE_3
+2021-05-03 16:21:08.977 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingGET_4
+2021-05-03 16:21:08.979 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingHEAD_4
+2021-05-03 16:21:08.981 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingPOST_6
+2021-05-03 16:21:08.983 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingPUT_4
+2021-05-03 16:21:08.985 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingPATCH_4
+2021-05-03 16:21:08.986 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_5
+2021-05-03 16:21:08.989 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingOPTIONS_4
+2021-05-03 16:21:08.991 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingTRACE_4
+2021-05-03 16:21:08.994 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: infoUsingGET_6
+2021-05-03 16:21:08.995 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: infoUsingHEAD_4
+2021-05-03 16:21:08.997 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: infoUsingPOST_5
+2021-05-03 16:21:09.000 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: infoUsingPUT_4
+2021-05-03 16:21:09.002 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: infoUsingPATCH_4
+2021-05-03 16:21:09.004 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: infoUsingDELETE_4
+2021-05-03 16:21:09.006 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: infoUsingOPTIONS_4
+2021-05-03 16:21:09.008 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: infoUsingTRACE_4
+2021-05-03 16:21:09.012 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_4
+2021-05-03 16:21:09.014 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingHEAD_4
+2021-05-03 16:21:09.016 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingPOST_6
+2021-05-03 16:21:09.018 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingPUT_4
+2021-05-03 16:21:09.029 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingPATCH_4
+2021-05-03 16:21:09.032 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingDELETE_4
+2021-05-03 16:21:09.035 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingOPTIONS_4
+2021-05-03 16:21:09.040 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingTRACE_4
+2021-05-03 16:21:09.052 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: saveUsingGET_4
+2021-05-03 16:21:09.055 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: saveUsingHEAD_4
+2021-05-03 16:21:09.057 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: saveUsingPOST_7
+2021-05-03 16:21:09.060 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: saveUsingPUT_4
+2021-05-03 16:21:09.063 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: saveUsingPATCH_4
+2021-05-03 16:21:09.094 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: saveUsingDELETE_4
+2021-05-03 16:21:09.099 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: saveUsingOPTIONS_4
+2021-05-03 16:21:09.104 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: saveUsingTRACE_4
+2021-05-03 16:21:09.109 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingGET_4
+2021-05-03 16:21:09.112 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingHEAD_4
+2021-05-03 16:21:09.115 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPOST_7
+2021-05-03 16:21:09.118 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_4
+2021-05-03 16:21:09.121 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPATCH_4
+2021-05-03 16:21:09.124 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingDELETE_4
+2021-05-03 16:21:09.128 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingOPTIONS_4
+2021-05-03 16:21:09.132 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingTRACE_4
+2021-05-03 16:21:09.142 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingGET_5
+2021-05-03 16:21:09.145 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingHEAD_5
+2021-05-03 16:21:09.147 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingPOST_7
+2021-05-03 16:21:09.151 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingPUT_5
+2021-05-03 16:21:09.153 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingPATCH_5
+2021-05-03 16:21:09.155 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_6
+2021-05-03 16:21:09.157 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingOPTIONS_5
+2021-05-03 16:21:09.161 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingTRACE_5
+2021-05-03 16:21:09.166 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: infoUsingGET_7
+2021-05-03 16:21:09.169 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: infoUsingHEAD_5
+2021-05-03 16:21:09.172 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: infoUsingPOST_6
+2021-05-03 16:21:09.175 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: infoUsingPUT_5
+2021-05-03 16:21:09.178 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: infoUsingPATCH_5
+2021-05-03 16:21:09.181 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: infoUsingDELETE_5
+2021-05-03 16:21:09.184 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: infoUsingOPTIONS_5
+2021-05-03 16:21:09.186 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: infoUsingTRACE_5
+2021-05-03 16:21:09.196 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_5
+2021-05-03 16:21:09.198 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingHEAD_5
+2021-05-03 16:21:09.203 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingPOST_7
+2021-05-03 16:21:09.206 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingPUT_5
+2021-05-03 16:21:09.209 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingPATCH_5
+2021-05-03 16:21:09.212 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingDELETE_5
+2021-05-03 16:21:09.214 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingOPTIONS_5
+2021-05-03 16:21:09.216 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingTRACE_5
+2021-05-03 16:21:09.221 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: saveUsingGET_5
+2021-05-03 16:21:09.223 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: saveUsingHEAD_5
+2021-05-03 16:21:09.225 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: saveUsingPOST_8
+2021-05-03 16:21:09.233 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: saveUsingPUT_5
+2021-05-03 16:21:09.237 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: saveUsingPATCH_5
+2021-05-03 16:21:09.242 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: saveUsingDELETE_5
+2021-05-03 16:21:09.245 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: saveUsingOPTIONS_5
+2021-05-03 16:21:09.247 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: saveUsingTRACE_5
+2021-05-03 16:21:09.255 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingGET_5
+2021-05-03 16:21:09.257 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingHEAD_5
+2021-05-03 16:21:09.260 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPOST_8
+2021-05-03 16:21:09.267 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_5
+2021-05-03 16:21:09.270 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPATCH_5
+2021-05-03 16:21:09.272 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingDELETE_5
+2021-05-03 16:21:09.276 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingOPTIONS_5
+2021-05-03 16:21:09.279 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingTRACE_5
+2021-05-03 16:21:09.287 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingGET_6
+2021-05-03 16:21:09.290 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingHEAD_6
+2021-05-03 16:21:09.293 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingPOST_8
+2021-05-03 16:21:09.296 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingPUT_6
+2021-05-03 16:21:09.299 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingPATCH_6
+2021-05-03 16:21:09.302 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_7
+2021-05-03 16:21:09.304 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingOPTIONS_6
+2021-05-03 16:21:09.307 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingTRACE_6
+2021-05-03 16:21:09.311 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: infoUsingGET_8
+2021-05-03 16:21:09.313 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: infoUsingHEAD_6
+2021-05-03 16:21:09.316 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: infoUsingPOST_7
+2021-05-03 16:21:09.320 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: infoUsingPUT_6
+2021-05-03 16:21:09.323 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: infoUsingPATCH_6
+2021-05-03 16:21:09.324 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: infoUsingDELETE_6
+2021-05-03 16:21:09.326 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: infoUsingOPTIONS_6
+2021-05-03 16:21:09.333 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: infoUsingTRACE_6
+2021-05-03 16:21:09.336 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_6
+2021-05-03 16:21:09.338 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingHEAD_6
+2021-05-03 16:21:09.340 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingPOST_8
+2021-05-03 16:21:09.345 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingPUT_6
+2021-05-03 16:21:09.348 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingPATCH_6
+2021-05-03 16:21:09.350 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingDELETE_6
+2021-05-03 16:21:09.355 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingOPTIONS_6
+2021-05-03 16:21:09.357 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingTRACE_6
+2021-05-03 16:21:09.369 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: saveUsingGET_6
+2021-05-03 16:21:09.372 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: saveUsingHEAD_6
+2021-05-03 16:21:09.375 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: saveUsingPOST_9
+2021-05-03 16:21:09.379 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: saveUsingPUT_6
+2021-05-03 16:21:09.384 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: saveUsingPATCH_6
+2021-05-03 16:21:09.386 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: saveUsingDELETE_6
+2021-05-03 16:21:09.394 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: saveUsingOPTIONS_6
+2021-05-03 16:21:09.397 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: saveUsingTRACE_6
+2021-05-03 16:21:09.401 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingGET_6
+2021-05-03 16:21:09.403 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingHEAD_6
+2021-05-03 16:21:09.405 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPOST_9
+2021-05-03 16:21:09.408 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_6
+2021-05-03 16:21:09.412 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPATCH_6
+2021-05-03 16:21:09.414 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingDELETE_6
+2021-05-03 16:21:09.420 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingOPTIONS_6
+2021-05-03 16:21:09.422 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingTRACE_6
+2021-05-03 16:21:09.427 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingPOST_9
+2021-05-03 16:21:09.433 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: infoUsingGET_9
+2021-05-03 16:21:09.438 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingPOST_9
+2021-05-03 16:21:09.450 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: saveUsingPOST_10
+2021-05-03 16:21:09.454 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPOST_10
+2021-05-03 16:21:09.493 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingGET_7
+2021-05-03 16:21:09.501 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingHEAD_7
+2021-05-03 16:21:09.504 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingPOST_10
+2021-05-03 16:21:09.540 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingPUT_7
+2021-05-03 16:21:09.544 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingPATCH_7
+2021-05-03 16:21:09.550 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_8
+2021-05-03 16:21:09.554 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingOPTIONS_7
+2021-05-03 16:21:09.558 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingTRACE_7
+2021-05-03 16:21:09.588 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: homeUsingPOST_1
+2021-05-03 16:21:09.594 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: infoUsingGET_10
+2021-05-03 16:21:09.601 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: infoUsingHEAD_7
+2021-05-03 16:21:09.605 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: infoUsingPOST_8
+2021-05-03 16:21:09.609 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: infoUsingPUT_7
+2021-05-03 16:21:09.614 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: infoUsingPATCH_7
+2021-05-03 16:21:09.623 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: infoUsingDELETE_7
+2021-05-03 16:21:09.627 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: infoUsingOPTIONS_7
+2021-05-03 16:21:09.634 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: infoUsingTRACE_7
+2021-05-03 16:21:09.643 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_7
+2021-05-03 16:21:09.647 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingHEAD_7
+2021-05-03 16:21:09.655 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingPOST_10
+2021-05-03 16:21:09.659 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingPUT_7
+2021-05-03 16:21:09.663 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingPATCH_7
+2021-05-03 16:21:09.669 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingDELETE_7
+2021-05-03 16:21:09.673 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingOPTIONS_7
+2021-05-03 16:21:09.677 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingTRACE_7
+2021-05-03 16:21:09.720 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: saveUsingGET_7
+2021-05-03 16:21:09.724 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: saveUsingHEAD_7
+2021-05-03 16:21:09.728 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: saveUsingPOST_11
+2021-05-03 16:21:09.734 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: saveUsingPUT_7
+2021-05-03 16:21:09.737 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: saveUsingPATCH_7
+2021-05-03 16:21:09.741 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: saveUsingDELETE_7
+2021-05-03 16:21:09.744 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: saveUsingOPTIONS_7
+2021-05-03 16:21:09.748 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: saveUsingTRACE_7
+2021-05-03 16:21:09.756 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPOST_11
+2021-05-03 16:21:09.793 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingGET_8
+2021-05-03 16:21:09.795 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingHEAD_8
+2021-05-03 16:21:09.797 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingPOST_11
+2021-05-03 16:21:09.799 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingPUT_8
+2021-05-03 16:21:09.801 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingPATCH_8
+2021-05-03 16:21:09.803 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_9
+2021-05-03 16:21:09.806 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingOPTIONS_8
+2021-05-03 16:21:09.808 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingTRACE_8
+2021-05-03 16:21:09.812 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: infoUsingGET_11
+2021-05-03 16:21:09.815 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: infoUsingHEAD_8
+2021-05-03 16:21:09.817 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: infoUsingPOST_9
+2021-05-03 16:21:09.819 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: infoUsingPUT_8
+2021-05-03 16:21:09.822 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: infoUsingPATCH_8
+2021-05-03 16:21:09.824 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: infoUsingDELETE_8
+2021-05-03 16:21:09.825 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: infoUsingOPTIONS_8
+2021-05-03 16:21:09.827 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: infoUsingTRACE_8
+2021-05-03 16:21:09.832 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_8
+2021-05-03 16:21:09.834 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingHEAD_8
+2021-05-03 16:21:09.836 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingPOST_11
+2021-05-03 16:21:09.838 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingPUT_8
+2021-05-03 16:21:09.840 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingPATCH_8
+2021-05-03 16:21:09.842 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingDELETE_8
+2021-05-03 16:21:09.844 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingOPTIONS_8
+2021-05-03 16:21:09.846 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingTRACE_8
+2021-05-03 16:21:09.852 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: saveUsingGET_8
+2021-05-03 16:21:09.860 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: saveUsingHEAD_8
+2021-05-03 16:21:09.862 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: saveUsingPOST_12
+2021-05-03 16:21:09.865 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: saveUsingPUT_8
+2021-05-03 16:21:09.871 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: saveUsingPATCH_8
+2021-05-03 16:21:09.873 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: saveUsingDELETE_8
+2021-05-03 16:21:09.875 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: saveUsingOPTIONS_8
+2021-05-03 16:21:09.877 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: saveUsingTRACE_8
+2021-05-03 16:21:09.884 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingGET_7
+2021-05-03 16:21:09.886 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingHEAD_7
+2021-05-03 16:21:09.888 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPOST_12
+2021-05-03 16:21:09.891 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_7
+2021-05-03 16:21:09.898 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPATCH_7
+2021-05-03 16:21:09.901 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingDELETE_7
+2021-05-03 16:21:09.907 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingOPTIONS_7
+2021-05-03 16:21:09.910 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingTRACE_7
+2021-05-03 16:21:09.916 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: aboutUsingPOST_1
+2021-05-03 16:21:09.952 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 16:21:10.035 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#3652dd19:0/SimpleConnection@30f0c5e [delegate=amqp://guest@192.168.88.136:5672/, localPort= 50710]
+2021-05-03 16:21:10.217 [INFO ] com.dippy.SpringbootSecondcarApplication - Started SpringbootSecondcarApplication in 26.439 seconds (JVM running for 38.541)
+2021-05-03 16:24:33.429 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-03 16:24:36.774 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-05-03 16:24:37.516 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-05-03 16:42:36.977 [INFO ] io.lettuce.core.protocol.CommandHandler - null Unexpected exception during request: java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1133)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2021-05-03 16:42:37.226 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com/192.168.88.136:6379
+2021-05-03 16:42:37.287 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@31a45131: tags=[[amq.ctag-ssx0-S0TTx9WQGyamR7Lcw]], channel=Cached Rabbit Channel: AMQChannel(amqp://guest@192.168.88.136:5672/,1), conn: Proxy@4a31924e Shared Rabbit Connection: SimpleConnection@30f0c5e [delegate=amqp://guest@192.168.88.136:5672/, localPort= 50710], acknowledgeMode=AUTO local queue size=0
+2021-05-03 16:42:37.329 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:15:20.108 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 17:15:30.684 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 17:15:35.742 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:15:40.785 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 17:15:50.888 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 17:16:00.985 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 17:16:01.777 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@4b1736c8: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 17:16:01.778 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:16:11.089 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 17:16:21.284 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 17:16:22.786 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:16:31.586 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 17:16:42.184 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 17:16:48.853 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@d1eaaaa: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 17:16:48.854 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:16:53.285 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 17:17:05.385 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 17:17:09.866 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:17:19.585 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 17:17:35.931 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@7e780fc1: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 17:17:35.931 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:17:37.784 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 17:17:56.944 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:18:04.184 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 17:18:22.998 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@7c2fa24: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 17:18:22.999 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:18:44.013 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:18:44.284 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 17:19:10.036 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@7cd3e62c: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 17:19:10.037 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:19:24.385 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 17:19:31.060 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:19:57.096 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@31afb08b: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 17:19:57.097 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:20:04.485 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 17:20:18.108 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:20:44.167 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@45e73639: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 17:20:44.169 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:20:44.584 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 17:21:05.183 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:21:24.685 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 17:21:31.237 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@4c1d9c35: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 17:21:31.238 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:21:52.245 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:22:04.786 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 17:22:18.294 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@6f37eba1: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 17:22:18.295 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:22:39.304 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:22:44.885 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 17:23:05.357 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@6359a351: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 17:23:05.358 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:23:24.986 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 17:23:26.372 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:23:52.393 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@9993ee0: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 17:23:52.394 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:24:05.085 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 17:24:13.403 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:24:39.462 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@21b75db1: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 17:24:39.463 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:24:45.185 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 17:25:00.474 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:25:25.284 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 17:25:26.519 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@175668f6: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 17:25:26.521 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:25:47.529 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:26:05.384 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 17:26:13.589 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@2b0caaf6: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 17:26:13.590 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:26:34.601 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:26:45.485 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 17:27:00.651 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@23a30fa4: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 17:27:00.652 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:27:21.666 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:27:25.585 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 17:27:47.729 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@34f4ea2a: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 17:27:47.729 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:28:05.687 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 17:28:08.734 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:28:34.786 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@79404ef8: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 17:28:34.788 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:28:45.787 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 17:28:55.801 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:29:21.854 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@6b938041: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 17:29:21.855 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:29:25.885 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 17:29:42.863 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:30:05.985 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 17:30:08.910 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@2bfa7926: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 17:30:08.910 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:30:29.929 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:30:46.087 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 17:30:55.951 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@3c4096b4: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 17:30:55.952 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:31:16.957 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:31:26.185 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 17:31:43.001 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@92d233f: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 17:31:43.002 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:32:04.010 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:32:06.285 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 17:32:30.072 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@4afbeabc: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 17:32:30.073 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:32:46.384 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 17:32:51.080 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:33:17.137 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@12f7676d: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 17:33:17.138 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:33:26.486 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 17:33:38.165 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:34:04.214 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@6c77b4d8: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 17:34:04.216 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:34:06.585 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 17:34:25.231 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:34:46.685 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 17:34:51.293 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@741858eb: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 17:34:51.293 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:35:12.302 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:35:26.785 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 17:35:38.361 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@adbbf27: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 17:35:38.362 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:35:59.378 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:36:06.886 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 17:36:25.417 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@4e4d1b32: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 17:36:25.418 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:36:46.429 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:36:46.987 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 17:37:12.481 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@37eb1c3c: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 17:37:12.482 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:37:27.086 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 17:37:33.491 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:37:59.515 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@7ad58ce7: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 17:37:59.516 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:38:07.186 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 17:38:20.527 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:38:46.582 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@66f5da7e: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 17:38:46.583 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:38:47.286 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 17:39:07.592 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:39:27.385 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 17:39:33.641 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@2857e56f: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 17:39:33.642 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:39:54.651 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:40:07.485 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 17:40:20.704 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@47948b93: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 17:40:20.705 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:40:41.729 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:40:47.585 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 17:41:07.775 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@4e58792b: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 17:41:07.776 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:41:27.685 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 17:41:28.789 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:41:54.835 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@3d4ab050: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 17:41:54.836 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:42:07.785 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 17:42:15.841 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:42:41.886 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@71812fb7: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 17:42:41.887 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:42:47.884 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 17:43:02.898 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:43:27.984 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 17:43:28.964 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@46c52704: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 17:43:28.965 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:43:49.975 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:44:08.088 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 17:44:16.016 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@3d8cfa54: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 17:44:16.017 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:44:37.029 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:44:48.185 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 17:45:03.049 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@1358253c: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 17:45:03.050 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:45:24.055 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:45:28.285 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 17:45:50.097 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@712dd84f: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 17:45:50.098 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:46:08.387 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 17:46:11.100 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:46:37.156 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@3b04a5b4: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 17:46:37.157 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:46:48.484 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 17:46:58.163 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:47:24.215 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@5b2bc187: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 17:47:24.217 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:47:28.584 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 17:47:45.230 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:48:08.685 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 17:48:11.280 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@37cf10e: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 17:48:11.281 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:48:32.297 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:48:48.784 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 17:48:58.328 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@367f75dd: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 17:48:58.329 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:49:19.337 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:49:28.885 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 17:49:45.393 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@574491ee: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 17:49:45.394 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:50:06.417 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:50:08.984 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 17:50:32.480 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@6732a823: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 17:50:32.481 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:50:49.084 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 17:50:53.491 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:51:19.558 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@23f07e8a: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 17:51:19.559 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:51:29.187 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 17:51:40.570 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:52:06.600 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@69dd4311: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 17:52:06.601 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:52:09.285 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 17:52:27.610 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:52:49.384 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 17:52:53.671 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@15c8b1e0: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 17:52:53.703 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:53:14.713 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:53:29.488 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 17:53:40.758 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@2e01d618: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 17:53:40.759 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:54:01.765 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:54:09.585 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 17:54:27.809 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@329bcc3b: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 17:54:27.810 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:54:48.822 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:54:49.685 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 17:55:14.869 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@7ebecf3c: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 17:55:14.870 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:55:29.785 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 17:55:35.885 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:56:01.907 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@7d4dcafa: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 17:56:01.908 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:56:09.885 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 17:56:22.926 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:56:48.981 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@4a066996: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 17:56:48.982 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:56:49.985 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 17:57:09.995 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:57:30.085 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 17:57:36.059 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@4f519ccf: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 17:57:36.060 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:57:57.070 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:58:10.185 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 17:58:23.121 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@7ebdf80d: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 17:58:23.123 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:58:44.133 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:58:50.284 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 17:59:10.177 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@43123655: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 17:59:10.178 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:59:30.385 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 17:59:31.188 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 17:59:57.241 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@5abd910: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 17:59:57.242 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:00:10.484 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 18:00:18.246 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:00:44.299 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@6ceb8dbd: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 18:00:44.300 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:00:50.585 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 18:01:05.308 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:01:30.685 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 18:01:31.327 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@27a8d009: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 18:01:31.327 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:01:52.337 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:02:10.784 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 18:02:18.384 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@e52142d: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 18:02:18.384 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:02:39.397 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:02:50.886 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 18:03:05.418 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@cc5d7c: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 18:03:05.419 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:03:26.430 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:03:30.988 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 18:03:52.487 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@689ef9aa: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 18:03:52.489 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:04:11.084 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 18:04:13.503 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:04:39.562 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@7a24ae78: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 18:04:39.563 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:04:51.184 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 18:05:00.575 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:05:26.620 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@586e6c11: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 18:05:26.621 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:05:31.285 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 18:05:47.634 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:06:11.385 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 18:06:13.668 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@4ed45054: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 18:06:13.669 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:06:34.677 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:06:51.484 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 18:07:00.746 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@77d99fce: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 18:07:00.747 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:07:21.767 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:07:31.584 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 18:07:47.819 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@6dbdb6c8: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 18:07:47.820 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:08:08.829 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:08:11.685 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 18:08:34.892 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@526740b1: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 18:08:34.893 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:08:51.785 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 18:08:55.903 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:09:21.959 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@1df48527: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 18:09:21.961 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:09:31.884 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 18:09:42.975 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:10:08.993 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@1dbf1563: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 18:10:08.994 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:10:11.985 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 18:10:30.002 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:10:52.084 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 18:10:56.060 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@62b367da: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 18:10:56.061 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:11:17.072 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:11:32.184 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 18:11:43.155 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@62702eaf: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 18:11:43.187 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:12:04.195 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:12:12.285 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 18:12:30.241 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@7b149c46: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 18:12:30.241 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:12:51.252 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:12:52.386 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 18:13:17.287 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@5767d0b: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 18:13:17.288 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:13:32.486 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 18:13:38.301 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:14:04.354 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@b894d08: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 18:14:04.355 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:14:12.584 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 18:14:25.360 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:14:51.415 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@6b989ab4: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 18:14:51.416 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:14:52.685 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 18:15:12.428 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:15:32.785 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 18:15:38.481 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@5cfdce42: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 18:15:38.482 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:15:59.492 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:16:12.885 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 18:16:25.546 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@465900dc: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 18:16:25.547 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:16:46.559 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:16:52.984 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 18:17:12.580 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@11d871d3: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 18:17:12.581 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:17:33.085 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 18:17:33.592 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:17:59.641 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@2028cde6: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 18:17:59.642 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:18:13.186 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 18:18:20.650 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:18:46.691 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@669377cb: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 18:18:46.692 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:18:53.285 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 18:19:07.715 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:19:33.384 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 18:19:33.779 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@1c154739: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 18:19:33.780 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:19:54.794 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:20:13.485 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 18:20:20.819 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@4ae613fc: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 18:20:20.820 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:20:41.843 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:20:53.584 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 18:21:07.889 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@59bd5a69: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 18:21:07.890 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:21:28.898 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:21:33.684 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 18:21:54.955 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@5074e5e2: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 18:21:54.956 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:22:13.785 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 18:22:15.976 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:22:42.046 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@697dcd74: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 18:22:42.047 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:22:53.884 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 18:23:03.055 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:23:29.110 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@1c48b3bf: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 18:23:29.111 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:23:33.985 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 18:23:50.120 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:24:14.085 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 18:24:16.156 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@6fa297e0: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 18:24:16.157 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:24:37.166 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:24:54.185 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 18:25:03.227 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@130290b: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 18:25:03.228 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:25:24.238 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:25:34.285 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 18:25:50.299 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@4300124: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 18:25:50.300 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:26:11.312 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:26:14.385 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 18:26:37.371 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@4dcf64b6: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 18:26:37.372 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:26:54.487 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 18:26:58.384 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:27:24.436 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@23dbde58: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 18:27:24.437 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:27:34.589 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 18:27:45.448 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:28:11.523 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@48f83bf5: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 18:28:11.524 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:28:14.685 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 18:28:32.532 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:28:54.785 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 18:28:58.581 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@27cf861a: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 18:28:58.582 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:29:19.589 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:29:34.884 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 18:29:45.645 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@69ff311b: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 18:29:45.680 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:30:06.690 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:30:14.985 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 18:30:32.758 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@44810d89: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 18:30:32.759 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:30:53.772 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:30:55.084 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 18:31:19.793 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@41b32cce: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 18:31:19.794 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:31:35.185 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 18:31:40.807 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:32:06.864 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@b2a821f: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 18:32:06.865 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:32:15.286 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 18:32:27.873 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:32:53.934 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@1da5fd95: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 18:32:53.935 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:32:55.384 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 18:33:14.942 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:33:35.486 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 18:33:41.002 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@3d915cb0: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 18:33:41.002 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:34:02.016 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:34:15.584 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 18:34:28.089 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@13149e86: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 18:34:28.090 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:34:49.101 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:34:55.685 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 18:35:15.141 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@533aa366: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 18:35:15.142 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:35:35.784 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 18:35:36.158 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:36:02.211 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@12092764: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 18:36:02.212 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:36:15.885 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 18:36:23.215 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:36:49.270 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@43a226b8: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 18:36:49.271 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:36:55.985 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 18:37:10.281 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:37:36.084 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 18:37:36.343 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@7e49afee: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 18:37:36.344 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:37:57.355 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:38:16.185 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 18:38:23.381 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@56de665f: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 18:38:23.382 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:38:44.390 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:38:56.284 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 18:39:10.434 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@7c2347ab: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 18:39:10.435 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:39:31.444 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:39:36.384 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 18:39:57.493 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@7f7a5cfa: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 18:39:57.494 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:40:16.484 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 18:40:18.502 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:40:44.566 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@60d7820e: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 18:40:44.567 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 18:40:56.586 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 18:41:05.580 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 21:02:27.739 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@29ef9e38: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 21:02:27.881 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 21:02:28.328 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 21:02:30.461 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 21:02:56.744 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@4e967d3c: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 21:02:56.745 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 21:03:00.477 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 21:03:17.753 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 21:03:40.576 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 21:03:43.802 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@640e4f66: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 21:03:43.803 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 21:04:04.827 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 21:04:20.676 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 21:04:30.883 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@169989f7: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 21:04:30.884 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 21:04:51.901 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 21:05:00.776 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 21:05:17.981 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@4207217e: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 21:05:18.001 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 21:05:39.020 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 21:05:40.877 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 21:06:05.071 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@525049d4: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 21:06:05.072 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 21:06:20.976 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 21:06:26.083 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 21:06:52.172 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@c056652: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 21:06:52.173 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 21:07:01.075 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 21:07:13.184 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 21:07:39.237 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@66e296d: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 21:07:39.238 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 21:07:41.177 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 21:08:00.250 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 21:08:21.278 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 21:08:26.366 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@101cf40: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 21:08:26.400 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 21:08:47.410 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 21:09:01.376 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 21:09:13.533 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@d1c58c: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 21:09:13.535 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 21:09:34.543 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 21:09:41.476 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 21:10:00.587 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@23b72426: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 21:10:00.588 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 21:10:21.576 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 21:10:21.607 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 21:10:47.646 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@2f628385: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 21:10:47.647 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 21:11:01.676 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 21:11:08.656 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 21:11:34.700 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@5b6e7fe4: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 21:11:34.701 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 21:11:41.777 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 21:11:55.724 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 21:12:21.814 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@14ddf3b2: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 21:12:21.815 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 21:12:21.877 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 21:12:42.818 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 21:13:01.977 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 21:13:08.984 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@65924250: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 21:13:08.989 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 21:13:30.001 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 21:13:42.076 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-03 21:13:42.084 [INFO ] io.lettuce.core.protocol.ReconnectionHandler - Reconnected to yuechi.com:6379
+2021-05-03 21:13:56.026 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@5b9e05d7: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-03 21:13:56.027 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-03 21:13:56.038 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#3652dd19:251/SimpleConnection@31ea77aa [delegate=amqp://guest@192.168.88.137:5672/, localPort= 58694]
+2021-05-03 23:29:37.351 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2021-05-03 23:29:37.377 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24ms. Found 0 Elasticsearch repository interfaces.
+2021-05-03 23:29:37.377 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2021-05-03 23:29:37.400 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22ms. Found 0 Reactive Elasticsearch repository interfaces.
+2021-05-03 23:29:37.404 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-05-03 23:29:37.424 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19ms. Found 0 Redis repository interfaces.
+2021-05-03 23:29:37.804 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-03 23:29:43.429 [INFO ] com.dippy.service.impl.TokenServiceJWTImpl - delete jwtToken:eyJhbGciOiJIUzI1NiJ9.eyJMT0dJTl9VU0VSX0tFWSI6IjhhOGVhOGVlLTk3NjEtNGVlZi04NWZjLWQzMTA5NjZlZjFjNiJ9.sPWB6kNol1CqIRw6YqhJRboGuCsxl4glTI-b6k9gK_g
+2021-05-03 23:29:43.433 [INFO ] com.dippy.service.impl.TokenServiceJWTImpl - delete uuid:8a8ea8ee-9761-4eef-85fc-d310966ef1c6
+2021-05-03 23:29:43.434 [INFO ] com.dippy.service.impl.TokenServiceJWTImpl - delete key:tokens:8a8ea8ee-9761-4eef-85fc-d310966ef1c6
+2021-05-03 23:29:44.017 [INFO ] com.dippy.es.service.impl.SearchServiceImpl - 构建的DSL语句为：{"from":0,"size":10,"query":{"bool":{"filter":[{"range":{"carPrice":{"from":0.0,"to":null,"include_lower":true,"include_upper":true,"boost":1.0}}}],"adjust_pure_negative":true,"boost":1.0}}}
+2021-05-03 23:29:44.207 [INFO ] com.dippy.es.service.impl.SearchServiceImpl - 构建的聚合DSL语句为：{"from":0,"size":10,"query":{"bool":{"filter":[{"range":{"carPrice":{"from":0.0,"to":null,"include_lower":true,"include_upper":true,"boost":1.0}}}],"adjust_pure_negative":true,"boost":1.0}},"aggregations":{"car_brand_agg":{"terms":{"field":"carBrand.keyword","size":50,"min_doc_count":1,"shard_min_doc_count":0,"show_term_doc_count_error":false,"order":[{"_count":"desc"},{"_key":"asc"}]},"aggregations":{"car_brand_id":{"terms":{"field":"carId","size":1,"min_doc_count":1,"shard_min_doc_count":0,"show_term_doc_count_error":false,"order":[{"_count":"desc"},{"_key":"asc"}]}}}},"car_series":{"terms":{"field":"carSeries.keyword","size":50,"min_doc_count":1,"shard_min_doc_count":0,"show_term_doc_count_error":false,"order":[{"_count":"desc"},{"_key":"asc"}]}},"car_user_time":{"terms":{"field":"carUserTime","size":10,"min_doc_count":1,"shard_min_doc_count":0,"show_term_doc_count_error":false,"order":[{"_count":"desc"},{"_key":"asc"}]}},"car_type":{"terms":{"field":"carType.keyword","size":10,"min_doc_count":1,"shard_min_doc_count":0,"show_term_doc_count_error":false,"order":[{"_count":"desc"},{"_key":"asc"}]}},"transfer_count":{"terms":{"field":"transferCount","size":10,"min_doc_count":1,"shard_min_doc_count":0,"show_term_doc_count_error":false,"order":[{"_count":"desc"},{"_key":"asc"}]}},"car_car_mileage":{"terms":{"field":"carCarMileage","size":10,"min_doc_count":1,"shard_min_doc_count":0,"show_term_doc_count_error":false,"order":[{"_count":"desc"},{"_key":"asc"}]}},"car_gear_box":{"terms":{"field":"carGearBox.keyword","size":5,"min_doc_count":1,"shard_min_doc_count":0,"show_term_doc_count_error":false,"order":[{"_count":"desc"},{"_key":"asc"}]}},"car_seat":{"terms":{"field":"carSeat","size":5,"min_doc_count":1,"shard_min_doc_count":0,"show_term_doc_count_error":false,"order":[{"_count":"desc"},{"_key":"asc"}]}},"car_fuel_type":{"terms":{"field":"carFuelType.keyword","size":5,"min_doc_count":1,"shard_min_doc_count":0,"show_term_doc_count_error":false,"order":[{"_count":"desc"},{"_key":"asc"}]}},"car_price":{"terms":{"field":"carPrice","size":10,"min_doc_count":1,"shard_min_doc_count":0,"show_term_doc_count_error":false,"order":[{"_count":"desc"},{"_key":"asc"}]}},"car_color":{"terms":{"field":"carColor.keyword","size":10,"min_doc_count":1,"shard_min_doc_count":0,"show_term_doc_count_error":false,"order":[{"_count":"desc"},{"_key":"asc"}]}}}}
+2021-05-03 23:29:56.929 [INFO ] com.dippy.controller.KaptchaController - 生成的getCaptcha: dn7yw
+2021-05-03 23:30:05.946 [INFO ] com.dippy.service.impl.UserDetailServiceImpl - 执行UserDetailServiceImpl自定义登录逻辑---admin--用户名
+2021-05-03 23:30:06.137 [INFO ] com.dippy.common.SecurityHandlerConfig - 执行了SecurityHandlerConfig登录成功处理器------
+2021-05-03 23:30:06.205 [INFO ] com.dippy.service.impl.TokenServiceJWTImpl - 生成的jwttoken为：eyJhbGciOiJIUzI1NiJ9.eyJMT0dJTl9VU0VSX0tFWSI6ImI0ODlhZTJiLWIzOTMtNGNkNS1iYmI1LWJlNGU2MDgyMGIxMiJ9.tzfiLu8-auHlpHunUOFQI2ChhN_A-hnSH5REnpsbBlA
+2021-05-03 23:30:06.212 [INFO ] com.dippy.controller.SysUserController - 登录成功页面
+2021-05-03 23:30:06.795 [INFO ] com.dippy.es.service.impl.SearchServiceImpl - 构建的DSL语句为：{"from":0,"size":10,"query":{"bool":{"filter":[{"range":{"carPrice":{"from":0.0,"to":null,"include_lower":true,"include_upper":true,"boost":1.0}}}],"adjust_pure_negative":true,"boost":1.0}}}
+2021-05-03 23:30:06.797 [INFO ] com.dippy.es.service.impl.SearchServiceImpl - 构建的聚合DSL语句为：{"from":0,"size":10,"query":{"bool":{"filter":[{"range":{"carPrice":{"from":0.0,"to":null,"include_lower":true,"include_upper":true,"boost":1.0}}}],"adjust_pure_negative":true,"boost":1.0}},"aggregations":{"car_brand_agg":{"terms":{"field":"carBrand.keyword","size":50,"min_doc_count":1,"shard_min_doc_count":0,"show_term_doc_count_error":false,"order":[{"_count":"desc"},{"_key":"asc"}]},"aggregations":{"car_brand_id":{"terms":{"field":"carId","size":1,"min_doc_count":1,"shard_min_doc_count":0,"show_term_doc_count_error":false,"order":[{"_count":"desc"},{"_key":"asc"}]}}}},"car_series":{"terms":{"field":"carSeries.keyword","size":50,"min_doc_count":1,"shard_min_doc_count":0,"show_term_doc_count_error":false,"order":[{"_count":"desc"},{"_key":"asc"}]}},"car_user_time":{"terms":{"field":"carUserTime","size":10,"min_doc_count":1,"shard_min_doc_count":0,"show_term_doc_count_error":false,"order":[{"_count":"desc"},{"_key":"asc"}]}},"car_type":{"terms":{"field":"carType.keyword","size":10,"min_doc_count":1,"shard_min_doc_count":0,"show_term_doc_count_error":false,"order":[{"_count":"desc"},{"_key":"asc"}]}},"transfer_count":{"terms":{"field":"transferCount","size":10,"min_doc_count":1,"shard_min_doc_count":0,"show_term_doc_count_error":false,"order":[{"_count":"desc"},{"_key":"asc"}]}},"car_car_mileage":{"terms":{"field":"carCarMileage","size":10,"min_doc_count":1,"shard_min_doc_count":0,"show_term_doc_count_error":false,"order":[{"_count":"desc"},{"_key":"asc"}]}},"car_gear_box":{"terms":{"field":"carGearBox.keyword","size":5,"min_doc_count":1,"shard_min_doc_count":0,"show_term_doc_count_error":false,"order":[{"_count":"desc"},{"_key":"asc"}]}},"car_seat":{"terms":{"field":"carSeat","size":5,"min_doc_count":1,"shard_min_doc_count":0,"show_term_doc_count_error":false,"order":[{"_count":"desc"},{"_key":"asc"}]}},"car_fuel_type":{"terms":{"field":"carFuelType.keyword","size":5,"min_doc_count":1,"shard_min_doc_count":0,"show_term_doc_count_error":false,"order":[{"_count":"desc"},{"_key":"asc"}]}},"car_price":{"terms":{"field":"carPrice","size":10,"min_doc_count":1,"shard_min_doc_count":0,"show_term_doc_count_error":false,"order":[{"_count":"desc"},{"_key":"asc"}]}},"car_color":{"terms":{"field":"carColor.keyword","size":10,"min_doc_count":1,"shard_min_doc_count":0,"show_term_doc_count_error":false,"order":[{"_count":"desc"},{"_key":"asc"}]}}}}
+2021-05-03 23:30:23.030 [INFO ] com.dippy.es.service.impl.SearchServiceImpl - 构建的DSL语句为：{"from":0,"size":10,"query":{"bool":{"filter":[{"range":{"carPrice":{"from":0.0,"to":null,"include_lower":true,"include_upper":true,"boost":1.0}}}],"adjust_pure_negative":true,"boost":1.0}}}
+2021-05-03 23:30:23.031 [INFO ] com.dippy.es.service.impl.SearchServiceImpl - 构建的聚合DSL语句为：{"from":0,"size":10,"query":{"bool":{"filter":[{"range":{"carPrice":{"from":0.0,"to":null,"include_lower":true,"include_upper":true,"boost":1.0}}}],"adjust_pure_negative":true,"boost":1.0}},"aggregations":{"car_brand_agg":{"terms":{"field":"carBrand.keyword","size":50,"min_doc_count":1,"shard_min_doc_count":0,"show_term_doc_count_error":false,"order":[{"_count":"desc"},{"_key":"asc"}]},"aggregations":{"car_brand_id":{"terms":{"field":"carId","size":1,"min_doc_count":1,"shard_min_doc_count":0,"show_term_doc_count_error":false,"order":[{"_count":"desc"},{"_key":"asc"}]}}}},"car_series":{"terms":{"field":"carSeries.keyword","size":50,"min_doc_count":1,"shard_min_doc_count":0,"show_term_doc_count_error":false,"order":[{"_count":"desc"},{"_key":"asc"}]}},"car_user_time":{"terms":{"field":"carUserTime","size":10,"min_doc_count":1,"shard_min_doc_count":0,"show_term_doc_count_error":false,"order":[{"_count":"desc"},{"_key":"asc"}]}},"car_type":{"terms":{"field":"carType.keyword","size":10,"min_doc_count":1,"shard_min_doc_count":0,"show_term_doc_count_error":false,"order":[{"_count":"desc"},{"_key":"asc"}]}},"transfer_count":{"terms":{"field":"transferCount","size":10,"min_doc_count":1,"shard_min_doc_count":0,"show_term_doc_count_error":false,"order":[{"_count":"desc"},{"_key":"asc"}]}},"car_car_mileage":{"terms":{"field":"carCarMileage","size":10,"min_doc_count":1,"shard_min_doc_count":0,"show_term_doc_count_error":false,"order":[{"_count":"desc"},{"_key":"asc"}]}},"car_gear_box":{"terms":{"field":"carGearBox.keyword","size":5,"min_doc_count":1,"shard_min_doc_count":0,"show_term_doc_count_error":false,"order":[{"_count":"desc"},{"_key":"asc"}]}},"car_seat":{"terms":{"field":"carSeat","size":5,"min_doc_count":1,"shard_min_doc_count":0,"show_term_doc_count_error":false,"order":[{"_count":"desc"},{"_key":"asc"}]}},"car_fuel_type":{"terms":{"field":"carFuelType.keyword","size":5,"min_doc_count":1,"shard_min_doc_count":0,"show_term_doc_count_error":false,"order":[{"_count":"desc"},{"_key":"asc"}]}},"car_price":{"terms":{"field":"carPrice","size":10,"min_doc_count":1,"shard_min_doc_count":0,"show_term_doc_count_error":false,"order":[{"_count":"desc"},{"_key":"asc"}]}},"car_color":{"terms":{"field":"carColor.keyword","size":10,"min_doc_count":1,"shard_min_doc_count":0,"show_term_doc_count_error":false,"order":[{"_count":"desc"},{"_key":"asc"}]}}}}
+2021-05-03 23:40:24.892 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Waiting for workers to finish.
+2021-05-03 23:40:25.153 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Successfully waited for workers to finish.
+2021-05-03 23:40:26.220 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Shutdown ignored - container is not active already
+2021-05-03 23:40:26.221 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-03 23:40:26.283 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2021-05-03 23:40:26.290 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

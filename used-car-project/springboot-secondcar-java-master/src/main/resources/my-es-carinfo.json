@@ -1,0 +1,38 @@
+{
+  "_index" : "car-info",
+  "_type" : "_doc",
+  "_id" : "1",
+  "_score" : 1.0,
+  "_source" : {
+    "_class" : "com.dippy.es.model.CarInfoModel",
+    "carId" : 1,
+    "carBrand" : "宝马",
+    "carSeries" : "5系",
+    "carType" : "SUV",
+    "carPrice" : 21000.0,
+    "carCount" : 1,
+    "carUserTime" : 1,
+    "transferCount" : 0,
+    "carCarMileage" : 12,
+    "carColor" : "白",
+    "carPictureId" : 3,
+    "carGearBox" : "自动",
+    "carDisplacement" : 2.0,
+    "produceTime" : "2021-01-13",
+    "carConfiguration" : "天窗、真皮坐垫",
+    "carSeat" : 4,
+    "carFuelType" : "机油",
+    "carQualityTime" : 1,
+    "carRegionId" : 1,
+    "createTime" : "2021-02-02T02:11:17",
+    "updateTime" : "2021-02-08T02:11:20",
+    "carPictures" : [
+      {
+        "carPictureId" : 3,
+        "carUrl" : "fttf.com",
+        "carPictureLocation" : 3,
+        "carId" : 1
+      }
+    ]
+  }
+}

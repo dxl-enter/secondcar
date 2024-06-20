@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dippy.mapper.CarInfoMapper">
+    <resultMap type="com.dippy.entity.CarInfo" id="CarInfoMap">
+        <id property="carId" column="car_id" jdbcType="INTEGER"/>
+        <result property="carBrand" column="car_brand" jdbcType="VARCHAR"/>
+        <result property="carSeries" column="car_series" jdbcType="VARCHAR"/>
+        <result property="carType" column="car_type" jdbcType="VARCHAR"/>
+        <result property="carPrice" column="car_price" jdbcType="DOUBLE"/>
+        <result property="carCount" column="car_count" jdbcType="INTEGER"/>
+        <result property="carUserTime" column="car_user_time" jdbcType="INTEGER"/>
+        <result property="transferCount" column="transfer_count" jdbcType="INTEGER"/>
+        <result property="carCarMileage" column="car_car_mileage" jdbcType="INTEGER"/>
+        <result property="carColor" column="car_color" jdbcType="VARCHAR"/>
+        <result property="carPictureId" column="car_picture_id" jdbcType="INTEGER"/>
+        <result property="carGearBox" column="car_gear_box" jdbcType="VARCHAR"/>
+        <result property="carDisplacement" column="car_displacement" jdbcType="VARCHAR"/>
+        <result property="produceTime" column="produce_time" jdbcType="VARCHAR"/>
+        <result property="carConfiguration" column="car_configuration" jdbcType="VARCHAR"/>
+        <result property="carSeat" column="car_seat" jdbcType="INTEGER"/>
+        <result property="carFuelType" column="car_fuel_type" jdbcType="VARCHAR"/>
+        <result property="carQualityTime" column="car_quality_time" jdbcType="INTEGER"/>
+        <result property="carRegionId" column="car_region_id" jdbcType="INTEGER"/>
+        <result property="carFrontTyre" column="car_front_tyre" jdbcType="VARCHAR"/>
+        <result property="rearTyre" column="rear_tyre" jdbcType="VARCHAR"/>
+        <result property="carDescribe" column="car_describe" jdbcType="VARCHAR"/>
+        <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+        <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+        <result property="carStatus" column="car_status" jdbcType="VARCHAR"/>
+        <result property="carTitle" column="car_title" jdbcType="VARCHAR"/>
+        <result property="userId" column="user_id" jdbcType="INTEGER"/>
+        <result property="carPicture" column="car_picture" jdbcType="VARCHAR"/>
+
+
+        <collection property="carPictures" ofType="CarPicture">
+            <id property="carPictureId" column="car_picture_id" jdbcType="INTEGER"/>
+            <result property="carUrl" column="car_url" jdbcType="VARCHAR"/>
+            <result property="carPictureLocation" column="car_picture_location" jdbcType="INTEGER"/>
+            <result property="carId" column="car_id" jdbcType="INTEGER"/>
+        </collection>
+    </resultMap>
+
+    <resultMap id="CarDetailVo" type="com.dippy.vo.CarDetailVo">
+        <!--一对一-->
+        <association property="carInfo" javaType="com.dippy.entity.CarInfo"/>
+
+        <!--一对一-->
+        <association property="name" javaType="SysUser"/>
+
+        <!--一对一-->
+        <association property="phone" javaType="SysUser"/>
+
+        <!--一对一-->
+        <association property="sex" javaType="SysUser"/>
+
+        <!--一对多-->
+        <collection property="carPicturesMap" ofType="java.lang.Integer"/>
+        <!--<collection property="carPictures" ofType="CarPicture"/>-->
+
+    </resultMap>
+
+    <!--用户卖的全部车信息、包括图片-->
+    <select id="findMySellCarByPage" resultMap="CarInfoMap" parameterType="integer">
+        select *
+
+        from car_info
+                     left join car_picture cp on car_info.car_id = cp.car_id
+
+        where car_info.user_id = #{userId}
+    </select>
+
+    <!--汽车详细信息，包括图片。暂未用到。。。-->
+    <select id="getCarDetailByCarId" resultMap="CarDetailVo" parameterType="integer">
+        select car_info.*, cp.*, su.name, su.phone, su.sex
+        from car_info
+                     left join car_picture cp on car_info.car_id = cp.car_id
+                     left join sys_user su on car_info.user_id = su.user_id
+        where car_info.car_id = #{carId}
+    </select>
+
+
+    <!--
+        &lt;!&ndash;查询单个&ndash;&gt;
+        <select id="queryById" resultMap="CarInfoMap">
+            select
+              car_id, car_brand, car_series, car_type, car_price, car_count, car_user_time, transfer_count, car_car_mileage, car_color, car_picture_id, car_gear_box, car_displacement, produce_time, car_configuration, car_seat, car_fuel_type, car_quality_time, car_region_id, car_front_tyre, rear_tyre, car_describe, create_time, update_time, car_status, car_title, user_id, car_picture
+            from second_car.car_info
+            where car_id = #{carId}
+        </select>
+
+        &lt;!&ndash;查询指定行数据&ndash;&gt;
+        <select id="queryAllByLimit" resultMap="CarInfoMap">
+            select
+              car_id, car_brand, car_series, car_type, car_price, car_count, car_user_time, transfer_count, car_car_mileage, car_color, car_picture_id, car_gear_box, car_displacement, produce_time, car_configuration, car_seat, car_fuel_type, car_quality_time, car_region_id, car_front_tyre, rear_tyre, car_describe, create_time, update_time, car_status, car_title, user_id, car_picture
+            from second_car.car_info
+            limit #{offset}, #{limit}
+        </select>
+
+        &lt;!&ndash;通过实体作为筛选条件查询&ndash;&gt;
+        <select id="queryAll" resultMap="CarInfoMap">
+            select
+              car_id, car_brand, car_series, car_type, car_price, car_count, car_user_time, transfer_count, car_car_mileage, car_color, car_picture_id, car_gear_box, car_displacement, produce_time, car_configuration, car_seat, car_fuel_type, car_quality_time, car_region_id, car_front_tyre, rear_tyre, car_describe, create_time, update_time, car_status, car_title, user_id, car_picture
+            from second_car.car_info
+            <where>
+                <if test="carId != null">
+                    and car_id = #{carId}
+                </if>
+                <if test="carBrand != null and carBrand != ''">
+                    and car_brand = #{carBrand}
+                </if>
+                <if test="carSeries != null and carSeries != ''">
+                    and car_series = #{carSeries}
+                </if>
+                <if test="carType != null and carType != ''">
+                    and car_type = #{carType}
+                </if>
+                <if test="carPrice != null">
+                    and car_price = #{carPrice}
+                </if>
+                <if test="carCount != null">
+                    and car_count = #{carCount}
+                </if>
+                <if test="carUserTime != null">
+                    and car_user_time = #{carUserTime}
+                </if>
+                <if test="transferCount != null">
+                    and transfer_count = #{transferCount}
+                </if>
+                <if test="carCarMileage != null">
+                    and car_car_mileage = #{carCarMileage}
+                </if>
+                <if test="carColor != null and carColor != ''">
+                    and car_color = #{carColor}
+                </if>
+                <if test="carPictureId != null">
+                    and car_picture_id = #{carPictureId}
+                </if>
+                <if test="carGearBox != null and carGearBox != ''">
+                    and car_gear_box = #{carGearBox}
+                </if>
+                <if test="carDisplacement != null">
+                    and car_displacement = #{carDisplacement}
+                </if>
+                <if test="produceTime != null">
+                    and produce_time = #{produceTime}
+                </if>
+                <if test="carConfiguration != null and carConfiguration != ''">
+                    and car_configuration = #{carConfiguration}
+                </if>
+                <if test="carSeat != null">
+                    and car_seat = #{carSeat}
+                </if>
+                <if test="carFuelType != null and carFuelType != ''">
+                    and car_fuel_type = #{carFuelType}
+                </if>
+                <if test="carQualityTime != null">
+                    and car_quality_time = #{carQualityTime}
+                </if>
+                <if test="carRegionId != null">
+                    and car_region_id = #{carRegionId}
+                </if>
+                <if test="carFrontTyre != null and carFrontTyre != ''">
+                    and car_front_tyre = #{carFrontTyre}
+                </if>
+                <if test="rearTyre != null and rearTyre != ''">
+                    and rear_tyre = #{rearTyre}
+                </if>
+                <if test="carDescribe != null and carDescribe != ''">
+                    and car_describe = #{carDescribe}
+                </if>
+                <if test="createTime != null">
+                    and create_time = #{createTime}
+                </if>
+                <if test="updateTime != null">
+                    and update_time = #{updateTime}
+                </if>
+                <if test="carStatus != null">
+                    and car_status = #{carStatus}
+                </if>
+                <if test="carTitle != null and carTitle != ''">
+                    and car_title = #{carTitle}
+                </if>
+                <if test="userId != null">
+                    and user_id = #{userId}
+                </if>
+                <if test="carPicture != null and carPicture != ''">
+                    and car_picture = #{carPicture}
+                </if>
+            </where>
+        </select>
+
+        &lt;!&ndash;新增所有列&ndash;&gt;
+        <insert id="insert" keyProperty="carId" useGeneratedKeys="true">
+            insert into second_car.car_info(car_brand, car_series, car_type, car_price, car_count, car_user_time, transfer_count, car_car_mileage, car_color, car_picture_id, car_gear_box, car_displacement, produce_time, car_configuration, car_seat, car_fuel_type, car_quality_time, car_region_id, car_front_tyre, rear_tyre, car_describe, create_time, update_time, car_status, car_title, user_id, car_picture)
+            values (#{carBrand}, #{carSeries}, #{carType}, #{carPrice}, #{carCount}, #{carUserTime}, #{transferCount}, #{carCarMileage}, #{carColor}, #{carPictureId}, #{carGearBox}, #{carDisplacement}, #{produceTime}, #{carConfiguration}, #{carSeat}, #{carFuelType}, #{carQualityTime}, #{carRegionId}, #{carFrontTyre}, #{rearTyre}, #{carDescribe}, #{createTime}, #{updateTime}, #{carStatus}, #{carTitle}, #{userId}, #{carPicture})
+        </insert>
+
+        <insert id="insertBatch" keyProperty="carId" useGeneratedKeys="true">
+            insert into second_car.car_info(car_brand, car_series, car_type, car_price, car_count, car_user_time, transfer_count, car_car_mileage, car_color, car_picture_id, car_gear_box, car_displacement, produce_time, car_configuration, car_seat, car_fuel_type, car_quality_time, car_region_id, car_front_tyre, rear_tyre, car_describe, create_time, update_time, car_status, car_title, user_id, car_picture)
+            values
+            <foreach collection="entities" item="entity" separator=",">
+            (#{entity.carBrand}, #{entity.carSeries}, #{entity.carType}, #{entity.carPrice}, #{entity.carCount}, #{entity.carUserTime}, #{entity.transferCount}, #{entity.carCarMileage}, #{entity.carColor}, #{entity.carPictureId}, #{entity.carGearBox}, #{entity.carDisplacement}, #{entity.produceTime}, #{entity.carConfiguration}, #{entity.carSeat}, #{entity.carFuelType}, #{entity.carQualityTime}, #{entity.carRegionId}, #{entity.carFrontTyre}, #{entity.rearTyre}, #{entity.carDescribe}, #{entity.createTime}, #{entity.updateTime}, #{entity.carStatus}, #{entity.carTitle}, #{entity.userId}, #{entity.carPicture})
+            </foreach>
+        </insert>
+
+        <insert id="insertOrUpdateBatch" keyProperty="carId" useGeneratedKeys="true">
+            insert into second_car.car_info(car_brand, car_series, car_type, car_price, car_count, car_user_time, transfer_count, car_car_mileage, car_color, car_picture_id, car_gear_box, car_displacement, produce_time, car_configuration, car_seat, car_fuel_type, car_quality_time, car_region_id, car_front_tyre, rear_tyre, car_describe, create_time, update_time, car_status, car_title, user_id, car_picture)
+            values
+            <foreach collection="entities" item="entity" separator=",">
+                (#{entity.carBrand}, #{entity.carSeries}, #{entity.carType}, #{entity.carPrice}, #{entity.carCount}, #{entity.carUserTime}, #{entity.transferCount}, #{entity.carCarMileage}, #{entity.carColor}, #{entity.carPictureId}, #{entity.carGearBox}, #{entity.carDisplacement}, #{entity.produceTime}, #{entity.carConfiguration}, #{entity.carSeat}, #{entity.carFuelType}, #{entity.carQualityTime}, #{entity.carRegionId}, #{entity.carFrontTyre}, #{entity.rearTyre}, #{entity.carDescribe}, #{entity.createTime}, #{entity.updateTime}, #{entity.carStatus}, #{entity.carTitle}, #{entity.userId}, #{entity.carPicture})
+            </foreach>
+            on duplicate key update
+             car_brand = values(car_brand) , car_series = values(car_series) , car_type = values(car_type) , car_price = values(car_price) , car_count = values(car_count) , car_user_time = values(car_user_time) , transfer_count = values(transfer_count) , car_car_mileage = values(car_car_mileage) , car_color = values(car_color) , car_picture_id = values(car_picture_id) , car_gear_box = values(car_gear_box) , car_displacement = values(car_displacement) , produce_time = values(produce_time) , car_configuration = values(car_configuration) , car_seat = values(car_seat) , car_fuel_type = values(car_fuel_type) , car_quality_time = values(car_quality_time) , car_region_id = values(car_region_id) , car_front_tyre = values(car_front_tyre) , rear_tyre = values(rear_tyre) , car_describe = values(car_describe) , create_time = values(create_time) , update_time = values(update_time) , car_status = values(car_status) , car_title = values(car_title) , user_id = values(user_id) , car_picture = values(car_picture)     </insert>
+
+        &lt;!&ndash;通过主键修改数据&ndash;&gt;
+        <update id="update">
+            update second_car.car_info
+            <set>
+                <if test="carBrand != null and carBrand != ''">
+                    car_brand = #{carBrand},
+                </if>
+                <if test="carSeries != null and carSeries != ''">
+                    car_series = #{carSeries},
+                </if>
+                <if test="carType != null and carType != ''">
+                    car_type = #{carType},
+                </if>
+                <if test="carPrice != null">
+                    car_price = #{carPrice},
+                </if>
+                <if test="carCount != null">
+                    car_count = #{carCount},
+                </if>
+                <if test="carUserTime != null">
+                    car_user_time = #{carUserTime},
+                </if>
+                <if test="transferCount != null">
+                    transfer_count = #{transferCount},
+                </if>
+                <if test="carCarMileage != null">
+                    car_car_mileage = #{carCarMileage},
+                </if>
+                <if test="carColor != null and carColor != ''">
+                    car_color = #{carColor},
+                </if>
+                <if test="carPictureId != null">
+                    car_picture_id = #{carPictureId},
+                </if>
+                <if test="carGearBox != null and carGearBox != ''">
+                    car_gear_box = #{carGearBox},
+                </if>
+                <if test="carDisplacement != null">
+                    car_displacement = #{carDisplacement},
+                </if>
+                <if test="produceTime != null">
+                    produce_time = #{produceTime},
+                </if>
+                <if test="carConfiguration != null and carConfiguration != ''">
+                    car_configuration = #{carConfiguration},
+                </if>
+                <if test="carSeat != null">
+                    car_seat = #{carSeat},
+                </if>
+                <if test="carFuelType != null and carFuelType != ''">
+                    car_fuel_type = #{carFuelType},
+                </if>
+                <if test="carQualityTime != null">
+                    car_quality_time = #{carQualityTime},
+                </if>
+                <if test="carRegionId != null">
+                    car_region_id = #{carRegionId},
+                </if>
+                <if test="carFrontTyre != null and carFrontTyre != ''">
+                    car_front_tyre = #{carFrontTyre},
+                </if>
+                <if test="rearTyre != null and rearTyre != ''">
+                    rear_tyre = #{rearTyre},
+                </if>
+                <if test="carDescribe != null and carDescribe != ''">
+                    car_describe = #{carDescribe},
+                </if>
+                <if test="createTime != null">
+                    create_time = #{createTime},
+                </if>
+                <if test="updateTime != null">
+                    update_time = #{updateTime},
+                </if>
+                <if test="carStatus != null">
+                    car_status = #{carStatus},
+                </if>
+                <if test="carTitle != null and carTitle != ''">
+                    car_title = #{carTitle},
+                </if>
+                <if test="userId != null">
+                    user_id = #{userId},
+                </if>
+                <if test="carPicture != null and carPicture != ''">
+                    car_picture = #{carPicture},
+                </if>
+            </set>
+            where car_id = #{carId}
+        </update>
+
+        &lt;!&ndash;通过主键删除&ndash;&gt;
+        <delete id="deleteById">
+            delete from second_car.car_info where car_id = #{carId}
+        </delete>
+    -->
+</mapper>
+

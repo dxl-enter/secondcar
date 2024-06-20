@@ -1,0 +1,105 @@
+2021-02-07 01:58:46.254 [INFO ] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2021-02-07 01:58:46.403 [INFO ] com.dippy.SpringbootSecondcarApplication - Starting SpringbootSecondcarApplication on Dippy with PID 16324 (E:\workspace\IDEA\springboot\springboot-secondcar\target\classes started by Mindless in E:\workspace\IDEA\springboot\springboot-secondcar)
+2021-02-07 01:58:46.406 [INFO ] com.dippy.SpringbootSecondcarApplication - No active profile set, falling back to default profiles: default
+2021-02-07 01:58:46.582 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-02-07 01:58:46.583 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-02-07 01:58:52.388 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-02-07 01:58:52.395 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-02-07 01:58:52.654 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 229ms. Found 0 Redis repository interfaces.
+2021-02-07 01:58:53.428 [INFO ] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@6afbe6a1' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-07 01:58:53.438 [INFO ] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-07 01:58:54.615 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2021-02-07 01:58:54.638 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2021-02-07 01:58:54.640 [INFO ] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-02-07 01:58:54.643 [INFO ] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2021-02-07 01:58:54.921 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-02-07 01:58:54.921 [INFO ] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 8338 ms
+2021-02-07 01:58:58.579 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-02-07 01:58:58.824 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-07 01:58:58.925 [INFO ] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-02-07 01:58:59.980 [INFO ] org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/captcha.jpg'], []
+2021-02-07 01:59:00.051 [INFO ] org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@49318c2a, org.springframework.security.web.context.SecurityContextPersistenceFilter@6c4eccd2, org.springframework.security.web.header.HeaderWriterFilter@3a70acd5, org.springframework.web.filter.CorsFilter@a80a896, org.springframework.security.web.authentication.logout.LogoutFilter@700b035b, com.dippy.filter.VerifyCodeFilter@6c8d8b60, com.dippy.filter.VerifyCodeFilter@6c8d8b60, com.dippy.filter.TokenFilter@6f7b8ae1, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@786de0a3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4c7d19bf, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7ecf4608, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@5b166420, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@17adbecf, org.springframework.security.web.session.SessionManagementFilter@41db6e4b, org.springframework.security.web.access.ExceptionTranslationFilter@8b93c88, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@78b293a]
+2021-02-07 01:59:00.252 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2021-02-07 01:59:00.300 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2021-02-07 01:59:00.302 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-02-07 01:59:00.331 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-02-07 01:59:00.396 [INFO ] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-02-07 01:59:00.624 [INFO ] com.dippy.SpringbootSecondcarApplication - Started SpringbootSecondcarApplication in 17.698 seconds (JVM running for 28.423)
+2021-02-07 02:40:38.652 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-07 02:40:41.354 [INFO ] com.dippy.controller.KaptchaController - 生成的getCaptcha: 6e7be
+2021-02-07 03:13:59.706 [INFO ] com.dippy.filter.VerifyCodeFilter - getSession后端的验证码为： null
+2021-02-07 03:15:03.597 [INFO ] com.dippy.filter.VerifyCodeFilter - getSession后端的验证码为： null
+2021-02-07 03:15:07.181 [INFO ] com.dippy.filter.VerifyCodeFilter - getSession后端的验证码为： null
+2021-02-07 03:15:15.035 [INFO ] com.dippy.filter.VerifyCodeFilter - getSession后端的验证码为： null
+2021-02-07 03:15:16.650 [INFO ] com.dippy.filter.VerifyCodeFilter - getSession后端的验证码为： null
+2021-02-07 03:16:57.682 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-02-07 03:16:57.779 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 93ms. Found 0 Redis repository interfaces.
+2021-02-07 03:16:58.332 [INFO ] com.dippy.filter.VerifyCodeFilter - getSession后端的验证码为： null
+2021-02-07 03:17:25.255 [INFO ] com.dippy.controller.KaptchaController - 生成的getCaptcha: df4xw
+2021-02-07 03:17:46.946 [INFO ] com.dippy.filter.VerifyCodeFilter - getSession后端的验证码为： df4xw
+2021-02-07 03:17:51.015 [INFO ] com.dippy.filter.VerifyCodeFilter - getSession后端的验证码为： df4xw
+2021-02-07 03:17:51.540 [INFO ] com.dippy.service.impl.UserDetailServiceImpl - 执行UserDetailServiceImpl自定义登录逻辑---admin--用户名
+2021-02-07 03:17:51.786 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-02-07 03:17:52.294 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-02-07 03:17:53.142 [INFO ] com.dippy.common.SecurityHandlerConfig - 执行了SecurityHandlerConfig登录成功处理器------
+2021-02-07 03:17:55.084 [INFO ] com.dippy.service.impl.TokenServiceJWTImpl - 生成的jwttoken为：eyJhbGciOiJIUzI1NiJ9.eyJMT0dJTl9VU0VSX0tFWSI6ImZkODRhOWJjLTY2ZjYtNGU2Mi05MGE2LWVkODkwOTJkNzM0OSJ9.mrrZrBs3X06bbmnOvrxcCPkYNlG929WKDzelxZ6tmB4
+2021-02-07 03:17:55.093 [INFO ] com.dippy.controller.UserInfoController - 登录成功页面
+2021-02-07 03:18:03.072 [INFO ] com.dippy.common.SecurityHandlerConfig - 当前登录用户: 管理员 于 2021-02-07 03:18:02 退出了
+2021-02-07 03:18:03.073 [INFO ] com.dippy.service.impl.TokenServiceJWTImpl - delete jwtToken:eyJhbGciOiJIUzI1NiJ9.eyJMT0dJTl9VU0VSX0tFWSI6ImZkODRhOWJjLTY2ZjYtNGU2Mi05MGE2LWVkODkwOTJkNzM0OSJ9.mrrZrBs3X06bbmnOvrxcCPkYNlG929WKDzelxZ6tmB4
+2021-02-07 03:18:03.075 [INFO ] com.dippy.service.impl.TokenServiceJWTImpl - delete uuid:fd84a9bc-66f6-4e62-90a6-ed89092d7349
+2021-02-07 03:18:03.075 [INFO ] com.dippy.service.impl.TokenServiceJWTImpl - delete key:tokens:fd84a9bc-66f6-4e62-90a6-ed89092d7349
+2021-02-07 03:22:45.417 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-02-07 03:22:45.508 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 89ms. Found 0 Redis repository interfaces.
+2021-02-07 03:24:19.886 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-02-07 03:24:19.958 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 71ms. Found 0 Redis repository interfaces.
+2021-02-07 03:28:29.132 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-02-07 03:28:29.229 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 95ms. Found 0 Redis repository interfaces.
+2021-02-07 03:29:32.623 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-02-07 03:29:32.717 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 92ms. Found 0 Redis repository interfaces.
+2021-02-07 03:31:43.205 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-02-07 03:31:43.306 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 101ms. Found 0 Redis repository interfaces.
+2021-02-07 03:33:06.671 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-02-07 03:33:06.759 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 87ms. Found 0 Redis repository interfaces.
+2021-02-07 03:33:09.038 [INFO ] com.dippy.service.impl.TokenServiceJWTImpl - delete jwtToken:eyJhbGciOiJIUzI1NiJ9.eyJMT0dJTl9VU0VSX0tFWSI6ImZkODRhOWJjLTY2ZjYtNGU2Mi05MGE2LWVkODkwOTJkNzM0OSJ9.mrrZrBs3X06bbmnOvrxcCPkYNlG929WKDzelxZ6tmB4
+2021-02-07 03:33:09.040 [INFO ] com.dippy.service.impl.TokenServiceJWTImpl - delete uuid:fd84a9bc-66f6-4e62-90a6-ed89092d7349
+2021-02-07 03:33:09.094 [INFO ] com.dippy.service.impl.TokenServiceJWTImpl - delete key:tokens:fd84a9bc-66f6-4e62-90a6-ed89092d7349
+2021-02-07 03:34:27.114 [INFO ] com.dippy.service.impl.TokenServiceJWTImpl - delete jwtToken:eyJhbGciOiJIUzI1NiJ9.eyJMT0dJTl9VU0VSX0tFWSI6ImZkODRhOWJjLTY2ZjYtNGU2Mi05MGE2LWVkODkwOTJkNzM0OSJ9.mrrZrBs3X06bbmnOvrxcCPkYNlG929WKDzelxZ6tmB4
+2021-02-07 03:34:27.132 [INFO ] com.dippy.service.impl.TokenServiceJWTImpl - delete uuid:fd84a9bc-66f6-4e62-90a6-ed89092d7349
+2021-02-07 03:34:27.138 [INFO ] com.dippy.service.impl.TokenServiceJWTImpl - delete key:tokens:fd84a9bc-66f6-4e62-90a6-ed89092d7349
+2021-02-07 03:35:04.125 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-02-07 03:35:04.209 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 83ms. Found 0 Redis repository interfaces.
+2021-02-07 03:35:12.540 [INFO ] com.dippy.service.impl.TokenServiceJWTImpl - delete jwtToken:eyJhbGciOiJIUzI1NiJ9.eyJMT0dJTl9VU0VSX0tFWSI6ImZkODRhOWJjLTY2ZjYtNGU2Mi05MGE2LWVkODkwOTJkNzM0OSJ9.mrrZrBs3X06bbmnOvrxcCPkYNlG929WKDzelxZ6tmB4
+2021-02-07 03:35:12.542 [INFO ] com.dippy.service.impl.TokenServiceJWTImpl - delete uuid:fd84a9bc-66f6-4e62-90a6-ed89092d7349
+2021-02-07 03:35:12.566 [INFO ] com.dippy.service.impl.TokenServiceJWTImpl - delete key:tokens:fd84a9bc-66f6-4e62-90a6-ed89092d7349
+2021-02-07 03:36:02.989 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-02-07 03:36:03.076 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 86ms. Found 0 Redis repository interfaces.
+2021-02-07 03:39:13.329 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-02-07 03:39:13.419 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 88ms. Found 0 Redis repository interfaces.
+2021-02-07 03:44:12.965 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-02-07 03:44:13.064 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 97ms. Found 0 Redis repository interfaces.
+2021-02-07 03:44:24.105 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-02-07 03:44:24.197 [INFO ] com.dippy.controller.KaptchaController - 生成的getCaptcha: mbc2p
+2021-02-07 03:44:47.722 [INFO ] com.dippy.filter.VerifyCodeFilter - getSession后端的验证码为： mbc2p
+2021-02-07 03:44:47.723 [INFO ] com.dippy.service.impl.UserDetailServiceImpl - 执行UserDetailServiceImpl自定义登录逻辑---admin--用户名
+2021-02-07 03:44:48.453 [INFO ] com.dippy.common.SecurityHandlerConfig - 执行了SecurityHandlerConfig登录成功处理器------
+2021-02-07 03:44:48.474 [INFO ] com.dippy.service.impl.TokenServiceJWTImpl - 生成的jwttoken为：eyJhbGciOiJIUzI1NiJ9.eyJMT0dJTl9VU0VSX0tFWSI6IjhhY2YyZDRiLTlmZjctNDYyYi1iZDk2LTMxZjEwZWVkZmI4NCJ9.MNhmXRJIeTV5iGlBL9N848pu3-CaIC5qMrUGrGyxvCA
+2021-02-07 03:44:48.475 [INFO ] com.dippy.controller.UserInfoController - 登录成功页面
+2021-02-07 03:44:55.634 [INFO ] com.dippy.common.SecurityHandlerConfig - 当前登录用户: 管理员 于 2021-02-07 03:44:55 退出了
+2021-02-07 03:44:55.635 [INFO ] com.dippy.service.impl.TokenServiceJWTImpl - delete jwtToken:eyJhbGciOiJIUzI1NiJ9.eyJMT0dJTl9VU0VSX0tFWSI6IjhhY2YyZDRiLTlmZjctNDYyYi1iZDk2LTMxZjEwZWVkZmI4NCJ9.MNhmXRJIeTV5iGlBL9N848pu3-CaIC5qMrUGrGyxvCA
+2021-02-07 03:44:55.636 [INFO ] com.dippy.service.impl.TokenServiceJWTImpl - delete uuid:8acf2d4b-9ff7-462b-bd96-31f10eedfb84
+2021-02-07 03:44:55.637 [INFO ] com.dippy.service.impl.TokenServiceJWTImpl - delete key:tokens:8acf2d4b-9ff7-462b-bd96-31f10eedfb84
+2021-02-07 03:44:55.703 [INFO ] com.dippy.controller.KaptchaController - 生成的getCaptcha: 8fdx5
+2021-02-07 03:45:09.812 [INFO ] com.dippy.filter.VerifyCodeFilter - getSession后端的验证码为： 8fdx5
+2021-02-07 03:45:09.813 [INFO ] com.dippy.service.impl.UserDetailServiceImpl - 执行UserDetailServiceImpl自定义登录逻辑---admin--用户名
+2021-02-07 03:45:10.587 [INFO ] com.dippy.common.SecurityHandlerConfig - 执行了SecurityHandlerConfig登录成功处理器------
+2021-02-07 03:45:10.592 [INFO ] com.dippy.service.impl.TokenServiceJWTImpl - 生成的jwttoken为：eyJhbGciOiJIUzI1NiJ9.eyJMT0dJTl9VU0VSX0tFWSI6ImRlZGIxNjY4LTlkOWQtNGI1OS1iOGU5LWI5ODNkOGUzN2ZjNSJ9.NLoLc0xn4FawUnmjjg4XoQDLfBBpB4ubaW7bQCEaTwU
+2021-02-07 03:45:10.593 [INFO ] com.dippy.controller.UserInfoController - 登录成功页面
+2021-02-07 14:04:21.422 [INFO ] com.dippy.controller.KaptchaController - 生成的getCaptcha: 7p6ga
+2021-02-07 14:04:36.404 [INFO ] com.dippy.filter.VerifyCodeFilter - getSession后端的验证码为： 7p6ga
+2021-02-07 14:04:36.406 [INFO ] com.dippy.service.impl.UserDetailServiceImpl - 执行UserDetailServiceImpl自定义登录逻辑---admin--用户名
+2021-02-07 14:04:36.959 [INFO ] com.dippy.common.SecurityHandlerConfig - 执行了SecurityHandlerConfig登录成功处理器------
+2021-02-07 14:04:36.963 [INFO ] com.dippy.service.impl.TokenServiceJWTImpl - 生成的jwttoken为：eyJhbGciOiJIUzI1NiJ9.eyJMT0dJTl9VU0VSX0tFWSI6ImQwNmE5Yjk4LWU1MWQtNDc3Yi1iZjVlLWQ3ODM0OGE2MmFhZCJ9.wYo3Oe-v33TkxuFbb-JarddXSL4tK8FFFT0mboutrjw
+2021-02-07 14:04:36.964 [INFO ] com.dippy.controller.UserInfoController - 登录成功页面
+2021-02-07 14:50:59.637 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-07 14:50:59.642 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2021-02-07 14:50:59.649 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

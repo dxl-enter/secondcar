@@ -1,0 +1,803 @@
+2020-12-13 00:50:40.578 [INFO ] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-12-13 00:50:40.639 [INFO ] com.dippy.SpringbootSecondcarApplication - Starting SpringbootSecondcarApplication on Dippy with PID 12764 (E:\workspace\IDEA\springboot\springboot-secondcar\target\classes started by Mindless in E:\workspace\IDEA\springboot\springboot-secondcar)
+2020-12-13 00:50:40.641 [INFO ] com.dippy.SpringbootSecondcarApplication - No active profile set, falling back to default profiles: default
+2020-12-13 00:50:40.828 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-13 00:50:40.852 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-13 00:50:43.627 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-13 00:50:43.633 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-13 00:50:43.808 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 143ms. Found 0 Redis repository interfaces.
+2020-12-13 00:50:46.288 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2020-12-13 00:50:46.312 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2020-12-13 00:50:46.315 [INFO ] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-13 00:50:46.316 [INFO ] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-12-13 00:50:46.767 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-13 00:50:46.768 [INFO ] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5916 ms
+2020-12-13 00:50:49.974 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-13 00:50:50.169 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-13 00:50:50.268 [INFO ] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-12-13 00:50:51.314 [INFO ] org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/captcha.jpg'], []
+2020-12-13 00:50:51.388 [INFO ] org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@20e73e41, org.springframework.security.web.context.SecurityContextPersistenceFilter@2740585b, org.springframework.security.web.header.HeaderWriterFilter@1d160161, org.springframework.web.filter.CorsFilter@41bdaa81, org.springframework.security.web.authentication.logout.LogoutFilter@140fa482, com.dippy.filter.VerifyCodeFilter@75add13c, com.dippy.filter.TokenFilter@1169fdfd, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@78de0f6f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2d6e09f0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4468ced2, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@518ed9b4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@694dc99b, org.springframework.security.web.session.SessionManagementFilter@48cbb4c5, org.springframework.security.web.access.ExceptionTranslationFilter@c651286, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@59ac60d1]
+2020-12-13 00:50:51.553 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2020-12-13 00:50:51.602 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2020-12-13 00:50:51.604 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-12-13 00:50:51.640 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-12-13 00:50:51.740 [INFO ] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-12-13 00:50:52.018 [INFO ] com.dippy.SpringbootSecondcarApplication - Started SpringbootSecondcarApplication in 13.805 seconds (JVM running for 21.009)
+2020-12-13 00:54:55.335 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-13 00:55:11.839 [INFO ] com.dippy.service.impl.UserDetailServiceImpl - 执行UserDetailServiceImpl自定义登录逻辑---dippy--用户名
+2020-12-13 00:55:11.841 [INFO ] com.dippy.service.impl.UserDetailServiceImpl - 用户名为：dippy
+2020-12-13 00:55:12.042 [INFO ] com.dippy.common.SecurityHandlerConfig - 执行了SecurityHandlerConfig登录成功处理器------
+2020-12-13 00:55:37.519 [INFO ] com.dippy.service.impl.UserDetailServiceImpl - 执行UserDetailServiceImpl自定义登录逻辑---dippy--用户名
+2020-12-13 00:55:37.519 [INFO ] com.dippy.service.impl.UserDetailServiceImpl - 用户名为：dippy
+2020-12-13 00:55:37.724 [INFO ] com.dippy.common.SecurityHandlerConfig - 执行了SecurityHandlerConfig登录成功处理器------
+2020-12-13 00:58:14.615 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-13 00:58:14.713 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 96ms. Found 0 Redis repository interfaces.
+2020-12-13 00:58:19.439 [INFO ] com.dippy.service.impl.UserDetailServiceImpl - 执行UserDetailServiceImpl自定义登录逻辑---dippy--用户名
+2020-12-13 00:58:19.440 [INFO ] com.dippy.service.impl.UserDetailServiceImpl - 用户名为：dippy
+2020-12-13 00:58:19.643 [INFO ] com.dippy.common.SecurityHandlerConfig - 执行了SecurityHandlerConfig登录成功处理器------
+2020-12-13 00:59:15.425 [INFO ] com.dippy.service.impl.UserDetailServiceImpl - 执行UserDetailServiceImpl自定义登录逻辑---dippy--用户名
+2020-12-13 00:59:15.426 [INFO ] com.dippy.service.impl.UserDetailServiceImpl - 用户名为：dippy
+2020-12-13 00:59:15.791 [INFO ] com.dippy.common.SecurityHandlerConfig - 执行了SecurityHandlerConfig登录成功处理器------
+2020-12-13 00:59:16.653 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-13 00:59:26.161 [INFO ] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-12-13 00:59:26.352 [INFO ] com.dippy.SpringbootSecondcarApplication - Starting SpringbootSecondcarApplication on Dippy with PID 20628 (E:\workspace\IDEA\springboot\springboot-secondcar\target\classes started by Mindless in E:\workspace\IDEA\springboot\springboot-secondcar)
+2020-12-13 00:59:26.354 [INFO ] com.dippy.SpringbootSecondcarApplication - No active profile set, falling back to default profiles: default
+2020-12-13 00:59:26.602 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-13 00:59:26.603 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-13 00:59:28.540 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-13 00:59:28.546 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-13 00:59:28.704 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 133ms. Found 0 Redis repository interfaces.
+2020-12-13 00:59:30.097 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2020-12-13 00:59:30.115 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2020-12-13 00:59:30.117 [INFO ] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-13 00:59:30.118 [INFO ] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-12-13 00:59:30.365 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-13 00:59:30.366 [INFO ] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3763 ms
+2020-12-13 00:59:33.562 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-13 00:59:33.763 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-13 00:59:33.833 [INFO ] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-12-13 00:59:34.812 [INFO ] org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/captcha.jpg'], []
+2020-12-13 00:59:34.863 [INFO ] org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4a2f1ae3, org.springframework.security.web.context.SecurityContextPersistenceFilter@304cad3a, org.springframework.security.web.header.HeaderWriterFilter@277dddcf, org.springframework.web.filter.CorsFilter@651cedfb, org.springframework.security.web.authentication.logout.LogoutFilter@6f6998b6, com.dippy.filter.VerifyCodeFilter@2e44cb34, com.dippy.filter.TokenFilter@12421766, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@60493524, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@19f9404d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@455cb6d9, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@190cc39e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@48b1b469, org.springframework.security.web.session.SessionManagementFilter@d5eca06, org.springframework.security.web.access.ExceptionTranslationFilter@7bb888b7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@a1be5cb]
+2020-12-13 00:59:35.001 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2020-12-13 00:59:35.054 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2020-12-13 00:59:35.055 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-12-13 00:59:35.086 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-12-13 00:59:35.158 [INFO ] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-12-13 00:59:35.595 [INFO ] com.dippy.SpringbootSecondcarApplication - Started SpringbootSecondcarApplication in 10.925 seconds (JVM running for 17.457)
+2020-12-13 01:00:29.728 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-13 01:09:34.731 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-13 01:09:34.835 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 102ms. Found 0 Redis repository interfaces.
+2020-12-13 01:12:08.300 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-13 01:12:16.673 [INFO ] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-12-13 01:12:16.777 [INFO ] com.dippy.SpringbootSecondcarApplication - Starting SpringbootSecondcarApplication on Dippy with PID 11856 (E:\workspace\IDEA\springboot\springboot-secondcar\target\classes started by Mindless in E:\workspace\IDEA\springboot\springboot-secondcar)
+2020-12-13 01:12:16.778 [INFO ] com.dippy.SpringbootSecondcarApplication - No active profile set, falling back to default profiles: default
+2020-12-13 01:12:16.898 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-13 01:12:16.898 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-13 01:12:18.540 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-13 01:12:18.546 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-13 01:12:18.701 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 131ms. Found 0 Redis repository interfaces.
+2020-12-13 01:12:20.031 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2020-12-13 01:12:20.050 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2020-12-13 01:12:20.051 [INFO ] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-13 01:12:20.052 [INFO ] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-12-13 01:12:20.288 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-13 01:12:20.289 [INFO ] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3390 ms
+2020-12-13 01:12:23.074 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-13 01:12:23.250 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-13 01:12:23.321 [INFO ] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-12-13 01:12:24.222 [INFO ] org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/captcha.jpg'], []
+2020-12-13 01:12:24.271 [INFO ] org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@55159007, org.springframework.security.web.context.SecurityContextPersistenceFilter@48543f11, org.springframework.security.web.header.HeaderWriterFilter@650a0b50, org.springframework.web.filter.CorsFilter@74f649a7, org.springframework.security.web.authentication.logout.LogoutFilter@5f14eb51, com.dippy.filter.VerifyCodeFilter@153c6603, com.dippy.filter.TokenFilter@5b64f771, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3f31cf8f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7e92e9a2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@38affd02, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@63d43a5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@edf4973, org.springframework.security.web.session.SessionManagementFilter@52f71d2, org.springframework.security.web.access.ExceptionTranslationFilter@6a175162, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@79169472]
+2020-12-13 01:12:24.406 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2020-12-13 01:12:24.451 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2020-12-13 01:12:24.453 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-12-13 01:12:24.481 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-12-13 01:12:24.553 [INFO ] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-12-13 01:12:24.770 [INFO ] com.dippy.SpringbootSecondcarApplication - Started SpringbootSecondcarApplication in 9.289 seconds (JVM running for 14.856)
+2020-12-13 01:12:44.805 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-13 01:16:48.889 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-13 01:16:48.998 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 106ms. Found 0 Redis repository interfaces.
+2020-12-13 01:17:14.353 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-13 01:17:23.710 [INFO ] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-12-13 01:17:23.801 [INFO ] com.dippy.SpringbootSecondcarApplication - Starting SpringbootSecondcarApplication on Dippy with PID 12192 (E:\workspace\IDEA\springboot\springboot-secondcar\target\classes started by Mindless in E:\workspace\IDEA\springboot\springboot-secondcar)
+2020-12-13 01:17:23.803 [INFO ] com.dippy.SpringbootSecondcarApplication - No active profile set, falling back to default profiles: default
+2020-12-13 01:17:23.920 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-13 01:17:23.921 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-13 01:17:26.252 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-13 01:17:26.257 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-13 01:17:26.449 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 158ms. Found 0 Redis repository interfaces.
+2020-12-13 01:17:27.881 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2020-12-13 01:17:27.901 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2020-12-13 01:17:27.903 [INFO ] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-13 01:17:27.903 [INFO ] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-12-13 01:17:28.145 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-13 01:17:28.146 [INFO ] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4225 ms
+2020-12-13 01:17:31.203 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-13 01:17:31.380 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-13 01:17:31.449 [INFO ] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-12-13 01:17:32.349 [INFO ] org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/captcha.jpg'], []
+2020-12-13 01:17:32.405 [INFO ] org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1bd6bfb0, org.springframework.security.web.context.SecurityContextPersistenceFilter@373fb666, org.springframework.security.web.header.HeaderWriterFilter@823f978, org.springframework.web.filter.CorsFilter@23e9dd78, org.springframework.security.web.authentication.logout.LogoutFilter@1e86b2d1, com.dippy.filter.VerifyCodeFilter@d978ab9, com.dippy.filter.TokenFilter@4af7ac25, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@65029fc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1bd53c5c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5e97da56, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@5d2bfc9f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3b9c386d, org.springframework.security.web.session.SessionManagementFilter@397b5b2d, org.springframework.security.web.access.ExceptionTranslationFilter@c0a8787, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2a49753]
+2020-12-13 01:17:32.530 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2020-12-13 01:17:32.580 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2020-12-13 01:17:32.581 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-12-13 01:17:32.610 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-12-13 01:17:32.678 [INFO ] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-12-13 01:17:32.909 [INFO ] com.dippy.SpringbootSecondcarApplication - Started SpringbootSecondcarApplication in 10.622 seconds (JVM running for 17.014)
+2020-12-13 01:17:50.268 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-13 01:18:12.824 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-13 01:18:23.563 [INFO ] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-12-13 01:18:23.687 [INFO ] com.dippy.SpringbootSecondcarApplication - Starting SpringbootSecondcarApplication on Dippy with PID 21168 (E:\workspace\IDEA\springboot\springboot-secondcar\target\classes started by Mindless in E:\workspace\IDEA\springboot\springboot-secondcar)
+2020-12-13 01:18:23.688 [INFO ] com.dippy.SpringbootSecondcarApplication - No active profile set, falling back to default profiles: default
+2020-12-13 01:18:23.807 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-13 01:18:23.807 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-13 01:18:25.620 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-13 01:18:25.625 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-13 01:18:25.778 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 128ms. Found 0 Redis repository interfaces.
+2020-12-13 01:18:27.131 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2020-12-13 01:18:27.151 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2020-12-13 01:18:27.152 [INFO ] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-13 01:18:27.153 [INFO ] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-12-13 01:18:27.391 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-13 01:18:27.391 [INFO ] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3583 ms
+2020-12-13 01:18:30.206 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-13 01:18:30.377 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-13 01:18:30.444 [INFO ] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-12-13 01:18:31.346 [INFO ] org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/captcha.jpg'], []
+2020-12-13 01:18:31.398 [INFO ] org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6f6998b6, org.springframework.security.web.context.SecurityContextPersistenceFilter@5a3d52a0, org.springframework.security.web.header.HeaderWriterFilter@2fb24ad8, org.springframework.web.filter.CorsFilter@2e44cb34, org.springframework.security.web.authentication.logout.LogoutFilter@38eafdab, com.dippy.filter.VerifyCodeFilter@2f8f40cc, com.dippy.filter.TokenFilter@36638b59, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@373c8f35, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@18356d9e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@443b9ebb, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@29767156, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@60493524, org.springframework.security.web.session.SessionManagementFilter@5ab70df7, org.springframework.security.web.access.ExceptionTranslationFilter@38affd02, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7fb28ed]
+2020-12-13 01:18:31.526 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2020-12-13 01:18:31.573 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2020-12-13 01:18:31.575 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-12-13 01:18:31.602 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-12-13 01:18:31.667 [INFO ] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-12-13 01:18:31.881 [INFO ] com.dippy.SpringbootSecondcarApplication - Started SpringbootSecondcarApplication in 9.717 seconds (JVM running for 15.31)
+2020-12-13 01:18:47.134 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-13 01:25:44.973 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-13 01:25:45.028 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 53ms. Found 0 Redis repository interfaces.
+2020-12-13 01:25:45.205 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-13 01:34:11.115 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-13 01:34:11.173 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 57ms. Found 0 Redis repository interfaces.
+2020-12-13 01:34:36.726 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-13 01:34:36.802 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 73ms. Found 0 Redis repository interfaces.
+2020-12-13 01:34:36.955 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-13 01:35:05.963 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-13 01:35:06.029 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 62ms. Found 0 Redis repository interfaces.
+2020-12-13 01:35:06.151 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-13 01:35:30.296 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-13 01:35:30.364 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 68ms. Found 0 Redis repository interfaces.
+2020-12-13 01:35:30.490 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-13 01:36:04.147 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-13 01:36:04.235 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 84ms. Found 0 Redis repository interfaces.
+2020-12-13 01:36:04.402 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-13 01:43:19.492 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-13 01:43:30.556 [INFO ] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-12-13 01:43:30.637 [INFO ] com.dippy.SpringbootSecondcarApplication - Starting SpringbootSecondcarApplication on Dippy with PID 23108 (E:\workspace\IDEA\springboot\springboot-secondcar\target\classes started by Mindless in E:\workspace\IDEA\springboot\springboot-secondcar)
+2020-12-13 01:43:30.638 [INFO ] com.dippy.SpringbootSecondcarApplication - No active profile set, falling back to default profiles: default
+2020-12-13 01:43:30.744 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-13 01:43:30.744 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-13 01:43:32.273 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-13 01:43:32.278 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-13 01:43:32.428 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 128ms. Found 0 Redis repository interfaces.
+2020-12-13 01:43:33.733 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2020-12-13 01:43:33.750 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2020-12-13 01:43:33.752 [INFO ] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-13 01:43:33.752 [INFO ] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-12-13 01:43:34.003 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-13 01:43:34.003 [INFO ] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3258 ms
+2020-12-13 01:43:36.740 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-13 01:43:36.901 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-13 01:43:36.967 [INFO ] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-12-13 01:43:37.857 [INFO ] org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/captcha.jpg'], []
+2020-12-13 01:43:37.909 [INFO ] org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6202f8bf, org.springframework.security.web.context.SecurityContextPersistenceFilter@35bb3fea, org.springframework.security.web.header.HeaderWriterFilter@57fb6900, org.springframework.web.filter.CorsFilter@6fc7e828, org.springframework.security.web.authentication.logout.LogoutFilter@34f2d3a6, com.dippy.filter.VerifyCodeFilter@e895e3e, com.dippy.filter.TokenFilter@6802d023, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3da701a1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7a0df38e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2a20aa4e, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@21b792c2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@330d557e, org.springframework.security.web.session.SessionManagementFilter@3f0751b0, org.springframework.security.web.access.ExceptionTranslationFilter@1f67d37f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@46cb800b]
+2020-12-13 01:43:38.032 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2020-12-13 01:43:38.078 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2020-12-13 01:43:38.081 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-12-13 01:43:38.110 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-12-13 01:43:38.174 [INFO ] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-12-13 01:43:38.390 [INFO ] com.dippy.SpringbootSecondcarApplication - Started SpringbootSecondcarApplication in 8.844 seconds (JVM running for 13.551)
+2020-12-13 01:43:43.179 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-13 01:45:26.467 [INFO ] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-12-13 01:45:26.561 [INFO ] com.dippy.SpringbootSecondcarApplication - Starting SpringbootSecondcarApplication on Dippy with PID 21996 (E:\workspace\IDEA\springboot\springboot-secondcar\target\classes started by Mindless in E:\workspace\IDEA\springboot\springboot-secondcar)
+2020-12-13 01:45:26.562 [INFO ] com.dippy.SpringbootSecondcarApplication - No active profile set, falling back to default profiles: default
+2020-12-13 01:45:26.684 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-13 01:45:26.684 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-13 01:45:28.526 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-13 01:45:28.531 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-13 01:45:28.683 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 126ms. Found 0 Redis repository interfaces.
+2020-12-13 01:45:29.965 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2020-12-13 01:45:29.983 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2020-12-13 01:45:29.984 [INFO ] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-13 01:45:29.985 [INFO ] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-12-13 01:45:30.263 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-13 01:45:30.264 [INFO ] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3579 ms
+2020-12-13 01:45:33.474 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-13 01:45:33.650 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-13 01:45:33.725 [INFO ] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-12-13 01:45:34.704 [INFO ] org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/captcha.jpg'], []
+2020-12-13 01:45:34.754 [INFO ] org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5f14eb51, org.springframework.security.web.context.SecurityContextPersistenceFilter@3c4231e5, org.springframework.security.web.header.HeaderWriterFilter@3b48361e, org.springframework.web.filter.CorsFilter@5fb514c2, org.springframework.security.web.authentication.logout.LogoutFilter@4a561f7d, com.dippy.filter.VerifyCodeFilter@3e2772a9, com.dippy.filter.TokenFilter@1592e540, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@601ca994, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@72e4ffa2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6888746c, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@6cfe32cd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3f31cf8f, org.springframework.security.web.session.SessionManagementFilter@5ae22651, org.springframework.security.web.access.ExceptionTranslationFilter@1ed0128b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6764201e]
+2020-12-13 01:45:34.878 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2020-12-13 01:45:34.925 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2020-12-13 01:45:34.927 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-12-13 01:45:34.963 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-12-13 01:45:35.048 [INFO ] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-12-13 01:45:35.296 [INFO ] com.dippy.SpringbootSecondcarApplication - Started SpringbootSecondcarApplication in 9.925 seconds (JVM running for 14.583)
+2020-12-13 01:46:20.388 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-13 01:46:20.494 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 102ms. Found 0 Redis repository interfaces.
+2020-12-13 01:47:06.726 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-13 01:47:06.860 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 132ms. Found 0 Redis repository interfaces.
+2020-12-13 01:47:06.985 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-13 01:47:43.553 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-13 01:49:31.384 [INFO ] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-12-13 01:49:31.474 [INFO ] com.dippy.SpringbootSecondcarApplication - Starting SpringbootSecondcarApplication on Dippy with PID 9316 (E:\workspace\IDEA\springboot\springboot-secondcar\target\classes started by Mindless in E:\workspace\IDEA\springboot\springboot-secondcar)
+2020-12-13 01:49:31.476 [INFO ] com.dippy.SpringbootSecondcarApplication - No active profile set, falling back to default profiles: default
+2020-12-13 01:49:31.598 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-13 01:49:31.598 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-13 01:49:33.596 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-13 01:49:33.601 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-13 01:49:33.774 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 151ms. Found 0 Redis repository interfaces.
+2020-12-13 01:49:35.140 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2020-12-13 01:49:35.174 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2020-12-13 01:49:35.176 [INFO ] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-13 01:49:35.176 [INFO ] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-12-13 01:49:35.409 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-13 01:49:35.409 [INFO ] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3810 ms
+2020-12-13 01:49:38.100 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-13 01:49:38.270 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-13 01:49:38.338 [INFO ] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-12-13 01:49:39.227 [INFO ] org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/captcha.jpg'], []
+2020-12-13 01:49:39.279 [INFO ] org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@505a48a2, org.springframework.security.web.context.SecurityContextPersistenceFilter@1f67d37f, org.springframework.security.web.header.HeaderWriterFilter@4b6942a0, org.springframework.web.filter.CorsFilter@69d58731, org.springframework.security.web.authentication.logout.LogoutFilter@259ae1a9, com.dippy.filter.VerifyCodeFilter@878feb2, com.dippy.filter.TokenFilter@3a988299, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@d082916, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@57fb6900, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@77feca04, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@46cb800b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@15096b0e, org.springframework.security.web.session.SessionManagementFilter@2e845f1c, org.springframework.security.web.access.ExceptionTranslationFilter@27ada0e8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@32f8a37b]
+2020-12-13 01:49:39.404 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2020-12-13 01:49:39.450 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2020-12-13 01:49:39.452 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-12-13 01:49:39.479 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-12-13 01:49:39.542 [INFO ] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-12-13 01:49:39.767 [INFO ] com.dippy.SpringbootSecondcarApplication - Started SpringbootSecondcarApplication in 9.555 seconds (JVM running for 14.92)
+2020-12-13 01:49:54.899 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-13 01:50:46.990 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-13 01:50:47.065 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 74ms. Found 0 Redis repository interfaces.
+2020-12-13 01:50:47.276 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-13 01:52:01.934 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-13 01:52:01.981 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 46ms. Found 0 Redis repository interfaces.
+2020-12-13 01:52:02.036 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-13 01:53:49.270 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-13 01:53:49.345 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 73ms. Found 0 Redis repository interfaces.
+2020-12-13 01:53:49.408 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-13 01:54:32.851 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-13 01:54:32.960 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 102ms. Found 0 Redis repository interfaces.
+2020-12-13 01:54:33.120 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-13 01:56:52.324 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-13 01:56:52.487 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 159ms. Found 0 Redis repository interfaces.
+2020-12-13 01:56:52.610 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-13 01:57:04.199 [INFO ] com.dippy.filter.VerifyCodeFilter - 后端的验证码为： null
+2020-12-13 01:59:58.298 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-13 13:12:40.719 [INFO ] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-12-13 13:12:40.897 [INFO ] com.dippy.SpringbootSecondcarApplication - Starting SpringbootSecondcarApplication on Dippy with PID 21436 (E:\workspace\IDEA\springboot\springboot-secondcar\target\classes started by Mindless in E:\workspace\IDEA\springboot\springboot-secondcar)
+2020-12-13 13:12:40.898 [INFO ] com.dippy.SpringbootSecondcarApplication - No active profile set, falling back to default profiles: default
+2020-12-13 13:12:41.043 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-13 13:12:41.044 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-13 13:12:43.398 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-13 13:12:43.404 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-13 13:12:43.574 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 137ms. Found 0 Redis repository interfaces.
+2020-12-13 13:12:45.017 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2020-12-13 13:12:45.040 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2020-12-13 13:12:45.042 [INFO ] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-13 13:12:45.043 [INFO ] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-12-13 13:12:45.312 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-13 13:12:45.313 [INFO ] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4269 ms
+2020-12-13 13:12:49.644 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-13 13:12:50.059 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-13 13:12:50.348 [INFO ] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-12-13 13:12:51.937 [INFO ] org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/captcha.jpg'], []
+2020-12-13 13:12:52.012 [INFO ] org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@65192f16, org.springframework.security.web.context.SecurityContextPersistenceFilter@518ed9b4, org.springframework.security.web.header.HeaderWriterFilter@7c8cea05, org.springframework.web.filter.CorsFilter@6294e4a6, org.springframework.security.web.authentication.logout.LogoutFilter@17810908, com.dippy.filter.VerifyCodeFilter@31e22365, com.dippy.filter.TokenFilter@b267745, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@174d5cf7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@694dc99b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@77e64a46, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@3bea478e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7ab8c972, org.springframework.security.web.session.SessionManagementFilter@40612056, org.springframework.security.web.access.ExceptionTranslationFilter@59ac60d1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@15c8b75c]
+2020-12-13 13:12:52.202 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2020-12-13 13:12:52.276 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2020-12-13 13:12:52.278 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-12-13 13:12:52.320 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-12-13 13:12:52.406 [INFO ] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-12-13 13:12:52.717 [INFO ] com.dippy.SpringbootSecondcarApplication - Started SpringbootSecondcarApplication in 13.354 seconds (JVM running for 22.235)
+2020-12-13 13:16:55.810 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-13 13:22:31.730 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-13 13:22:31.816 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 85ms. Found 0 Redis repository interfaces.
+2020-12-13 13:22:32.253 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-13 13:22:48.482 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-13 13:22:48.581 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 97ms. Found 0 Redis repository interfaces.
+2020-12-13 13:23:10.695 [INFO ] com.dippy.filter.VerifyCodeFilter - 后端的验证码为： null
+2020-12-13 13:29:03.914 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-13 13:29:03.978 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 62ms. Found 0 Redis repository interfaces.
+2020-12-13 13:30:22.150 [INFO ] com.dippy.filter.VerifyCodeFilter - 后端的验证码为： null
+2020-12-13 13:57:54.296 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-13 13:57:54.414 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 116ms. Found 0 Redis repository interfaces.
+2020-12-13 14:07:02.742 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-13 14:07:20.736 [INFO ] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-12-13 14:07:20.863 [INFO ] com.dippy.SpringbootSecondcarApplication - Starting SpringbootSecondcarApplication on Dippy with PID 4628 (E:\workspace\IDEA\springboot\springboot-secondcar\target\classes started by Mindless in E:\workspace\IDEA\springboot\springboot-secondcar)
+2020-12-13 14:07:20.866 [INFO ] com.dippy.SpringbootSecondcarApplication - No active profile set, falling back to default profiles: default
+2020-12-13 14:07:21.038 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-13 14:07:21.038 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-13 14:07:23.143 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-13 14:07:23.149 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-13 14:07:23.325 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 148ms. Found 0 Redis repository interfaces.
+2020-12-13 14:07:24.799 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2020-12-13 14:07:24.823 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2020-12-13 14:07:24.825 [INFO ] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-13 14:07:24.825 [INFO ] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-12-13 14:07:25.141 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-13 14:07:25.142 [INFO ] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4104 ms
+2020-12-13 14:07:29.160 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-13 14:07:29.347 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-13 14:07:29.422 [INFO ] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-12-13 14:07:30.351 [INFO ] org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/captcha.jpg'], []
+2020-12-13 14:07:30.400 [INFO ] org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@d426e01, org.springframework.security.web.context.SecurityContextPersistenceFilter@7fd7085d, org.springframework.security.web.header.HeaderWriterFilter@27d44578, org.springframework.web.filter.CorsFilter@64544ee4, org.springframework.security.web.authentication.logout.LogoutFilter@6f09cb98, com.dippy.filter.VerifyCodeFilter@4e51eda7, com.dippy.filter.TokenFilter@294ebe11, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7236213e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@9120cb5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2d91147b, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@225890bc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@44b5b54, org.springframework.security.web.session.SessionManagementFilter@8dd0c70, org.springframework.security.web.access.ExceptionTranslationFilter@f047670, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@78d52d4c]
+2020-12-13 14:07:30.531 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2020-12-13 14:07:30.587 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2020-12-13 14:07:30.589 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-12-13 14:07:30.619 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-12-13 14:07:30.686 [INFO ] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-12-13 14:07:30.920 [INFO ] com.dippy.SpringbootSecondcarApplication - Started SpringbootSecondcarApplication in 11.922 seconds (JVM running for 18.161)
+2020-12-13 14:07:41.151 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-13 14:10:15.006 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-13 14:10:15.056 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 49ms. Found 0 Redis repository interfaces.
+2020-12-13 14:10:15.218 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-13 14:12:05.920 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-13 14:12:05.977 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 55ms. Found 0 Redis repository interfaces.
+2020-12-13 14:12:06.059 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-13 14:12:41.154 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-13 14:12:41.298 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 143ms. Found 0 Redis repository interfaces.
+2020-12-13 14:13:53.324 [INFO ] com.dippy.filter.VerifyCodeFilter - 后端的验证码为： null
+2020-12-13 14:14:09.179 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-13 14:14:18.671 [INFO ] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-12-13 14:14:18.886 [INFO ] com.dippy.SpringbootSecondcarApplication - Starting SpringbootSecondcarApplication on Dippy with PID 7016 (E:\workspace\IDEA\springboot\springboot-secondcar\target\classes started by Mindless in E:\workspace\IDEA\springboot\springboot-secondcar)
+2020-12-13 14:14:18.887 [INFO ] com.dippy.SpringbootSecondcarApplication - No active profile set, falling back to default profiles: default
+2020-12-13 14:14:18.999 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-13 14:14:19.009 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-13 14:14:21.116 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-13 14:14:21.122 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-13 14:14:21.286 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 136ms. Found 0 Redis repository interfaces.
+2020-12-13 14:14:22.681 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2020-12-13 14:14:22.702 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2020-12-13 14:14:22.708 [INFO ] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-13 14:14:22.709 [INFO ] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-12-13 14:14:22.964 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-13 14:14:22.964 [INFO ] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3953 ms
+2020-12-13 14:14:26.156 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-13 14:14:26.336 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-13 14:14:26.404 [INFO ] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-12-13 14:14:27.308 [INFO ] org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/captcha.jpg'], []
+2020-12-13 14:14:27.364 [INFO ] org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1267f832, org.springframework.security.web.context.SecurityContextPersistenceFilter@24455d50, org.springframework.security.web.header.HeaderWriterFilter@c10f7a8, org.springframework.web.filter.CorsFilter@1e7cfd49, org.springframework.security.web.authentication.logout.LogoutFilter@65852d05, com.dippy.filter.VerifyCodeFilter@5c25daad, com.dippy.filter.TokenFilter@3df04fa1, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@47462daf, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4cc4f6bd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7860a014, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@770c3ca2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@711261c7, org.springframework.security.web.session.SessionManagementFilter@33de9d85, org.springframework.security.web.access.ExceptionTranslationFilter@1f591b2e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@420068a]
+2020-12-13 14:14:27.508 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2020-12-13 14:14:27.553 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2020-12-13 14:14:27.555 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-12-13 14:14:27.581 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-12-13 14:14:27.642 [INFO ] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-12-13 14:14:27.853 [INFO ] com.dippy.SpringbootSecondcarApplication - Started SpringbootSecondcarApplication in 11.211 seconds (JVM running for 17.522)
+2020-12-13 14:14:44.370 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-13 14:14:53.417 [INFO ] com.dippy.filter.VerifyCodeFilter - 后端的验证码为： null
+2020-12-13 14:17:56.237 [INFO ] com.dippy.filter.VerifyCodeFilter - 后端的验证码为： null
+2020-12-13 14:21:50.142 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-13 14:21:50.219 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 74ms. Found 0 Redis repository interfaces.
+2020-12-13 14:21:59.374 [INFO ] com.dippy.filter.VerifyCodeFilter - 后端的验证码为： null
+2020-12-13 14:22:05.564 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-13 14:22:14.666 [INFO ] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-12-13 14:22:14.753 [INFO ] com.dippy.SpringbootSecondcarApplication - Starting SpringbootSecondcarApplication on Dippy with PID 15468 (E:\workspace\IDEA\springboot\springboot-secondcar\target\classes started by Mindless in E:\workspace\IDEA\springboot\springboot-secondcar)
+2020-12-13 14:22:14.756 [INFO ] com.dippy.SpringbootSecondcarApplication - No active profile set, falling back to default profiles: default
+2020-12-13 14:22:14.895 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-13 14:22:14.895 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-13 14:22:16.534 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-13 14:22:16.539 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-13 14:22:16.692 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 130ms. Found 0 Redis repository interfaces.
+2020-12-13 14:22:18.021 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2020-12-13 14:22:18.043 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2020-12-13 14:22:18.045 [INFO ] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-13 14:22:18.046 [INFO ] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-12-13 14:22:18.291 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-13 14:22:18.291 [INFO ] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3395 ms
+2020-12-13 14:22:21.540 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-13 14:22:21.710 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-13 14:22:21.777 [INFO ] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-12-13 14:22:22.664 [INFO ] org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/captcha.jpg'], []
+2020-12-13 14:22:22.715 [INFO ] org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@f3e6876, org.springframework.security.web.context.SecurityContextPersistenceFilter@55f4ec04, org.springframework.security.web.header.HeaderWriterFilter@63f16350, org.springframework.web.filter.CorsFilter@5f68eec6, org.springframework.security.web.authentication.logout.LogoutFilter@c6db00d, com.dippy.filter.VerifyCodeFilter@7e691624, com.dippy.filter.TokenFilter@29532e91, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@732fa176, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1fd4850b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@44ec6637, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@5aa461, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@52c2d1e8, org.springframework.security.web.session.SessionManagementFilter@21262bde, org.springframework.security.web.access.ExceptionTranslationFilter@701c413, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@48cbb4c5]
+2020-12-13 14:22:22.848 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2020-12-13 14:22:22.900 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2020-12-13 14:22:22.902 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-12-13 14:22:22.930 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-12-13 14:22:22.990 [INFO ] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-12-13 14:22:23.200 [INFO ] com.dippy.SpringbootSecondcarApplication - Started SpringbootSecondcarApplication in 9.909 seconds (JVM running for 15.262)
+2020-12-13 14:23:15.832 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-13 14:23:52.056 [INFO ] com.dippy.filter.VerifyCodeFilter - 后端的验证码为： null
+2020-12-13 14:25:53.814 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-13 14:25:53.896 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 69ms. Found 0 Redis repository interfaces.
+2020-12-13 14:25:54.090 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-13 14:26:11.386 [INFO ] com.dippy.filter.VerifyCodeFilter - 后端的验证码为： null
+2020-12-13 14:27:33.277 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-13 14:27:53.119 [INFO ] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-12-13 14:27:53.223 [INFO ] com.dippy.SpringbootSecondcarApplication - Starting SpringbootSecondcarApplication on Dippy with PID 20520 (E:\workspace\IDEA\springboot\springboot-secondcar\target\classes started by Mindless in E:\workspace\IDEA\springboot\springboot-secondcar)
+2020-12-13 14:27:53.228 [INFO ] com.dippy.SpringbootSecondcarApplication - No active profile set, falling back to default profiles: default
+2020-12-13 14:27:53.365 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-13 14:27:53.365 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-13 14:27:55.063 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-13 14:27:55.067 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-13 14:27:55.226 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 135ms. Found 0 Redis repository interfaces.
+2020-12-13 14:27:56.644 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2020-12-13 14:27:56.663 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2020-12-13 14:27:56.665 [INFO ] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-13 14:27:56.665 [INFO ] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-12-13 14:27:56.921 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-13 14:27:56.922 [INFO ] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3556 ms
+2020-12-13 14:27:59.844 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-13 14:28:00.025 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-13 14:28:00.093 [INFO ] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-12-13 14:28:01.008 [INFO ] org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/captcha.jpg'], []
+2020-12-13 14:28:01.066 [INFO ] org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@31beb0d0, org.springframework.security.web.context.SecurityContextPersistenceFilter@40e7aea9, org.springframework.security.web.header.HeaderWriterFilter@21a462ce, org.springframework.web.filter.CorsFilter@46de118b, org.springframework.security.web.authentication.logout.LogoutFilter@6715a6da, com.dippy.filter.VerifyCodeFilter@7b4619a3, com.dippy.filter.TokenFilter@38cf4497, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1eb207c3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@46e38c28, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@15251cc2, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@299cddbf, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@13da6bc9, org.springframework.security.web.session.SessionManagementFilter@31428f76, org.springframework.security.web.access.ExceptionTranslationFilter@1002c49e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@70fcd3e5]
+2020-12-13 14:28:01.219 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2020-12-13 14:28:01.285 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2020-12-13 14:28:01.287 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-12-13 14:28:01.317 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-12-13 14:28:01.375 [INFO ] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-12-13 14:28:01.600 [INFO ] com.dippy.SpringbootSecondcarApplication - Started SpringbootSecondcarApplication in 9.582 seconds (JVM running for 14.869)
+2020-12-13 14:28:15.097 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-13 14:28:23.330 [INFO ] com.dippy.filter.VerifyCodeFilter - 后端的验证码为： null
+2020-12-13 14:49:27.230 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-13 14:49:27.362 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 127ms. Found 0 Redis repository interfaces.
+2020-12-13 14:49:27.673 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-13 14:49:54.193 [INFO ] com.dippy.filter.VerifyCodeFilter - 后端的验证码为： cffff
+2020-12-13 14:49:54.324 [INFO ] com.dippy.service.impl.UserDetailServiceImpl - 执行UserDetailServiceImpl自定义登录逻辑---dippy--用户名
+2020-12-13 14:50:05.481 [INFO ] com.dippy.service.impl.UserDetailServiceImpl - 用户名为：dippy
+2020-12-13 14:56:04.911 [INFO ] com.dippy.common.SecurityHandlerConfig - 执行了SecurityHandlerConfig登录成功处理器------
+2020-12-13 14:56:11.803 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-13 14:56:11.884 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 76ms. Found 0 Redis repository interfaces.
+2020-12-13 14:56:24.288 [INFO ] com.dippy.filter.VerifyCodeFilter - 后端的验证码为： gffdm
+2020-12-13 14:56:24.289 [INFO ] com.dippy.service.impl.UserDetailServiceImpl - 执行UserDetailServiceImpl自定义登录逻辑---dippy--用户名
+2020-12-13 14:56:24.290 [INFO ] com.dippy.service.impl.UserDetailServiceImpl - 用户名为：dippy
+2020-12-13 14:56:24.492 [INFO ] com.dippy.common.SecurityHandlerConfig - 执行了SecurityHandlerConfig登录成功处理器------
+2020-12-13 14:59:34.558 [INFO ] com.dippy.filter.VerifyCodeFilter - 后端的验证码为： 82wxn
+2020-12-13 14:59:34.559 [INFO ] com.dippy.service.impl.UserDetailServiceImpl - 执行UserDetailServiceImpl自定义登录逻辑---dippy--用户名
+2020-12-13 14:59:34.559 [INFO ] com.dippy.service.impl.UserDetailServiceImpl - 用户名为：dippy
+2020-12-13 14:59:34.771 [INFO ] com.dippy.common.SecurityHandlerConfig - 执行了SecurityHandlerConfig登录成功处理器------
+2020-12-13 15:01:15.171 [INFO ] com.dippy.filter.VerifyCodeFilter - 后端的验证码为： null
+2020-12-13 15:01:50.061 [INFO ] com.dippy.filter.VerifyCodeFilter - 后端的验证码为： yxy4d
+2020-12-13 15:01:50.063 [INFO ] com.dippy.service.impl.UserDetailServiceImpl - 执行UserDetailServiceImpl自定义登录逻辑---dippy--用户名
+2020-12-13 15:01:50.063 [INFO ] com.dippy.service.impl.UserDetailServiceImpl - 用户名为：dippy
+2020-12-13 15:01:50.282 [INFO ] com.dippy.common.SecurityHandlerConfig - 执行了SecurityHandlerConfig登录成功处理器------
+2020-12-13 15:14:45.816 [INFO ] com.dippy.filter.VerifyCodeFilter - 后端的验证码为： null
+2020-12-13 15:47:42.508 [INFO ] com.dippy.filter.VerifyCodeFilter - 后端的验证码为： null
+2020-12-13 15:49:09.197 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-13 15:49:09.301 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 101ms. Found 0 Redis repository interfaces.
+2020-12-13 15:49:21.533 [INFO ] com.dippy.filter.VerifyCodeFilter - 后端的验证码为： null
+2020-12-13 15:50:08.822 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-13 15:50:08.905 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 81ms. Found 0 Redis repository interfaces.
+2020-12-13 15:50:23.861 [INFO ] com.dippy.filter.VerifyCodeFilter - 后端的验证码为： null
+2020-12-13 15:51:06.715 [INFO ] com.dippy.filter.VerifyCodeFilter - 后端的验证码为： null
+2020-12-13 15:51:51.213 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-13 15:51:51.296 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 82ms. Found 0 Redis repository interfaces.
+2020-12-13 15:51:59.224 [INFO ] com.dippy.filter.VerifyCodeFilter - 后端的验证码为： null
+2020-12-13 15:52:15.490 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-13 15:52:25.566 [INFO ] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-12-13 15:52:25.670 [INFO ] com.dippy.SpringbootSecondcarApplication - Starting SpringbootSecondcarApplication on Dippy with PID 14348 (E:\workspace\IDEA\springboot\springboot-secondcar\target\classes started by Mindless in E:\workspace\IDEA\springboot\springboot-secondcar)
+2020-12-13 15:52:25.675 [INFO ] com.dippy.SpringbootSecondcarApplication - No active profile set, falling back to default profiles: default
+2020-12-13 15:52:25.859 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-13 15:52:25.860 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-13 15:52:27.798 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-13 15:52:27.803 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-13 15:52:27.959 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 131ms. Found 0 Redis repository interfaces.
+2020-12-13 15:52:29.307 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2020-12-13 15:52:29.326 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2020-12-13 15:52:29.328 [INFO ] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-13 15:52:29.328 [INFO ] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-12-13 15:52:29.676 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-13 15:52:29.676 [INFO ] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3816 ms
+2020-12-13 15:52:32.639 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-13 15:52:32.825 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-13 15:52:32.897 [INFO ] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-12-13 15:52:33.822 [INFO ] org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/captcha.jpg'], []
+2020-12-13 15:52:33.876 [INFO ] org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7842260f, org.springframework.security.web.context.SecurityContextPersistenceFilter@299c86f0, org.springframework.security.web.header.HeaderWriterFilter@3749c6ac, org.springframework.web.filter.CorsFilter@6e0d058a, org.springframework.security.web.authentication.logout.LogoutFilter@549be307, com.dippy.filter.VerifyCodeFilter@22a63740, com.dippy.filter.TokenFilter@4583b617, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@d03cdc7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1b1d93e9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5ce1ec7, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@6cee52e2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7cb4d4ee, org.springframework.security.web.session.SessionManagementFilter@3bede349, org.springframework.security.web.access.ExceptionTranslationFilter@71d8794f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1db9d253]
+2020-12-13 15:52:34.009 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2020-12-13 15:52:34.057 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2020-12-13 15:52:34.059 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-12-13 15:52:34.090 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-12-13 15:52:34.158 [INFO ] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-12-13 15:52:34.387 [INFO ] com.dippy.SpringbootSecondcarApplication - Started SpringbootSecondcarApplication in 10.326 seconds (JVM running for 16.334)
+2020-12-13 15:52:52.070 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-13 16:02:13.034 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-13 16:02:13.096 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 60ms. Found 0 Redis repository interfaces.
+2020-12-13 16:02:32.262 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-13 16:02:41.033 [INFO ] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-12-13 16:02:41.140 [INFO ] com.dippy.SpringbootSecondcarApplication - Starting SpringbootSecondcarApplication on Dippy with PID 9184 (E:\workspace\IDEA\springboot\springboot-secondcar\target\classes started by Mindless in E:\workspace\IDEA\springboot\springboot-secondcar)
+2020-12-13 16:02:41.141 [INFO ] com.dippy.SpringbootSecondcarApplication - No active profile set, falling back to default profiles: default
+2020-12-13 16:02:41.286 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-13 16:02:41.286 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-13 16:02:43.352 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-13 16:02:43.357 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-13 16:02:43.515 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 134ms. Found 0 Redis repository interfaces.
+2020-12-13 16:02:44.854 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2020-12-13 16:02:44.873 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2020-12-13 16:02:44.875 [INFO ] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-13 16:02:44.875 [INFO ] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-12-13 16:02:45.122 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-13 16:02:45.123 [INFO ] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3836 ms
+2020-12-13 16:02:47.988 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-13 16:02:48.165 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-13 16:02:48.234 [INFO ] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-12-13 16:02:49.208 [INFO ] org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/captcha.jpg'], []
+2020-12-13 16:02:49.263 [INFO ] org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6202f8bf, org.springframework.security.web.context.SecurityContextPersistenceFilter@35bb3fea, org.springframework.security.web.header.HeaderWriterFilter@57fb6900, org.springframework.web.filter.CorsFilter@4b00d59, org.springframework.security.web.authentication.logout.LogoutFilter@34f2d3a6, com.dippy.filter.VerifyCodeFilter@4ba13fed, com.dippy.filter.TokenFilter@3aca2579, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3da701a1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7a0df38e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2a20aa4e, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@21b792c2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@330d557e, org.springframework.security.web.session.SessionManagementFilter@3f0751b0, org.springframework.security.web.access.ExceptionTranslationFilter@1f67d37f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@46cb800b]
+2020-12-13 16:02:49.392 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2020-12-13 16:02:49.440 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2020-12-13 16:02:49.442 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-12-13 16:02:49.469 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-12-13 16:02:49.529 [INFO ] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-12-13 16:02:49.763 [INFO ] com.dippy.SpringbootSecondcarApplication - Started SpringbootSecondcarApplication in 10.005 seconds (JVM running for 15.536)
+2020-12-13 16:03:06.840 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-13 16:03:15.618 [INFO ] com.dippy.filter.VerifyCodeFilter - 后端的验证码为： null
+2020-12-13 16:05:28.567 [INFO ] com.dippy.filter.VerifyCodeFilter - 后端的验证码为： null
+2020-12-13 16:06:23.481 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-13 16:06:23.541 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 58ms. Found 0 Redis repository interfaces.
+2020-12-13 16:06:31.011 [INFO ] com.dippy.filter.VerifyCodeFilter - 后端的验证码为： null
+2020-12-13 16:16:23.722 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-13 16:16:23.801 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 78ms. Found 0 Redis repository interfaces.
+2020-12-13 16:16:33.390 [INFO ] com.dippy.filter.VerifyCodeFilter - 后端的验证码为： null
+2020-12-13 16:17:13.456 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-13 16:17:26.044 [INFO ] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-12-13 16:17:26.195 [INFO ] com.dippy.SpringbootSecondcarApplication - Starting SpringbootSecondcarApplication on Dippy with PID 6520 (E:\workspace\IDEA\springboot\springboot-secondcar\target\classes started by Mindless in E:\workspace\IDEA\springboot\springboot-secondcar)
+2020-12-13 16:17:26.196 [INFO ] com.dippy.SpringbootSecondcarApplication - No active profile set, falling back to default profiles: default
+2020-12-13 16:17:26.354 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-13 16:17:26.355 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-13 16:17:29.383 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-13 16:17:29.389 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-13 16:17:29.610 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 173ms. Found 0 Redis repository interfaces.
+2020-12-13 16:17:32.255 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2020-12-13 16:17:32.343 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2020-12-13 16:17:32.348 [INFO ] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-13 16:17:32.349 [INFO ] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-12-13 16:17:33.419 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-13 16:17:33.420 [INFO ] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 7065 ms
+2020-12-13 16:17:38.439 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-13 16:17:38.943 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-13 16:17:39.065 [INFO ] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-12-13 16:17:40.208 [INFO ] org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/captcha.jpg'], []
+2020-12-13 16:17:40.265 [INFO ] org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@f69e35a, org.springframework.security.web.context.SecurityContextPersistenceFilter@5620470a, org.springframework.security.web.header.HeaderWriterFilter@7fae6f43, org.springframework.web.filter.CorsFilter@54ca9420, org.springframework.security.web.authentication.logout.LogoutFilter@7da59f6e, com.dippy.filter.VerifyCodeFilter@752494dd, com.dippy.filter.TokenFilter@78743dd8, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7fb8d720, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3368cf02, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@408bb173, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@5edce7da, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6c2d124e, org.springframework.security.web.session.SessionManagementFilter@4bca2a09, org.springframework.security.web.access.ExceptionTranslationFilter@5be8a92c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@58ca1cad]
+2020-12-13 16:17:40.395 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2020-12-13 16:17:40.444 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2020-12-13 16:17:40.445 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-12-13 16:17:40.475 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-12-13 16:17:40.547 [INFO ] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-12-13 16:17:40.937 [INFO ] com.dippy.SpringbootSecondcarApplication - Started SpringbootSecondcarApplication in 16.224 seconds (JVM running for 21.928)
+2020-12-13 16:18:12.842 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-13 16:18:12.895 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 51ms. Found 0 Redis repository interfaces.
+2020-12-13 16:18:12.922 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-13 18:04:36.597 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-13 22:34:18.833 [INFO ] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-12-13 22:34:18.952 [INFO ] com.dippy.SpringbootSecondcarApplication - Starting SpringbootSecondcarApplication on Dippy with PID 14692 (E:\workspace\IDEA\springboot\springboot-secondcar\target\classes started by Mindless in E:\workspace\IDEA\springboot\springboot-secondcar)
+2020-12-13 22:34:18.954 [INFO ] com.dippy.SpringbootSecondcarApplication - No active profile set, falling back to default profiles: default
+2020-12-13 22:34:19.097 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-13 22:34:19.098 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-13 22:34:21.478 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-13 22:34:21.484 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-13 22:34:21.649 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 136ms. Found 0 Redis repository interfaces.
+2020-12-13 22:34:23.140 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2020-12-13 22:34:23.160 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2020-12-13 22:34:23.162 [INFO ] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-13 22:34:23.162 [INFO ] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-12-13 22:34:23.419 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-13 22:34:23.419 [INFO ] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4320 ms
+2020-12-13 22:34:26.306 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-13 22:34:26.488 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-13 22:34:26.567 [INFO ] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-12-13 22:34:27.639 [INFO ] org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/captcha.jpg'], []
+2020-12-13 22:34:27.691 [INFO ] org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@65c66fc4, org.springframework.security.web.context.SecurityContextPersistenceFilter@588614f9, org.springframework.security.web.header.HeaderWriterFilter@5fdff4f1, org.springframework.web.filter.CorsFilter@31443680, org.springframework.security.web.authentication.logout.LogoutFilter@2a49753, com.dippy.filter.VerifyCodeFilter@23c72128, com.dippy.filter.TokenFilter@213ceb4e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6e68ccc9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7fb313e3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@277dddcf, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@597eb9ac, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7a90f33d, org.springframework.security.web.session.SessionManagementFilter@140fa482, org.springframework.security.web.access.ExceptionTranslationFilter@5e0b7f58, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5e8684a3]
+2020-12-13 22:34:27.820 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2020-12-13 22:34:27.878 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2020-12-13 22:34:27.880 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-12-13 22:34:27.915 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-12-13 22:34:27.984 [INFO ] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-12-13 22:34:28.224 [INFO ] com.dippy.SpringbootSecondcarApplication - Started SpringbootSecondcarApplication in 10.669 seconds (JVM running for 17.294)
+2020-12-13 22:36:21.742 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-13 22:37:42.960 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-13 22:37:55.981 [INFO ] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-12-13 22:37:56.120 [INFO ] com.dippy.SpringbootSecondcarApplication - Starting SpringbootSecondcarApplication on Dippy with PID 3692 (E:\workspace\IDEA\springboot\springboot-secondcar\target\classes started by Mindless in E:\workspace\IDEA\springboot\springboot-secondcar)
+2020-12-13 22:37:56.124 [INFO ] com.dippy.SpringbootSecondcarApplication - No active profile set, falling back to default profiles: default
+2020-12-13 22:37:56.295 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-13 22:37:56.296 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-13 22:37:57.938 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-13 22:37:57.944 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-13 22:37:58.101 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 127ms. Found 0 Redis repository interfaces.
+2020-12-13 22:37:59.774 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2020-12-13 22:37:59.793 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2020-12-13 22:37:59.795 [INFO ] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-13 22:37:59.795 [INFO ] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-12-13 22:38:00.040 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-13 22:38:00.041 [INFO ] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3744 ms
+2020-12-13 22:38:02.976 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-13 22:38:03.145 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-13 22:38:03.220 [INFO ] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-12-13 22:38:04.312 [INFO ] org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/captcha.jpg'], []
+2020-12-13 22:38:04.378 [INFO ] org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2e04c89d, org.springframework.security.web.context.SecurityContextPersistenceFilter@7cb4d4ee, org.springframework.security.web.header.HeaderWriterFilter@698daff6, org.springframework.web.filter.CorsFilter@31b650e9, org.springframework.security.web.authentication.logout.LogoutFilter@2e17a9e6, com.dippy.filter.VerifyCodeFilter@c30f26d, com.dippy.filter.TokenFilter@628bd77e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6a1b4854, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5a0b550a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5f0a5848, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@2c989d82, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2e7dd504, org.springframework.security.web.session.SessionManagementFilter@6cee52e2, org.springframework.security.web.access.ExceptionTranslationFilter@1b2e841, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@334ac669]
+2020-12-13 22:38:04.524 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2020-12-13 22:38:04.601 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2020-12-13 22:38:04.604 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-12-13 22:38:04.645 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-12-13 22:38:04.731 [INFO ] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-12-13 22:38:04.826 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-13 22:38:04.997 [INFO ] com.dippy.SpringbootSecondcarApplication - Started SpringbootSecondcarApplication in 10.664 seconds (JVM running for 18.038)
+2020-12-13 22:42:12.026 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-13 22:42:12.098 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 70ms. Found 0 Redis repository interfaces.
+2020-12-13 22:42:46.566 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-13 22:42:46.659 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 90ms. Found 0 Redis repository interfaces.
+2020-12-13 22:42:57.542 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-13 22:43:08.016 [INFO ] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-12-13 22:43:08.142 [INFO ] com.dippy.SpringbootSecondcarApplication - Starting SpringbootSecondcarApplication on Dippy with PID 17980 (E:\workspace\IDEA\springboot\springboot-secondcar\target\classes started by Mindless in E:\workspace\IDEA\springboot\springboot-secondcar)
+2020-12-13 22:43:08.145 [INFO ] com.dippy.SpringbootSecondcarApplication - No active profile set, falling back to default profiles: default
+2020-12-13 22:43:08.313 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-13 22:43:08.313 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-13 22:43:10.022 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-13 22:43:10.027 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-13 22:43:10.194 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 141ms. Found 0 Redis repository interfaces.
+2020-12-13 22:43:11.566 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2020-12-13 22:43:11.588 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2020-12-13 22:43:11.591 [INFO ] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-13 22:43:11.593 [INFO ] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-12-13 22:43:11.875 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-13 22:43:11.876 [INFO ] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3562 ms
+2020-12-13 22:43:17.069 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-13 22:43:17.342 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-13 22:43:17.423 [INFO ] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-12-13 22:43:18.540 [INFO ] org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/captcha.jpg'], []
+2020-12-13 22:43:18.607 [INFO ] org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7c35d7d, org.springframework.security.web.context.SecurityContextPersistenceFilter@5e97da56, org.springframework.security.web.header.HeaderWriterFilter@6764201e, org.springframework.web.filter.CorsFilter@300aa927, org.springframework.security.web.authentication.logout.LogoutFilter@e0c03bd, com.dippy.filter.VerifyCodeFilter@5be69f7e, com.dippy.filter.TokenFilter@6fdc2db6, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@61e4a072, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6cfe32cd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1e86b2d1, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@1da5635e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@24ccc91b, org.springframework.security.web.session.SessionManagementFilter@7a0f1f9d, org.springframework.security.web.access.ExceptionTranslationFilter@1db7a4ae, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@71b6edfb]
+2020-12-13 22:43:18.749 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2020-12-13 22:43:18.795 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2020-12-13 22:43:18.797 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-12-13 22:43:18.826 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-12-13 22:43:18.900 [INFO ] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-12-13 22:43:19.170 [INFO ] com.dippy.SpringbootSecondcarApplication - Started SpringbootSecondcarApplication in 12.689 seconds (JVM running for 18.655)
+2020-12-13 22:43:30.806 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-13 22:46:06.150 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-13 22:46:06.212 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 60ms. Found 0 Redis repository interfaces.
+2020-12-13 22:52:32.672 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-13 22:52:32.740 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 67ms. Found 0 Redis repository interfaces.
+2020-12-13 22:52:45.918 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-13 22:52:55.139 [INFO ] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-12-13 22:52:55.227 [INFO ] com.dippy.SpringbootSecondcarApplication - Starting SpringbootSecondcarApplication on Dippy with PID 22140 (E:\workspace\IDEA\springboot\springboot-secondcar\target\classes started by Mindless in E:\workspace\IDEA\springboot\springboot-secondcar)
+2020-12-13 22:52:55.228 [INFO ] com.dippy.SpringbootSecondcarApplication - No active profile set, falling back to default profiles: default
+2020-12-13 22:52:55.340 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-13 22:52:55.340 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-13 22:52:56.998 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-13 22:52:57.002 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-13 22:52:57.159 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 134ms. Found 0 Redis repository interfaces.
+2020-12-13 22:52:58.527 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2020-12-13 22:52:58.546 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2020-12-13 22:52:58.548 [INFO ] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-13 22:52:58.549 [INFO ] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-12-13 22:52:58.799 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-13 22:52:58.800 [INFO ] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3459 ms
+2020-12-13 22:53:02.450 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-13 22:53:02.830 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-13 22:53:02.991 [INFO ] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-12-13 22:53:04.199 [INFO ] org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/captcha.jpg'], []
+2020-12-13 22:53:04.259 [INFO ] org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@8dd0c70, org.springframework.security.web.context.SecurityContextPersistenceFilter@2e2546bf, org.springframework.security.web.header.HeaderWriterFilter@c950fd, org.springframework.web.filter.CorsFilter@5cd701e4, org.springframework.security.web.authentication.logout.LogoutFilter@58e0d1ac, com.dippy.filter.VerifyCodeFilter@396f2724, com.dippy.filter.TokenFilter@1f4dd016, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7fba30fe, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6908674b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@62aefc75, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@2446597e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7aad7df5, org.springframework.security.web.session.SessionManagementFilter@3f910f36, org.springframework.security.web.access.ExceptionTranslationFilter@4df54c1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2f0b5d79]
+2020-12-13 22:53:04.404 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2020-12-13 22:53:04.494 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2020-12-13 22:53:04.496 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-12-13 22:53:04.526 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-12-13 22:53:04.594 [INFO ] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-12-13 22:53:04.837 [INFO ] com.dippy.SpringbootSecondcarApplication - Started SpringbootSecondcarApplication in 11.032 seconds (JVM running for 16.723)
+2020-12-13 22:53:16.573 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-13 22:53:23.173 [INFO ] com.dippy.filter.VerifyCodeFilter - 后端的验证码为： null
+2020-12-13 22:54:04.901 [INFO ] com.dippy.filter.VerifyCodeFilter - 后端的验证码为： wmc64
+2020-12-13 22:54:05.009 [INFO ] com.dippy.service.impl.UserDetailServiceImpl - 执行UserDetailServiceImpl自定义登录逻辑---dippy--用户名
+2020-12-13 22:54:05.010 [INFO ] com.dippy.service.impl.UserDetailServiceImpl - 用户名为：dippy
+2020-12-13 22:54:05.212 [INFO ] com.dippy.common.SecurityHandlerConfig - 执行了SecurityHandlerConfig登录成功处理器------
+2020-12-13 22:55:19.876 [INFO ] com.dippy.filter.VerifyCodeFilter - 后端的验证码为： null
+2020-12-13 22:59:06.146 [INFO ] com.dippy.filter.VerifyCodeFilter - 后端的验证码为： null
+2020-12-13 22:59:44.196 [INFO ] com.dippy.filter.VerifyCodeFilter - 后端的验证码为： null
+2020-12-13 23:00:11.412 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-13 23:00:11.617 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 204ms. Found 0 Redis repository interfaces.
+2020-12-13 23:00:18.026 [INFO ] com.dippy.filter.VerifyCodeFilter - 后端的验证码为： null
+2020-12-13 23:00:29.123 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-13 23:00:37.066 [INFO ] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-12-13 23:00:37.224 [INFO ] com.dippy.SpringbootSecondcarApplication - Starting SpringbootSecondcarApplication on Dippy with PID 21872 (E:\workspace\IDEA\springboot\springboot-secondcar\target\classes started by Mindless in E:\workspace\IDEA\springboot\springboot-secondcar)
+2020-12-13 23:00:37.226 [INFO ] com.dippy.SpringbootSecondcarApplication - No active profile set, falling back to default profiles: default
+2020-12-13 23:00:37.367 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-13 23:00:37.369 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-13 23:00:39.379 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-13 23:00:39.385 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-13 23:00:39.546 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 135ms. Found 0 Redis repository interfaces.
+2020-12-13 23:00:41.239 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2020-12-13 23:00:41.274 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2020-12-13 23:00:41.281 [INFO ] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-13 23:00:41.282 [INFO ] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-12-13 23:00:41.614 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-13 23:00:41.614 [INFO ] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4245 ms
+2020-12-13 23:00:45.599 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-13 23:00:45.848 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-13 23:00:45.934 [INFO ] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-12-13 23:00:47.387 [INFO ] org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/captcha.jpg'], []
+2020-12-13 23:00:47.484 [INFO ] org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5de32e00, org.springframework.security.web.context.SecurityContextPersistenceFilter@32f2de5c, org.springframework.security.web.header.HeaderWriterFilter@373c8f35, org.springframework.web.filter.CorsFilter@31443680, org.springframework.security.web.authentication.logout.LogoutFilter@f3e6876, com.dippy.filter.VerifyCodeFilter@23c72128, com.dippy.filter.TokenFilter@213ceb4e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@52c2d1e8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@74120029, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@75708130, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@37a0c3c6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@219ec4b6, org.springframework.security.web.session.SessionManagementFilter@e0c03bd, org.springframework.security.web.access.ExceptionTranslationFilter@3fe59f84, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@31c800a5]
+2020-12-13 23:00:47.653 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2020-12-13 23:00:47.719 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2020-12-13 23:00:47.720 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-12-13 23:00:47.754 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-12-13 23:00:47.864 [INFO ] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-12-13 23:00:48.231 [INFO ] com.dippy.SpringbootSecondcarApplication - Started SpringbootSecondcarApplication in 12.413 seconds (JVM running for 17.634)
+2020-12-13 23:01:18.166 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-13 23:06:35.920 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-13 23:06:49.587 [INFO ] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-12-13 23:06:49.679 [INFO ] com.dippy.SpringbootSecondcarApplication - Starting SpringbootSecondcarApplication on Dippy with PID 20024 (E:\workspace\IDEA\springboot\springboot-secondcar\target\classes started by Mindless in E:\workspace\IDEA\springboot\springboot-secondcar)
+2020-12-13 23:06:49.681 [INFO ] com.dippy.SpringbootSecondcarApplication - No active profile set, falling back to default profiles: default
+2020-12-13 23:06:49.797 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-13 23:06:49.797 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-13 23:06:51.377 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-13 23:06:51.382 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-13 23:06:51.536 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 129ms. Found 0 Redis repository interfaces.
+2020-12-13 23:06:52.825 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2020-12-13 23:06:52.842 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2020-12-13 23:06:52.844 [INFO ] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-13 23:06:52.845 [INFO ] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-12-13 23:06:53.083 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-13 23:06:53.084 [INFO ] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3287 ms
+2020-12-13 23:06:55.833 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-13 23:06:56.007 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-13 23:06:56.075 [INFO ] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-12-13 23:06:56.961 [INFO ] org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/captcha.jpg'], []
+2020-12-13 23:06:57.012 [INFO ] org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7d48299e, org.springframework.security.web.context.SecurityContextPersistenceFilter@5fdff4f1, org.springframework.security.web.header.HeaderWriterFilter@3e5febe9, org.springframework.web.filter.CorsFilter@37e491e2, org.springframework.security.web.authentication.logout.LogoutFilter@171b0d3, com.dippy.filter.VerifyCodeFilter@39ae6408, com.dippy.filter.TokenFilter@624d778e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@63d43a5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@140fa482, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@45775a15, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@8a8cab8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@17810908, org.springframework.security.web.session.SessionManagementFilter@5e0b7f58, org.springframework.security.web.access.ExceptionTranslationFilter@2e04c89d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1b89debc]
+2020-12-13 23:06:57.135 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2020-12-13 23:06:57.186 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2020-12-13 23:06:57.188 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-12-13 23:06:57.219 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-12-13 23:06:57.286 [INFO ] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-12-13 23:06:57.502 [INFO ] com.dippy.SpringbootSecondcarApplication - Started SpringbootSecondcarApplication in 8.896 seconds (JVM running for 13.82)
+2020-12-13 23:07:15.949 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-13 23:08:08.755 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-13 23:08:19.294 [INFO ] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-12-13 23:08:19.394 [INFO ] com.dippy.SpringbootSecondcarApplication - Starting SpringbootSecondcarApplication on Dippy with PID 18048 (E:\workspace\IDEA\springboot\springboot-secondcar\target\classes started by Mindless in E:\workspace\IDEA\springboot\springboot-secondcar)
+2020-12-13 23:08:19.402 [INFO ] com.dippy.SpringbootSecondcarApplication - No active profile set, falling back to default profiles: default
+2020-12-13 23:08:19.567 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-13 23:08:19.568 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-13 23:08:21.140 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-13 23:08:21.145 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-13 23:08:21.293 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 126ms. Found 0 Redis repository interfaces.
+2020-12-13 23:08:22.594 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2020-12-13 23:08:22.612 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2020-12-13 23:08:22.614 [INFO ] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-13 23:08:22.614 [INFO ] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-12-13 23:08:22.851 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-13 23:08:22.852 [INFO ] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3283 ms
+2020-12-13 23:08:25.664 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-13 23:08:25.838 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-13 23:08:25.909 [INFO ] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-12-13 23:08:26.792 [INFO ] org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/captcha.jpg'], []
+2020-12-13 23:08:26.843 [INFO ] org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6b8a9e1, org.springframework.security.web.context.SecurityContextPersistenceFilter@55589ef5, org.springframework.security.web.header.HeaderWriterFilter@1d77d9c6, org.springframework.web.filter.CorsFilter@4641f66c, org.springframework.security.web.authentication.logout.LogoutFilter@50b78155, com.dippy.filter.VerifyCodeFilter@6b64429e, com.dippy.filter.TokenFilter@653e7b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1e284d90, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@793248d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5935eb9c, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@29f86630, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4c51fc9a, org.springframework.security.web.session.SessionManagementFilter@51eeae0a, org.springframework.security.web.access.ExceptionTranslationFilter@160d68b8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@51d6c42d]
+2020-12-13 23:08:26.971 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2020-12-13 23:08:27.023 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2020-12-13 23:08:27.025 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-12-13 23:08:27.055 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-12-13 23:08:27.118 [INFO ] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-12-13 23:08:27.335 [INFO ] com.dippy.SpringbootSecondcarApplication - Started SpringbootSecondcarApplication in 9.036 seconds (JVM running for 13.99)
+2020-12-13 23:08:35.145 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-13 23:08:49.977 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-13 23:09:00.564 [INFO ] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-12-13 23:09:00.651 [INFO ] com.dippy.SpringbootSecondcarApplication - Starting SpringbootSecondcarApplication on Dippy with PID 13096 (E:\workspace\IDEA\springboot\springboot-secondcar\target\classes started by Mindless in E:\workspace\IDEA\springboot\springboot-secondcar)
+2020-12-13 23:09:00.652 [INFO ] com.dippy.SpringbootSecondcarApplication - No active profile set, falling back to default profiles: default
+2020-12-13 23:09:00.767 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-13 23:09:00.768 [INFO ] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-13 23:09:02.366 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-13 23:09:02.370 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-13 23:09:02.515 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 122ms. Found 0 Redis repository interfaces.
+2020-12-13 23:09:03.824 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2020-12-13 23:09:03.843 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2020-12-13 23:09:03.845 [INFO ] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-13 23:09:03.845 [INFO ] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-12-13 23:09:04.080 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-13 23:09:04.080 [INFO ] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3312 ms
+2020-12-13 23:09:06.868 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-13 23:09:07.038 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-13 23:09:07.111 [INFO ] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-12-13 23:09:07.976 [INFO ] org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/captcha.jpg'], []
+2020-12-13 23:09:08.030 [INFO ] org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@698daff6, org.springframework.security.web.context.SecurityContextPersistenceFilter@9cdf13e, org.springframework.security.web.header.HeaderWriterFilter@36e11b60, org.springframework.web.filter.CorsFilter@21d8da75, org.springframework.security.web.authentication.logout.LogoutFilter@3b6c55b6, com.dippy.filter.VerifyCodeFilter@2419fe6f, com.dippy.filter.TokenFilter@2862271a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@55e02661, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@501956f9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@76d220eb, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@3a75d9a1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7a085d02, org.springframework.security.web.session.SessionManagementFilter@6af02de0, org.springframework.security.web.access.ExceptionTranslationFilter@7bbc11ed, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@55f4ec04]
+2020-12-13 23:09:08.164 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2020-12-13 23:09:08.213 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2020-12-13 23:09:08.215 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-12-13 23:09:08.246 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-12-13 23:09:08.312 [INFO ] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-12-13 23:09:08.525 [INFO ] com.dippy.SpringbootSecondcarApplication - Started SpringbootSecondcarApplication in 8.934 seconds (JVM running for 14.062)
+2020-12-13 23:09:18.053 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-13 23:09:27.826 [INFO ] com.dippy.filter.VerifyCodeFilter - 后端的验证码为： null
+2020-12-13 23:10:01.292 [INFO ] com.dippy.filter.VerifyCodeFilter - 后端的验证码为： ad6w3
+2020-12-13 23:10:01.406 [INFO ] com.dippy.service.impl.UserDetailServiceImpl - 执行UserDetailServiceImpl自定义登录逻辑---dippy--用户名
+2020-12-13 23:10:01.407 [INFO ] com.dippy.service.impl.UserDetailServiceImpl - 用户名为：dippy
+2020-12-13 23:10:01.618 [INFO ] com.dippy.common.SecurityHandlerConfig - 执行了SecurityHandlerConfig登录成功处理器------
+2020-12-13 23:11:34.790 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'

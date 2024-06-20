@@ -1,0 +1,180 @@
+{
+  "car-info" : {
+    "mappings" : {
+      "properties" : {
+        "_class" : {
+          "type" : "text",
+          "fields" : {
+            "keyword" : {
+              "type" : "keyword",
+              "ignore_above" : 256
+            }
+          }
+        },
+        "carBrand" : {
+          "type" : "text",
+          "fields" : {
+            "keyword" : {
+              "type" : "keyword",
+              "ignore_above" : 256
+            }
+          }
+        },
+        "carCarMileage" : {
+          "type" : "long"
+        },
+        "carColor" : {
+          "type" : "text",
+          "fields" : {
+            "keyword" : {
+              "type" : "keyword",
+              "ignore_above" : 256
+            }
+          }
+        },
+        "carConfiguration" : {
+          "type" : "text",
+          "fields" : {
+            "keyword" : {
+              "type" : "keyword",
+              "ignore_above" : 256
+            }
+          }
+        },
+        "carCount" : {
+          "type" : "long"
+        },
+        "carDescribe" : {
+          "type" : "text",
+          "fields" : {
+            "keyword" : {
+              "type" : "keyword",
+              "ignore_above" : 256
+            }
+          }
+        },
+        "carDisplacement" : {
+          "type" : "float"
+        },
+        "carFrontTyre" : {
+          "type" : "text",
+          "fields" : {
+            "keyword" : {
+              "type" : "keyword",
+              "ignore_above" : 256
+            }
+          }
+        },
+        "carFuelType" : {
+          "type" : "text",
+          "fields" : {
+            "keyword" : {
+              "type" : "keyword",
+              "ignore_above" : 256
+            }
+          }
+        },
+        "carGearBox" : {
+          "type" : "text",
+          "fields" : {
+            "keyword" : {
+              "type" : "keyword",
+              "ignore_above" : 256
+            }
+          }
+        },
+        "carId" : {
+          "type" : "long"
+        },
+        "carPictureId" : {
+          "type" : "long"
+        },
+        "carPictures" : {
+          "properties" : {
+            "carId" : {
+              "type" : "long"
+            },
+            "carPictureId" : {
+              "type" : "long"
+            },
+            "carPictureLocation" : {
+              "type" : "long"
+            },
+            "carUrl" : {
+              "type" : "text",
+              "fields" : {
+                "keyword" : {
+                  "type" : "keyword",
+                  "ignore_above" : 256
+                }
+              }
+            }
+          }
+        },
+        "carPrice" : {
+          "type" : "float"
+        },
+        "carQualityTime" : {
+          "type" : "long"
+        },
+        "carRegionId" : {
+          "type" : "long"
+        },
+        "carSeat" : {
+          "type" : "long"
+        },
+        "carSeries" : {
+          "type" : "text",
+          "fields" : {
+            "keyword" : {
+              "type" : "keyword",
+              "ignore_above" : 256
+            }
+          }
+        },
+        "carTitle" : {
+          "type" : "text",
+          "fields" : {
+            "keyword" : {
+              "type" : "keyword",
+              "ignore_above" : 256
+            }
+          }
+        },
+        "carType" : {
+          "type" : "text",
+          "fields" : {
+            "keyword" : {
+              "type" : "keyword",
+              "ignore_above" : 256
+            }
+          }
+        },
+        "carUserTime" : {
+          "type" : "long"
+        },
+        "createTime" : {
+          "type" : "date"
+        },
+        "produceTime" : {
+          "type" : "date"
+        },
+        "rearTyre" : {
+          "type" : "text",
+          "fields" : {
+            "keyword" : {
+              "type" : "keyword",
+              "ignore_above" : 256
+            }
+          }
+        },
+        "transferCount" : {
+          "type" : "long"
+        },
+        "updateTime" : {
+          "type" : "date"
+        }
+      }
+    }
+  }
+}

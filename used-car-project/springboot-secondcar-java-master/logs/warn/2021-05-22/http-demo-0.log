@@ -1,0 +1,7 @@
+2021-05-22 02:00:56.427 [AMQP Connection 192.168.88.146:5672] WARN  com.rabbitmq.client.impl.ForgivingExceptionHandler - An unexpected connection driver error occured (Exception message: Connection reset)
+2021-05-22 07:26:10.018 [lettuce-nioEventLoop-4-4] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [yuechi.com:6379]: Reconnection attempt exceeded timeout of 60 SECONDS 
+2021-05-22 07:26:20.599 [lettuce-nioEventLoop-4-1] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [yuechi.com:6379]: connection timed out: yuechi.com/192.168.88.146:6379
+2021-05-22 07:26:30.632 [lettuce-nioEventLoop-4-2] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [yuechi.com:6379]: connection timed out: yuechi.com/192.168.88.146:6379
+2021-05-22 07:26:31.839 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5h25m39s406ms274µs400ns).
+2021-05-22 07:26:37.070 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-3] WARN  o.s.a.r.listener.SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection timed out: connect
+2021-05-22 07:39:44.114 [http-nio-8090-exec-7] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [MyException(code=2020, errMsg=用户异常！请退出后重新登录)]

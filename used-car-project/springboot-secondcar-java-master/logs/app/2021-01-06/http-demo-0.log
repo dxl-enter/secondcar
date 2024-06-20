@@ -1,0 +1,15 @@
+2021-01-06 15:09:21.525 [DEBUG] com.dippy.mapper.UserInfoMapper.selectOne - ==>  Preparing: SELECT id,username,password,name FROM user_info WHERE (username = ?)
+2021-01-06 15:09:21.571 [DEBUG] com.dippy.mapper.UserInfoMapper.selectOne - ==> Parameters: admin(String)
+2021-01-06 15:09:21.644 [DEBUG] com.dippy.mapper.UserInfoMapper.selectOne - <==      Total: 1
+2021-01-06 15:20:53.844 [DEBUG] com.dippy.mapper.UserInfoMapper.selectOne - ==>  Preparing: SELECT id,username,password,name FROM user_info WHERE (username = ?)
+2021-01-06 15:20:53.846 [DEBUG] com.dippy.mapper.UserInfoMapper.selectOne - ==> Parameters: admin(String)
+2021-01-06 15:20:53.847 [DEBUG] com.dippy.mapper.UserInfoMapper.selectOne - <==      Total: 1
+2021-01-06 15:22:27.622 [DEBUG] com.dippy.mapper.UserInfoMapper.selectOne - ==>  Preparing: SELECT id,username,password,name FROM user_info WHERE (username = ?)
+2021-01-06 15:22:27.623 [DEBUG] com.dippy.mapper.UserInfoMapper.selectOne - ==> Parameters: admin(String)
+2021-01-06 15:22:27.624 [DEBUG] com.dippy.mapper.UserInfoMapper.selectOne - <==      Total: 1
+2021-01-06 16:06:12.397 [DEBUG] com.dippy.mapper.UserInfoMapper.selectOne - ==>  Preparing: SELECT id,username,password,name FROM user_info WHERE (username = ?)
+2021-01-06 16:06:12.438 [DEBUG] com.dippy.mapper.UserInfoMapper.selectOne - ==> Parameters: admin(String)
+2021-01-06 16:06:12.481 [DEBUG] com.dippy.mapper.UserInfoMapper.selectOne - <==      Total: 1
+2021-01-06 19:28:17.996 [DEBUG] com.dippy.mapper.UserInfoMapper.selectOne - ==>  Preparing: SELECT id,username,password,name FROM user_info WHERE (username = ?)
+2021-01-06 19:28:18.041 [DEBUG] com.dippy.mapper.UserInfoMapper.selectOne - ==> Parameters: admin(String)
+2021-01-06 19:28:18.085 [DEBUG] com.dippy.mapper.UserInfoMapper.selectOne - <==      Total: 1

@@ -1,0 +1,90 @@
+{
+  "carInfo": {
+    "carId": 1,
+    "carBrand": "宝马",
+    "carSeries": "5系",
+    "carType": "SUV",
+    "carPrice": 21000,
+    "carCount": 1,
+    "carUserTime": 1,
+    "transferCount": 0,
+    "carCarMileage": 12,
+    "carColor": "白",
+    "carPictureId": 3,
+    "carGearBox": "自动",
+    "carDisplacement": 2,
+    "produceTime": "2021-01-13",
+    "carConfiguration": "天窗、真皮坐垫",
+    "carSeat": 4,
+    "carFuelType": "机油",
+    "carQualityTime": 1,
+    "carRegionId": 1,
+    "carFrontTyre": null,
+    "rearTyre": null,
+    "carDescribe": null,
+    "createTime": "2021-02-02 02:11:17",
+    "updateTime": "2021-04-21 14:40:09",
+    "carStatus": 1,
+    "carTitle": "宝马 200 SUV",
+    "carPictures": null,
+    "userId": 1,
+    "carPicture": "http://qrcqcbhcv.hn-bkt.clouddn.com/160_1351486634778.jpg\r\n"
+  },
+
+
+  "carPicturesMap": {
+    "2": [
+      {
+        "carPictureId": 2,
+        "carUrl": "http://qrcqcbhcv.hn-bkt.clouddn.com/%E7%99%BD%E8%B7%91.jpg",
+        "carPictureLocation": 2,
+        "carId": 1
+      },
+      {
+        "carPictureId": 4,
+        "carUrl": "http://qrcqcbhcv.hn-bkt.clouddn.com/0wy1pn.png",
+        "carPictureLocation": 2,
+        "carId": 1
+      }
+    ],
+    "3": [
+      {
+        "carPictureId": 3,
+        "carUrl": "http://qrcqcbhcv.hn-bkt.clouddn.com/5dvep7.jpg",
+        "carPictureLocation": 3,
+        "carId": 1
+      }
+    ],
+   , "4": [
+      {
+        "carPictureId": 8,
+        "carUrl": "http://qrg5og3v4.hn-bkt.clouddn.com/100x100_f40_autohomecar__ChcCP1s8gGWAKcBwAAArk2E6Nwc210.png",
+        "carPictureLocation": 4,
+        "carId": 1
+      },
+      {
+        "carPictureId": 9,
+        "carUrl": "http://qrg5og3v4.hn-bkt.clouddn.com/100x100_f40_autohomecar__ChcCP1s8nxmAKuFKAAAXtaGhcAA193.png",
+        "carPictureLocation": 4,
+        "carId": 1
+      },
+      {
+        "carPictureId": 10,
+        "carUrl": "http://qrg5og3v4.hn-bkt.clouddn.com/100x100_f40_autohomecar__ChcCP1s8rZeAd9ORAAAylfi3l4U081.png",
+        "carPictureLocation": 4,
+        "carId": 1
+      },
+      {
+        "carPictureId": 11,
+        "carUrl": "http://qrg5og3v4.hn-bkt.clouddn.com/100x100_f40_autohomecar__ChcCP1s9s6GAF9URAAAjNrt50sk685.png",
+        "carPictureLocation": 4,
+        "carId": 1
+      }
+    ]
+  },
+
+
+  "name": "管理员",
+  "phone": "123456",
+  "sex": 0
+}

@@ -1,0 +1,24 @@
+2021-04-07 23:47:40.485 [DEBUG] com.dippy.mapper.CarInfoMapper.getAllCarBrand - ==>  Preparing: SELECT distinct(car_brand) FROM car_info
+2021-04-07 23:47:40.485 [DEBUG] com.dippy.mapper.CarInfoMapper.getAllCarBrand - ==>  Preparing: SELECT distinct(car_brand) FROM car_info
+2021-04-07 23:47:40.575 [DEBUG] com.dippy.mapper.CarInfoMapper.getAllCarBrand - ==> Parameters: 
+2021-04-07 23:47:40.575 [DEBUG] com.dippy.mapper.CarInfoMapper.getAllCarBrand - ==> Parameters: 
+2021-04-07 23:47:40.655 [DEBUG] com.dippy.mapper.CarInfoMapper.getAllCarBrand - <==      Total: 9
+2021-04-07 23:47:40.655 [DEBUG] com.dippy.mapper.CarInfoMapper.getAllCarBrand - <==      Total: 9
+2021-04-07 23:47:40.700 [DEBUG] com.dippy.mapper.CarInfoMapper.getAllCarBrand - ==>  Preparing: SELECT distinct(car_brand) FROM car_info
+2021-04-07 23:47:40.706 [DEBUG] com.dippy.mapper.CarInfoMapper.getAllCarBrand - ==> Parameters: 
+2021-04-07 23:47:40.709 [DEBUG] com.dippy.mapper.CarInfoMapper.getAllCarBrand - <==      Total: 9
+2021-04-07 23:47:40.787 [DEBUG] com.dippy.mapper.CarInfoMapper.getAllCarBrand - ==>  Preparing: SELECT distinct(car_brand) FROM car_info
+2021-04-07 23:47:40.788 [DEBUG] com.dippy.mapper.CarInfoMapper.getAllCarBrand - ==> Parameters: 
+2021-04-07 23:47:40.790 [DEBUG] com.dippy.mapper.CarInfoMapper.getAllCarBrand - <==      Total: 9
+2021-04-07 23:48:11.738 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==>  Preparing: SELECT user_id,username,password,user_name,sex,avatar,address_id,phone,email,birthday,is_lock,create_time,update_time FROM sys_user WHERE (username = ?)
+2021-04-07 23:48:11.740 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==> Parameters: admin(String)
+2021-04-07 23:48:11.756 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - <==      Total: 1
+2021-04-07 23:48:11.773 [DEBUG] com.dippy.mapper.SysPermissionMapper.listPermissionByUserId - ==>  Preparing: SELECT p.* FROM sys_user u, sys_permission p LEFT JOIN sys_role_permission rp ON p.permission_id = rp.permission_id LEFT JOIN sys_role_user ru ON rp.role_id = ru.role_id WHERE u.user_id = ?
+2021-04-07 23:48:11.773 [DEBUG] com.dippy.mapper.SysPermissionMapper.listPermissionByUserId - ==> Parameters: 1(Integer)
+2021-04-07 23:48:11.803 [DEBUG] com.dippy.mapper.SysPermissionMapper.listPermissionByUserId - <==      Total: 40
+2021-04-07 23:51:56.650 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==>  Preparing: SELECT user_id,username,password,user_name,sex,avatar,address_id,phone,email,birthday,is_lock,create_time,update_time FROM sys_user WHERE (username = ?)
+2021-04-07 23:51:56.651 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==> Parameters: admin(String)
+2021-04-07 23:51:56.653 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - <==      Total: 1
+2021-04-07 23:51:56.655 [DEBUG] com.dippy.mapper.SysPermissionMapper.listPermissionByUserId - ==>  Preparing: SELECT p.* FROM sys_user u, sys_permission p LEFT JOIN sys_role_permission rp ON p.permission_id = rp.permission_id LEFT JOIN sys_role_user ru ON rp.role_id = ru.role_id WHERE u.user_id = ?
+2021-04-07 23:51:56.656 [DEBUG] com.dippy.mapper.SysPermissionMapper.listPermissionByUserId - ==> Parameters: 1(Integer)
+2021-04-07 23:51:56.663 [DEBUG] com.dippy.mapper.SysPermissionMapper.listPermissionByUserId - <==      Total: 40

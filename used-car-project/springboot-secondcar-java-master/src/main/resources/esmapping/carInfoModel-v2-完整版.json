@@ -1,0 +1,312 @@
+{
+  "from": 0,
+  "size": 5,
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "match": {
+            "carBrand": {
+              "query": "宝马",
+              "operator": "OR",
+              "prefix_length": 0,
+              "max_expansions": 50,
+              "fuzzy_transpositions": true,
+              "lenient": false,
+              "zero_terms_query": "NONE",
+              "auto_generate_synonyms_phrase_query": true,
+              "boost": 1
+            }
+          }
+        },
+        {
+          "match": {
+            "carTitle": {
+              "query": "宝马",
+              "operator": "OR",
+              "prefix_length": 0,
+              "max_expansions": 50,
+              "fuzzy_transpositions": true,
+              "lenient": false,
+              "zero_terms_query": "NONE",
+              "auto_generate_synonyms_phrase_query": true,
+              "boost": 1
+            }
+          }
+        },
+        {
+          "match": {
+            "carType.keyword": {
+              "query": "SUV",
+              "operator": "OR",
+              "prefix_length": 0,
+              "max_expansions": 50,
+              "fuzzy_transpositions": true,
+              "lenient": false,
+              "zero_terms_query": "NONE",
+              "auto_generate_synonyms_phrase_query": true,
+              "boost": 1
+            }
+          }
+        },
+        {
+          "match": {
+            "carGearBox.keyword": {
+              "query": "自动",
+              "operator": "OR",
+              "prefix_length": 0,
+              "max_expansions": 50,
+              "fuzzy_transpositions": true,
+              "lenient": false,
+              "zero_terms_query": "NONE",
+              "auto_generate_synonyms_phrase_query": true,
+              "boost": 1
+            }
+          }
+        }
+      ],
+      "filter": [
+        {
+          "term": {
+            "carUserTime": {
+              "value": 1,
+              "boost": 1
+            }
+          }
+        },
+        {
+          "range": {
+            "carPrice": {
+              "from": 0,
+              "to": null,
+              "include_lower": true,
+              "include_upper": true,
+              "boost": 1
+            }
+          }
+        }
+      ],
+      "adjust_pure_negative": true,
+      "boost": 1
+    }
+  },
+  "aggregations": {
+    "car_brand_agg": {
+      "terms": {
+        "field": "carBrand.keyword",
+        "size": 50,
+        "min_doc_count": 1,
+        "shard_min_doc_count": 0,
+        "show_term_doc_count_error": false,
+        "order": [
+          {
+            "_count": "desc"
+          },
+          {
+            "_key": "asc"
+          }
+        ]
+      },
+      "aggregations": {
+        "car_brand_id": {
+          "terms": {
+            "field": "carId",
+            "size": 1,
+            "min_doc_count": 1,
+            "shard_min_doc_count": 0,
+            "show_term_doc_count_error": false,
+            "order": [
+              {
+                "_count": "desc"
+              },
+              {
+                "_key": "asc"
+              }
+            ]
+          }
+        },
+        "car_series": {
+          "terms": {
+            "field": "carSeries.keyword",
+            "size": 50,
+            "min_doc_count": 1,
+            "shard_min_doc_count": 0,
+            "show_term_doc_count_error": false,
+            "order": [
+              {
+                "_count": "desc"
+              },
+              {
+                "_key": "asc"
+              }
+            ]
+          }
+        },
+        "car_user_time": {
+          "terms": {
+            "field": "carUserTime",
+            "size": 10,
+            "min_doc_count": 1,
+            "shard_min_doc_count": 0,
+            "show_term_doc_count_error": false,
+            "order": [
+              {
+                "_count": "desc"
+              },
+              {
+                "_key": "asc"
+              }
+            ]
+          }
+        },
+        "car_type": {
+          "terms": {
+            "field": "carType.keyword",
+            "size": 10,
+            "min_doc_count": 1,
+            "shard_min_doc_count": 0,
+            "show_term_doc_count_error": false,
+            "order": [
+              {
+                "_count": "desc"
+              },
+              {
+                "_key": "asc"
+              }
+            ]
+          }
+        },
+        "transfer_count": {
+          "terms": {
+            "field": "transferCount",
+            "size": 10,
+            "min_doc_count": 1,
+            "shard_min_doc_count": 0,
+            "show_term_doc_count_error": false,
+            "order": [
+              {
+                "_count": "desc"
+              },
+              {
+                "_key": "asc"
+              }
+            ]
+          }
+        },
+        "car_car_mileage": {
+          "terms": {
+            "field": "carCarMileage",
+            "size": 10,
+            "min_doc_count": 1,
+            "shard_min_doc_count": 0,
+            "show_term_doc_count_error": false,
+            "order": [
+              {
+                "_count": "desc"
+              },
+              {
+                "_key": "asc"
+              }
+            ]
+          }
+        },
+        "car_gear_box": {
+          "terms": {
+            "field": "carGearBox.keyword",
+            "size": 5,
+            "min_doc_count": 1,
+            "shard_min_doc_count": 0,
+            "show_term_doc_count_error": false,
+            "order": [
+              {
+                "_count": "desc"
+              },
+              {
+                "_key": "asc"
+              }
+            ]
+          }
+        },
+        "car_seat": {
+          "terms": {
+            "field": "carSeat",
+            "size": 5,
+            "min_doc_count": 1,
+            "shard_min_doc_count": 0,
+            "show_term_doc_count_error": false,
+            "order": [
+              {
+                "_count": "desc"
+              },
+              {
+                "_key": "asc"
+              }
+            ]
+          }
+        },
+        "car_fuel_type": {
+          "terms": {
+            "field": "carFuelType.keyword",
+            "size": 5,
+            "min_doc_count": 1,
+            "shard_min_doc_count": 0,
+            "show_term_doc_count_error": false,
+            "order": [
+              {
+                "_count": "desc"
+              },
+              {
+                "_key": "asc"
+              }
+            ]
+          }
+        },
+        "car_price": {
+          "terms": {
+            "field": "carPrice",
+            "size": 10,
+            "min_doc_count": 1,
+            "shard_min_doc_count": 0,
+            "show_term_doc_count_error": false,
+            "order": [
+              {
+                "_count": "desc"
+              },
+              {
+                "_key": "asc"
+              }
+            ]
+          }
+        },
+        "car_color": {
+          "terms": {
+            "field": "carColor.keyword",
+            "size": 10,
+            "min_doc_count": 1,
+            "shard_min_doc_count": 0,
+            "show_term_doc_count_error": false,
+            "order": [
+              {
+                "_count": "desc"
+              },
+              {
+                "_key": "asc"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "highlight": {
+    "pre_tags": [
+      "<b style == color:red'>"
+    ],
+    "post_tags": [
+      "</b>"
+    ],
+    "fields": {
+      "carTitle": {}
+    }
+  }
+}

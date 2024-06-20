@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dippy.mapper.SysPermissionMapper">
+
+    <!--<resultMap id="permissionMap" type="sysPermission">-->
+    <!--    <id property="permissionId" column="permission_id"/>-->
+    <!--    <result property="parentId" column="parent_id" />-->
+    <!--    <result property="name" column="name" />-->
+    <!--    <result property="url" column="url" />-->
+    <!--    <result property="type" column="type" />-->
+    <!--    <result property="permission" column="permission" />-->
+    <!--</resultMap>-->
+
+    <!--<select id="listPermissionByUserId" parameterType="Integer" resultType="SysPermission">-->
+    <!--    SELECT-->
+    <!--        p.*-->
+    <!--    FROM-->
+    <!--        sys_user u,-->
+    <!--        sys_permission p-->
+    <!--            LEFT JOIN sys_role_permission rp ON p.permission_id = rp.permissionId-->
+    <!--            LEFT JOIN sys_role_user ru ON rp.roleId = ru.roleId-->
+    <!--    WHERE-->
+    <!--        u.user_id = #{userId}-->
+    <!--</select>-->
+</mapper>

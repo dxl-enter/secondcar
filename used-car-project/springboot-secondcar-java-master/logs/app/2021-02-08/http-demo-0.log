@@ -1,0 +1,27 @@
+2021-02-08 03:42:21.866 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==>  Preparing: SELECT distinct car_brand FROM car_info
+2021-02-08 03:42:21.903 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==> Parameters: 
+2021-02-08 03:42:21.960 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - <==      Total: 2
+2021-02-08 03:47:11.813 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==>  Preparing: SELECT distinct car_brand FROM car_info
+2021-02-08 03:47:11.961 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==> Parameters: 
+2021-02-08 03:47:12.022 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - <==      Total: 2
+2021-02-08 03:48:06.904 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==>  Preparing: SELECT distinct(car_brand) FROM car_info
+2021-02-08 03:48:06.944 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - ==> Parameters: 
+2021-02-08 03:48:06.992 [DEBUG] com.dippy.mapper.CarInfoMapper.selectList - <==      Total: 2
+2021-02-08 04:00:26.280 [DEBUG] com.dippy.mapper.CarInfoMapper.selectMaps - ==>  Preparing: SELECT distinct(car_brand) FROM car_info
+2021-02-08 04:00:26.313 [DEBUG] com.dippy.mapper.CarInfoMapper.selectMaps - ==> Parameters: 
+2021-02-08 04:00:26.343 [DEBUG] com.dippy.mapper.CarInfoMapper.selectMaps - <==      Total: 2
+2021-02-08 04:01:54.607 [DEBUG] com.dippy.mapper.CarInfoMapper.selectObjs - ==>  Preparing: SELECT distinct(car_brand) FROM car_info
+2021-02-08 04:01:54.642 [DEBUG] com.dippy.mapper.CarInfoMapper.selectObjs - ==> Parameters: 
+2021-02-08 04:01:54.672 [DEBUG] com.dippy.mapper.CarInfoMapper.selectObjs - <==      Total: 2
+2021-02-08 22:53:40.528 [DEBUG] com.dippy.mapper.CarInfoMapper.selectObjs - ==>  Preparing: SELECT distinct(car_brand) FROM car_info
+2021-02-08 22:53:40.571 [DEBUG] com.dippy.mapper.CarInfoMapper.selectObjs - ==> Parameters: 
+2021-02-08 22:53:40.602 [DEBUG] com.dippy.mapper.CarInfoMapper.selectObjs - <==      Total: 2
+2021-02-08 23:10:27.768 [DEBUG] com.dippy.mapper.CarInfoMapper.selectObjs - ==>  Preparing: SELECT distinct(car_brand) FROM car_info
+2021-02-08 23:10:27.801 [DEBUG] com.dippy.mapper.CarInfoMapper.selectObjs - ==> Parameters: 
+2021-02-08 23:10:27.830 [DEBUG] com.dippy.mapper.CarInfoMapper.selectObjs - <==      Total: 2
+2021-02-08 23:10:27.838 [DEBUG] com.dippy.mapper.CarInfoMapper.selectObjs - ==>  Preparing: SELECT distinct(car_type) FROM car_info
+2021-02-08 23:10:27.839 [DEBUG] com.dippy.mapper.CarInfoMapper.selectObjs - ==> Parameters: 
+2021-02-08 23:10:27.846 [DEBUG] com.dippy.mapper.CarInfoMapper.selectObjs - <==      Total: 2
+2021-02-08 23:10:27.847 [DEBUG] com.dippy.mapper.CarInfoMapper.selectObjs - ==>  Preparing: SELECT distinct(car_series) FROM car_info
+2021-02-08 23:10:27.848 [DEBUG] com.dippy.mapper.CarInfoMapper.selectObjs - ==> Parameters: 
+2021-02-08 23:10:27.850 [DEBUG] com.dippy.mapper.CarInfoMapper.selectObjs - <==      Total: 3

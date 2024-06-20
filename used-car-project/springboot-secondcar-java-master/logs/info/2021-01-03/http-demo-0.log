@@ -1,0 +1,4 @@
+2021-01-03 00:50:50.315 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-03 00:50:50.385 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 60ms. Found 0 Redis repository interfaces.
+2021-01-03 00:50:51.154 [INFO ] com.dippy.controller.KaptchaController - 生成的getCaptcha: wgnwa
+2021-01-03 00:51:13.080 [INFO ] com.dippy.controller.KaptchaController - 生成的getCaptcha: agym8

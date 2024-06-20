@@ -1,0 +1,3 @@
+2021-04-01 23:31:43.782 [AMQP Connection 192.168.88.130:5672] ERROR o.s.a.rabbit.connection.CachingConnectionFactory - Channel shutdown: connection error
+2021-04-01 23:39:45.929 [AMQP Connection 192.168.88.130:5672] ERROR o.s.a.rabbit.connection.CachingConnectionFactory - Channel shutdown: connection error
+2021-04-01 23:39:45.930 [AMQP Connection 192.168.88.130:5672] ERROR o.s.a.rabbit.connection.CachingConnectionFactory - Channel shutdown: connection error

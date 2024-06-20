@@ -1,0 +1,6 @@
+2021-02-25 23:45:30.510 [DEBUG] com.dippy.mapper.CarInfoMapper.getAllCarBrand - ==>  Preparing: SELECT distinct(car_brand) FROM car_info
+2021-02-25 23:45:30.594 [DEBUG] com.dippy.mapper.CarInfoMapper.getAllCarBrand - ==> Parameters: 
+2021-02-25 23:45:30.670 [DEBUG] com.dippy.mapper.CarInfoMapper.getAllCarBrand - <==      Total: 2
+2021-02-25 23:45:30.869 [DEBUG] com.dippy.mapper.CarInfoMapper.getAllCarBrand - ==>  Preparing: SELECT distinct(car_brand) FROM car_info
+2021-02-25 23:45:30.871 [DEBUG] com.dippy.mapper.CarInfoMapper.getAllCarBrand - ==> Parameters: 
+2021-02-25 23:45:30.874 [DEBUG] com.dippy.mapper.CarInfoMapper.getAllCarBrand - <==      Total: 2

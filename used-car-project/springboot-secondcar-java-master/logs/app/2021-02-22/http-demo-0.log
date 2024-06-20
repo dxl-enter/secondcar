@@ -1,0 +1,4 @@
+2021-02-22 23:54:05.215 [INFO ] com.dippy.mapper.SysPermissionMapperTest - Starting SysPermissionMapperTest on LAPTOP-LTJAKFJ8 with PID 20444 (started by Mindless in E:\workspace\IDEA\springboot\springboot-secondcar)
+2021-02-22 23:54:05.217 [DEBUG] com.dippy.mapper.SysPermissionMapperTest - Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2021-02-22 23:54:05.218 [INFO ] com.dippy.mapper.SysPermissionMapperTest - No active profile set, falling back to default profiles: default
+2021-02-22 23:54:17.393 [INFO ] com.dippy.mapper.SysPermissionMapperTest - Started SysPermissionMapperTest in 13.13 seconds (JVM running for 15.062)

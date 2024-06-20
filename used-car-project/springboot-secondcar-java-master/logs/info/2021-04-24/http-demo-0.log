@@ -1,0 +1,28 @@
+2021-04-24 00:22:39.671 [INFO ] com.dippy.service.impl.UserDetailServiceImpl - 执行UserDetailServiceImpl自定义登录逻辑---admin--用户名
+2021-04-24 00:26:00.293 [INFO ] io.lettuce.core.protocol.CommandHandler - null Unexpected exception during request: java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1133)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2021-04-24 00:26:00.729 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@38be8302: tags=[[amq.ctag-ZNsZlLo3AAMxw59vBA7H5w]], channel=Cached Rabbit Channel: AMQChannel(amqp://guest@192.168.88.134:5672/,1), conn: Proxy@233ffc79 Shared Rabbit Connection: SimpleConnection@480b7651 [delegate=amqp://guest@192.168.88.134:5672/, localPort= 50162], acknowledgeMode=AUTO local queue size=0
+2021-04-24 09:34:27.188 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-04-24 09:34:27.541 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com/192.168.88.134:6379
+2021-04-24 09:34:37.694 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-04-24 09:34:45.571 [INFO ] io.lettuce.core.protocol.ReconnectionHandler - Reconnected to yuechi.com:6379
+2021-04-24 09:34:48.595 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-04-24 09:34:49.324 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#6df605f:16/SimpleConnection@6c406eb9 [delegate=amqp://guest@192.168.88.134:5672/, localPort= 59541]
+2021-04-24 15:38:49.432 [INFO ] com.dippy.controller.KaptchaController - 生成的getCaptcha: feg3c

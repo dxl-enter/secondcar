@@ -1,0 +1,151 @@
+server:
+  port: 8090
+  servlet:
+    context-path: /api/ #（不同SpringBoot版本会有区别，这里是采用2.x）
+
+
+# DataSource Config
+spring:
+  datasource:
+    #    driver-class-name: com.mysql.cj.jdbc.Driver
+    #    url: jdbc:mysql://${host.ecs}:3306/second_car?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+    driver-class-name: com.p6spy.engine.spy.P6SpyDriver
+    url: jdbc:p6spy:mysql://${host.ecs}:3306/second_car?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+    #    生成数据库文档
+    xa:
+      properties:
+        useInformationSchema: true
+
+  # 全局时间格式化
+  jackson:
+    date-format: yyyy-MM-dd hh:mm:ss
+    time-zone: GMT+8
+
+  redis:
+#    host: yuechi.com
+    host: ${host.ecs}
+    port: 6379
+    timeout: 10s
+    lettuce:
+      pool:
+        min-idle: 0
+        max-idle: 8
+        max-active: 8
+        max-wait: -1ms
+#    password: 612345
+#  elasticsearch:
+#    rest:
+##      uris: http://yuechi.com:9200
+#      uris: http://${host.ecs}:9200
+
+host:
+  ecs: localhost #阿里主机地址
+
+
+
+  rabbitmq:
+    #    host: yuechi.com
+    host: ${host.ecs}
+    port: 15672
+    username: guest
+    password: guest
+  # 文件上传
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 100MB
+
+
+#mybatis:
+#  configuration:
+#    map-underscore-to-camel-case: false #自动驼峰映射
+
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**Mapper.xml
+  type-aliases-package: com.dippy.entity
+  global-config:
+    #数据库相关配置
+    db-config:
+      #主键类型  AUTO:"数据库ID自增", INPUT:"用户输入ID", ID_WORKER:"全局唯一ID (数字类型唯一ID)", UUID:"全局唯一ID UUID";
+      id-type: AUTO
+
+  configuration:
+    #    log-impl: org.apache.ibatis.logging.slf4j.Slf4jImpl
+    # 设置控制台打印日志
+    #    log-impl: org.apache.ibatis.logging.slf4j.Slf4jImpl
+    # 设置控制台不打印日志
+    log-impl: org.apache.ibatis.logging.nologging.NoLoggingImpl
+    map-underscore-to-camel-case: true #自动驼峰映射
+
+dippy-jwtutils: # 和token二选一。本项目使用token的配置生成jwt
+  jwt:
+    # 加密秘钥
+    secret: f4e2e52034348f86b67cde581c0f9eb5
+    # token有效时长，7天，单位秒
+    expire: 604800
+    header: Authorization
+
+# 登录是否需要验证码
+login:
+  needVerifyCode: false
+
+token:
+  key: authorization
+  # token有效时长，7天，单位秒
+  expire:
+    seconds: 7200
+  # 加密秘钥
+  jwtSecret: (DDDD:)_$^1124^%$_(III:)_@++--(PPP:)_++++_.sd_(YYYY:)66
+
+kaptcha:
+  key: KAPTCHA_SESSION_KEY
+
+# 记住我的过期时间
+rememberMe:
+  out-time: 7200
+
+
+# 七牛云相关
+# 目前使用的是VariableNames这个类的配置
+qiniuyun:
+  access-key: rvp99RfE5JthhjERgGzUYdHZgRbjeH7wdnib81LI
+  secret-key: pMG7aFilYOZp6hDVS0p1T2jRvZ5pJfPGua-hcBcx
+  bucket-name: yuechi
+  qiniuURL: http://r8vi8vkpw.hn-bkt.clouddn.com/
+
+#redis中地址的键
+address:
+  region: region
+  province: province
+  city: city
+  area: area
+
+
+#redis中的键
+redisKeys:
+  #  用户收藏的汽车的键
+  myCollectCars: myCollectCars
+
+
+#AliPayConfig:
+#  # 应用ID,您的APPID，收款账号既是您的APPID对应支付宝账号
+#  app_id: 2016110300788834
+#  # 商户私钥，您的PKCS8格式RSA2私钥
+#  merchant_private_key: "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAg/Q/XvJEV9+abY5ZHaKEe/VU4FTLo0OAr1UGYqjn/rM7I3K8HwD6frZ2Z7KEVnLNzMAVAbwOqKchGnSsqr5ZT0WkGaT0bH8DiAnLWe1BaK2aRwB8hf+auunajz2t4Z/pX9FB8ntcq1yrxEpT4UqslPDvmnYdIvGCu3AO1IDt2GEGJs3hhf6UrrG6prsU0Vfe1m7zYWdpkpR/9mcis2wBn1SUZ9ZGEYjGzS8228cNlpDl/3b2d2EcM7bAiRCGmrSQ6h12d6KU88nIGToKdz9Npd34f4Mbs9NWQnJsR9Z7UAe10ukMeRPmspksiL8mVY4cydaDN+7ZxjdhJJByEqNEpQIDAQAB"
+#  # 支付宝公钥,查看地址：https://openhome.alipay.com/platform/keyManage.htm 对应APPID下的支付宝公钥。
+#  alipay_public_key: "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAhQnacJLoHqldRtX7mD2+YiSnB4BJ8asRSdS1Kxtw6wpxmJLwLmIOz26ShBQQzHq+5qGQLwirNEdY/0IHTgZhJm9gHRHP2z6Tf4mCDeWVDT/kSy891DEC54Wrq0rMWyQZ/nGMiTQEw31xmX/IL1HukN1OzdnEF1G9lLFbyU8eu1i4kA+KvSCOMOmf8g69wZ/WMTBrSSfBpyAkv3dH1HBoGH6RL8ltBn6peqqBi85rNmVxbypVuvTwFB8Emn8zj9yv41HwV6qZWo67uHADRWgx5nld5KiTz2Zs8B4RmSKFReiNZ5cgxeGPv0WJi4Xn4sj4cbnKXAm1fS7rssPJZlCXmQIDAQAB"
+#  # 服务器异步通知页面路径  需http://格式的完整路径，不能加?id=123这类自定义参数。支付错误时使用
+#  # notify_url 和 return_url 是我们在控制器中定义的两个方法！！！回调和异步通知时可以在里面处理事务。
+#  notify_url:   http://xip5cy.natappfree.cc
+#  # 页面跳转同步通知页面路径 需http://格式的完整路径，不能加?id=123这类自定义参数。
+#  return_url: http://localhost:8090/success
+#  # 签名方式
+#  sign_type: RSA2
+#  # 字符编码格式
+#  charset: utf-8
+#  # 支付宝网关
+#  gatewayUr: https://openapi.alipaydev.com/gateway.do
+#  # 支付宝网关日志
+#  log_path: "logs/alipay"

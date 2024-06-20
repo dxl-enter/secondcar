@@ -1,0 +1,1343 @@
+2021-04-19 00:34:45.687 [AMQP Connection 192.168.88.132:5672] WARN  com.rabbitmq.client.impl.ForgivingExceptionHandler - An unexpected connection driver error occured (Exception message: Connection reset)
+2021-04-19 09:11:18.314 [AMQP Connection 192.168.88.132:5672] WARN  com.rabbitmq.client.impl.ForgivingExceptionHandler - An unexpected connection driver error occured (Exception message: Connection reset)
+2021-04-19 09:12:05.719 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-3] WARN  o.s.a.r.listener.SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection timed out: connect
+2021-04-19 09:12:52.765 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-4] WARN  o.s.a.r.listener.SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection timed out: connect
+2021-04-19 09:13:39.793 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-5] WARN  o.s.a.r.listener.SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection timed out: connect
+2021-04-19 09:14:26.827 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-6] WARN  o.s.a.r.listener.SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection timed out: connect
+2021-04-19 09:15:13.852 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-7] WARN  o.s.a.r.listener.SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection timed out: connect
+2021-04-19 09:16:00.917 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-8] WARN  o.s.a.r.listener.SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection timed out: connect
+2021-04-19 09:16:47.959 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-9] WARN  o.s.a.r.listener.SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection timed out: connect
+2021-04-19 09:17:35.008 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-10] WARN  o.s.a.r.listener.SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection timed out: connect
+2021-04-19 10:28:00.079 [http-nio-8090-exec-3] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.validation.BindException: org.springframework.validation.BeanPropertyBindingResult: 5 errors
+Field error in object 'sysUser' on field 'addressId': rejected value [null]; codes [typeMismatch.sysUser.addressId,typeMismatch.addressId,typeMismatch.java.lang.Integer,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [sysUser.addressId,addressId]; arguments []; default message [addressId]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.lang.Integer' for property 'addressId'; nested exception is java.lang.NumberFormatException: For input string: "null"]
+Field error in object 'sysUser' on field 'birthday': rejected value [1998-07-01]; codes [typeMismatch.sysUser.birthday,typeMismatch.birthday,typeMismatch.java.time.LocalDate,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [sysUser.birthday,birthday]; arguments []; default message [birthday]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.time.LocalDate' for property 'birthday'; nested exception is org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [@com.fasterxml.jackson.databind.annotation.JsonDeserialize @com.fasterxml.jackson.databind.annotation.JsonSerialize @io.swagger.annotations.ApiModelProperty @com.fasterxml.jackson.annotation.JsonFormat java.time.LocalDate] for value '1998-07-01'; nested exception is java.lang.IllegalArgumentException: Parse attempt failed for value [1998-07-01]]
+Field error in object 'sysUser' on field 'carInfos': rejected value [null]; codes [typeMismatch.sysUser.carInfos,typeMismatch.carInfos,typeMismatch.java.util.List,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [sysUser.carInfos,carInfos]; arguments []; default message [carInfos]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.util.List' for property 'carInfos'; nested exception is java.lang.IllegalStateException: Cannot convert value of type 'java.lang.String' to required type 'com.dippy.entity.CarInfo' for property 'carInfos[0]': no matching editors or conversion strategy found]
+Field error in object 'sysUser' on field 'createTime': rejected value [2021-01-30 03:00:51]; codes [typeMismatch.sysUser.createTime,typeMismatch.createTime,typeMismatch.java.time.LocalDateTime,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [sysUser.createTime,createTime]; arguments []; default message [createTime]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.time.LocalDateTime' for property 'createTime'; nested exception is org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [@com.fasterxml.jackson.databind.annotation.JsonDeserialize @com.fasterxml.jackson.databind.annotation.JsonSerialize @com.fasterxml.jackson.annotation.JsonFormat @io.swagger.annotations.ApiModelProperty java.time.LocalDateTime] for value '2021-01-30 03:00:51'; nested exception is java.lang.IllegalArgumentException: Parse attempt failed for value [2021-01-30 03:00:51]]
+Field error in object 'sysUser' on field 'updateTime': rejected value [2017-07-06 09:20:19]; codes [typeMismatch.sysUser.updateTime,typeMismatch.updateTime,typeMismatch.java.time.LocalDateTime,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [sysUser.updateTime,updateTime]; arguments []; default message [updateTime]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.time.LocalDateTime' for property 'updateTime'; nested exception is org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [@com.fasterxml.jackson.databind.annotation.JsonDeserialize @com.fasterxml.jackson.databind.annotation.JsonSerialize @com.fasterxml.jackson.annotation.JsonFormat @io.swagger.annotations.ApiModelProperty java.time.LocalDateTime] for value '2017-07-06 09:20:19'; nested exception is java.lang.IllegalArgumentException: Parse attempt failed for value [2017-07-06 09:20:19]]]
+2021-04-19 10:28:40.748 [http-nio-8090-exec-6] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.validation.BindException: org.springframework.validation.BeanPropertyBindingResult: 5 errors
+Field error in object 'sysUser' on field 'addressId': rejected value [null]; codes [typeMismatch.sysUser.addressId,typeMismatch.addressId,typeMismatch.java.lang.Integer,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [sysUser.addressId,addressId]; arguments []; default message [addressId]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.lang.Integer' for property 'addressId'; nested exception is java.lang.NumberFormatException: For input string: "null"]
+Field error in object 'sysUser' on field 'birthday': rejected value [1998-07-01]; codes [typeMismatch.sysUser.birthday,typeMismatch.birthday,typeMismatch.java.time.LocalDate,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [sysUser.birthday,birthday]; arguments []; default message [birthday]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.time.LocalDate' for property 'birthday'; nested exception is org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [@com.fasterxml.jackson.databind.annotation.JsonDeserialize @com.fasterxml.jackson.databind.annotation.JsonSerialize @io.swagger.annotations.ApiModelProperty @com.fasterxml.jackson.annotation.JsonFormat java.time.LocalDate] for value '1998-07-01'; nested exception is java.lang.IllegalArgumentException: Parse attempt failed for value [1998-07-01]]
+Field error in object 'sysUser' on field 'carInfos': rejected value [null]; codes [typeMismatch.sysUser.carInfos,typeMismatch.carInfos,typeMismatch.java.util.List,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [sysUser.carInfos,carInfos]; arguments []; default message [carInfos]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.util.List' for property 'carInfos'; nested exception is java.lang.IllegalStateException: Cannot convert value of type 'java.lang.String' to required type 'com.dippy.entity.CarInfo' for property 'carInfos[0]': no matching editors or conversion strategy found]
+Field error in object 'sysUser' on field 'createTime': rejected value [2021-01-30 03:00:51]; codes [typeMismatch.sysUser.createTime,typeMismatch.createTime,typeMismatch.java.time.LocalDateTime,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [sysUser.createTime,createTime]; arguments []; default message [createTime]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.time.LocalDateTime' for property 'createTime'; nested exception is org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [@com.fasterxml.jackson.databind.annotation.JsonDeserialize @com.fasterxml.jackson.databind.annotation.JsonSerialize @com.fasterxml.jackson.annotation.JsonFormat @io.swagger.annotations.ApiModelProperty java.time.LocalDateTime] for value '2021-01-30 03:00:51'; nested exception is java.lang.IllegalArgumentException: Parse attempt failed for value [2021-01-30 03:00:51]]
+Field error in object 'sysUser' on field 'updateTime': rejected value [2017-07-06 09:20:19]; codes [typeMismatch.sysUser.updateTime,typeMismatch.updateTime,typeMismatch.java.time.LocalDateTime,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [sysUser.updateTime,updateTime]; arguments []; default message [updateTime]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.time.LocalDateTime' for property 'updateTime'; nested exception is org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [@com.fasterxml.jackson.databind.annotation.JsonDeserialize @com.fasterxml.jackson.databind.annotation.JsonSerialize @com.fasterxml.jackson.annotation.JsonFormat @io.swagger.annotations.ApiModelProperty java.time.LocalDateTime] for value '2017-07-06 09:20:19'; nested exception is java.lang.IllegalArgumentException: Parse attempt failed for value [2017-07-06 09:20:19]]]
+2021-04-19 10:30:19.396 [http-nio-8090-exec-7] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-04-19 10:30:19.511 [http-nio-8090-exec-7] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-04-19 10:31:20.247 [http-nio-8090-exec-5] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-04-19 10:31:20.468 [http-nio-8090-exec-5] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-04-19 12:35:44.993 [http-nio-8090-exec-10] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-04-19 12:35:45.202 [http-nio-8090-exec-10] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-04-19 12:37:12.421 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=51s408ms217µs500ns).
+2021-04-19 13:02:05.064 [http-nio-8090-exec-1] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-04-19 13:02:05.135 [http-nio-8090-exec-1] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-04-19 13:12:41.514 [http-nio-8090-exec-2] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-04-19 13:12:41.618 [http-nio-8090-exec-2] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-04-19 13:20:34.825 [http-nio-8090-exec-5] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-04-19 13:20:34.910 [http-nio-8090-exec-5] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-04-19 13:21:20.820 [http-nio-8090-exec-10] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-04-19 13:21:22.823 [http-nio-8090-exec-10] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-04-19 13:23:26.940 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'carInfoMapper' and 'com.dippy.mapper.CarInfoMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 13:23:26.941 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'carPictureMapper' and 'com.dippy.mapper.CarPictureMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 13:23:26.941 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'logLoginMapper' and 'com.dippy.mapper.LogLoginMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 13:23:26.941 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'persistentLoginsMapper' and 'com.dippy.mapper.PersistentLoginsMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 13:23:26.942 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'regionMapper' and 'com.dippy.mapper.RegionMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 13:23:26.942 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'shAreaMapper' and 'com.dippy.mapper.ShAreaMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 13:23:26.942 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysPermissionMapper' and 'com.dippy.mapper.SysPermissionMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 13:23:26.942 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysRoleMapper' and 'com.dippy.mapper.SysRoleMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 13:23:26.943 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysRolePermissionMapper' and 'com.dippy.mapper.SysRolePermissionMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 13:23:26.943 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysRoleUserMapper' and 'com.dippy.mapper.SysRoleUserMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 13:23:26.943 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysUserMapper' and 'com.dippy.mapper.SysUserMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 13:23:26.943 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userAddressMapper' and 'com.dippy.mapper.UserAddressMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 13:23:26.944 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userInfoMapper' and 'com.dippy.mapper.UserInfoMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 13:23:26.945 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-04-19 13:23:30.384 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.dippy.entity.SysRoleUser".
+2021-04-19 13:23:36.173 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-04-19 13:23:36.174 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-04-19 13:23:36.174 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-04-19 13:23:36.175 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-04-19 13:23:36.573 [main] WARN  o.s.data.elasticsearch.support.VersionInfo - Version mismatch in between Elasticsearch Clients build/use: 7.6.2 - 7.10.1
+2021-04-19 13:23:37.362 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.dippy.entity.PersistentLogins".
+2021-04-19 13:25:19.522 [http-nio-8090-exec-7] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-04-19 13:25:19.524 [http-nio-8090-exec-7] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-04-19 13:52:59.807 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'carInfoMapper' and 'com.dippy.mapper.CarInfoMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 13:52:59.809 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'carPictureMapper' and 'com.dippy.mapper.CarPictureMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 13:52:59.809 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'logLoginMapper' and 'com.dippy.mapper.LogLoginMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 13:52:59.809 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'persistentLoginsMapper' and 'com.dippy.mapper.PersistentLoginsMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 13:52:59.809 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'regionMapper' and 'com.dippy.mapper.RegionMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 13:52:59.810 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'shAreaMapper' and 'com.dippy.mapper.ShAreaMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 13:52:59.810 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysPermissionMapper' and 'com.dippy.mapper.SysPermissionMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 13:52:59.810 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysRoleMapper' and 'com.dippy.mapper.SysRoleMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 13:52:59.810 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysRolePermissionMapper' and 'com.dippy.mapper.SysRolePermissionMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 13:52:59.811 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysRoleUserMapper' and 'com.dippy.mapper.SysRoleUserMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 13:52:59.811 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysUserMapper' and 'com.dippy.mapper.SysUserMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 13:52:59.811 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userAddressMapper' and 'com.dippy.mapper.UserAddressMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 13:52:59.811 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userInfoMapper' and 'com.dippy.mapper.UserInfoMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 13:52:59.812 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-04-19 13:53:03.132 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.dippy.entity.SysRoleUser".
+2021-04-19 13:53:08.128 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-04-19 13:53:08.129 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-04-19 13:53:08.130 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-04-19 13:53:08.130 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-04-19 13:53:08.458 [main] WARN  o.s.data.elasticsearch.support.VersionInfo - Version mismatch in between Elasticsearch Clients build/use: 7.6.2 - 7.10.1
+2021-04-19 13:53:09.702 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.dippy.entity.PersistentLogins".
+2021-04-19 14:07:42.109 [http-nio-8090-exec-4] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-04-19 14:07:42.188 [http-nio-8090-exec-4] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-04-19 14:32:15.750 [http-nio-8090-exec-7] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-04-19 14:32:15.796 [http-nio-8090-exec-7] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-04-19 14:38:31.121 [http-nio-8090-exec-1] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-04-19 14:38:31.221 [http-nio-8090-exec-1] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-04-19 14:47:05.245 [http-nio-8090-exec-1] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-04-19 14:47:05.298 [http-nio-8090-exec-1] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-04-19 14:56:48.407 [SpringContextShutdownHook] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception thrown from LifecycleProcessor on context close
+java.lang.StackOverflowError: null
+	at com.zeroturnaround.jrebelbase.meta.f.a(SourceFile:163)
+	at com.zeroturnaround.jrebelbase.facade.g.getOriginClass(SourceFile:111)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:60)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+	at com.zeroturnaround.reload.ad.a(SourceFile:164)
+	at com.zeroturnaround.reload.ad.a(SourceFile:128)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersionInternal(SourceFile:71)
+	at com.zeroturnaround.jrebelbase.facade.g.getCurrentVersion(SourceFile:1)
+	at com.zeroturnaround.jrebelbase.d._jr$gCur(SourceFile:147)
+	at com.zeroturnaround.reload.aa.b(SourceFile:175)
+	at com.zeroturnaround.reload.aa.a(SourceFile:197)
+	at com.zeroturnaround.reload.ad.a(SourceFile:87)
+2021-04-19 14:57:24.155 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'carInfoMapper' and 'com.dippy.mapper.CarInfoMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 14:57:24.156 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'carPictureMapper' and 'com.dippy.mapper.CarPictureMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 14:57:24.156 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'logLoginMapper' and 'com.dippy.mapper.LogLoginMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 14:57:24.156 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'persistentLoginsMapper' and 'com.dippy.mapper.PersistentLoginsMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 14:57:24.157 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'regionMapper' and 'com.dippy.mapper.RegionMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 14:57:24.157 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'shAreaMapper' and 'com.dippy.mapper.ShAreaMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 14:57:24.157 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysPermissionMapper' and 'com.dippy.mapper.SysPermissionMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 14:57:24.157 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysRoleMapper' and 'com.dippy.mapper.SysRoleMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 14:57:24.157 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysRolePermissionMapper' and 'com.dippy.mapper.SysRolePermissionMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 14:57:24.158 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysRoleUserMapper' and 'com.dippy.mapper.SysRoleUserMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 14:57:24.158 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysUserMapper' and 'com.dippy.mapper.SysUserMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 14:57:24.158 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userAddressMapper' and 'com.dippy.mapper.UserAddressMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 14:57:24.158 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userInfoMapper' and 'com.dippy.mapper.UserInfoMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 14:57:24.159 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-04-19 14:57:27.296 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.dippy.entity.SysRoleUser".
+2021-04-19 14:57:30.199 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-04-19 14:57:30.200 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-04-19 14:57:30.200 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-04-19 14:57:30.201 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-04-19 14:57:30.436 [main] WARN  o.s.data.elasticsearch.support.VersionInfo - Version mismatch in between Elasticsearch Clients build/use: 7.6.2 - 7.10.1
+2021-04-19 14:57:31.282 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.dippy.entity.PersistentLogins".
+2021-04-19 14:58:42.937 [rebel-change-detector-thread] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-04-19 14:58:42.969 [rebel-change-detector-thread] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-04-19 15:10:10.766 [http-nio-8090-exec-7] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-04-19 15:10:10.973 [http-nio-8090-exec-7] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-04-19 15:13:02.057 [http-nio-8090-exec-8] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-04-19 15:13:02.141 [http-nio-8090-exec-8] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-04-19 15:19:36.991 [http-nio-8090-exec-7] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-04-19 15:19:37.647 [http-nio-8090-exec-7] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-04-19 15:20:27.005 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'carInfoMapper' and 'com.dippy.mapper.CarInfoMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 15:20:27.006 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'carPictureMapper' and 'com.dippy.mapper.CarPictureMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 15:20:27.006 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'logLoginMapper' and 'com.dippy.mapper.LogLoginMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 15:20:27.007 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'persistentLoginsMapper' and 'com.dippy.mapper.PersistentLoginsMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 15:20:27.007 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'regionMapper' and 'com.dippy.mapper.RegionMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 15:20:27.007 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'shAreaMapper' and 'com.dippy.mapper.ShAreaMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 15:20:27.007 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysPermissionMapper' and 'com.dippy.mapper.SysPermissionMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 15:20:27.007 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysRoleMapper' and 'com.dippy.mapper.SysRoleMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 15:20:27.008 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysRolePermissionMapper' and 'com.dippy.mapper.SysRolePermissionMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 15:20:27.008 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysRoleUserMapper' and 'com.dippy.mapper.SysRoleUserMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 15:20:27.008 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysUserMapper' and 'com.dippy.mapper.SysUserMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 15:20:27.008 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userAddressMapper' and 'com.dippy.mapper.UserAddressMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 15:20:27.009 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userInfoMapper' and 'com.dippy.mapper.UserInfoMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 15:20:27.010 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-04-19 15:20:30.128 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.dippy.entity.SysRoleUser".
+2021-04-19 15:20:31.961 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2021-04-19 15:21:15.449 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'carInfoMapper' and 'com.dippy.mapper.CarInfoMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 15:21:15.449 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'carPictureMapper' and 'com.dippy.mapper.CarPictureMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 15:21:15.450 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'logLoginMapper' and 'com.dippy.mapper.LogLoginMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 15:21:15.450 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'persistentLoginsMapper' and 'com.dippy.mapper.PersistentLoginsMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 15:21:15.450 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'regionMapper' and 'com.dippy.mapper.RegionMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 15:21:15.450 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'shAreaMapper' and 'com.dippy.mapper.ShAreaMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 15:21:15.450 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysPermissionMapper' and 'com.dippy.mapper.SysPermissionMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 15:21:15.450 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysRoleMapper' and 'com.dippy.mapper.SysRoleMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 15:21:15.451 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysRolePermissionMapper' and 'com.dippy.mapper.SysRolePermissionMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 15:21:15.451 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysRoleUserMapper' and 'com.dippy.mapper.SysRoleUserMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 15:21:15.451 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysUserMapper' and 'com.dippy.mapper.SysUserMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 15:21:15.451 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userAddressMapper' and 'com.dippy.mapper.UserAddressMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 15:21:15.451 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userInfoMapper' and 'com.dippy.mapper.UserInfoMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 15:21:15.452 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-04-19 15:21:18.234 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.dippy.entity.SysRoleUser".
+2021-04-19 15:21:21.640 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-04-19 15:21:21.641 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-04-19 15:21:21.641 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-04-19 15:21:21.642 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-04-19 15:21:21.991 [main] WARN  o.s.data.elasticsearch.support.VersionInfo - Version mismatch in between Elasticsearch Clients build/use: 7.6.2 - 7.10.1
+2021-04-19 15:21:22.952 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.dippy.entity.PersistentLogins".
+2021-04-19 15:51:44.522 [http-nio-8090-exec-1] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-04-19 15:51:44.526 [http-nio-8090-exec-1] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-04-19 15:53:13.318 [http-nio-8090-exec-6] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-04-19 15:53:13.322 [http-nio-8090-exec-6] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-04-19 15:56:42.843 [http-nio-8090-exec-4] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-04-19 15:56:42.845 [http-nio-8090-exec-4] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-04-19 15:56:57.096 [http-nio-8090-exec-9] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-04-19 15:56:57.100 [http-nio-8090-exec-9] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-04-19 15:57:43.644 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'carInfoMapper' and 'com.dippy.mapper.CarInfoMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 15:57:43.645 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'carPictureMapper' and 'com.dippy.mapper.CarPictureMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 15:57:43.645 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'logLoginMapper' and 'com.dippy.mapper.LogLoginMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 15:57:43.645 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'persistentLoginsMapper' and 'com.dippy.mapper.PersistentLoginsMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 15:57:43.645 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'regionMapper' and 'com.dippy.mapper.RegionMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 15:57:43.646 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'shAreaMapper' and 'com.dippy.mapper.ShAreaMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 15:57:43.646 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysPermissionMapper' and 'com.dippy.mapper.SysPermissionMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 15:57:43.646 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysRoleMapper' and 'com.dippy.mapper.SysRoleMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 15:57:43.646 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysRolePermissionMapper' and 'com.dippy.mapper.SysRolePermissionMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 15:57:43.646 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysRoleUserMapper' and 'com.dippy.mapper.SysRoleUserMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 15:57:43.647 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysUserMapper' and 'com.dippy.mapper.SysUserMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 15:57:43.647 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userAddressMapper' and 'com.dippy.mapper.UserAddressMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 15:57:43.647 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userInfoMapper' and 'com.dippy.mapper.UserInfoMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 15:57:43.648 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-04-19 15:57:46.880 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.dippy.entity.SysRoleUser".
+2021-04-19 15:57:49.612 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-04-19 15:57:49.613 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-04-19 15:57:49.614 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-04-19 15:57:49.614 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-04-19 15:57:49.850 [main] WARN  o.s.data.elasticsearch.support.VersionInfo - Version mismatch in between Elasticsearch Clients build/use: 7.6.2 - 7.10.1
+2021-04-19 15:57:50.450 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.dippy.entity.PersistentLogins".
+2021-04-19 16:11:30.901 [http-nio-8090-exec-7] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-04-19 16:11:30.924 [http-nio-8090-exec-7] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-04-19 16:28:27.691 [http-nio-8090-exec-1] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-04-19 16:28:27.711 [http-nio-8090-exec-1] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-04-19 16:35:39.466 [http-nio-8090-exec-4] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-04-19 16:35:39.481 [http-nio-8090-exec-4] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-04-19 16:39:17.969 [http-nio-8090-exec-7] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-04-19 16:39:17.991 [http-nio-8090-exec-7] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-04-19 18:03:40.844 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'carInfoMapper' and 'com.dippy.mapper.CarInfoMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 18:03:40.873 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'carPictureMapper' and 'com.dippy.mapper.CarPictureMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 18:03:40.874 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'logLoginMapper' and 'com.dippy.mapper.LogLoginMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 18:03:40.874 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'persistentLoginsMapper' and 'com.dippy.mapper.PersistentLoginsMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 18:03:40.874 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'regionMapper' and 'com.dippy.mapper.RegionMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 18:03:40.875 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'shAreaMapper' and 'com.dippy.mapper.ShAreaMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 18:03:40.875 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysPermissionMapper' and 'com.dippy.mapper.SysPermissionMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 18:03:40.875 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysRoleMapper' and 'com.dippy.mapper.SysRoleMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 18:03:40.875 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysRolePermissionMapper' and 'com.dippy.mapper.SysRolePermissionMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 18:03:40.876 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysRoleUserMapper' and 'com.dippy.mapper.SysRoleUserMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 18:03:40.876 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysUserAddressMapper' and 'com.dippy.mapper.SysUserAddressMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 18:03:40.876 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysUserMapper' and 'com.dippy.mapper.SysUserMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 18:03:40.876 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userAddressMapper' and 'com.dippy.mapper.UserAddressMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 18:03:40.876 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userInfoMapper' and 'com.dippy.mapper.UserInfoMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 18:03:40.877 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-04-19 18:03:43.982 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.dippy.entity.SysRoleUser".
+2021-04-19 18:03:46.708 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-04-19 18:03:46.709 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-04-19 18:03:46.709 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-04-19 18:03:46.710 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-04-19 18:03:47.001 [main] WARN  o.s.data.elasticsearch.support.VersionInfo - Version mismatch in between Elasticsearch Clients build/use: 7.6.2 - 7.10.1
+2021-04-19 18:03:47.707 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.dippy.entity.PersistentLogins".
+2021-04-19 18:36:45.553 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'carInfoMapper' and 'com.dippy.mapper.CarInfoMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 18:36:45.555 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'carPictureMapper' and 'com.dippy.mapper.CarPictureMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 18:36:45.556 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'logLoginMapper' and 'com.dippy.mapper.LogLoginMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 18:36:45.556 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'persistentLoginsMapper' and 'com.dippy.mapper.PersistentLoginsMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 18:36:45.556 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'regionMapper' and 'com.dippy.mapper.RegionMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 18:36:45.557 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'shAreaMapper' and 'com.dippy.mapper.ShAreaMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 18:36:45.557 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysPermissionMapper' and 'com.dippy.mapper.SysPermissionMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 18:36:45.557 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysRoleMapper' and 'com.dippy.mapper.SysRoleMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 18:36:45.557 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysRolePermissionMapper' and 'com.dippy.mapper.SysRolePermissionMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 18:36:45.557 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysRoleUserMapper' and 'com.dippy.mapper.SysRoleUserMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 18:36:45.558 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysUserAddressMapper' and 'com.dippy.mapper.SysUserAddressMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 18:36:45.558 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysUserMapper' and 'com.dippy.mapper.SysUserMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 18:36:45.558 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userAddressMapper' and 'com.dippy.mapper.UserAddressMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 18:36:45.558 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userInfoMapper' and 'com.dippy.mapper.UserInfoMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 18:36:45.559 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-04-19 18:36:48.739 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.dippy.entity.SysRoleUser".
+2021-04-19 18:36:51.430 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-04-19 18:36:51.431 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-04-19 18:36:51.431 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-04-19 18:36:51.432 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-04-19 18:36:51.651 [main] WARN  o.s.data.elasticsearch.support.VersionInfo - Version mismatch in between Elasticsearch Clients build/use: 7.6.2 - 7.10.1
+2021-04-19 18:36:52.303 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.dippy.entity.PersistentLogins".
+2021-04-19 18:43:46.494 [http-nio-8090-exec-3] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-04-19 18:43:46.572 [http-nio-8090-exec-3] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-04-19 22:47:07.516 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'carInfoMapper' and 'com.dippy.mapper.CarInfoMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 22:47:07.544 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'carPictureMapper' and 'com.dippy.mapper.CarPictureMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 22:47:07.545 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'logLoginMapper' and 'com.dippy.mapper.LogLoginMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 22:47:07.545 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'persistentLoginsMapper' and 'com.dippy.mapper.PersistentLoginsMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 22:47:07.545 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'regionMapper' and 'com.dippy.mapper.RegionMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 22:47:07.546 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'shAreaMapper' and 'com.dippy.mapper.ShAreaMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 22:47:07.546 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysPermissionMapper' and 'com.dippy.mapper.SysPermissionMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 22:47:07.548 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysRoleMapper' and 'com.dippy.mapper.SysRoleMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 22:47:07.549 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysRolePermissionMapper' and 'com.dippy.mapper.SysRolePermissionMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 22:47:07.550 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysRoleUserMapper' and 'com.dippy.mapper.SysRoleUserMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 22:47:07.550 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysUserAddressMapper' and 'com.dippy.mapper.SysUserAddressMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 22:47:07.551 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysUserMapper' and 'com.dippy.mapper.SysUserMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 22:47:07.551 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userAddressMapper' and 'com.dippy.mapper.UserAddressMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 22:47:07.552 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userInfoMapper' and 'com.dippy.mapper.UserInfoMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 22:47:07.553 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-04-19 22:47:12.030 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.dippy.entity.PersistentLogins".
+2021-04-19 22:47:12.388 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.dippy.entity.SysRoleUser".
+2021-04-19 22:47:16.022 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-04-19 22:47:16.022 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-04-19 22:47:16.023 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-04-19 22:47:16.023 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-04-19 22:47:16.297 [main] WARN  o.s.data.elasticsearch.support.VersionInfo - Version mismatch in between Elasticsearch Clients build/use: 7.6.2 - 7.10.1
+2021-04-19 22:59:36.675 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=48s570ms33µs400ns).
+2021-04-19 23:00:28.432 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=51s757ms124µs600ns).
+2021-04-19 23:19:32.477 [http-nio-8090-exec-6] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-04-19 23:19:32.481 [http-nio-8090-exec-6] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-04-19 23:20:15.377 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=46s862ms908µs).
+2021-04-19 23:27:32.857 [http-nio-8090-exec-9] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-04-19 23:27:32.863 [http-nio-8090-exec-9] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-04-19 23:28:50.315 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m31s441ms72µs400ns).
+2021-04-19 23:28:50.381 [http-nio-8090-exec-10] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'userName' in 'class com.dippy.entity.SysUser']
+2021-04-19 23:44:41.330 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'carInfoMapper' and 'com.dippy.mapper.CarInfoMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 23:44:41.331 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'carPictureMapper' and 'com.dippy.mapper.CarPictureMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 23:44:41.331 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'logLoginMapper' and 'com.dippy.mapper.LogLoginMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 23:44:41.332 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'persistentLoginsMapper' and 'com.dippy.mapper.PersistentLoginsMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 23:44:41.332 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'regionMapper' and 'com.dippy.mapper.RegionMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 23:44:41.332 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'shAreaMapper' and 'com.dippy.mapper.ShAreaMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 23:44:41.332 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysPermissionMapper' and 'com.dippy.mapper.SysPermissionMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 23:44:41.332 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysRoleMapper' and 'com.dippy.mapper.SysRoleMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 23:44:41.333 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysRolePermissionMapper' and 'com.dippy.mapper.SysRolePermissionMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 23:44:41.333 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysRoleUserMapper' and 'com.dippy.mapper.SysRoleUserMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 23:44:41.333 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysUserAddressMapper' and 'com.dippy.mapper.SysUserAddressMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 23:44:41.334 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysUserMapper' and 'com.dippy.mapper.SysUserMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 23:44:41.334 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userAddressMapper' and 'com.dippy.mapper.UserAddressMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 23:44:41.334 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userInfoMapper' and 'com.dippy.mapper.UserInfoMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 23:44:41.335 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-04-19 23:44:43.804 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.dippy.entity.PersistentLogins".
+2021-04-19 23:44:44.016 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.dippy.entity.SysRoleUser".
+2021-04-19 23:44:46.443 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-04-19 23:44:46.443 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-04-19 23:44:46.444 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-04-19 23:44:46.444 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-04-19 23:44:46.649 [main] WARN  o.s.data.elasticsearch.support.VersionInfo - Version mismatch in between Elasticsearch Clients build/use: 7.6.2 - 7.10.1
+2021-04-19 23:50:49.646 [rebel-change-detector-thread] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-04-19 23:50:49.675 [rebel-change-detector-thread] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-04-19 23:51:04.989 [http-nio-8090-exec-1] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-04-19 23:51:05.011 [http-nio-8090-exec-1] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-04-19 23:54:28.599 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'carInfoMapper' and 'com.dippy.mapper.CarInfoMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 23:54:28.600 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'carPictureMapper' and 'com.dippy.mapper.CarPictureMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 23:54:28.601 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'logLoginMapper' and 'com.dippy.mapper.LogLoginMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 23:54:28.601 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'persistentLoginsMapper' and 'com.dippy.mapper.PersistentLoginsMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 23:54:28.601 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'regionMapper' and 'com.dippy.mapper.RegionMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 23:54:28.601 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'shAreaMapper' and 'com.dippy.mapper.ShAreaMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 23:54:28.602 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysPermissionMapper' and 'com.dippy.mapper.SysPermissionMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 23:54:28.602 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysRoleMapper' and 'com.dippy.mapper.SysRoleMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 23:54:28.603 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysRolePermissionMapper' and 'com.dippy.mapper.SysRolePermissionMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 23:54:28.603 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysRoleUserMapper' and 'com.dippy.mapper.SysRoleUserMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 23:54:28.603 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysUserAddressMapper' and 'com.dippy.mapper.SysUserAddressMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 23:54:28.603 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sysUserMapper' and 'com.dippy.mapper.SysUserMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 23:54:28.603 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userAddressMapper' and 'com.dippy.mapper.UserAddressMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 23:54:28.604 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userInfoMapper' and 'com.dippy.mapper.UserInfoMapper' mapperInterface. Bean already defined with the same name!
+2021-04-19 23:54:28.605 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dippy.mapper]' package. Please check your configuration.
+2021-04-19 23:54:31.584 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.dippy.entity.PersistentLogins".
+2021-04-19 23:54:31.781 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.dippy.entity.SysRoleUser".
+2021-04-19 23:54:34.270 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-04-19 23:54:34.271 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-04-19 23:54:34.272 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-04-19 23:54:34.272 [main] WARN  org.springframework.data.convert.CustomConversions - Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-04-19 23:54:34.467 [main] WARN  o.s.data.elasticsearch.support.VersionInfo - Version mismatch in between Elasticsearch Clients build/use: 7.6.2 - 7.10.1

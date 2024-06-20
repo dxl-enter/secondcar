@@ -1,0 +1,429 @@
+{
+  "took" : 3,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 1,
+    "successful" : 1,
+    "skipped" : 0,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : {
+      "value" : 6,
+      "relation" : "eq"
+    },
+    "max_score" : 0.0,
+    "hits" : [
+      {
+        "_index" : "car-info",
+        "_type" : "_doc",
+        "_id" : "1",
+        "_score" : 0.0,
+        "_source" : {
+          "_class" : "com.dippy.es.model.CarInfoModel",
+          "carId" : 1,
+          "carBrand" : "宝马",
+          "carSeries" : "5系",
+          "carType" : "SUV",
+          "carPrice" : 21000.0,
+          "carCount" : 1,
+          "carUserTime" : 1,
+          "transferCount" : 0,
+          "carCarMileage" : 12,
+          "carColor" : "白",
+          "carPictureId" : 3,
+          "carGearBox" : "自动",
+          "carDisplacement" : 2.0,
+          "produceTime" : "2021-01-13",
+          "carConfiguration" : "天窗、真皮坐垫",
+          "carSeat" : 4,
+          "carFuelType" : "机油",
+          "carQualityTime" : 1,
+          "carRegionId" : 1,
+          "createTime" : "2021-02-02T02:11:17",
+          "updateTime" : "2021-04-09T16:31:08",
+          "carPictures" : [
+            {
+              "carPictureId" : 3,
+              "carUrl" : "fttf.com",
+              "carPictureLocation" : 3,
+              "carId" : 1
+            }
+          ],
+          "carTitle" : "宝马 200 SUV"
+        }
+      },
+      {
+        "_index" : "car-info",
+        "_type" : "_doc",
+        "_id" : "2",
+        "_score" : 0.0,
+        "_source" : {
+          "_class" : "com.dippy.es.model.CarInfoModel",
+          "carId" : 2,
+          "carBrand" : "奔驰",
+          "carSeries" : "3",
+          "carType" : "轿车",
+          "carPrice" : 214500.0,
+          "carCount" : 1,
+          "carUserTime" : 1,
+          "transferCount" : 0,
+          "carCarMileage" : 17,
+          "carColor" : "黑",
+          "carPictureId" : 1,
+          "carGearBox" : "手自一体",
+          "carDisplacement" : 2.0,
+          "produceTime" : "2020-07-08",
+          "carConfiguration" : "天窗、真皮坐垫",
+          "carSeat" : 4,
+          "carFuelType" : "机油",
+          "carQualityTime" : 0,
+          "carRegionId" : 1,
+          "createTime" : "2021-02-02T02:13:29",
+          "updateTime" : "2021-04-09T16:31:11",
+          "carPictures" : [
+            {
+              "carPictureId" : 1,
+              "carUrl" : "tan.com",
+              "carPictureLocation" : 1,
+              "carId" : 2
+            }
+          ]
+        }
+      },
+      {
+        "_index" : "car-info",
+        "_type" : "_doc",
+        "_id" : "3",
+        "_score" : 0.0,
+        "_source" : {
+          "_class" : "com.dippy.es.model.CarInfoModel",
+          "carId" : 3,
+          "carBrand" : "宝马",
+          "carSeries" : "3系",
+          "carType" : "轿车",
+          "carPrice" : 303033.0,
+          "carCount" : 1,
+          "carUserTime" : 1,
+          "transferCount" : 0,
+          "carCarMileage" : 15,
+          "carColor" : "白",
+          "carPictureId" : 2,
+          "carGearBox" : "自动",
+          "carDisplacement" : 2.0,
+          "produceTime" : "2021-01-05",
+          "carConfiguration" : "天窗",
+          "carSeat" : 4,
+          "carFuelType" : "机油",
+          "carQualityTime" : 1,
+          "carRegionId" : 1,
+          "createTime" : "2021-01-12T22:53:02",
+          "updateTime" : "2021-04-08T20:23:49",
+          "carPictures" : [
+            {
+              "carPictureId" : 2,
+              "carUrl" : "fff.com",
+              "carPictureLocation" : 2,
+              "carId" : 3
+            }
+          ],
+          "carTitle" : "400 宝马 SUV"
+        }
+      },
+      {
+        "_index" : "car-info",
+        "_type" : "_doc",
+        "_id" : "8",
+        "_score" : 0.0,
+        "_source" : {
+          "_class" : "com.dippy.es.model.CarInfoModel",
+          "carId" : 8,
+          "carBrand" : "大众",
+          "carSeries" : "",
+          "carType" : "",
+          "carPrice" : 14.0,
+          "carCount" : 0,
+          "carUserTime" : 0,
+          "transferCount" : 0,
+          "carCarMileage" : 0,
+          "carColor" : "",
+          "carPictureId" : 0,
+          "carGearBox" : "",
+          "carDisplacement" : 0.0,
+          "carConfiguration" : "",
+          "carSeat" : 0,
+          "carFuelType" : "",
+          "carQualityTime" : 0,
+          "carRegionId" : 0,
+          "carFrontTyre" : "",
+          "rearTyre" : "",
+          "carDescribe" : "",
+          "updateTime" : "2021-03-27T20:17:37",
+          "carPictures" : [ ]
+        }
+      },
+      {
+        "_index" : "car-info",
+        "_type" : "_doc",
+        "_id" : "9",
+        "_score" : 0.0,
+        "_source" : {
+          "_class" : "com.dippy.es.model.CarInfoModel",
+          "carId" : 9,
+          "carBrand" : "宝马",
+          "carSeries" : "5系",
+          "carType" : "SUV",
+          "carPrice" : 21000.0,
+          "carCount" : 1,
+          "carUserTime" : 1,
+          "transferCount" : 0,
+          "carCarMileage" : 12,
+          "carColor" : "黄色",
+          "carPictureId" : 3,
+          "carGearBox" : "自动",
+          "carDisplacement" : 2.0,
+          "produceTime" : "2021-01-13",
+          "carConfiguration" : "天窗、真皮坐垫",
+          "carSeat" : 4,
+          "carFuelType" : "机油",
+          "carQualityTime" : 1,
+          "carRegionId" : 1,
+          "createTime" : "2021-02-02T02:11:17",
+          "updateTime" : "2021-04-08T20:23:38",
+          "carPictures" : [ ],
+          "carTitle" : "宝马 500 轿车"
+        }
+      }
+    ]
+  },
+  "aggregations" : {
+    "transfer_count" : {
+      "doc_count_error_upper_bound" : 0,
+      "sum_other_doc_count" : 0,
+      "buckets" : [
+        {
+          "key" : 0,
+          "doc_count" : 6
+        }
+      ]
+    },
+    "car_price" : {
+      "doc_count_error_upper_bound" : 0,
+      "sum_other_doc_count" : 0,
+      "buckets" : [
+        {
+          "key" : 21000.0,
+          "doc_count" : 3
+        },
+        {
+          "key" : 14.0,
+          "doc_count" : 1
+        },
+        {
+          "key" : 214500.0,
+          "doc_count" : 1
+        },
+        {
+          "key" : 303033.0,
+          "doc_count" : 1
+        }
+      ]
+    },
+    "car_brand_agg" : {
+      "doc_count_error_upper_bound" : 0,
+      "sum_other_doc_count" : 0,
+      "buckets" : [
+        {
+          "key" : "宝马",
+          "doc_count" : 4,
+          "car_brand_id" : {
+            "doc_count_error_upper_bound" : 0,
+            "sum_other_doc_count" : 3,
+            "buckets" : [
+              {
+                "key" : 1,
+                "doc_count" : 1
+              }
+            ]
+          }
+        },
+        {
+          "key" : "大众",
+          "doc_count" : 1,
+          "car_brand_id" : {
+            "doc_count_error_upper_bound" : 0,
+            "sum_other_doc_count" : 0,
+            "buckets" : [
+              {
+                "key" : 8,
+                "doc_count" : 1
+              }
+            ]
+          }
+        },
+        {
+          "key" : "奔驰",
+          "doc_count" : 1,
+          "car_brand_id" : {
+            "doc_count_error_upper_bound" : 0,
+            "sum_other_doc_count" : 0,
+            "buckets" : [
+              {
+                "key" : 2,
+                "doc_count" : 1
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "car_user_time" : {
+      "doc_count_error_upper_bound" : 0,
+      "sum_other_doc_count" : 0,
+      "buckets" : [
+        {
+          "key" : 1,
+          "doc_count" : 5
+        },
+        {
+          "key" : 0,
+          "doc_count" : 1
+        }
+      ]
+    },
+    "car_car_mileage" : {
+      "doc_count_error_upper_bound" : 0,
+      "sum_other_doc_count" : 0,
+      "buckets" : [
+        {
+          "key" : 12,
+          "doc_count" : 3
+        },
+        {
+          "key" : 0,
+          "doc_count" : 1
+        },
+        {
+          "key" : 15,
+          "doc_count" : 1
+        },
+        {
+          "key" : 17,
+          "doc_count" : 1
+        }
+      ]
+    },
+    "car_seat" : {
+      "doc_count_error_upper_bound" : 0,
+      "sum_other_doc_count" : 0,
+      "buckets" : [
+        {
+          "key" : 4,
+          "doc_count" : 5
+        },
+        {
+          "key" : 0,
+          "doc_count" : 1
+        }
+      ]
+    },
+    "car_color" : {
+      "doc_count_error_upper_bound" : 0,
+      "sum_other_doc_count" : 0,
+      "buckets" : [
+        {
+          "key" : "白",
+          "doc_count" : 2
+        },
+        {
+          "key" : "",
+          "doc_count" : 1
+        },
+        {
+          "key" : "灰色",
+          "doc_count" : 1
+        },
+        {
+          "key" : "黄色",
+          "doc_count" : 1
+        },
+        {
+          "key" : "黑",
+          "doc_count" : 1
+        }
+      ]
+    },
+    "car_fuel_type" : {
+      "doc_count_error_upper_bound" : 0,
+      "sum_other_doc_count" : 0,
+      "buckets" : [
+        {
+          "key" : "机油",
+          "doc_count" : 5
+        },
+        {
+          "key" : "",
+          "doc_count" : 1
+        }
+      ]
+    },
+    "car_gear_box" : {
+      "doc_count_error_upper_bound" : 0,
+      "sum_other_doc_count" : 0,
+      "buckets" : [
+        {
+          "key" : "自动",
+          "doc_count" : 4
+        },
+        {
+          "key" : "",
+          "doc_count" : 1
+        },
+        {
+          "key" : "手自一体",
+          "doc_count" : 1
+        }
+      ]
+    },
+    "car_series" : {
+      "doc_count_error_upper_bound" : 0,
+      "sum_other_doc_count" : 0,
+      "buckets" : [
+        {
+          "key" : "5系",
+          "doc_count" : 3
+        },
+        {
+          "key" : "",
+          "doc_count" : 1
+        },
+        {
+          "key" : "3",
+          "doc_count" : 1
+        },
+        {
+          "key" : "3系",
+          "doc_count" : 1
+        }
+      ]
+    },
+    "car_type" : {
+      "doc_count_error_upper_bound" : 0,
+      "sum_other_doc_count" : 0,
+      "buckets" : [
+        {
+          "key" : "SUV",
+          "doc_count" : 3
+        },
+        {
+          "key" : "轿车",
+          "doc_count" : 2
+        },
+        {
+          "key" : "",
+          "doc_count" : 1
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dippy.mapper.SysUserChatMessageMapper">
+    <select id="getChatListByUserId" resultType="com.dippy.vo.ChatListVo" parameterType="integer">
+        select su.name, su.avatar, sucm.*
+        from sys_user_chat_message sucm
+                     left join sys_user su on sucm.to_id = su.user_id
+        where sucm.from_id = #{userId}
+    </select>
+</mapper>

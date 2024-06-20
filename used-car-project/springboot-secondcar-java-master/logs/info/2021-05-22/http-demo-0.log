@@ -1,0 +1,35 @@
+2021-05-22 02:00:56.432 [INFO ] io.lettuce.core.protocol.CommandHandler - null Unexpected exception during request: java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1133)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2021-05-22 02:00:56.773 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@271d86d0: tags=[[amq.ctag-lLDAo4UBto-EIVzV536lyg]], channel=Cached Rabbit Channel: AMQChannel(amqp://guest@192.168.88.146:5672/,1), conn: Proxy@33113d8b Shared Rabbit Connection: SimpleConnection@4d60b0bb [delegate=amqp://guest@192.168.88.146:5672/, localPort= 57398], acknowledgeMode=AUTO local queue size=0
+2021-05-22 02:00:56.773 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com/192.168.88.146:6379
+2021-05-22 02:00:56.819 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-22 07:26:10.056 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-22 07:26:10.076 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-22 07:26:20.628 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-22 07:26:30.729 [INFO ] io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was yuechi.com:6379
+2021-05-22 07:26:30.900 [INFO ] io.lettuce.core.protocol.ReconnectionHandler - Reconnected to yuechi.com:6379
+2021-05-22 07:26:37.070 [INFO ] org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@5a2dd090: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2021-05-22 07:26:37.071 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [yuechi.com:5672]
+2021-05-22 07:26:53.419 [INFO ] org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#7f2d681a:5/SimpleConnection@6867659a [delegate=amqp://guest@192.168.88.146:5672/, localPort= 56849]
+2021-05-22 07:39:44.048 [INFO ] com.dippy.common.aop.logcommon.LogAspect - Request : LogAspect.RequestLog(url=http://localhost:8090/carInfo/getCarDetail/1, ip=0:0:0:0:0:0:0:1, classMethod=com.dippy.controller.CarInfoController.getCarDetailByCarId, args=[1])
+2021-05-22 07:39:44.049 [INFO ] com.dippy.common.aop.logcommon.LogAspect - Request : LogAspect.RequestLog(url=http://localhost:8090/yueChi/sysUser/isCollectCar/1, ip=0:0:0:0:0:0:0:1, classMethod=com.dippy.controller.SysUserController.isCollectCar, args=[1])
+2021-05-22 07:39:44.053 [INFO ] com.dippy.common.aop.logcommon.LogAspect - ---------doAfter-------
+2021-05-22 07:39:44.107 [INFO ] com.dippy.common.aop.logcommon.LogAspect - Result : {}Result(code=200, msg=操作成功, data=CarDetailVo(carInfo=CarInfo(carId=1, carBrand=宝马, carSeries=5系, carType=SUV, carPrice=226000.0, carCount=1, carUserTime=1, transferCount=0, carCarMileage=12.0, carColor=白色, carPictureId=3, carGearBox=自动, carDisplacement=2.0, produceTime=2021-01-13, carConfiguration=天窗、真皮坐垫, carSeat=4, carFuelType=汽油, carQualityTime=1, carRegionId=1, carFrontTyre=225/55 R17, rearTyre=225/55 R17, carDescribe=无事故记录！！！, createTime=2021-02-02T02:11:17, updateTime=2021-05-21T20:02:04, carStatus=1, carTitle=宝马5系 2014款 520Li 典雅型, carPictures=null, userId=1, carPicture=http://qt3ee54kl.hn-bkt.clouddn.com/%E5%AE%9D%E9%A9%AC%E4%B8%BB%E5%9B%BE1.jpg), carPicturesMap={0=[CarPicture(carPictureId=null, carUrl=http://qrg5og3v4.hn-bkt.clouddn.com/7nfXK0SA8VF3ouec.jpg, carPictureLocation=0, carId=null)], 1=[CarPicture(carPictureId=null, carUrl=http://qt3ee54kl.hn-bkt.clouddn.com/%E5%AE%9D%E9%A9%AC5%E5%86%85%E9%A5%B0%E5%9B%BE3.jpg, carPictureLocation=1, carId=null), CarPicture(carPictureId=null, carUrl=http://qt3ee54kl.hn-bkt.clouddn.com/%E5%AE%9D%E9%A9%AC5%E5%86%85%E9%A5%B0%E5%9B%BE2.jpg, carPictureLocation=1, carId=null), CarPicture(carPictureId=null, carUrl=http://qt3ee54kl.hn-bkt.clouddn.com/%E5%AE%9D%E9%A9%AC5%E5%86%85%E9%A5%B0%E5%9B%BE1.jpg, carPictureLocation=1, carId=null)], 2=[CarPicture(carPictureId=null, carUrl=http://qt3ee54kl.hn-bkt.clouddn.com/%E5%AE%9D%E9%A9%AC5%E4%B8%BB%E5%9B%BE1.jpg, carPictureLocation=2, carId=null), CarPicture(carPictureId=null, carUrl=http://qt3ee54kl.hn-bkt.clouddn.com/%E5%AE%9D%E9%A9%AC5%E5%A4%96%E8%A7%82%E5%9B%BE3.jpg, carPictureLocation=2, carId=null), CarPicture(carPictureId=null, carUrl=http://qt3ee54kl.hn-bkt.clouddn.com/%E5%AE%9D%E9%A9%AC5%E5%85%B6%E4%BB%96%E5%9B%BE1.jpg, carPictureLocation=2, carId=null)], 3=[CarPicture(carPictureId=null, carUrl=http://qt3ee54kl.hn-bkt.clouddn.com/%E5%AE%9D%E9%A9%AC5%E4%B8%BB%E5%9B%BE1.jpg, carPictureLocation=3, carId=null), CarPicture(carPictureId=null, carUrl=http://qt3ee54kl.hn-bkt.clouddn.com/%E5%AE%9D%E9%A9%AC5%E5%85%B6%E4%BB%96%E5%9B%BE2.jpg, carPictureLocation=3, carId=null)], 4=[CarPicture(carPictureId=null, carUrl=http://qt3ee54kl.hn-bkt.clouddn.com/%E5%AE%9D%E9%A9%AC5%E5%A4%96%E8%A7%82%E5%9B%BE2.jpg, carPictureLocation=4, carId=null), CarPicture(carPictureId=null, carUrl=http://qt3ee54kl.hn-bkt.clouddn.com/%E5%AE%9D%E9%A9%AC5%E5%85%B6%E4%BB%96%E5%9B%BE2.jpg, carPictureLocation=4, carId=null), CarPicture(carPictureId=null, carUrl=http://qt3ee54kl.hn-bkt.clouddn.com/%E5%AE%9D%E9%A9%AC5%E8%BD%AE%E6%92%AD%E5%9B%BE1.jpg, carPictureLocation=4, carId=null), CarPicture(carPictureId=null, carUrl=http://qt3ee54kl.hn-bkt.clouddn.com/%E5%AE%9D%E9%A9%AC5%E8%BD%AE%E6%92%AD%E5%9B%BE2.jpg, carPictureLocation=4, carId=null), CarPicture(carPictureId=null, carUrl=http://qt3ee54kl.hn-bkt.clouddn.com/%E5%A4%96%E8%A7%82%E5%9B%BE2.jpg, carPictureLocation=4, carId=null)]}, carPictures=null, name=张三, phone=15975789454, sex=1))
+2021-05-22 07:39:44.107 [INFO ] com.dippy.common.aop.logcommon.LogAspect - ---------doAfter-------

@@ -1,0 +1,73 @@
+2021-02-03 13:51:37.890 [INFO ] com.dippy.mapper.SysPermissionMapperTest - Starting SysPermissionMapperTest on Dippy with PID 20580 (started by Mindless in E:\workspace\IDEA\springboot\springboot-secondcar)
+2021-02-03 13:51:37.891 [DEBUG] com.dippy.mapper.SysPermissionMapperTest - Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2021-02-03 13:51:37.892 [INFO ] com.dippy.mapper.SysPermissionMapperTest - No active profile set, falling back to default profiles: default
+2021-02-03 13:59:12.569 [INFO ] com.dippy.mapper.SysPermissionMapperTest - Starting SysPermissionMapperTest on Dippy with PID 4920 (started by Mindless in E:\workspace\IDEA\springboot\springboot-secondcar)
+2021-02-03 13:59:12.577 [DEBUG] com.dippy.mapper.SysPermissionMapperTest - Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2021-02-03 13:59:12.580 [INFO ] com.dippy.mapper.SysPermissionMapperTest - No active profile set, falling back to default profiles: default
+2021-02-03 13:59:26.618 [INFO ] com.dippy.mapper.SysPermissionMapperTest - Started SysPermissionMapperTest in 15.247 seconds (JVM running for 17.339)
+2021-02-03 13:59:27.481 [DEBUG] com.dippy.mapper.SysPermissionMapper.listPermissionByUserId - ==>  Preparing: SELECT p.* FROM sys_user u, sys_permission p LEFT JOIN sys_role_permission rp ON p.permission_id = rp.permissionId LEFT JOIN sys_role_user ru ON rp.roleId = ru.roleId WHERE u.user_id = ?
+2021-02-03 13:59:27.518 [DEBUG] com.dippy.mapper.SysPermissionMapper.listPermissionByUserId - ==> Parameters: 1(Integer)
+2021-02-03 13:59:27.652 [DEBUG] com.dippy.mapper.SysPermissionMapper.listPermissionByUserId - <==      Total: 68
+2021-02-03 14:19:01.902 [INFO ] com.dippy.mapper.SysPermissionMapperTest - Starting SysPermissionMapperTest on Dippy with PID 20712 (started by Mindless in E:\workspace\IDEA\springboot\springboot-secondcar)
+2021-02-03 14:19:01.925 [DEBUG] com.dippy.mapper.SysPermissionMapperTest - Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2021-02-03 14:19:01.928 [INFO ] com.dippy.mapper.SysPermissionMapperTest - No active profile set, falling back to default profiles: default
+2021-02-03 14:19:14.598 [INFO ] com.dippy.mapper.SysPermissionMapperTest - Started SysPermissionMapperTest in 13.868 seconds (JVM running for 16.636)
+2021-02-03 14:19:15.492 [DEBUG] com.dippy.mapper.SysPermissionMapper.listPermissionByUserId - ==>  Preparing: SELECT p.* FROM sys_user u, sys_permission p LEFT JOIN sys_role_permission rp ON p.permission_id = rp.permissionId LEFT JOIN sys_role_user ru ON rp.roleId = ru.roleId WHERE u.user_id = ?
+2021-02-03 14:19:15.532 [DEBUG] com.dippy.mapper.SysPermissionMapper.listPermissionByUserId - ==> Parameters: 1(Integer)
+2021-02-03 14:19:15.573 [DEBUG] com.dippy.mapper.SysPermissionMapper.listPermissionByUserId - <==      Total: 68
+2021-02-03 14:20:49.000 [INFO ] com.dippy.mapper.SysPermissionMapperTest - Starting SysPermissionMapperTest on Dippy with PID 7572 (started by Mindless in E:\workspace\IDEA\springboot\springboot-secondcar)
+2021-02-03 14:20:49.002 [DEBUG] com.dippy.mapper.SysPermissionMapperTest - Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2021-02-03 14:20:49.003 [INFO ] com.dippy.mapper.SysPermissionMapperTest - No active profile set, falling back to default profiles: default
+2021-02-03 14:21:00.212 [INFO ] com.dippy.mapper.SysPermissionMapperTest - Started SysPermissionMapperTest in 12.76 seconds (JVM running for 15.286)
+2021-02-03 14:21:00.814 [DEBUG] com.dippy.mapper.SysPermissionMapper.listPermissionByUserId - ==>  Preparing: SELECT p.* FROM sys_user u, sys_permission p LEFT JOIN sys_role_permission rp ON p.permission_id = rp.permissionId LEFT JOIN sys_role_user ru ON rp.roleId = ru.roleId WHERE u.user_id = ?
+2021-02-03 14:21:00.848 [DEBUG] com.dippy.mapper.SysPermissionMapper.listPermissionByUserId - ==> Parameters: 1(Integer)
+2021-02-03 14:21:00.887 [DEBUG] com.dippy.mapper.SysPermissionMapper.listPermissionByUserId - <==      Total: 68
+2021-02-03 15:23:59.123 [INFO ] com.dippy.mapper.SysPermissionMapperTest - Starting SysPermissionMapperTest on Dippy with PID 6924 (started by Mindless in E:\workspace\IDEA\springboot\springboot-secondcar)
+2021-02-03 15:23:59.134 [DEBUG] com.dippy.mapper.SysPermissionMapperTest - Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2021-02-03 15:23:59.188 [INFO ] com.dippy.mapper.SysPermissionMapperTest - No active profile set, falling back to default profiles: default
+2021-02-03 15:24:32.395 [INFO ] com.dippy.mapper.SysPermissionMapperTest - Started SysPermissionMapperTest in 36.426 seconds (JVM running for 73.35)
+2021-02-03 15:24:34.523 [DEBUG] com.dippy.mapper.SysPermissionMapper.listPermissionByUserId - ==>  Preparing: SELECT p.* FROM sys_user u, sys_permission p LEFT JOIN sys_role_permission rp ON p.permission_id = rp.permissionId LEFT JOIN sys_role_user ru ON rp.roleId = ru.roleId WHERE u.user_id = ?
+2021-02-03 15:24:34.620 [DEBUG] com.dippy.mapper.SysPermissionMapper.listPermissionByUserId - ==> Parameters: 1(Integer)
+2021-02-03 15:24:34.732 [DEBUG] com.dippy.mapper.SysPermissionMapper.listPermissionByUserId - <==      Total: 40
+2021-02-03 15:56:29.332 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==>  Preparing: SELECT user_id,username,password,user_name,sex,avatar,address_id,phone,email,birthday,is_lock,create_time,update_time FROM sys_user WHERE (username = ?)
+2021-02-03 15:56:29.635 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==> Parameters: admin(String)
+2021-02-03 15:56:29.714 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - <==      Total: 1
+2021-02-03 15:56:29.746 [DEBUG] com.dippy.mapper.SysPermissionMapper.listPermissionByUserId - ==>  Preparing: SELECT p.* FROM sys_user u, sys_permission p LEFT JOIN sys_role_permission rp ON p.permission_id = rp.permissionId LEFT JOIN sys_role_user ru ON rp.roleId = ru.roleId WHERE u.user_id = ?
+2021-02-03 15:56:29.747 [DEBUG] com.dippy.mapper.SysPermissionMapper.listPermissionByUserId - ==> Parameters: 1(Integer)
+2021-02-03 15:56:29.757 [DEBUG] com.dippy.mapper.SysPermissionMapper.listPermissionByUserId - <==      Total: 40
+2021-02-03 16:15:44.600 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==>  Preparing: SELECT user_id,username,password,user_name,sex,avatar,address_id,phone,email,birthday,is_lock,create_time,update_time FROM sys_user WHERE (username = ?)
+2021-02-03 16:15:44.601 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==> Parameters: admin(String)
+2021-02-03 16:15:44.604 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - <==      Total: 1
+2021-02-03 16:15:44.616 [DEBUG] com.dippy.mapper.SysPermissionMapper.listPermissionByUserId - ==>  Preparing: SELECT p.* FROM sys_user u, sys_permission p LEFT JOIN sys_role_permission rp ON p.permission_id = rp.permissionId LEFT JOIN sys_role_user ru ON rp.roleId = ru.roleId WHERE u.user_id = ?
+2021-02-03 16:15:44.617 [DEBUG] com.dippy.mapper.SysPermissionMapper.listPermissionByUserId - ==> Parameters: 1(Integer)
+2021-02-03 16:15:44.625 [DEBUG] com.dippy.mapper.SysPermissionMapper.listPermissionByUserId - <==      Total: 40
+2021-02-03 23:08:49.410 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==>  Preparing: SELECT user_id,username,password,user_name,sex,avatar,address_id,phone,email,birthday,is_lock,create_time,update_time FROM sys_user WHERE (username = ?)
+2021-02-03 23:08:49.515 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==> Parameters: admin(String)
+2021-02-03 23:08:49.633 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - <==      Total: 1
+2021-02-03 23:08:49.663 [DEBUG] com.dippy.mapper.SysPermissionMapper.listPermissionByUserId - ==>  Preparing: SELECT p.* FROM sys_user u, sys_permission p LEFT JOIN sys_role_permission rp ON p.permission_id = rp.permissionId LEFT JOIN sys_role_user ru ON rp.roleId = ru.roleId WHERE u.user_id = ?
+2021-02-03 23:08:49.665 [DEBUG] com.dippy.mapper.SysPermissionMapper.listPermissionByUserId - ==> Parameters: 1(Integer)
+2021-02-03 23:08:49.703 [DEBUG] com.dippy.mapper.SysPermissionMapper.listPermissionByUserId - <==      Total: 40
+2021-02-03 23:31:26.267 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==>  Preparing: SELECT user_id,username,password,user_name,sex,avatar,address_id,phone,email,birthday,is_lock,create_time,update_time FROM sys_user WHERE (username = ?)
+2021-02-03 23:31:26.367 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==> Parameters: admin(String)
+2021-02-03 23:31:26.464 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - <==      Total: 1
+2021-02-03 23:31:26.552 [DEBUG] com.dippy.mapper.SysPermissionMapper.listPermissionByUserId - ==>  Preparing: SELECT p.* FROM sys_user u, sys_permission p LEFT JOIN sys_role_permission rp ON p.permission_id = rp.permissionId LEFT JOIN sys_role_user ru ON rp.roleId = ru.roleId WHERE u.user_id = ?
+2021-02-03 23:31:26.554 [DEBUG] com.dippy.mapper.SysPermissionMapper.listPermissionByUserId - ==> Parameters: 1(Integer)
+2021-02-03 23:31:26.566 [DEBUG] com.dippy.mapper.SysPermissionMapper.listPermissionByUserId - <==      Total: 40
+2021-02-03 23:34:32.374 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==>  Preparing: SELECT user_id,username,password,user_name,sex,avatar,address_id,phone,email,birthday,is_lock,create_time,update_time FROM sys_user WHERE (username = ?)
+2021-02-03 23:34:32.376 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==> Parameters: admin(String)
+2021-02-03 23:34:32.407 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - <==      Total: 1
+2021-02-03 23:34:32.432 [DEBUG] com.dippy.mapper.SysPermissionMapper.listPermissionByUserId - ==>  Preparing: SELECT p.* FROM sys_user u, sys_permission p LEFT JOIN sys_role_permission rp ON p.permission_id = rp.permissionId LEFT JOIN sys_role_user ru ON rp.roleId = ru.roleId WHERE u.user_id = ?
+2021-02-03 23:34:32.433 [DEBUG] com.dippy.mapper.SysPermissionMapper.listPermissionByUserId - ==> Parameters: 1(Integer)
+2021-02-03 23:34:32.441 [DEBUG] com.dippy.mapper.SysPermissionMapper.listPermissionByUserId - <==      Total: 40
+2021-02-03 23:42:28.357 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==>  Preparing: SELECT user_id,username,password,user_name,sex,avatar,address_id,phone,email,birthday,is_lock,create_time,update_time FROM sys_user WHERE (username = ?)
+2021-02-03 23:42:28.358 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==> Parameters: admin(String)
+2021-02-03 23:42:28.360 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - <==      Total: 1
+2021-02-03 23:42:28.373 [DEBUG] com.dippy.mapper.SysPermissionMapper.listPermissionByUserId - ==>  Preparing: SELECT p.* FROM sys_user u, sys_permission p LEFT JOIN sys_role_permission rp ON p.permission_id = rp.permissionId LEFT JOIN sys_role_user ru ON rp.roleId = ru.roleId WHERE u.user_id = ?
+2021-02-03 23:42:28.374 [DEBUG] com.dippy.mapper.SysPermissionMapper.listPermissionByUserId - ==> Parameters: 1(Integer)
+2021-02-03 23:42:28.380 [DEBUG] com.dippy.mapper.SysPermissionMapper.listPermissionByUserId - <==      Total: 40
+2021-02-03 23:53:19.289 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==>  Preparing: SELECT user_id,username,password,user_name,sex,avatar,address_id,phone,email,birthday,is_lock,create_time,update_time FROM sys_user WHERE (username = ?)
+2021-02-03 23:53:19.290 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - ==> Parameters: admin(String)
+2021-02-03 23:53:19.293 [DEBUG] com.dippy.mapper.SysUserMapper.selectOne - <==      Total: 1
+2021-02-03 23:53:19.306 [DEBUG] com.dippy.mapper.SysPermissionMapper.listPermissionByUserId - ==>  Preparing: SELECT p.* FROM sys_user u, sys_permission p LEFT JOIN sys_role_permission rp ON p.permission_id = rp.permissionId LEFT JOIN sys_role_user ru ON rp.roleId = ru.roleId WHERE u.user_id = ?
+2021-02-03 23:53:19.307 [DEBUG] com.dippy.mapper.SysPermissionMapper.listPermissionByUserId - ==> Parameters: 1(Integer)
+2021-02-03 23:53:19.312 [DEBUG] com.dippy.mapper.SysPermissionMapper.listPermissionByUserId - <==      Total: 40
